@@ -14,6 +14,7 @@
               <li><a href="#diffusion-limited-aggregation-dla">Diffusion-limited aggregation (DLA)</a></li>
               <li><a href="#differential-growth">Differential growth</a></li>
               <li><a href="#eden-growth-model">Eden growth model</a></li>
+              <li><a href="#physarum">Physarum</a></li>
               <li><a href="#space-colonization">Space colonization</a></li>
               <li><a href="#reaction-diffusion">Reaction diffusion</a></li>
             </ul>
@@ -134,7 +135,7 @@ _Creative projects:_
 <img src="https://cdn.iopscience.com/images/1742-5468/2006/11/P11007/Full/3564901.jpg" width="150" align="right">
 
 ### Eden growth model
-First put forward by Murray Eden in 1961, this is a type of surface fractal growth process where material randomly accumulates on the _boundary_ of clusters. Sort of like DLA but without all the empty space between branches. Thought to be a good way to model certain kinds of bacterial and lichen growth.
+Created by Murray Eden in 1961, this is a type of surface fractal growth process where material randomly accumulates on the _boundary_ of clusters. Sort of like DLA but without all the empty space between branches. Thought to be a good way to model certain kinds of bacterial and lichen growth.
 
 _Articles:_
 * [A Two Dimensional Growth Process](https://projecteuclid.org/download/pdf_1/euclid.bsmsp/1200512888) by Murray Eden (original 1961 paper)
@@ -148,6 +149,9 @@ _Articles:_
 
 ## Mathematical topics
 ### Circle packing
+
+<img src="https://c1.staticflickr.com/1/915/42277964325_431501c7c0_o.gif" width="300" align="right">
+
 ### Cellular automata (CA)
 A regular grid of _cells_ with _states_ that are updated each iteration in accordance with _rules_. Developed by Stanislaw Ulam and John von Neumann at the Los Alamos National Laboratory in the 1940s, this system can be used to model physical, biological, and social phenomena
 
@@ -166,19 +170,28 @@ _Well-known rules:_
 
 _Articles:_
 * [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton) on Wikipedia
+* [Elementary Cellular Automaton](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) on Wolfram MathWorld
+* [Chapter 7. Cellular Automata](https://natureofcode.com/book/chapter-7-cellular-automata/) from Daniel Shiffman's Nature of Code book
 
 ### Delaunay and Voronoi diagrams
 ### Fourier series
 ### Fractals
-* Cantor set
-* Chaos game
-* Sierpinski gasket + carpet
-  * Related - Apollony gasket a.k.a. curvilinear Sierpinsky gasket
-* Menger sponge
-* Mandlebrot
-* Lindenmayer systems (L-systems)
-* Julia set
-* Koch snowflake
+* [Apollonian gasket](https://en.wikipedia.org/wiki/Apollonian_gasket) (a.k.a. curvilinear Sierpiński gasket)
+* [Cantor set](https://en.wikipedia.org/wiki/Cantor_set)
+* [Chaos game](https://en.wikipedia.org/wiki/Chaos_game)
+* [Dragon curve](https://en.wikipedia.org/wiki/Dragon_curve)
+* [Iterated function systems (IFS)](https://en.wikipedia.org/wiki/Iterated_function_system)
+  * [Lindenmayer systems (L-systems)](https://en.wikipedia.org/wiki/L-system)
+* [Julia set](https://en.wikipedia.org/wiki/Julia_set)
+* [Koch snowflake](https://en.wikipedia.org/wiki/Koch_snowflake)
+* [Menger sponge](https://en.wikipedia.org/wiki/Menger_sponge)
+* [Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) (related: [Mandelbulb](https://en.wikipedia.org/wiki/Mandelbulb) and [Buddhabrot](https://en.wikipedia.org/wiki/Buddhabrot))
+* [Sierpiński triangle / gasket / sieve](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle) and [carpet](https://en.wikipedia.org/wiki/Sierpinski_carpet)
+* [... and so much more](https://en.wikipedia.org/wiki/List_of_fractals_by_Hausdorff_dimension)
+
+_Articles:_
+* [Fractal](https://en.wikipedia.org/wiki/Fractal) on Wikipedia
+* [List of fractals by Hausdorff dimension](https://en.wikipedia.org/wiki/List_of_fractals_by_Hausdorff_dimension) on Wikipedia
 
 ### Laplace transform
 ### Lissajous curves
