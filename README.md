@@ -1,70 +1,76 @@
 <table>
-  <tr>
-    <td>
-      <p><b>Table of contents</b></p>
-      <details>
-        <summary>Growth algorithms</summary>
-        <p>
-          <ul>
-            <li><a href="#diffusion-limited-aggregation-dla">Diffusion-limited aggregation (DLA)</a></li>
-            <li><a href="#differential-growth">Differential growth</a></li>
-            <li><a href="#eden-growth-model">Eden growth model</a></li>
-            <li><a href="#space-colonization">Space colonization</a></li>
-            <li><a href="#reaction-diffusion">Reaction diffusion</a></li>
-          </ul>
-        </p>
-      </details>
-      <details>
-        <summary>Mathematical topics</summary>
-        <p>
-          <ul>
-            <li>Delaunay and voronoi diagrams</li>
-            <li>Circle packing</li>
-            <li>Cellular automata</li>
-            <li>Fourier series</li>
-            <li>Fractals</li>
-            <li>Laplace transform</li>
-            <li>Lissajous curves</li>
-            <li>Navier-Stokes equations</li>
-            <li>Strange Attractors</li>
-            <li>Superellipse, supershapes, and superformula</li>
-          </ul>
-        </p>
-      </details>
-      <details>
-        <summary>Lab experiments</summary>
-        <p>
-          <ul>
-            <li>Hele-Shaw cell experiment</li>
-            <li>Chladni plate</li>
-            <li>Belousov–Zhabotinsky reaction</li>
-          </ul>
-        </p>
-      </details>
-      <details>
-        <summary>Useful code patterns and techniques</summary>
-        <p>
-          <ul>
-            <li>Particle systems</li>
-            <li>Collision detection</li>
-            <li>Spatial indexing</li>
-            <li>Marching squares</li>
-            <li>Marching cubes</li>
-            <li>Noise (Perlin, Simplex)</li>
-            <li>Physics libraries</li>
-            <li>Signed distance functions (SDFs)</li>
-          </ul>
-        </p>
-      </details>
-      <details>
-        <summary>Books</summary>
-        <p>
-          <ul>
-          </ul>
-        </p>
-      </details>
-    </td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Table of contents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <details>
+          <summary>Growth algorithms</summary>
+          <p>
+            <ul>
+              <li><a href="#diffusion-limited-aggregation-dla">Diffusion-limited aggregation (DLA)</a></li>
+              <li><a href="#differential-growth">Differential growth</a></li>
+              <li><a href="#eden-growth-model">Eden growth model</a></li>
+              <li><a href="#space-colonization">Space colonization</a></li>
+              <li><a href="#reaction-diffusion">Reaction diffusion</a></li>
+            </ul>
+          </p>
+        </details>
+        <details>
+          <summary>Mathematical topics</summary>
+          <p>
+            <ul>
+              <li>Delaunay and voronoi diagrams</li>
+              <li>Circle packing</li>
+              <li>Cellular automata</li>
+              <li>Fourier series</li>
+              <li>Fractals</li>
+              <li>Laplace transform</li>
+              <li>Lissajous curves</li>
+              <li>Navier-Stokes equations</li>
+              <li>Strange Attractors</li>
+              <li>Superellipse, supershapes, and superformula</li>
+            </ul>
+          </p>
+        </details>
+        <details>
+          <summary>Lab experiments</summary>
+          <p>
+            <ul>
+              <li>Hele-Shaw cell experiment</li>
+              <li>Chladni plate</li>
+              <li>Belousov–Zhabotinsky reaction</li>
+            </ul>
+          </p>
+        </details>
+        <details>
+          <summary>Useful code patterns and techniques</summary>
+          <p>
+            <ul>
+              <li>Particle systems</li>
+              <li>Collision detection</li>
+              <li>Spatial indexing</li>
+              <li>Marching squares</li>
+              <li>Marching cubes</li>
+              <li>Noise (Perlin, Simplex)</li>
+              <li>Physics libraries</li>
+              <li>Signed distance functions (SDFs)</li>
+            </ul>
+          </p>
+        </details>
+        <details>
+          <summary>Books</summary>
+          <p>
+            <ul>
+            </ul>
+          </p>
+        </details>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 ## Growth algorithms
