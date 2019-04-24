@@ -24,16 +24,16 @@
           <summary>Mathematical topics</summary>
           <p>
             <ul>
-              <li>Delaunay and voronoi diagrams</li>
-              <li>Circle packing</li>
               <li>Cellular automata</li>
+              <li>Delaunay and voronoi diagrams</li>
               <li>Fourier series</li>
               <li>Fractals</li>
               <li>Laplace transform</li>
               <li>Lissajous curves</li>
               <li>Navier-Stokes equations</li>
+              <li>Packing problems</li>
               <li>Strange Attractors</li>
-              <li>Superellipse, supershapes, and superformula</li>
+              <li>Superellipse and superformula</li>
             </ul>
           </p>
         </details>
@@ -144,17 +144,31 @@ _Articles:_
 * [A Two Dimensional Growth Process](https://projecteuclid.org/download/pdf_1/euclid.bsmsp/1200512888) by Murray Eden (original 1961 paper)
 
 ### Physarum
+
+```
+TODO
+```
+
 _Articles:_
 * [Physarum Simulations](https://softologyblog.wordpress.com/2019/04/11/physarum-simulations/) by Softology
 
 ### Space colonization
+
+```
+TODO
+```
+
 ### Reaction-diffusion
+
+```
+TODO
+```
 
 ## Mathematical topics
 <img src="https://c1.staticflickr.com/1/915/42277964325_431501c7c0_o.gif" width="300" align="right">
 
 ### Cellular automata (CA)
-A regular grid of _cells_ with _states_ that are updated each iteration in accordance with _rules_. Developed by Stanislaw Ulam and John von Neumann at the Los Alamos National Laboratory in the 1940s, this system can be used to model physical, biological, and social phenomena
+A regular grid of _cells_ with _states_ that are updated each iteration in accordance with _rules_. Developed by Stanislaw Ulam and John von Neumann at the Los Alamos National Laboratory in the 1940s, this system has be used to model physical, biological, and social phenomena with remarkable variety and accuracy. 
 
 _Key terms:_
 * Cell - a discrete location on the grid
@@ -164,9 +178,10 @@ _Key terms:_
 * Generation - result of one iteration of the system.
 
 _Well-known rules:_
-* Game of Life
-* Langton's Ant
-* Brian's Brain
+* [Brian's Brain](https://en.wikipedia.org/wiki/Brian%27s_Brain)
+* [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+* [Langton's Ant](https://en.wikipedia.org/wiki/Langton%27s_ant)
+* [Wireworld](http://mathworld.wolfram.com/WireWorld.html)
 
 _Articles:_
 * [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton) on Wikipedia
@@ -181,7 +196,9 @@ _Notable software:_
 <img src="https://i.imgur.com/iOr8mvo.png" width="300" align="right">
 
 ### Delaunay triangulation and Voronoi diagrams
-_Delaunay triangulation_ is a way to connect a set of points
+_Delaunay triangulation_ is a way of connecting a set of points to form a network of non-overlapping triangles. One of the key properties of Delaunay triangulations is that the [circumcircles](https://en.wikipedia.org/wiki/Circumscribed_circle) associated with each triangle contains no other points than their three triangle vertices. When extended into 3D, Delaunay triangulation is useful for creating meshes.
+
+_Voronoi diagrams_ are the [dual](https://observablehq.com/@mbostock/the-delaunays-dual) of Delaunay triangulations. This means that once a Delaunay triangulation has been computed for a set of points, a Voronoi diagram can be drawn without any additional data - just draw lines connecting the centers of the circumcircles! Useful for efficiently partitioning (splitting up) space. 
 
 _Articles:_
 * [Delaunay triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) on Wikipedia
@@ -189,10 +206,21 @@ _Articles:_
 
 ### Fourier series
 
+```
+TODO
+```
+
+* [Coding Challenge #125: Fourier Series](https://www.youtube.com/watch?v=Mm2eYfj0SgA) by Daniel Shiffman
+* [Coding Challenge #130.1: Drawing with Fourier Transform and Epicycles](https://www.youtube.com/watch?v=MY4luNgGfms) by Daniel Shiffman
+* [Coding Challenge #130.2: Fourier Transform User Drawing](https://www.youtube.com/watch?v=n9nfTxp_APM) by Daniel Shiffman
+* [Coding Challenge #130.3: Fourier Transform Drawing with Complex Number Input](https://www.youtube.com/watch?v=7_vKzcgpfvU) by Daniel Shiffman
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mandel_zoom_08_satellite_antenna.jpg/320px-Mandel_zoom_08_satellite_antenna.jpg" width="300" align="right">
 
 ### Fractals
-Infinitely complex patterns that are self-similar across all scales
+Infinitely complex patterns generated via recursion that are self-similar across all scales. Thought to be found in abundance in nature, though "true" (infinite) fractals are not possible because nature uses physical matter, which has particular structures at the microscopic and smaller scales (molecules, atoms, elementary particles, etc).
+
+Fractal features can be observed in nature in tree branching structures, leaf veins, terrain, surface textures, coastlines, rivers, succulents, snowflakes, rivers, lightning bolts, nautilus shells (both form and pattern), and so much more.
 
 _Notable fractals:_
 * [Apollonian gasket](https://en.wikipedia.org/wiki/Apollonian_gasket) (a.k.a. curvilinear Sierpiński gasket)
@@ -213,28 +241,105 @@ _Notable fractals:_
 _Articles:_
 * [Fractal](https://en.wikipedia.org/wiki/Fractal) on Wikipedia
 * [List of fractals by Hausdorff dimension](https://en.wikipedia.org/wiki/List_of_fractals_by_Hausdorff_dimension) on Wikipedia
+* [Fractals, Caos, Self-Similarity](http://paulbourke.net/fractals/) by Paul Bourke
 
 ### Laplace transform
+
+```
+TODO
+```
+
+<img src="https://media3.giphy.com/media/I6eLbjpGq99x6/giphy.gif" width="300" align="right">
+
 ### Lissajous curves
+
+```
+TODO
+```
+
+_Articles:_
+* [Lissajous curve](https://en.wikipedia.org/wiki/Lissajous_curve) on Wikipedia
+
+### Medial axis
+
+```
+TODO
+```
+
 ### Navier-Stokes equations
+Mathematical equation that describe the motion of viscous fluids.
+
+_Articles:_
+* [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) on Wikipedia
+
 ### Packing problems
+
+```
+TODO
+```
+
 * Circle packing
-* See [Packing problems](https://en.wikipedia.org/wiki/Packing_problems) on Wikipedia
 
-### Strange Attractors
-* Clifford attractors
-* Lorenz attractors
-* Duffing attractor
-* Rossler attractor
-* Bouali attractor
-* Henon attractor
+_Articles:_
+* [Packing problems](https://en.wikipedia.org/wiki/Packing_problems) on Wikipedia
+* [Random space filling of the plane](http://paulbourke.net/fractals/randomtile/) by Paul Bourke
 
-### Superellipse, supershapes, and superformula
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Attractor_Poisson_Saturne.jpg" width="200" align="right">
+
+### Strange attractors
+
+```
+TODO
+```
+
+_Notable attractors:_
+* [Clifford attractor](http://paulbourke.net/fractals/clifford/)
+* [Duffing attractor](http://paulbourke.net/fractals/duffing/)
+* [Hénon attractor](https://en.wikipedia.org/wiki/H%C3%A9non_map)
+* [Lorenz attractor](https://en.wikipedia.org/wiki/Lorenz_system)
+* [Multiscroll attractor](https://en.wikipedia.org/wiki/Multiscroll_attractor) (a.k.a double-scroll attractor or Chua's attractor)
+* [Rössler attractor](https://en.wikipedia.org/wiki/R%C3%B6ssler_attractor)
+
+_Articles:_
+* [Strange attractor](https://en.wikipedia.org/wiki/Attractor#Strange_attractor) section on Wikipedia article for [attractors](https://en.wikipedia.org/wiki/Attractor)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sf2d.png/800px-Sf2d.png" width="300" align="right">
+
+### Superellipse and superformula
+
+```
+TODO
+```
+
+_Superellipse formula:_
+
+| Form | Formula |
+|---   |---      |
+| Cartesian space | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b21da32fe407ff5714620b26c50343d21afed15"> |
+| Parametric | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5ecc6bff4267f2ec1ee1d16845b8c402009880ea"> |
+
+<a href="http://www.syedrezaali.com/3d-supershapes" target="_blank"><img src="https://static1.squarespace.com/static/53c9cdf3e4b0669c8d19e691/53fc1d80e4b04305cfdf4913/53fc1d84e4b04305cfdf4914/1409031558078/3D-Superformula-Reza-Ali-19.png?format=1500w" width="300" alt="Example of 3D supershape by Reza Ali"></a>
+
+
+_Superformula:_
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8071dcb3a49044816f7885114c2335d805d7ad30">
+
+Where `r` is a radius and `φ` (phi) is an angle
+
+Adjust `a`, `b`, `m1`, `m2`, `n1`, `n2`, and `n3` for various effects.
+
+_Articles:_
+* [Superformula](https://en.wikipedia.org/wiki/Superformula) on Wikipedia
+* [Superellipse](https://en.wikipedia.org/wiki/Superellipse) on Wikipedia
+* [Supershapes / Superformula](http://paulbourke.net/geometry/supershape/) by Paul Bourke
+* [Coding Challenge #23: 2D Supershapes](https://www.youtube.com/watch?v=ksRoh-10lak) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_023_SuperShape2D) with Processing and p5.js code)
+* [Coding Challenge #26: 3D Supershapes](https://www.youtube.com/watch?v=akM4wMZIBWg) by Daniel Shiffman ([Processing sketch](https://github.com/CodingTrain/website/blob/master/CodingChallenges/CC_026_SuperShape3D/Processing/CC_026_SuperShape3D/CC_026_SuperShape3D.pde) on Github)
+
 ### Travelling salesman problem (TSP)
 Asks the question "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?" This classic problem is computer science classrooms to teach algorithm design and optimization techniques.
 
-_Useful for:_
-* Creating single-line drawings for use with pen plotters, laser cutters, CNC machines, and more.
+Useful for creating single-line drawings for use with pen plotters, laser cutters, CNC machines, and more.
 
 _Articles:_
 * [Travelling salesman problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem) on Wikipedia
@@ -243,9 +348,26 @@ _Notable software:_
 * [StippleGen](https://wiki.evilmadscientist.com/StippleGen) from Evil Mad Scientist Laboratories can [calculate TSP paths](https://wiki.evilmadscientist.com/StippleGen#Calculating_the_TSP_Path).
 
 ## Lab experiments
-* Hele-Shaw cell experiment
-* Chladni plate
-* Belousov–Zhabotinsky reaction
+
+### Hele-Shaw cell experiment
+
+```
+TODO
+```
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Quadratic_Chladni_plate.JPG/760px-Quadratic_Chladni_plate.JPG" width="300" align="right">
+
+### Chladni plate
+
+```
+TODO
+```
+
+### Belousov–Zhabotinsky reaction
+
+```
+TODO
+```
 
 ## Useful code patterns and techniques
 * Collision detection
@@ -254,6 +376,7 @@ _Notable software:_
 * Noise (Perlin, Simplex)
 * Particle systems
 * Physics libraries
+* Recursion (fractals, especially IFS)
 * Signed distance functions (SDFs)
 * Spatial indexing
 * Metaballs
@@ -265,7 +388,28 @@ _Notable software:_
   * [Branches](https://smile.amazon.com/Branches-Natures-Patterns-Tapestry-Three/dp/0199604886/)
   * [Shapes](https://smile.amazon.com/Shapes-Natures-Patterns-Tapestry-Three/dp/0199237964/)
 * [Fractal Concepts in Surface Growth](https://smile.amazon.com/Fractal-Concepts-Surface-Albert-Laszlo-Barabasi/dp/0521483182) by Albert-László Barabási
-* [Fractal Growth Phenomena](https://smile.amazon.com/gp/product/9810206690/) by Tamas Vicsek  
+* [Fractal Growth Phenomena](https://smile.amazon.com/gp/product/9810206690/) by Tamas Vicsek
+
+## Software
+
+### Tools
+* Houdini
+* Unity - VFX Graph
+* Unreal
+* Rhino and Grasshopper
+
+### Languages and frameworks
+* C++
+  * [openFrameworks](https://openframeworks.cc/)
+  * [Cinder](https://www.libcinder.org/)
+* Go
+* JavaScript
+  * [p5.js](https://p5js.org/)
+  * [D3.js](https://d3js.org/)
+* Java
+  * [Processing](https://processing.org/)
+* Rust
+  * [nannou](https://github.com/nannou-org/nannou)
 
 ## Uncategorized (TODO)
 * Phyllotaxis
