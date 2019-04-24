@@ -84,9 +84,9 @@ Process in which particles of matter stick together (_aggregate_) as they chaoti
 Very interesting macro-structures begin to emerge at around the 1-10 million particle range in 3D, but in order to get there you'll need to be smart about your rendering pipe and make use of optimized code in a performant language or environment (C/C++, CUDA, GLSL shaders, Houdini, etc).
 
 _Key terms:_
-* Walker = randomly-moving particle not attached to any other particle
-* Cluster = group of multiple particles stuck together
-* Brownian tree
+* Walker - randomly-moving particle not attached to any other particle
+* Cluster - group of multiple particles stuck together
+* [Brownian tree](https://en.wikipedia.org/wiki/Brownian_tree) - name of characteristic branching structure that emerges
 
 _Articles:_
 * [Diffusion-limited aggregation](https://en.wikipedia.org/wiki/Diffusion-limited_aggregation) on Wikipedia
@@ -105,6 +105,9 @@ _Code projects:_
 * [simutils-0001: Diffusion limited aggregation](http://toxiclibs.org/2010/02/new-package-simutils/) by Karsten Schmidt (toxiclibs)
 * [Simulate: Diffusion-Limited Aggregation](http://formandcode.com/code-examples/simulate-dla) from FORM+CODE book examples
 * [Dendron](http://www.flong.com/projects/dendron/) Processing sketch by Golan Levin
+* 
+_Notable software:_
+* [Visions of Chaos](https://www.softology.com.au/voc.htm)
 
 _Creative projects:_
 * [Aggregation](http://www.andylomas.com/aggregation.html) series by Andy Lomas
@@ -148,8 +151,6 @@ _Articles:_
 ### Reaction-diffusion
 
 ## Mathematical topics
-### Circle packing
-
 <img src="https://c1.staticflickr.com/1/915/42277964325_431501c7c0_o.gif" width="300" align="right">
 
 ### Cellular automata (CA)
@@ -161,7 +162,6 @@ _Key terms:_
 * Neighborhood - set of cells surrounding a given cell. Most common types are [Von Neumann](https://en.wikipedia.org/wiki/Von_Neumann_neighborhood) and [Moore](https://en.wikipedia.org/wiki/Moore_neighborhood), though others exist.
 * Rule(s) - if/else statement(s) that define what the next state of a cell should be based on various criteria like the states of that cell's neighbors.
 * Generation - result of one iteration of the system.
-* Class - tiered classification for rules described by Stephen Wolfram.
 
 _Well-known rules:_
 * Game of Life
@@ -173,19 +173,40 @@ _Articles:_
 * [Elementary Cellular Automaton](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) on Wolfram MathWorld
 * [Chapter 7. Cellular Automata](https://natureofcode.com/book/chapter-7-cellular-automata/) from Daniel Shiffman's Nature of Code book
 
-### Delaunay and Voronoi diagrams
+_Notable software:_
+* [MCell](http://psoup.math.wisc.edu/mcell/) (Mirek's Cellebration)
+* [Golly](http://golly.sourceforge.net/)
+* [Visions of Chaos](https://www.softology.com.au/voc.htm)
+
+<img src="https://i.imgur.com/iOr8mvo.png" width="300" align="right">
+
+### Delaunay triangulation and Voronoi diagrams
+_Delaunay triangulation_ is a way to connect a set of points
+
+_Articles:_
+* [Delaunay triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) on Wikipedia
+* [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram) on Wikipedia
+
 ### Fourier series
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mandel_zoom_08_satellite_antenna.jpg/320px-Mandel_zoom_08_satellite_antenna.jpg" width="300" align="right">
+
 ### Fractals
+Infinitely complex patterns that are self-similar across all scales
+
+_Notable fractals:_
 * [Apollonian gasket](https://en.wikipedia.org/wiki/Apollonian_gasket) (a.k.a. curvilinear Sierpiński gasket)
+* [Barnsley fern](https://en.wikipedia.org/wiki/Barnsley_fern)
 * [Cantor set](https://en.wikipedia.org/wiki/Cantor_set)
 * [Chaos game](https://en.wikipedia.org/wiki/Chaos_game)
 * [Dragon curve](https://en.wikipedia.org/wiki/Dragon_curve)
+* [Hilbert curve](https://en.wikipedia.org/wiki/Hilbert_curve)
 * [Iterated function systems (IFS)](https://en.wikipedia.org/wiki/Iterated_function_system)
   * [Lindenmayer systems (L-systems)](https://en.wikipedia.org/wiki/L-system)
 * [Julia set](https://en.wikipedia.org/wiki/Julia_set)
 * [Koch snowflake](https://en.wikipedia.org/wiki/Koch_snowflake)
 * [Menger sponge](https://en.wikipedia.org/wiki/Menger_sponge)
-* [Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set) (related: [Mandelbulb](https://en.wikipedia.org/wiki/Mandelbulb) and [Buddhabrot](https://en.wikipedia.org/wiki/Buddhabrot))
+* [Mandelbrot set](https://en.wikipedia.org/wiki/Mandelbrot_set) (related: [Mandelbulb](https://en.wikipedia.org/wiki/Mandelbulb) and [Buddhabrot](https://en.wikipedia.org/wiki/Buddhabrot))
 * [Sierpiński triangle / gasket / sieve](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle) and [carpet](https://en.wikipedia.org/wiki/Sierpinski_carpet)
 * [... and so much more](https://en.wikipedia.org/wiki/List_of_fractals_by_Hausdorff_dimension)
 
@@ -196,6 +217,10 @@ _Articles:_
 ### Laplace transform
 ### Lissajous curves
 ### Navier-Stokes equations
+### Packing problems
+* Circle packing
+* See [Packing problems](https://en.wikipedia.org/wiki/Packing_problems) on Wikipedia
+
 ### Strange Attractors
 * Clifford attractors
 * Lorenz attractors
@@ -207,6 +232,9 @@ _Articles:_
 ### Superellipse, supershapes, and superformula
 ### Travelling salesman problem (TSP)
 Asks the question "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?" This classic problem is computer science classrooms to teach algorithm design and optimization techniques.
+
+_Useful for:_
+* Creating single-line drawings for use with pen plotters, laser cutters, CNC machines, and more.
 
 _Articles:_
 * [Travelling salesman problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem) on Wikipedia
@@ -228,8 +256,10 @@ _Notable software:_
 * Physics libraries
 * Signed distance functions (SDFs)
 * Spatial indexing
+* Metaballs
 
 ## Books
+* [On Growth and Form](https://smile.amazon.com/Growth-Form-Complete-Revised/dp/0486671356/) by D'Arcy Wentworth Thompson
 * Nature's Patterns: A Tapestry in Three Parts by Philip Ball
   * [Flow](https://smile.amazon.com/Flow-Natures-Patterns-Tapestry-Three/dp/0199604878/)
   * [Branches](https://smile.amazon.com/Branches-Natures-Patterns-Tapestry-Three/dp/0199604886/)
@@ -238,10 +268,8 @@ _Notable software:_
 * [Fractal Growth Phenomena](https://smile.amazon.com/gp/product/9810206690/) by Tamas Vicsek  
 
 ## Uncategorized (TODO)
-* Leaf venation (generalized, may include space colonization. Any other algorithms?)
 * Phyllotaxis
-* Metaballs
 * Inverse and forward kinematics
-* Boids
 * Cymatics
 * Turing patterns
+* Viscous fingering, a.k.a. Saffman–Taylor instability
