@@ -284,6 +284,12 @@ _Articles:_
 * [Packing problems](https://en.wikipedia.org/wiki/Packing_problems) on Wikipedia
 * [Random space filling of the plane](http://paulbourke.net/fractals/randomtile/) by Paul Bourke
 
+### Spherical harmonics
+
+```
+TODO
+```
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Attractor_Poisson_Saturne.jpg" width="200" align="right">
 
 ### Strange attractors
@@ -311,10 +317,11 @@ _Articles:_
 TODO
 ```
 
-_Superellipse formula:_
+_Superellipse:_
+Also known as the Lamé curve
 
-| Form | Formula |
-|---   |---      |
+| []() |    |
+|---   |--- |
 | Cartesian space | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b21da32fe407ff5714620b26c50343d21afed15"> |
 | Parametric | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5ecc6bff4267f2ec1ee1d16845b8c402009880ea"> |
 
@@ -393,12 +400,15 @@ TODO
 ## Software
 
 ### Tools
-* Houdini
-* Unity - VFX Graph
+* Houdini ($)
+* Rhino ($) and Grasshopper
+* Structure Synth (free)
+* TouchDesigner ($)
+* Unity (free) - VFX Graph
 * Unreal
-* Rhino and Grasshopper
 
 ### Languages and frameworks
+* GLSL
 * C++
   * [openFrameworks](https://openframeworks.cc/)
   * [Cinder](https://www.libcinder.org/)
@@ -406,6 +416,7 @@ TODO
 * JavaScript
   * [p5.js](https://p5js.org/)
   * [D3.js](https://d3js.org/)
+  * three.js
 * Java
   * [Processing](https://processing.org/)
 * Rust
