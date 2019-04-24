@@ -320,10 +320,16 @@ TODO
 _Superellipse:_
 Also known as the Lamé curve
 
-| []() |    |
-|---   |--- |
-| Cartesian space | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b21da32fe407ff5714620b26c50343d21afed15"> |
-| Parametric | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5ecc6bff4267f2ec1ee1d16845b8c402009880ea"> |
+<table>
+ <tr>
+  <td>Cartesian space</td>
+  <td><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b21da32fe407ff5714620b26c50343d21afed15"></td>
+ </tr>
+ <tr>
+  <td>Parametric</td>
+  <td><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5ecc6bff4267f2ec1ee1d16845b8c402009880ea"></td>
+ </tr>
+</table>
 
 <a href="http://www.syedrezaali.com/3d-supershapes" target="_blank"><img src="https://static1.squarespace.com/static/53c9cdf3e4b0669c8d19e691/53fc1d80e4b04305cfdf4913/53fc1d84e4b04305cfdf4914/1409031558078/3D-Superformula-Reza-Ali-19.png?format=1500w" width="300" alt="Example of 3D supershape by Reza Ali"></a>
 
