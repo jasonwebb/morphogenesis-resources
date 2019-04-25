@@ -32,8 +32,9 @@
               <li>Lissajous curves</li>
               <li>Navier-Stokes equations</li>
               <li>Packing problems</li>
-              <li>Strange Attractors</li>
-              <li>Superellipse and superformula</li>
+              <li>Strange attractors</li>
+              <li>Superellipse</li>
+              <li>Superformula</li>
             </ul>
           </p>
         </details>
@@ -315,6 +316,7 @@ _Articles:_
 
 Also known as the Lamé curve, this equation describes a closed curve that can generate shapes that look like pinched or inflated ellipses. At the extremes of the parameter space the shapes can range from an outline of a plus (`+`) symbol to a nearly rectangular shape with rounded corners. 
 
+_Equations:_
 <table>
  <tr>
   <td valign="top">General form</td>
@@ -331,7 +333,13 @@ _Articles:_
 * [Coding Challenge #23: 2D Supershapes](https://www.youtube.com/watch?v=ksRoh-10lak) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_023_SuperShape2D) with Processing and p5.js code)
 
 ### Superformula
+Generalized version of the superellipse formula proposed by Johan Giellis around 2000
 
+```
+TODO: Copyright mention
+```
+
+_Equations:_
 <table>
  <tr>
   <td valign="top">General form</td>
@@ -353,7 +361,16 @@ _Articles:_
  </tr>
 </table>
 
-Adjust `a`, `b`, `m1`, `m2`, `n1`, `n2`, and `n3` for various effects.
+_Parameters:_
+| Param | Effect (loosely) |
+|---    |---               |
+| `a`   | |
+| `b`   | |
+| `m1`  | |
+| `m2`  | |
+| `n1`  | |
+| `n2`  | |
+| `n3`  | |
 
 _Articles:_
 * [Superformula](https://en.wikipedia.org/wiki/Superformula) on Wikipedia
