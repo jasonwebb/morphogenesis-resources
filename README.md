@@ -11,6 +11,7 @@
           <summary>Growth algorithms</summary>
           <p>
             <ul>
+              <li><a href="#dielectric-breakdown-model-dbm">Dielectric breakdown model (DBM)</a></li>
               <li><a href="#diffusion-limited-aggregation-dla">Diffusion-limited aggregation (DLA)</a></li>
               <li><a href="#differential-growth">Differential growth</a></li>
               <li><a href="#eden-growth-model">Eden growth model</a></li>
@@ -24,17 +25,17 @@
           <summary>Mathematical topics</summary>
           <p>
             <ul>
-              <li>Cellular automata</li>
-              <li>Delaunay and voronoi diagrams</li>
-              <li>Fourier series</li>
-              <li>Fractals</li>
-              <li>Laplace transform</li>
-              <li>Lissajous curves</li>
-              <li>Navier-Stokes equations</li>
-              <li>Packing problems</li>
-              <li>Strange attractors</li>
-              <li>Superellipse</li>
-              <li>Superformula</li>
+              <li><a href="#cellular-automata-ca">Cellular automata</a></li>
+              <li><a href="#delaunay-triangulation-and-voronoi-diagrams">Delaunay triangulation and Voronoi diagrams</a></li>
+              <li><a href="#fourier-series">Fourier series</a></li>
+              <li><a href="#fractals">Fractals</a></li>
+              <li><a href="#laplace-transform">Laplace transform</a></li>
+              <li><a href="#lissajous-curves">Lissajous curves</a></li>
+              <li><a href="#navier-stokes-equations">Navier-Stokes equations</a></li>
+              <li><a href="#packing-problems">Packing problems</a></li>
+              <li><a href="#strange-attractors">Strange attractors</a></li>
+              <li><a href="#superellipse">Superellipse</a></li>
+              <li><a href="#superformula">Superformula</a></li>
             </ul>
           </p>
         </details>
@@ -72,6 +73,15 @@
 
 ## Growth algorithms
 
+### Dielectric breakdown model (DBM)
+
+```
+TODO
+```
+
+_Articles:_
+* [Fractal Dimension of Dielectric Breakdown](http://laplace.ucv.cl/Patterns/Referencias/Pietronero-prl52-1033.pdf) (PDF) by L. Niemeyer, L. Pietronero, and H. J. Wiesmann
+
 <img src="https://cdn-images-1.medium.com/max/600/1*0G4K7Z5_VQG8snj639vHbw.gif" width="300" height="300" align="right">
 
 ### Diffusion-limited aggregation (DLA)
@@ -96,18 +106,21 @@ _Articles:_
 _Code projects:_
 * [dlaf](https://github.com/fogleman/dlaf) (C++ w/ Boost) by Michael Fogleman <br><i>Introduces a novel, super-efficient method of collision detection, [described here](https://twitter.com/FogleBird/status/1093611865912025089).</i>
 * [2D diffusion-limited aggregation (DLA) experiments in JavaScript](https://jasonwebb.github.io/2d-diffusion-limited-aggregation-experiments/) ([Github repo](https://github.com/jasonwebb/2d-diffusion-limited-aggregation-experiments)) by Jason Webb
-* [Coding Challenge #34: Diffusion-Limited Aggregation](https://www.youtube.com/watch?v=Cl_Gjj80gPE) by Dan Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_034_DLA/P5))
-* [Coding Challenge #127: Brownian Tree Snowflake](https://www.youtube.com/watch?v=XUA8UREROYE) by Dan Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_127_Snowflake_Brownian))
 * [simutils-0001: Diffusion limited aggregation](http://toxiclibs.org/2010/02/new-package-simutils/) by Karsten Schmidt (toxiclibs)
 * [Simulate: Diffusion-Limited Aggregation](http://formandcode.com/code-examples/simulate-dla) from FORM+CODE book examples
 * [Dendron](http://www.flong.com/projects/dendron/) Processing sketch by Golan Levin
+
+_Creative projects:_
+* [Aggregation](http://www.andylomas.com/aggregation.html) series by Andy Lomas
 
 _Notable software:_
 * [Visions of Chaos](https://www.softology.com.au/voc.htm)
 * [glChAoS.P](https://github.com/BrutPitt/glChAoS.P) by Michele Morrone (BrutPitt)
 
-_Creative projects:_
-* [Aggregation](http://www.andylomas.com/aggregation.html) series by Andy Lomas
+_Videos:_
+* [Coding Challenge #34: Diffusion-Limited Aggregation](https://www.youtube.com/watch?v=Cl_Gjj80gPE) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_034_DLA/P5))
+* [Coding Challenge #127: Brownian Tree Snowflake](https://www.youtube.com/watch?v=XUA8UREROYE) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_127_Snowflake_Brownian))
+
 
 ---
 
@@ -154,6 +167,7 @@ TODO
 
 _Articles:_
 * [Physarum Simulations](https://softologyblog.wordpress.com/2019/04/11/physarum-simulations/) by Softology
+* [Physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) on Wikipedia
 
 ---
 
@@ -163,6 +177,15 @@ _Articles:_
 TODO
 ```
 
+_Articles:_
+* [Modeling Trees with a Space Colonization Algorithm](http://algorithmicbotany.org/papers/colonization.egwnp2007.large.pdf) (PDF) paper by Adam Runions, Brendan Lane, and Przemyslaw Prusinkiewicz
+
+_Code projects:_
+* [ofxSpaceColoinzation](https://github.com/edap/ofxSpaceColonization) add-on for openFrameworks
+
+_Videos:_
+* [Coding Challenge #17: Fractal Trees - Space Colonization](https://www.youtube.com/watch?v=kKT0v3qhIQY) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_017_SpaceColonizer) with source code for p5.js and Processing)
+
 ---
 
 ### Reaction-diffusion
@@ -170,6 +193,22 @@ TODO
 ```
 TODO
 ```
+
+_Key terms:_
+* Gray Scott model
+
+_Articles:_
+* [Reaction-diffusion system](https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system) on Wikipedia
+* [Reaction-Diffusion Tutorial](https://www.karlsims.com/rd.html) by Karl Sims
+* [Reaction-Diffusion by the Gray-Scott Model: Pearson's Parametrization](https://mrob.com/pub/comp/xmorphia/) by Robert Munafo (mrob)
+* [Reaction Diffusion: The Gray-Scott Algorithm](https://www.algosome.com/articles/reaction-diffusion-gray-scott.html) by Algosome
+
+_Videos:_
+* Reaction Diffusion video series for Houdini by Entagma:
+  * [Part I: Theory](https://vimeo.com/170073061)
+  * [Part II: Implementation](https://vimeo.com/170073069)
+  * [Part III: Shaping Growth](https://vimeo.com/170073079)
+* [Coding Challenge #13: Reaction Diffusion Algorithm in p5.js](https://www.youtube.com/watch?v=BV9ny785UNc) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_013_ReactionDiffusion) with both p5.js and Processing source code)
 
 ## Mathematical topics
 <img src="https://c1.staticflickr.com/1/915/42277964325_431501c7c0_o.gif" width="300" align="right">
@@ -207,7 +246,9 @@ _Notable software:_
 ### Delaunay triangulation and Voronoi diagrams
 _Delaunay triangulation_ is a way of connecting a set of points to form a network of non-overlapping triangles. One of the key properties of Delaunay triangulations is that the [circumcircles](https://en.wikipedia.org/wiki/Circumscribed_circle) associated with each triangle contains no other points than their three triangle vertices. When extended into 3D, Delaunay triangulation is useful for creating meshes.
 
-_Voronoi diagrams_ are the [dual](https://observablehq.com/@mbostock/the-delaunays-dual) of Delaunay triangulations. This means that once a Delaunay triangulation has been computed for a set of points, a Voronoi diagram can be drawn without any additional data - just draw lines connecting the centers of the circumcircles! Useful for efficiently partitioning (splitting up) space. 
+_Voronoi diagrams_ are the [dual](https://observablehq.com/@mbostock/the-delaunays-dual) of Delaunay triangulations. This means that once a Delaunay triangulation has been computed for a set of points, a Voronoi diagram can be drawn without any additional data - just draw lines connecting the centers of the circumcircles! 
+
+_Voronoi diagrams_ are very useful for efficiently and organically partitioning (splitting up) both 2D and 3D space. They are especially good for accurately modelling the way soft bodies (like biological cells) get smushed together in constrained environments, like embryonic cells undergoing mitosis.
 
 _Articles:_
 * [Delaunay triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) on Wikipedia
@@ -235,6 +276,10 @@ Infinitely complex patterns generated via recursion that are self-similar across
 
 Fractal features can be observed in nature in tree branching structures, leaf veins, terrain, surface textures, coastlines, rivers, succulents, snowflakes, rivers, lightning bolts, nautilus shells (both form and pattern), and so much more.
 
+_Key terms:_
+* [Fractal dimension](https://en.wikipedia.org/wiki/Fractal_dimension) - ratio providing a statistical index of complexity comparing how detail in a fractal changes with scale.
+* [Self-similarity](https://en.wikipedia.org/wiki/Self-similarity) - when something is exactly or approximately similar to a part of itself.
+
 _Notable fractals:_
 * [Apollonian gasket](https://en.wikipedia.org/wiki/Apollonian_gasket) (a.k.a. curvilinear Sierpiński gasket)
 * [Barnsley fern](https://en.wikipedia.org/wiki/Barnsley_fern)
@@ -255,6 +300,7 @@ _Articles:_
 * [Fractal](https://en.wikipedia.org/wiki/Fractal) on Wikipedia
 * [List of fractals by Hausdorff dimension](https://en.wikipedia.org/wiki/List_of_fractals_by_Hausdorff_dimension) on Wikipedia
 * [Fractals, Caos, Self-Similarity](http://paulbourke.net/fractals/) by Paul Bourke
+* [Chapter 8. Fractals](https://natureofcode.com/book/chapter-8-fractals/) in Daniel Shiffman's Nature of Code book
 
 _Notable software:_
 * [glChAoS.P](https://github.com/BrutPitt/glChAoS.P) by Michele Morrone (BrutPitt)
@@ -318,6 +364,10 @@ _Articles:_
 TODO
 ```
 
+_Articles:_
+* [Spherical harmonics](https://en.wikipedia.org/wiki/Spherical_harmonics) on Wikipedia
+* [Spherical Harmonics](http://paulbourke.net/geometry/sphericalh/) by Paul Bourke
+
 ---
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Attractor_Poisson_Saturne.jpg" width="200" align="right">
@@ -361,6 +411,8 @@ _Equations:_
 
 _Articles:_
 * [Superellipse](https://en.wikipedia.org/wiki/Superellipse) on Wikipedia
+
+_Videos:_
 * [Coding Challenge #23: 2D Supershapes](https://www.youtube.com/watch?v=ksRoh-10lak) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_023_SuperShape2D) with Processing and p5.js code)
 
 ---
@@ -368,11 +420,7 @@ _Articles:_
 <a href="https://github.com/Softwave/glsl-superformula" target="_blank"><img src="https://camo.githubusercontent.com/5da22383c27146107d848fd73659ba12e2a38d4a/687474703a2f2f692e696d6775722e636f6d2f744131755263662e706e67" width="300" align="right" alt="Screenshot from GLSL Supershapes by Softwave"></a>
 
 ### Superformula
-Generalized version of the superellipse formula proposed by Johan Giellis around 2000
-
-```
-TODO: Patent mention
-```
+Generalized version of the superellipse formula proposed by Johan Giellis around 2000, capable of far more variety than the original superellipse. Unfortunately, Johan has patented use of the formula (via his company [Genicap](http://www.genicap.com/)) in both the US and the EU, which means you should avoid using it for any kind of commercial work, or work that could be commercialized in some way later. 
 
 The superformula can be used to generate both 2D and 3D forms. To create 2D forms, use the general form equation to obtain [polar coordinates](http://mathworld.wolfram.com/PolarCoordinates.html) that can be converted into Cartesian coordinates for drawing on a screen. To create 3D forms, compute the polar coordinates for _two_ 2D supershapes, then "mix" them together using the 3D equations below.
 
@@ -413,6 +461,8 @@ _Parameters:_
 _Articles:_
 * [Superformula](https://en.wikipedia.org/wiki/Superformula) on Wikipedia
 * [Supershapes / Superformula](http://paulbourke.net/geometry/supershape/) by Paul Bourke
+
+_Videos:_
 * [Coding Challenge #26: 3D Supershapes](https://www.youtube.com/watch?v=akM4wMZIBWg) by Daniel Shiffman ([Processing sketch](https://github.com/CodingTrain/website/blob/master/CodingChallenges/CC_026_SuperShape3D/Processing/CC_026_SuperShape3D/CC_026_SuperShape3D.pde) on Github)
 
 ---
@@ -478,19 +528,19 @@ TODO
 ## Software
 
 ### Tools
-* [Houdini](https://www.sidefx.com/products/houdini/) ($)
-* [Rhino](https://www.rhino3d.com/) ($)
+* [Houdini](https://www.sidefx.com/products/houdini/) 💲
+* [Rhino](https://www.rhino3d.com/) 💲
   * [Grasshopper](https://www.grasshopper3d.com/) - now built-in to Rhino 6 for Windows
   * [Lunchbox](https://www.food4rhino.com/app/lunchbox)
   * [Kangaroo](https://www.food4rhino.com/app/kangaroo-physics) - live physics engine for interactive simulation, form-finding, optimization and constraint solving.
-* [Structure Synth](http://structuresynth.sourceforge.net/) (free)
-* [TouchDesigner](https://www.derivative.ca/) ($)
-* [Unity](https://unity.com/) (free)
+* [Structure Synth](http://structuresynth.sourceforge.net/)
+* [TouchDesigner](https://www.derivative.ca/) 💲
+* [Unity](https://unity.com/)
   * [Visual Effects Graph](https://unity.com/visual-effect-graph) (VFX Graph)
 * [Unreal](https://www.unrealengine.com/en-US/)
 
 ### Languages and frameworks
-* Shaders (GLSL / GLslang / OopenGL Shader Language)
+* Shaders (GLSL / GLslang / OpenGL Shader Language)
   * [Shadertoy](https://www.shadertoy.com/)
 * C++
   * [boost](https://www.boost.org/)
