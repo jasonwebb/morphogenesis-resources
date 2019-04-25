@@ -362,6 +362,7 @@ _Equations:_
 </table>
 
 _Parameters:_
+
 | Param | Effect (loosely) |
 |---    |---               |
 | `a`   | |
