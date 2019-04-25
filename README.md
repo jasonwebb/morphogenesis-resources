@@ -322,11 +322,11 @@ Also known as the Lamé curve, this equation describes a closed curve that can g
 
 <table>
  <tr>
-  <td>General form</td>
+  <td valign="top">General form</td>
   <td><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b21da32fe407ff5714620b26c50343d21afed15"></td>
  </tr>
  <tr>
-  <td>Parametric</td>
+  <td valign="top">Parametric</td>
   <td><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5ecc6bff4267f2ec1ee1d16845b8c402009880ea"></td>
  </tr>
 </table>
@@ -335,7 +335,7 @@ _Superformula:_
 
 <table>
  <tr>
-  <td>General form</td>
+  <td valign="top">General form</td>
   <td>
    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8071dcb3a49044816f7885114c2335d805d7ad30"> 
 
@@ -343,7 +343,7 @@ _Superformula:_
   </td>
  </tr>
  <tr>
-  <td>3D equations</td>
+  <td valign="top">3D equations</td>
   <td>
    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4859fbe75c6a60f5769bebb1376693343c1aa3bd"><br>
    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5b68c1caf5b0bf4b912a6f8c7278f004774952a"><br>
