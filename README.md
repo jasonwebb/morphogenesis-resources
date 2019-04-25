@@ -318,11 +318,11 @@ TODO
 ```
 
 _Superellipse:_
-Also known as the Lamé curve
+Also known as the Lamé curve, this equation describes a closed curve that can generate shapes that look like pinched or inflated ellipses. At the extremes of the parameter space the shapes can range from an outline of a plus (`+`) symbol to a nearly rectangular shape with rounded corners. 
 
 <table>
  <tr>
-  <td>Cartesian space</td>
+  <td>General form</td>
   <td><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b21da32fe407ff5714620b26c50343d21afed15"></td>
  </tr>
  <tr>
@@ -331,14 +331,26 @@ Also known as the Lamé curve
  </tr>
 </table>
 
-<a href="http://www.syedrezaali.com/3d-supershapes" target="_blank"><img src="https://static1.squarespace.com/static/53c9cdf3e4b0669c8d19e691/53fc1d80e4b04305cfdf4913/53fc1d84e4b04305cfdf4914/1409031558078/3D-Superformula-Reza-Ali-19.png?format=1500w" width="300" alt="Example of 3D supershape by Reza Ali"></a>
-
-
 _Superformula:_
 
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8071dcb3a49044816f7885114c2335d805d7ad30">
+<table>
+ <tr>
+  <td>General form</td>
+  <td>
+   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8071dcb3a49044816f7885114c2335d805d7ad30"> 
 
-Where `r` is a radius and `φ` (phi) is an angle
+   Where `r` is a radius and `φ` (phi) is an angle
+  </td>
+ </tr>
+ <tr>
+  <td>3D equations</td>
+  <td>
+   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5b68c1caf5b0bf4b912a6f8c7278f004774952a">
+
+   Where `φ` (latitude) varies between −π/2 and π/2 and `θ` (longitude) between −π and π.
+  </td>
+ </tr>
+</table>
 
 Adjust `a`, `b`, `m1`, `m2`, `n1`, `n2`, and `n3` for various effects.
 
