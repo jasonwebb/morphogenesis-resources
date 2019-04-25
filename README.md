@@ -311,13 +311,7 @@ _Articles:_
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sf2d.png/800px-Sf2d.png" width="300" align="right">
 
-### Superellipse and superformula
-
-```
-TODO
-```
-
-#### Superellipse
+### Superellipse
 
 Also known as the Lamé curve, this equation describes a closed curve that can generate shapes that look like pinched or inflated ellipses. At the extremes of the parameter space the shapes can range from an outline of a plus (`+`) symbol to a nearly rectangular shape with rounded corners. 
 
@@ -332,7 +326,11 @@ Also known as the Lamé curve, this equation describes a closed curve that can g
  </tr>
 </table>
 
-#### Superformula
+_Articles:_
+* [Superellipse](https://en.wikipedia.org/wiki/Superellipse) on Wikipedia
+* [Coding Challenge #23: 2D Supershapes](https://www.youtube.com/watch?v=ksRoh-10lak) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_023_SuperShape2D) with Processing and p5.js code)
+
+### Superformula
 
 <table>
  <tr>
@@ -359,9 +357,7 @@ Adjust `a`, `b`, `m1`, `m2`, `n1`, `n2`, and `n3` for various effects.
 
 _Articles:_
 * [Superformula](https://en.wikipedia.org/wiki/Superformula) on Wikipedia
-* [Superellipse](https://en.wikipedia.org/wiki/Superellipse) on Wikipedia
 * [Supershapes / Superformula](http://paulbourke.net/geometry/supershape/) by Paul Bourke
-* [Coding Challenge #23: 2D Supershapes](https://www.youtube.com/watch?v=ksRoh-10lak) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_023_SuperShape2D) with Processing and p5.js code)
 * [Coding Challenge #26: 3D Supershapes](https://www.youtube.com/watch?v=akM4wMZIBWg) by Daniel Shiffman ([Processing sketch](https://github.com/CodingTrain/website/blob/master/CodingChallenges/CC_026_SuperShape3D/Processing/CC_026_SuperShape3D/CC_026_SuperShape3D.pde) on Github)
 
 ### Travelling salesman problem (TSP)
