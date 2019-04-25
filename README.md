@@ -63,8 +63,8 @@
             </ul>
           </p>
         </details>
-        ▶ <a href="#book">Books</a><br>
-        ▶ <a href="#software">Software</a>
+        ▸ <a href="#book">Books</a><br>
+        ▸ <a href="#software">Software</a>
       </td>
     </tr>
   </tbody>
