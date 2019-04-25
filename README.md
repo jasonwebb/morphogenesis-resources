@@ -104,6 +104,7 @@ _Code projects:_
 
 _Notable software:_
 * [Visions of Chaos](https://www.softology.com.au/voc.htm)
+* [glChAoS.P](https://github.com/BrutPitt/glChAoS.P) by Michele Morrone (BrutPitt)
 
 _Creative projects:_
 * [Aggregation](http://www.andylomas.com/aggregation.html) series by Andy Lomas
@@ -254,7 +255,10 @@ _Articles:_
 * [Fractal](https://en.wikipedia.org/wiki/Fractal) on Wikipedia
 * [List of fractals by Hausdorff dimension](https://en.wikipedia.org/wiki/List_of_fractals_by_Hausdorff_dimension) on Wikipedia
 * [Fractals, Caos, Self-Similarity](http://paulbourke.net/fractals/) by Paul Bourke
-  
+
+_Notable software:_
+* [glChAoS.P](https://github.com/BrutPitt/glChAoS.P) by Michele Morrone (BrutPitt)
+
 ---
 
 ### Laplace transform
@@ -361,12 +365,16 @@ _Articles:_
 
 ---
 
+<a href="https://github.com/Softwave/glsl-superformula" target="_blank"><img src="https://camo.githubusercontent.com/5da22383c27146107d848fd73659ba12e2a38d4a/687474703a2f2f692e696d6775722e636f6d2f744131755263662e706e67" width="300" align="right" alt="Screenshot from GLSL Supershapes by Softwave"></a>
+
 ### Superformula
 Generalized version of the superellipse formula proposed by Johan Giellis around 2000
 
 ```
-TODO: Copyright mention
+TODO: Patent mention
 ```
+
+The superformula can be used to generate both 2D and 3D forms. To create 2D forms, use the general form equation to obtain [polar coordinates](http://mathworld.wolfram.com/PolarCoordinates.html) that can be converted into Cartesian coordinates for drawing on a screen. To create 3D forms, compute the polar coordinates for _two_ 2D supershapes, then "mix" them together using the 3D equations below.
 
 _Equations:_
 <table>
@@ -402,6 +410,8 @@ _Parameters:_
 | `n2`  | |
 | `n3`  | |
 
+* Note: `a` and `b` can be split up into `a1` / `a2` and `b1` / `b2` to have more control over the 
+
 _Articles:_
 * [Superformula](https://en.wikipedia.org/wiki/Superformula) on Wikipedia
 * [Supershapes / Superformula](http://paulbourke.net/geometry/supershape/) by Paul Bourke
@@ -418,6 +428,7 @@ Useful for creating single-line drawings for use with pen plotters, laser cutter
 
 _Articles:_
 * [Travelling salesman problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem) on Wikipedia
+* [Traveling Salesman Problem](https://developers.google.com/optimization/routing/tsp) from Google OR-Tools
 
 _Notable software:_
 * [StippleGen](https://wiki.evilmadscientist.com/StippleGen) from Evil Mad Scientist Laboratories can [calculate TSP paths](https://wiki.evilmadscientist.com/StippleGen#Calculating_the_TSP_Path).
