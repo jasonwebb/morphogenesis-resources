@@ -478,14 +478,14 @@ TODO
 ## Software
 
 ### Tools
-* Houdini ($)
+* [Houdini](https://www.sidefx.com/products/houdini/) ($)
 * [Rhino](https://www.rhino3d.com/) ($)
   * [Grasshopper](https://www.grasshopper3d.com/) - now built-in to Rhino 6 for Windows
   * [Lunchbox](https://www.food4rhino.com/app/lunchbox)
   * [Kangaroo](https://www.food4rhino.com/app/kangaroo-physics) - live physics engine for interactive simulation, form-finding, optimization and constraint solving.
 * [Structure Synth](http://structuresynth.sourceforge.net/) (free)
 * [TouchDesigner](https://www.derivative.ca/) ($)
-* [Unity]((https://unity.com/)) (free)
+* [Unity](https://unity.com/) (free)
   * [Visual Effects Graph](https://unity.com/visual-effect-graph) (VFX Graph)
 * [Unreal](https://www.unrealengine.com/en-US/)
 
