@@ -63,13 +63,8 @@
             </ul>
           </p>
         </details>
-        <details>
-          <summary>Books</summary>
-          <p>
-            <ul>
-            </ul>
-          </p>
-        </details>
+        <a href="#book">Books</a><br>
+        <a href="#software">Software</a>
       </td>
     </tr>
   </tbody>
@@ -444,6 +439,7 @@ TODO
 
 ### Languages and frameworks
 * GLSL
+  * [Shadertoy](https://www.shadertoy.com/)
 * C++
   * [openFrameworks](https://openframeworks.cc/)
   * [Cinder](https://www.libcinder.org/)
@@ -451,7 +447,7 @@ TODO
 * JavaScript
   * [p5.js](https://p5js.org/)
   * [D3.js](https://d3js.org/)
-  * three.js
+  * [three.js](https://threejs.org/)
 * Java
   * [Processing](https://processing.org/)
 * Rust
