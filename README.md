@@ -63,7 +63,7 @@
             </ul>
           </p>
         </details>
-        ▸ <a href="#book">Books</a><br>
+        ▸ <a href="#books">Books</a><br>
         ▸ <a href="#software">Software</a>
       </td>
     </tr>
@@ -108,6 +108,8 @@ _Notable software:_
 _Creative projects:_
 * [Aggregation](http://www.andylomas.com/aggregation.html) series by Andy Lomas
 
+---
+
 <img src="https://cdn-images-1.medium.com/max/1000/1*3hSi1w_W-1YMW0YQaCk8rQ.gif" width="300" height="300" align="right">
 
 ### Differential growth
@@ -131,6 +133,8 @@ _Creative projects:_
 * [Floraform - an exploration of differential growth](https://n-e-r-v-o-u-s.com/blog/?p=6721) by Nervous System
 * [Floraform Chandelier at World Expo 2017 in Astana, Kazakhstan](https://n-e-r-v-o-u-s.com/blog/?p=7702) by Nervous System
 
+---
+
 <img src="https://cdn.iopscience.com/images/1742-5468/2006/11/P11007/Full/3564901.jpg" width="150" align="right">
 
 ### Eden growth model
@@ -138,6 +142,8 @@ Created by Murray Eden in 1961, this is a type of surface fractal growth process
 
 _Articles:_
 * [A Two Dimensional Growth Process](https://projecteuclid.org/download/pdf_1/euclid.bsmsp/1200512888) by Murray Eden (original 1961 paper)
+
+---
 
 ### Physarum
 
@@ -148,11 +154,15 @@ TODO
 _Articles:_
 * [Physarum Simulations](https://softologyblog.wordpress.com/2019/04/11/physarum-simulations/) by Softology
 
+---
+
 ### Space colonization
 
 ```
 TODO
 ```
+
+---
 
 ### Reaction-diffusion
 
@@ -189,6 +199,8 @@ _Notable software:_
 * [Golly](http://golly.sourceforge.net/)
 * [Visions of Chaos](https://www.softology.com.au/voc.htm)
 
+---
+
 <img src="https://i.imgur.com/iOr8mvo.png" width="300" align="right">
 
 ### Delaunay triangulation and Voronoi diagrams
@@ -200,6 +212,8 @@ _Articles:_
 * [Delaunay triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) on Wikipedia
 * [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram) on Wikipedia
 
+---
+
 ### Fourier series
 
 ```
@@ -210,6 +224,8 @@ TODO
 * [Coding Challenge #130.1: Drawing with Fourier Transform and Epicycles](https://www.youtube.com/watch?v=MY4luNgGfms) by Daniel Shiffman
 * [Coding Challenge #130.2: Fourier Transform User Drawing](https://www.youtube.com/watch?v=n9nfTxp_APM) by Daniel Shiffman
 * [Coding Challenge #130.3: Fourier Transform Drawing with Complex Number Input](https://www.youtube.com/watch?v=7_vKzcgpfvU) by Daniel Shiffman
+
+---
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mandel_zoom_08_satellite_antenna.jpg/320px-Mandel_zoom_08_satellite_antenna.jpg" width="300" align="right">
 
@@ -238,6 +254,8 @@ _Articles:_
 * [Fractal](https://en.wikipedia.org/wiki/Fractal) on Wikipedia
 * [List of fractals by Hausdorff dimension](https://en.wikipedia.org/wiki/List_of_fractals_by_Hausdorff_dimension) on Wikipedia
 * [Fractals, Caos, Self-Similarity](http://paulbourke.net/fractals/) by Paul Bourke
+  
+---
 
 ### Laplace transform
 
@@ -246,6 +264,8 @@ TODO
 ```
 
 <img src="https://media3.giphy.com/media/I6eLbjpGq99x6/giphy.gif" width="300" align="right">
+
+---
 
 ### Lissajous curves
 
@@ -256,17 +276,23 @@ TODO
 _Articles:_
 * [Lissajous curve](https://en.wikipedia.org/wiki/Lissajous_curve) on Wikipedia
 
+---
+
 ### Medial axis
 
 ```
 TODO
 ```
 
+---
+
 ### Navier-Stokes equations
 Mathematical equation that describe the motion of viscous fluids.
 
 _Articles:_
 * [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) on Wikipedia
+
+---
 
 ### Packing problems
 
@@ -280,11 +306,15 @@ _Articles:_
 * [Packing problems](https://en.wikipedia.org/wiki/Packing_problems) on Wikipedia
 * [Random space filling of the plane](http://paulbourke.net/fractals/randomtile/) by Paul Bourke
 
+---
+
 ### Spherical harmonics
 
 ```
 TODO
 ```
+
+---
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Attractor_Poisson_Saturne.jpg" width="200" align="right">
 
@@ -304,6 +334,8 @@ _Notable attractors:_
 
 _Articles:_
 * [Strange attractor](https://en.wikipedia.org/wiki/Attractor#Strange_attractor) section on Wikipedia article for [attractors](https://en.wikipedia.org/wiki/Attractor)
+
+---
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sf2d.png/800px-Sf2d.png" width="300" align="right">
 
@@ -326,6 +358,8 @@ _Equations:_
 _Articles:_
 * [Superellipse](https://en.wikipedia.org/wiki/Superellipse) on Wikipedia
 * [Coding Challenge #23: 2D Supershapes](https://www.youtube.com/watch?v=ksRoh-10lak) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_023_SuperShape2D) with Processing and p5.js code)
+
+---
 
 ### Superformula
 Generalized version of the superellipse formula proposed by Johan Giellis around 2000
@@ -372,6 +406,8 @@ _Articles:_
 * [Superformula](https://en.wikipedia.org/wiki/Superformula) on Wikipedia
 * [Supershapes / Superformula](http://paulbourke.net/geometry/supershape/) by Paul Bourke
 * [Coding Challenge #26: 3D Supershapes](https://www.youtube.com/watch?v=akM4wMZIBWg) by Daniel Shiffman ([Processing sketch](https://github.com/CodingTrain/website/blob/master/CodingChallenges/CC_026_SuperShape3D/Processing/CC_026_SuperShape3D/CC_026_SuperShape3D.pde) on Github)
+
+---
 
 ### Travelling salesman problem (TSP)
 Asks the question "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?" This classic problem is computer science classrooms to teach algorithm design and optimization techniques.
