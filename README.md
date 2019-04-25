@@ -410,8 +410,6 @@ _Parameters:_
 | `n2`  | |
 | `n3`  | |
 
-* Note: `a` and `b` can be split up into `a1` / `a2` and `b1` / `b2` to have more control over the 
-
 _Articles:_
 * [Superformula](https://en.wikipedia.org/wiki/Superformula) on Wikipedia
 * [Supershapes / Superformula](http://paulbourke.net/geometry/supershape/) by Paul Bourke
@@ -457,6 +455,7 @@ TODO
 
 ## Useful code patterns and techniques
 * Collision detection
+* Dithering
 * Marching squares
 * Marching cubes
 * Noise (Perlin, Simplex)
@@ -480,27 +479,36 @@ TODO
 
 ### Tools
 * Houdini ($)
-* Rhino ($) and Grasshopper
-* Structure Synth (free)
-* TouchDesigner ($)
-* Unity (free) - VFX Graph
-* Unreal
+* [Rhino](https://www.rhino3d.com/) ($)
+  * [Grasshopper](https://www.grasshopper3d.com/) - now built-in to Rhino 6 for Windows
+  * [Lunchbox](https://www.food4rhino.com/app/lunchbox)
+  * [Kangaroo](https://www.food4rhino.com/app/kangaroo-physics) - live physics engine for interactive simulation, form-finding, optimization and constraint solving.
+* [Structure Synth](http://structuresynth.sourceforge.net/) (free)
+* [TouchDesigner](https://www.derivative.ca/) ($)
+* [Unity]((https://unity.com/)) (free)
+  * [Visual Effects Graph](https://unity.com/visual-effect-graph) (VFX Graph)
+* [Unreal](https://www.unrealengine.com/en-US/)
 
 ### Languages and frameworks
-* GLSL
+* Shaders (GLSL / GLslang / OopenGL Shader Language)
   * [Shadertoy](https://www.shadertoy.com/)
 * C++
-  * [openFrameworks](https://openframeworks.cc/)
+  * [boost](https://www.boost.org/)
   * [Cinder](https://www.libcinder.org/)
+  * [openFrameworks](https://openframeworks.cc/)
 * Go
 * JavaScript
   * [p5.js](https://p5js.org/)
   * [D3.js](https://d3js.org/)
   * [three.js](https://threejs.org/)
+  * [Pts.js](https://ptsjs.org/)
+  * [sketch.js](http://soulwire.github.io/sketch.js/)
 * Java
   * [Processing](https://processing.org/)
 * Rust
   * [nannou](https://github.com/nannou-org/nannou)
+* Kotlin
+  * [OPENRNDR](https://openrndr.org/)
 
 ## Uncategorized (TODO)
 * Phyllotaxis
