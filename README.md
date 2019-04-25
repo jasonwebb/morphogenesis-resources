@@ -317,7 +317,8 @@ _Articles:_
 TODO
 ```
 
-_Superellipse:_
+#### Superellipse
+
 Also known as the Lamé curve, this equation describes a closed curve that can generate shapes that look like pinched or inflated ellipses. At the extremes of the parameter space the shapes can range from an outline of a plus (`+`) symbol to a nearly rectangular shape with rounded corners. 
 
 <table>
@@ -331,7 +332,7 @@ Also known as the Lamé curve, this equation describes a closed curve that can g
  </tr>
 </table>
 
-_Superformula:_
+#### Superformula
 
 <table>
  <tr>
