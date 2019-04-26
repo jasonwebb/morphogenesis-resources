@@ -530,16 +530,16 @@ TODO
 ## Software
 
 ### Tools
-* [Houdini](https://www.sidefx.com/products/houdini/) 💲
-* [Rhino](https://www.rhino3d.com/) 💲
-  * [Grasshopper](https://www.grasshopper3d.com/) - now built-in to Rhino 6 for Windows
-  * [Lunchbox](https://www.food4rhino.com/app/lunchbox)
+* [Houdini](https://www.sidefx.com/products/houdini/) (free for non-commercial users (with watermarked renders), $269 for no watermarks, thousands for studios) - industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms.
+* [Rhino](https://www.rhino3d.com/) ($1000, or $200 for students) - NURBS-based CAD program popular with architects and designers.
+  * [Grasshopper](https://www.grasshopper3d.com/) - extremely popular graphical node-based algorithm editor tightly integrated with Rhino’s 3D modeling tools. Highly recommended for digital morphogenesis work. Was a third-party plugin for many years, but is now a part of Rhino 6+.
+  * [Lunchbox](https://www.food4rhino.com/app/lunchbox) - very powerful collection of utilities for generative geometry, math, data manipulation, and even machine learning.
   * [Kangaroo](https://www.food4rhino.com/app/kangaroo-physics) - live physics engine for interactive simulation, form-finding, optimization and constraint solving.
-* [Structure Synth](http://structuresynth.sourceforge.net/)
-* [TouchDesigner](https://www.derivative.ca/) 💲
-* [Unity](https://unity.com/)
+* [Structure Synth](http://structuresynth.sourceforge.net/) (free) - application for generating surprising and complex fractal 3D structures using a design grammar.
+* [TouchDesigner](https://www.derivative.ca/) ($)
+* [Unity](https://unity.com/) (free for hobbyists [[1]](https://store.unity.com/))
   * [Visual Effects Graph](https://unity.com/visual-effect-graph) (VFX Graph)
-* [Unreal](https://www.unrealengine.com/en-US/)
+* [Unreal](https://www.unrealengine.com/en-US/) (free with [royalty on commercial products](https://www.unrealengine.com/en-US/faq))
 
 ### Languages and frameworks
 * Shaders (GLSL / GLslang / OpenGL Shader Language)
