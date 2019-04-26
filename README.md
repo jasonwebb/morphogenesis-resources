@@ -541,17 +541,17 @@ TODO
   </thead>
   <tbody>
     <tr>
-      <td valign="top">[Houdini](https://www.sidefx.com/products/houdini/)</td>
-      <td>Industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms.</td>
-      <td>Free for non-commercial users (with watermarked renders)
+      <td valign="top"><a href="https://www.sidefx.com/products/houdini/" target="_blank">Houdini</a></td>
+      <td valign="top">Industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms.</td>
+      <td valign="top">Free for non-commercial users (with watermarked renders)
       $269 for no watermarks, thousands for studios)</td>
       <td></td>
     </tr>
     <tr>
-      <td>[Rhino](https://www.rhino3d.com/)</td>
-      <td>NURBS-based CAD program popular with architects and designers.</td>
-      <td>$1000, or $200 for students</td>
-      <td>
+      <td valign="top"><a href="https://www.rhino3d.com/" target="_blank">Rhino</a></td>
+      <td valign="top">NURBS-based CAD program popular with architects and designers.</td>
+      <td valign="top">$1000, or $200 for students</td>
+      <td valign="top">
         <ul>
           <li>[Grasshopper](https://www.grasshopper3d.com/) - extremely popular graphical node-based algorithm editor tightly integrated with Rhino’s 3D modeling tools. Highly recommended for digital morphogenesis work. Was a third-party plugin for many years, but is now a part of Rhino 6+.</li>
           <li>[Lunchbox](https://www.food4rhino.com/app/lunchbox) - very powerful collection of utilities for generative geometry, math, data manipulation, and even machine learning.</li>
