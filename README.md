@@ -22,17 +22,20 @@
           </p>
         </details>
         <details>
-          <summary>Mathematical topics</summary>
+          <summary>Math and physics topics</summary>
           <p>
             <ul>
               <li><a href="#cellular-automata-ca">Cellular automata</a></li>
+              <li><a href="#cymatics">Cymatics</a></li>
               <li><a href="#delaunay-triangulation-and-voronoi-diagrams">Delaunay triangulation and Voronoi diagrams</a></li>
               <li><a href="#fourier-series">Fourier series</a></li>
               <li><a href="#fractals">Fractals</a></li>
+              <li><a href="#inverse-and-forward-kinematics">Inverse and forward kinematics</a></li>
               <li><a href="#laplace-transform">Laplace transform</a></li>
               <li><a href="#lissajous-curves">Lissajous curves</a></li>
               <li><a href="#navier-stokes-equations">Navier-Stokes equations</a></li>
               <li><a href="#packing-problems">Packing problems</a></li>
+              <li><a href="#phyllotaxis">Phyllotaxis</a></li>
               <li><a href="#strange-attractors">Strange attractors</a></li>
               <li><a href="#superellipse">Superellipse</a></li>
               <li><a href="#superformula">Superformula</a></li>
@@ -190,20 +193,35 @@ _Videos:_
 
 ---
 
+<img src="https://cdna.artstation.com/p/assets/images/images/008/781/346/large/pascal-wiemers-new-graph-basecolor-17.jpg?1515275614" width="300" align="right">
+
 ### Reaction-diffusion
 
 ```
 TODO
 ```
 
+_Equation:_
+![Reaction-diffusion equation from Karl Sims](https://www.karlsims.com/rd-equation.png)
+
 _Key terms:_
-* Gray Scott model
+* Gray-Scott model
+* Feed rate
+* Kill rate
+* Diffusion rate
+* Reaction chance
 
 _Articles:_
 * [Reaction-diffusion system](https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system) on Wikipedia
 * [Reaction-Diffusion Tutorial](https://www.karlsims.com/rd.html) by Karl Sims
 * [Reaction-Diffusion by the Gray-Scott Model: Pearson's Parametrization](https://mrob.com/pub/comp/xmorphia/) by Robert Munafo (mrob)
 * [Reaction Diffusion: The Gray-Scott Algorithm](https://www.algosome.com/articles/reaction-diffusion-gray-scott.html) by Algosome
+
+_Code projects:_
+* [simutils-0001: Gray-Scott reaction diffusion](http://toxiclibs.org/2010/02/simutils-grayscott/) by toxiclibs
+
+_Creative projects:_
+* [3D Printed Reaction Diffusion Patterns](https://www.instructables.com/id/3D-Printed-Reaction-Diffusion-Patterns/) Instructable by Reza Ali
 
 _Videos:_
 * Reaction Diffusion video series for Houdini by Entagma:
@@ -212,7 +230,7 @@ _Videos:_
   * [Part III: Shaping Growth](https://vimeo.com/170073079)
 * [Coding Challenge #13: Reaction Diffusion Algorithm in p5.js](https://www.youtube.com/watch?v=BV9ny785UNc) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_013_ReactionDiffusion) with both p5.js and Processing source code)
 
-## Mathematical topics
+## Math and physics topics
 <img src="https://c1.staticflickr.com/1/915/42277964325_431501c7c0_o.gif" width="300" align="right">
 
 ### Cellular automata (CA)
@@ -240,6 +258,14 @@ _Notable software:_
 * [MCell](http://psoup.math.wisc.edu/mcell/) (Mirek's Cellebration)
 * [Golly](http://golly.sourceforge.net/)
 * [Visions of Chaos](https://www.softology.com.au/voc.htm)
+
+---
+
+### Cymatics
+
+```
+TODO
+```
 
 ---
 
@@ -309,6 +335,14 @@ _Notable software:_
 
 ---
 
+### Inverse and forward kinematics
+
+```
+TODO
+```
+
+---
+
 ### Laplace transform
 
 ```
@@ -357,6 +391,14 @@ TODO
 _Articles:_
 * [Packing problems](https://en.wikipedia.org/wiki/Packing_problems) on Wikipedia
 * [Random space filling of the plane](http://paulbourke.net/fractals/randomtile/) by Paul Bourke
+
+---
+
+### Phyllotaxis
+
+```
+TODO
+```
 
 ---
 
@@ -609,8 +651,5 @@ TODO
   * [OPENRNDR](https://openrndr.org/)
 
 ## Uncategorized (TODO)
-* Phyllotaxis
-* Inverse and forward kinematics
-* Cymatics
 * Turing patterns
 * Viscous fingering, a.k.a. Saffman–Taylor instability
