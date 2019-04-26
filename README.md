@@ -197,31 +197,34 @@ _Videos:_
 
 ### Reaction-diffusion
 
-```
-TODO
-```
+Grid-based process that generates complex and dynamic patterns based the interactions of two chemicals as they _diffuse_ through a medium. At every location on the grid these chemicals (usually referred to as `A` and `B`) have a chance of causing a _reaction_ that converts chemicals of one type to another based on their relative concentrations at that location. Throughout the simulation chemical `A` is added at a particular _feed rate_ and chemical `B` is removed at a particular _kill rate_ - adjusting these rates can result in wildly different emergent patterns.
 
-_Equation:_
+_Equation (via [Karl Sims](https://www.karlsims.com/rd.html)):_
 ![Reaction-diffusion equation from Karl Sims](https://www.karlsims.com/rd-equation.png)
 
 _Key terms:_
-* Gray-Scott model
 * Feed rate
 * Kill rate
 * Diffusion rate
 * Reaction chance
+* Gray-Scott model
+* [Turing patterns](https://en.wikipedia.org/wiki/Turing_pattern)
 
 _Articles:_
 * [Reaction-diffusion system](https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system) on Wikipedia
 * [Reaction-Diffusion Tutorial](https://www.karlsims.com/rd.html) by Karl Sims
 * [Reaction-Diffusion by the Gray-Scott Model: Pearson's Parametrization](https://mrob.com/pub/comp/xmorphia/) by Robert Munafo (mrob)
 * [Reaction Diffusion: The Gray-Scott Algorithm](https://www.algosome.com/articles/reaction-diffusion-gray-scott.html) by Algosome
+* [The Chemical Basis of Morphogenesis](http://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf) (PDF) paper by Alan Turing (1951)
 
 _Code projects:_
 * [simutils-0001: Gray-Scott reaction diffusion](http://toxiclibs.org/2010/02/simutils-grayscott/) by toxiclibs
+* [ofxReactionDiffusion](https://github.com/matsune/ofxReactionDiffusion) add-on for openFrameworks by Yuma Matsune
+* [ofxRD](https://github.com/aanrii/ofxRD) add-on for openFrameworks by aanrii
 
 _Creative projects:_
 * [3D Printed Reaction Diffusion Patterns](https://www.instructables.com/id/3D-Printed-Reaction-Diffusion-Patterns/) Instructable by Reza Ali
+* [Processing: Reaction Diffusion Halftone patterns](https://vimeo.com/233530691) by Ignazio Lucenti
 
 _Videos:_
 * Reaction Diffusion video series for Houdini by Entagma:
@@ -455,6 +458,7 @@ _Equations:_
 
 _Articles:_
 * [Superellipse](https://en.wikipedia.org/wiki/Superellipse) on Wikipedia
+* [Superellipse](http://mathworld.wolfram.com/Superellipse.html) on Wolfram MathWorld
 
 _Videos:_
 * [Coding Challenge #23: 2D Supershapes](https://www.youtube.com/watch?v=ksRoh-10lak) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_023_SuperShape2D) with Processing and p5.js code)
