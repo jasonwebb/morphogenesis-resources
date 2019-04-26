@@ -530,11 +530,38 @@ TODO
 ## Software
 
 ### Tools
-* [Houdini](https://www.sidefx.com/products/houdini/) (free for non-commercial users (with watermarked renders), $269 for no watermarks, thousands for studios) - industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms.
-* [Rhino](https://www.rhino3d.com/) ($1000, or $200 for students) - NURBS-based CAD program popular with architects and designers.
-  * [Grasshopper](https://www.grasshopper3d.com/) - extremely popular graphical node-based algorithm editor tightly integrated with Rhino’s 3D modeling tools. Highly recommended for digital morphogenesis work. Was a third-party plugin for many years, but is now a part of Rhino 6+.
-  * [Lunchbox](https://www.food4rhino.com/app/lunchbox) - very powerful collection of utilities for generative geometry, math, data manipulation, and even machine learning.
-  * [Kangaroo](https://www.food4rhino.com/app/kangaroo-physics) - live physics engine for interactive simulation, form-finding, optimization and constraint solving.
+<table>
+  <thead>
+    <tr>
+      <td>Application</td>
+      <td>Description</td>
+      <td>Cost</td>
+      <td>Plugins</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="top">[Houdini](https://www.sidefx.com/products/houdini/)</td>
+      <td>Industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms.</td>
+      <td>Free for non-commercial users (with watermarked renders)
+      $269 for no watermarks, thousands for studios)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>[Rhino](https://www.rhino3d.com/)</td>
+      <td>NURBS-based CAD program popular with architects and designers.</td>
+      <td>$1000, or $200 for students</td>
+      <td>
+        <ul>
+          <li>[Grasshopper](https://www.grasshopper3d.com/) - extremely popular graphical node-based algorithm editor tightly integrated with Rhino’s 3D modeling tools. Highly recommended for digital morphogenesis work. Was a third-party plugin for many years, but is now a part of Rhino 6+.</li>
+          <li>[Lunchbox](https://www.food4rhino.com/app/lunchbox) - very powerful collection of utilities for generative geometry, math, data manipulation, and even machine learning.</li>
+          <li>[Kangaroo](https://www.food4rhino.com/app/kangaroo-physics) - live physics engine for interactive simulation, form-finding, optimization and constraint solving.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 * [Structure Synth](http://structuresynth.sourceforge.net/) (free) - application for generating surprising and complex fractal 3D structures using a design grammar.
 * [TouchDesigner](https://www.derivative.ca/) ($)
 * [Unity](https://unity.com/) (free for hobbyists [[1]](https://store.unity.com/))
