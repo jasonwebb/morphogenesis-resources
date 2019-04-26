@@ -564,14 +564,28 @@ TODO
         </details>
       </td>
     </tr>
+    <tr>
+      <td><a href="http://structuresynth.sourceforge.net/" target="_blank">Structure Synth</a></td>
+      <td>Application for generating surprising and complex fractal 3D structures using a design grammar.</td>
+      <td>Free</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.derivative.ca/" target="_blank">TouchDesigner</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="https://unity.com/" target="_blank">Unity</a></td>
+      <td></td>
+      <td>Free for hobbyists</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.unrealengine.com/en-US/)" target="_blank">Unreal</a></td>
+      <td></td>
+      <td>Free with <a href="https://www.unrealengine.com/en-US/faq" target="_blank">royalty on commercial products</a></td>
+    </tr>
   </tbody>
 </table>
-
-* [Structure Synth](http://structuresynth.sourceforge.net/) (free) - application for generating surprising and complex fractal 3D structures using a design grammar.
-* [TouchDesigner](https://www.derivative.ca/) ($)
-* [Unity](https://unity.com/) (free for hobbyists [[1]](https://store.unity.com/))
-  * [Visual Effects Graph](https://unity.com/visual-effect-graph) (VFX Graph)
-* [Unreal](https://www.unrealengine.com/en-US/) (free with [royalty on commercial products](https://www.unrealengine.com/en-US/faq))
 
 ### Languages and frameworks
 * Shaders (GLSL / GLslang / OpenGL Shader Language)
