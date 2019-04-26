@@ -414,7 +414,7 @@ _Articles:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Attractor_Poisson_Saturne.jpg" width="200" align="right">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Attractor_Poisson_Saturne.jpg" width="300" align="right">
 
 ### Strange attractors
 
