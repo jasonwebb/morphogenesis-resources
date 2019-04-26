@@ -536,7 +536,6 @@ TODO
       <td>Application</td>
       <td>Description</td>
       <td>Cost</td>
-      <td>Plugins</td>
     </tr>
   </thead>
   <tbody>
@@ -545,17 +544,19 @@ TODO
       <td valign="top">Industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms.</td>
       <td valign="top">Free for non-commercial users (with watermarked renders)
       $269 for no watermarks, thousands for studios)</td>
-      <td></td>
     </tr>
     <tr>
       <td valign="top"><a href="https://www.rhino3d.com/" target="_blank">Rhino</a></td>
       <td valign="top">NURBS-based CAD program popular with architects and designers.</td>
       <td valign="top">$1000, or $200 for students</td>
-      <td valign="top">
+    </tr>
+    <tr>
+      <td colspan="3">
+        <em>Rhino plugins:</em>
         <ul>
-          <li>[Grasshopper](https://www.grasshopper3d.com/) - extremely popular graphical node-based algorithm editor tightly integrated with Rhino’s 3D modeling tools. Highly recommended for digital morphogenesis work. Was a third-party plugin for many years, but is now a part of Rhino 6+.</li>
-          <li>[Lunchbox](https://www.food4rhino.com/app/lunchbox) - very powerful collection of utilities for generative geometry, math, data manipulation, and even machine learning.</li>
-          <li>[Kangaroo](https://www.food4rhino.com/app/kangaroo-physics) - live physics engine for interactive simulation, form-finding, optimization and constraint solving.</li>
+          <li><a href="https://www.grasshopper3d.com/" target="_blank">Grasshopper</a> - extremely popular graphical node-based algorithm editor tightly integrated with Rhino’s 3D modeling tools. Highly recommended for digital morphogenesis work. Was a third-party plugin for many years, but is now a part of Rhino 6+.</li>
+          <li><a href="https://www.food4rhino.com/app/lunchbox" target="_blank">Lunchbox</a> - very powerful collection of utilities for generative geometry, math, data manipulation, and even machine learning.</li>
+          <li><a href="https://www.food4rhino.com/app/kangaroo-physics" target="_blank">Kangaroo</a> - live physics engine for interactive simulation, form-finding, optimization and constraint solving.</li>
         </ul>
       </td>
     </tr>
