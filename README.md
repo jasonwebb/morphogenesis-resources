@@ -533,9 +533,9 @@ TODO
 <table>
   <thead>
     <tr>
-      <td>Application</td>
-      <td>Description</td>
-      <td>Cost</td>
+      <th>Application</th>
+      <th>Description</th>
+      <th>Cost</th>
     </tr>
   </thead>
   <tbody>
