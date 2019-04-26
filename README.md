@@ -193,11 +193,13 @@ _Videos:_
 
 ---
 
-<img src="https://cdna.artstation.com/p/assets/images/images/008/781/346/large/pascal-wiemers-new-graph-basecolor-17.jpg?1515275614" width="300" align="right">
+<img src="https://cdna.artstation.com/p/assets/images/images/008/781/346/large/pascal-wiemers-new-graph-basecolor-17.jpg?1515275614" width="250" align="right">
 
 ### Reaction-diffusion
 
-Grid-based process that generates complex and dynamic patterns based the interactions of two chemicals as they _diffuse_ through a medium. At every location on the grid these chemicals (usually referred to as `A` and `B`) have a chance of causing a _reaction_ that converts chemicals of one type to another based on their relative concentrations at that location. Throughout the simulation chemical `A` is added at a particular _feed rate_ and chemical `B` is removed at a particular _kill rate_ - adjusting these rates can result in wildly different emergent patterns.
+Grid-based process that generates complex and dynamic patterns based the interactions of two chemicals as they _diffuse_ through a medium. At every location on the grid these chemicals (usually referred to as `A` and `B`) have a chance of causing a _reaction_ that converts chemicals of one type to another based on their relative concentrations at that location. 
+
+Throughout the simulation chemical `A` is added at a particular _feed rate_ and chemical `B` is removed at a particular _kill rate_ - adjusting these rates can result in wildly different emergent patterns.
 
 _Equation (via [Karl Sims](https://www.karlsims.com/rd.html)):_
 ![Reaction-diffusion equation from Karl Sims](https://www.karlsims.com/rd-equation.png)
