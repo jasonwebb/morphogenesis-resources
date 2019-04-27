@@ -56,14 +56,14 @@
           <summary>Useful code patterns and techniques</summary>
           <p>
             <ul>
-              <li>Particle systems</li>
               <li>Collision detection</li>
-              <li>Spatial indexing</li>
               <li>Marching squares</li>
               <li>Marching cubes</li>
-              <li>Noise (Perlin, Simplex)</li>
+              <li>Noise</li>
+              <li>Particle systems</li>
               <li>Physics libraries</li>
               <li>Signed distance functions (SDFs)</li>
+              <li>Spatial index</li>
             </ul>
           </p>
         </details>
@@ -579,6 +579,8 @@ TODO
 _Articles:_
 * [Collision detection](https://en.wikipedia.org/wiki/Collision_detection) on Wikipedia
 
+---
+
 ### Dithering
 
 ```
@@ -593,6 +595,8 @@ TODO
 _Articles:_
 * [Dither](https://en.wikipedia.org/wiki/Dither) on Wikipedia
 
+---
+
 ### Marching squares
 
 ```
@@ -602,6 +606,8 @@ TODO
 _Articles:_
 * [Marching squares](https://en.wikipedia.org/wiki/Marching_squares) on Wikipedia
 
+---
+
 ### Marching cubes
 
 ```
@@ -609,6 +615,8 @@ TODO
 ```
 
 * [Marching cubes](https://en.wikipedia.org/wiki/Marching_cubes) on Wikipedia
+
+---
 
 ### Noise
 
@@ -624,6 +632,8 @@ TODO
 * Wavelet noise
 * Worley noise
 
+---
+
 ### Particle systems
 
 ```
@@ -633,11 +643,15 @@ TODO
 _Articles:_
 * [Particle system](https://en.wikipedia.org/wiki/Particle_system) on Wikipedia
 
+---
+
 ### Physics libraries
 
 ```
 TODO
 ```
+
+---
 
 ### Recursion
 
@@ -648,6 +662,8 @@ TODO
 _Articles:_
 * [Recursion](https://en.wikipedia.org/wiki/Recursion) on Wikipedia
 
+---
+
 ### Signed distance functions (SDFs)
 
 ```
@@ -656,6 +672,8 @@ TODO
 
 _Articles:_
 * [Signed distance function](https://en.wikipedia.org/wiki/Signed_distance_function) on Wikipedia
+
+---
 
 ### Spatial index
 
@@ -671,6 +689,8 @@ _Common types:_
 
 _Articles:_
 * [Spatial index](https://en.wikipedia.org/wiki/Spatial_database#Spatial_index) section on Wikipedia article for Spatial database
+
+---
 
 ### Metaballs
 
