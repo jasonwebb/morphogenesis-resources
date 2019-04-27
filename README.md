@@ -726,7 +726,7 @@ _Articles:_
   <thead>
     <tr>
       <th>Application</th>
-      <th>Description</th>
+      <th width="50%">Description</th>
       <th>Cost</th>
     </tr>
   </thead>
