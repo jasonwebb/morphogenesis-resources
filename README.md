@@ -199,17 +199,18 @@ _Videos:_
 
 Grid-based process that generates complex and dynamic patterns based the interactions of two chemicals as they _diffuse_ through a medium. At every location on the grid these chemicals (usually referred to as `A` and `B`) have a chance of causing a _reaction_ that converts chemicals of one type to another based on their relative concentrations at that location. 
 
-Throughout the simulation chemical `A` is added at a particular _feed rate_ and chemical `B` is removed at a particular _kill rate_ - adjusting these rates can result in wildly different emergent patterns.
+Throughout the simulation chemical `A` is added at a particular _feed rate_ (`f`) and chemical `B` is removed at a particular _kill rate_ (`k`) - adjusting these rates can result in wildly different emergent patterns.
 
 _Equation (via [Karl Sims](https://www.karlsims.com/rd.html)):_
 ![Reaction-diffusion equation from Karl Sims](https://www.karlsims.com/rd-equation.png)
 
 _Key terms:_
-* Feed rate
-* Kill rate
-* Diffusion rate
-* Reaction chance
+* Feed rate - rate at which chemical `A` is added to system
+* Kill rate - rate at which chemical `B` is removed from the system
+* Diffusion rate - rate at which each chemical spreads, which acts as a kind of scaler to a 3x3 [Laplacian transform](#laplace-transform)
+* Reaction chance - probability that one `A` will be converted to a `B` when in the presence of two `B`s.
 * Gray-Scott model
+* [Pearson's classification](http://mrob.com/pub/comp/xmorphia/pearson-classes.html)
 * [Turing patterns](https://en.wikipedia.org/wiki/Turing_pattern)
 
 _Articles:_
@@ -227,6 +228,10 @@ _Code projects:_
 _Creative projects:_
 * [3D Printed Reaction Diffusion Patterns](https://www.instructables.com/id/3D-Printed-Reaction-Diffusion-Patterns/) Instructable by Reza Ali
 * [Processing: Reaction Diffusion Halftone patterns](https://vimeo.com/233530691) by Ignazio Lucenti
+* [Coral Cup](https://n-e-r-v-o-u-s.com/blog/?p=8222) by Nervous System
+* [Reaction Lamps](https://n-e-r-v-o-u-s.com/projects/albums/reaction-products/) by Nervous System
+* [Reaction Table](https://n-e-r-v-o-u-s.com/projects/albums/reaction-table/) by Nervous System
+* [Reaction-Diffusion Media Wall](http://www.karlsims.com/rd-exhibit.html) by Karl Sims
 
 _Videos:_
 * Reaction Diffusion video series for Houdini by Entagma:
