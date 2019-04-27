@@ -271,11 +271,22 @@ _Notable software:_
 
 ---
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/07/CornstarchCymatics_cc.jpg" width="300" align="right">
+
 ### Cymatics
 
 ```
 TODO
 ```
+
+_Articles:_
+* [Cymatics](https://en.wikipedia.org/wiki/Cymatics) on Wikipedia
+* [Modal vibrational phenomena](https://en.wikipedia.org/wiki/Normal_mode) on Wikipedia
+
+_Creative projects:_
+* [CYMATICS: Science Vs. Music](https://vimeo.com/111593305) by Nigel Stanford
+* [Cymatics](https://vimeo.com/74130357) by Susi Sie
+* [The Essence of Sound](https://vimeo.com/89491724) by Susi Sie
 
 ---
 
@@ -559,17 +570,116 @@ TODO
 ```
 
 ## Useful code patterns and techniques
-* Collision detection
-* Dithering
-* Marching squares
-* Marching cubes
-* Noise (Perlin, Simplex)
-* Particle systems
-* Physics libraries
-* Recursion (fractals, especially IFS)
-* Signed distance functions (SDFs)
-* Spatial indexing
-* Metaballs
+### Collision detection
+
+```
+TODO
+```
+
+_Articles:_
+* [Collision detection](https://en.wikipedia.org/wiki/Collision_detection) on Wikipedia
+
+### Dithering
+
+```
+TODO
+```
+
+* Floyd-Steinberg dithering
+* Rectangular Probability Density Function (RPDF)
+* Triangular Probability Density Function (TPDF)
+* Gaussian Probably Density Function (Gaussian PDF)
+
+_Articles:_
+* [Dither](https://en.wikipedia.org/wiki/Dither) on Wikipedia
+
+### Marching squares
+
+```
+TODO
+```
+
+_Articles:_
+* [Marching squares](https://en.wikipedia.org/wiki/Marching_squares) on Wikipedia
+
+### Marching cubes
+
+```
+TODO
+```
+
+* [Marching cubes](https://en.wikipedia.org/wiki/Marching_cubes) on Wikipedia
+
+### Noise
+
+```
+TODO
+```
+
+* Gradient noise
+* Perlin noise
+* Simplex noise
+* Simuation noise
+* Value noise
+* Wavelet noise
+* Worley noise
+
+### Particle systems
+
+```
+TODO
+```
+
+_Articles:_
+* [Particle system](https://en.wikipedia.org/wiki/Particle_system) on Wikipedia
+
+### Physics libraries
+
+```
+TODO
+```
+
+### Recursion
+
+```
+TODO
+```
+
+_Articles:_
+* [Recursion](https://en.wikipedia.org/wiki/Recursion) on Wikipedia
+
+### Signed distance functions (SDFs)
+
+```
+TODO
+```
+
+_Articles:_
+* [Signed distance function](https://en.wikipedia.org/wiki/Signed_distance_function) on Wikipedia
+
+### Spatial index
+
+```
+TODO
+```
+
+_Common types:_
+* Quadtree
+* Octree
+* kd-tree
+* R tree
+
+_Articles:_
+* [Spatial index](https://en.wikipedia.org/wiki/Spatial_database#Spatial_index) section on Wikipedia article for Spatial database
+
+### Metaballs
+
+```
+TODO
+```
+
+_Articles:_
+* [Metaballs](https://en.wikipedia.org/wiki/Metaballs) on Wikipedia
 
 ## Books
 * [On Growth and Form](https://smile.amazon.com/Growth-Form-Complete-Revised/dp/0486671356/) by D'Arcy Wentworth Thompson
