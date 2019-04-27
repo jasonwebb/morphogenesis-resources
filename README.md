@@ -305,6 +305,8 @@ _Articles:_
 
 ---
 
+<img src="https://i.stack.imgur.com/cfnQu.gif" width="300" align="right">
+
 ### Fourier series
 
 ```
@@ -385,11 +387,16 @@ _Articles:_
 
 ---
 
+<img src="http://welfenlab.de/archive/mirror/brown00/Figs/PlaneMA3.jpg" width="300" align="right">
+
 ### Medial axis
 
 ```
 TODO
 ```
+
+_Articles:_
+* [Medial axis](https://en.wikipedia.org/wiki/Medial_axis) on Wikipedia
 
 ---
 
@@ -414,6 +421,8 @@ _Articles:_
 * [Random space filling of the plane](http://paulbourke.net/fractals/randomtile/) by Paul Bourke
 
 ---
+
+<img src="http://3.bp.blogspot.com/_gP2wXZHi-kE/SMf1_O3V9LI/AAAAAAAAAJg/GPHwq_qJgZo/s400/fathom_phylo2.jpg" width="300" align="right">
 
 ### Phyllotaxis
 
@@ -725,8 +734,12 @@ _Articles:_
     <tr>
       <td valign="top"><a href="https://www.sidefx.com/products/houdini/" target="_blank">Houdini</a></td>
       <td valign="top">Industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms.</td>
-      <td valign="top">Free for non-commercial users (with watermarked renders)
-      $269 for no watermarks, thousands for studios)</td>
+      <td valign="top">
+        <ul>
+          <li>Free for non-commercial users (with watermarked renders)</li>
+          <li>$269 for no watermarks, thousands for studios)</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td valign="top"><a href="https://www.rhino3d.com/" target="_blank">Rhino</a></td>
