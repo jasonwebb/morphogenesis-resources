@@ -371,19 +371,29 @@ TODO
 ```
 TODO
 ```
-
-<img src="https://media3.giphy.com/media/I6eLbjpGq99x6/giphy.gif" width="300" align="right">
-
 ---
+
+<img src="https://media.giphy.com/media/kC8yGWRJnYws1z4WRP/giphy.gif" width="300" align="right">
 
 ### Lissajous curves
 
-```
-TODO
-```
+Also known as Bowditch curves, these figures plot the trajectories of a point as it follows the path of two simultaneous sinusoidal motions.
+
+Can be created using various physical systems including [oscilloscopes](https://www.youtube.com/watch?v=t6nGiBzGLD8), [harmonographes](https://en.wikipedia.org/wiki/Harmonograph), and more.
+
+_Equations:_
+
+<img src="https://www.mathcurve.com/courbes2d.gb/lissajous/imageGSM.JPG"><br>
+<img src="https://www.mathcurve.com/courbes2d.gb/lissajous/imageRGH.JPG">
 
 _Articles:_
 * [Lissajous curve](https://en.wikipedia.org/wiki/Lissajous_curve) on Wikipedia
+* [Lissajous curve](https://www.mathcurve.com/courbes2d.gb/lissajous/lissajous.shtml) from MathCurve
+* [Lissajous Curves](http://datagenetics.com/blog/april22015/index.html) from DataGenetics
+
+_Videos:_
+* [Coding Challenge #116: Lissajous Curve Table](https://www.youtube.com/watch?v=--6eyLO78CY) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_116_Lissajous) with source code for p5.js and Processing)
+* [#48: Basics of Lissajous Patterns on an Oscilloscope](https://www.youtube.com/watch?v=t6nGiBzGLD8) by w2aew
 
 ---
 
@@ -736,15 +746,22 @@ _Articles:_
       <td valign="top">Industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms.</td>
       <td valign="top">
         <ul>
-          <li>Free for non-commercial users (with watermarked renders)</li>
-          <li>$269 for no watermarks, thousands for studios)</li>
+          <li>Free with watermarked renders for non-commercial users (Apprentice)</li>
+          <li>$269 for no watermarks for commercial <$100k annual profit (Indie)</li>
+          <li>Thousands for commercial users, with complex pricing model</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td valign="top"><a href="https://www.rhino3d.com/" target="_blank">Rhino</a></td>
       <td valign="top">NURBS-based CAD program popular with architects and designers.</td>
-      <td valign="top">$1000, or $200 for students</td>
+      <td valign="top">
+        <ul>
+          <li>Rhino 6 for Win - $995</li>
+          <li>Rhino 5 for Mac - $695</li>
+          <li>$195 for students (both platforms)</li>
+        </ul>
+      </td>
     </tr>
     <tr>
       <td colspan="3">
