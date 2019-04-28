@@ -28,8 +28,10 @@
               <li><a href="#cellular-automata-ca">Cellular automata</a></li>
               <li><a href="#cymatics">Cymatics</a></li>
               <li><a href="#delaunay-triangulation-and-voronoi-diagrams">Delaunay triangulation and Voronoi diagrams</a></li>
+              <li><a href="#fibonacci-sequence">Fibonacci sequence</a></li>
               <li><a href="#fourier-series">Fourier series</a></li>
               <li><a href="#fractals">Fractals</a></li>
+              <li><a href="#golden-ratio">Golden ratio</a></li>
               <li><a href="#inverse-and-forward-kinematics">Inverse and forward kinematics</a></li>
               <li><a href="#laplace-transform">Laplace transform</a></li>
               <li><a href="#lissajous-curves">Lissajous curves</a></li>
@@ -305,6 +307,17 @@ _Articles:_
 
 ---
 
+### Fibonacci sequence
+_Related to [Golden ratio](#golden-ratio)_
+
+```
+TODO
+```
+
+* [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) on Wikipedia
+
+---
+
 <img src="https://i.stack.imgur.com/cfnQu.gif" width="300" align="right">
 
 ### Fourier series
@@ -358,6 +371,18 @@ _Notable software:_
 
 ---
 
+### Golden ratio
+_Related to [Fibonacci sequence](#fibonacci-sequence)_
+
+```
+TODO
+```
+
+_Articles:_
+* [Golden ratio](https://en.wikipedia.org/wiki/Golden_ratio) on Wikipedia
+
+---
+
 ### Inverse and forward kinematics
 
 ```
@@ -379,7 +404,7 @@ TODO
 
 Also known as Bowditch curves, these figures plot the trajectories of a point as it follows the path of two simultaneous sinusoidal motions.
 
-Can be created using various physical systems including [oscilloscopes](https://www.youtube.com/watch?v=t6nGiBzGLD8), [harmonographes](https://en.wikipedia.org/wiki/Harmonograph), and more.
+Can be created using various physical systems including [oscilloscopes](https://www.youtube.com/watch?v=t6nGiBzGLD8), [harmonographs](https://en.wikipedia.org/wiki/Harmonograph), and more.
 
 _Equations:_
 
@@ -439,6 +464,9 @@ _Articles:_
 ```
 TODO
 ```
+
+_Articles:_
+* [Phyllotaxis](https://en.wikipedia.org/wiki/Phyllotaxis) on Wikipedia
 
 ---
 
