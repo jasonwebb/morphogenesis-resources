@@ -373,7 +373,7 @@ TODO
 ```
 ---
 
-<img src="https://media.giphy.com/media/kC8yGWRJnYws1z4WRP/giphy.gif" width="300" align="right">
+<img src="https://thumbs.gfycat.com/AngelicDismalAmazonparrot-max-1mb.gif" width="300" align="right">
 
 ### Lissajous curves
 
