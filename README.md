@@ -16,6 +16,7 @@
               <li><a href="#differential-growth">Differential growth</a></li>
               <li><a href="#eden-growth-model">Eden growth model</a></li>
               <li><a href="#physarum">Physarum</a></li>
+              <li><a href="#primordial-particle-system">Primordial Particle System</a></li>
               <li><a href="#space-colonization">Space colonization</a></li>
               <li><a href="#reaction-diffusion">Reaction diffusion</a></li>
             </ul>
@@ -84,6 +85,8 @@
 TODO
 ```
 
+* Rigid and elastic bond models
+
 _Articles:_
 * [Fractal Dimension of Dielectric Breakdown](http://laplace.ucv.cl/Patterns/Referencias/Pietronero-prl52-1033.pdf) (PDF) by L. Niemeyer, L. Pietronero, and H. J. Wiesmann
 
@@ -127,6 +130,7 @@ _Notable software:_
 _Videos:_
 * [Coding Challenge #34: Diffusion-Limited Aggregation](https://www.youtube.com/watch?v=Cl_Gjj80gPE) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_034_DLA/P5))
 * [Coding Challenge #127: Brownian Tree Snowflake](https://www.youtube.com/watch?v=XUA8UREROYE) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_127_Snowflake_Brownian))
+* [VEX in Houdini: Diffusion Limited Aggregation (Plus Rendering In Mantra & Redshift)](https://vimeo.com/218372128) by Entagma
 
 
 ---
@@ -175,6 +179,14 @@ TODO
 _Articles:_
 * [Physarum Simulations](https://softologyblog.wordpress.com/2019/04/11/physarum-simulations/) by Softology
 * [Physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) on Wikipedia
+
+---
+
+### Primordial Particle System
+
+```
+TODO
+```
 
 ---
 
@@ -266,6 +278,9 @@ _Articles:_
 * [Elementary Cellular Automaton](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) on Wolfram MathWorld
 * [Chapter 7. Cellular Automata](https://natureofcode.com/book/chapter-7-cellular-automata/) from Daniel Shiffman's Nature of Code book
 
+_Creative projects:_
+* [KnitYak: Custom mathematical knit scarves](https://www.kickstarter.com/projects/fbz/knityak-custom-mathematical-knit-scarves) by Fabienne "fbz" Serriere
+
 _Notable software:_
 * [MCell](http://psoup.math.wisc.edu/mcell/) (Mirek's Cellebration)
 * [Golly](http://golly.sourceforge.net/)
@@ -299,7 +314,9 @@ _Delaunay triangulation_ is a way of connecting a set of points to form a networ
 
 _Voronoi diagrams_ are the [dual](https://observablehq.com/@mbostock/the-delaunays-dual) of Delaunay triangulations. This means that once a Delaunay triangulation has been computed for a set of points, a Voronoi diagram can be drawn without any additional data - just draw lines connecting the centers of the circumcircles! 
 
-_Voronoi diagrams_ are very useful for efficiently and organically partitioning (splitting up) both 2D and 3D space. They are especially good for accurately modelling the way soft bodies (like biological cells) get smushed together in constrained environments, like embryonic cells undergoing mitosis.
+Voronoi diagrams are very useful for efficiently and organically partitioning (splitting up) both 2D and 3D space. They are especially good for accurately modelling the way soft bodies (like biological cells) get smushed together in constrained environments, like embryonic cells undergoing mitosis.
+
+Voronoi diagrams are often used (perhaps overused) in digital fabrication applications, [especially 3D printing](https://www.google.com/search?q=voronoi+3d+printing&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiQh-npy_HhAhUFSq0KHfBpClQQ_AUIDigB&biw=1920&bih=937), for their characteristic aesthetic style and their ability to reduce material usage while preserving overall form. Given their popularity among amateur 3D printing enthusiasts, this effect is probably best used sparingly in serious applications.
 
 _Articles:_
 * [Delaunay triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) on Wikipedia
@@ -852,3 +869,4 @@ _Articles:_
 ## Uncategorized (TODO)
 * Turing patterns
 * Viscous fingering, a.k.a. Saffman–Taylor instability
+* Percolation theory
