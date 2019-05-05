@@ -188,6 +188,10 @@ _Articles:_
 TODO
 ```
 
+_Articles:_
+* [Primordial Particle Systems](http://zool33.uni-graz.at/artlife/PPS) from the Artificial Life Laboratory in Graz, Austria.
+* [How a life-like system emerges from a simple particle motion law](https://www.nature.com/articles/srep37969) Thomas Schmickl, Martin Stefanec & Karl Crailsheim
+
 ---
 
 ### Space colonization
