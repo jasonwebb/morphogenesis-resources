@@ -63,8 +63,8 @@
               <li>Marching squares</li>
               <li>Marching cubes</li>
               <li>Noise</li>
-              <li>Particle systems</li>
-              <li>Physics libraries</li>
+              <li>Particle system</li>
+              <li>Physics engine</li>
               <li>Signed distance functions (SDFs)</li>
               <li>Spatial index</li>
             </ul>
@@ -638,14 +638,31 @@ TODO
 ```
 
 ## Useful code patterns and techniques
-### Collision detection
 
-```
-TODO
-```
+<img src="https://cdn-images-1.medium.com/max/800/1*CHhG6Ea1664UrKwaJhiDTQ.png" width="300" align="right">
+
+### Collision detection
+Computational methods for determining when two or more shapes are intersecting either statically (right now) or predictively (in the future). In technical terms, _a posterior_ and _a priori_ respectively. Detecting and reacting to collisions is extremely important in videos games and physical simulations, and takes quite a lot of brains and computational muscle to do effectively in real-time, especially in large-scale systems.
+
+Building your own collision detection code is a fun and educational exercise, but is so complex and difficult to achieve in practice that it is generally a good idea to use an establisihed physics library or VFX/modelling application for performance. See the [Physics engine](#physics-engine) and [Tools](#tools) sections for options.
+
+_Relevant topics:_
+* Broad phase - class of algorithms that detect pairs of _potentially_ colliding shapes using fast but approximate methods, such as:
+  * [Axis-aligned bounding box](https://en.wikipedia.org/wiki/Minimum_bounding_box#Axis-aligned_minimum_bounding_box) (AABB)
+  * [Sort and sweep](https://en.wikipedia.org/wiki/Sweep_and_prune) (a.k.a. sweep and prune)
+  * [Bounding volume hierarchy](https://en.wikipedia.org/wiki/Bounding_volume_hierarchy) (BVH)
+* Narrow phase - class of algorithms that determine if two shapes are definately intersecting or not, and by how much.
+  * [Separating axis theorem](https://gamedevelopment.tutsplus.com/tutorials/collision-detection-using-the-separating-axis-theorem--gamedev-169) (SAT)
+  * [Gilbert-Johnson-Keerthi](https://en.wikipedia.org/wiki/Gilbert%E2%80%93Johnson%E2%80%93Keerthi_distance_algorithm) (GJK) algorithm
+  * Expanding Polytope Algorithm (EPA)
 
 _Articles:_
 * [Collision detection](https://en.wikipedia.org/wiki/Collision_detection) on Wikipedia
+* [Video Game Physics Tutorial - Part II: Collision Detection for Solid Objects](https://www.toptal.com/game/video-game-physics-part-ii-collision-detection-for-solid-objects) by Nilson Souto
+* [Let's talk about broad phase](http://podgorskiy.com/spblog/40/lets-talk-about-broad-phase)
+
+_Books:_
+* [Real-Time Collision Detection](https://smile.amazon.com/exec/obidos/tg/detail/-/1558607323/realtimecolli-20/?sa-no-redirect=1) by Christer Ericson
 
 ---
 
@@ -702,7 +719,7 @@ TODO
 
 ---
 
-### Particle systems
+### Particle system
 
 ```
 TODO
@@ -713,7 +730,7 @@ _Articles:_
 
 ---
 
-### Physics libraries
+### Physics engine
 
 ```
 TODO
@@ -732,7 +749,7 @@ _Articles:_
 
 ---
 
-### Signed distance functions (SDFs)
+### Signed distance function (SDFs)
 
 ```
 TODO
