@@ -659,26 +659,44 @@ _Relevant topics:_
 _Articles:_
 * [Collision detection](https://en.wikipedia.org/wiki/Collision_detection) on Wikipedia
 * [Video Game Physics Tutorial - Part II: Collision Detection for Solid Objects](https://www.toptal.com/game/video-game-physics-part-ii-collision-detection-for-solid-objects) by Nilson Souto
-* [Let's talk about broad phase](http://podgorskiy.com/spblog/40/lets-talk-about-broad-phase)
+* [Let's talk about broad phase](http://podgorskiy.com/spblog/40/lets-talk-about-broad-phase) by Stanislav Pidhorskyi
 
 _Books:_
 * [Real-Time Collision Detection](https://smile.amazon.com/exec/obidos/tg/detail/-/1558607323/realtimecolli-20/?sa-no-redirect=1) by Christer Ericson
 
 ---
 
+<img src="https://www.visgraf.impa.br/Courses/ip00/proj/Dithering1/image/lena%20ordered.gif" width="300" align="right">
+
 ### Dithering
+Creates the illusion of depth in an image using a limited color palette, most commonly by varying the spacing and sizes of solid, single-color dots or lines. Some techniques (like [halftones](https://en.wikipedia.org/wiki/Halftone)) even predate modern digital technologies because of their usefulness in traditional printmaking and engraving processes. There are even relevant techniques in the fields of painting and drawing; see [stippling](https://en.wikipedia.org/wiki/Stippling) and [pointillism](https://en.wikipedia.org/wiki/Pointillism)!
 
-```
-TODO
-```
+Useful for realizing grayscale images with various digital fabrication equipment like laser cutters, pen plotters, CNC routers/mills, and more.
 
-* Floyd-Steinberg dithering
-* Rectangular Probability Density Function (RPDF)
-* Triangular Probability Density Function (TPDF)
-* Gaussian Probably Density Function (Gaussian PDF)
+_Types of dithering:_
+* Threshold (a.k.a average)
+* Random
+* Patterned
+* Ordered
+  * Halftone ⭐
+  * Bayer matrix
+  * Blue noise matrix
+* Error-diffusion
+  * Floyd-Steinberg ⭐
+  * Minimized average error
+  * Stucki
+  * Burkes
+  * Sierra
+  * Two-row Sierra
+  * Filter Lite
+  * Atkinson
+  * Gradient-based error-diffusion
 
 _Articles:_
-* [Dither](https://en.wikipedia.org/wiki/Dither) on Wikipedia
+* [Dither](https://en.wikipedia.org/wiki/Dither#Digital_photography_and_image_processing) on Wikipedia
+
+_Code projects:_
+* [Coding Challenge #90: Floyd-Steinberg Dithering](https://www.youtube.com/watch?v=0L2n8Tg2FwI) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_090_dithering) with source code for p5.js and Processing)
 
 ---
 
