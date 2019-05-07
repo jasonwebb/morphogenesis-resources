@@ -59,14 +59,14 @@
           <summary>Useful code patterns and techniques</summary>
           <p>
             <ul>
-              <li>Collision detection</li>
-              <li>Marching squares</li>
-              <li>Marching cubes</li>
-              <li>Noise</li>
-              <li>Particle system</li>
-              <li>Physics engine</li>
-              <li>Signed distance functions (SDFs)</li>
-              <li>Spatial index</li>
+              <li><a href="#collision-detection">Collision detection</a></li>
+              <li><a href="#marching-squares">Marching squares</a></li>
+              <li><a href="#marching-cubes">Marching cubes</a></li>
+              <li><a href="#noise">Noise</a></li>
+              <li><a href="#particle-system">Particle system</a></li>
+              <li><a href="#physics-engine">Physics engine</a></li>
+              <li><a href="#signed-distance-function-sdfs">Signed distance functions (SDFs)</a></li>
+              <li><a href="#spatial-index">Spatial index</a></li>
             </ul>
           </p>
         </details>
@@ -697,26 +697,45 @@ _Articles:_
 
 _Code projects:_
 * [Coding Challenge #90: Floyd-Steinberg Dithering](https://www.youtube.com/watch?v=0L2n8Tg2FwI) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_090_dithering) with source code for p5.js and Processing)
+* [Atkinson Dithering, Live in Processing](https://www.evilmadscientist.com/2012/dithering/) by Windell Oskay of Evil Mad Scientist Laboratories
+* [#dithering-algorithms](https://github.com/topics/dithering-algorithms) on Github
+* [Digital Halftoning](https://engineering.purdue.edu/~bouman/ece637/notes/pdf/Halftoning.pdf) by C. A. Bouman
+* [Color Quantization and Dithering](http://www.imagemagick.org/Usage/quantize/) reference page for ImageMagick v6
 
 ---
 
-### Marching squares
+<img src="http://www.bushwalking101.org/wp-content/uploads/2016/09/elevation.png" width="300" align="right">
 
-```
-TODO
-```
+### Marching squares
+Method of generating contours for a 2D scalar field (a grid of individual numerical values), like turning elevation data into a banded topographical map. The scalar values get associated with vertices of the 2D grid, then lines are drawn across each cell in different ways based on the values of their four corner vertices. 
+
+There is only a finite number of lines possible, so they can be precomputed into a lookup table and referenced quickly later for faster performance. These lines can also be linearly interpolated to smoothly transition from cell to cell, resulting in very realistic blobby / fluid structures.
+
+_Key terms:_
+* Isoline - contour line tracing a single data level, or _isovalue_.
+* Isoband - filled area between isolines.
 
 _Articles:_
 * [Marching squares](https://en.wikipedia.org/wiki/Marching_squares) on Wikipedia
+* [Metaballs and Marching Squares](http://jamie-wong.com/2014/08/19/metaballs-and-marching-squares/) by Jamie Wong
+
+_Code projects:_
+* [d3-contour](https://github.com/d3/d3-contour) - D3.js library
+
+_Videos:_
+* [Marching Squares](https://unity3d.com/learn/tutorials/projects/procedural-cave-generation-tutorial/marching-squares) for procedural cave generation in Unity by Sebastian Lague
 
 ---
 
+<img src="https://i.ytimg.com/vi/LC0IbOZ0jkw/maxresdefault.jpg" width="300" align="right">
+
 ### Marching cubes
+3D version of [marching squares](#marching-squares). Whereas marching _squares_ uses lines and cells to trace the contours of a 2D scalar field, marching _cubes_ uses polygons and voxels to trace the contours of a 3D scalar field, resulting in a mesh.
 
-```
-TODO
-```
+_Key terms:_
+* Isosurface - surface that represents points of a constant value within a volume of space
 
+_Articles:_
 * [Marching cubes](https://en.wikipedia.org/wiki/Marching_cubes) on Wikipedia
 
 ---
@@ -796,6 +815,7 @@ _Articles:_
 ---
 
 ### Metaballs
+_Related to [marching squares](#marching-squares) (2D) and [marching cubes](#marching-cubes) (3D)_
 
 ```
 TODO
