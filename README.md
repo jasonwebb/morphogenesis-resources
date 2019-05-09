@@ -669,7 +669,7 @@ _Books:_
 <img src="https://www.visgraf.impa.br/Courses/ip00/proj/Dithering1/image/lena%20ordered.gif" width="300" align="right">
 
 ### Dithering
-Creates the illusion of depth in an image using a limited color palette, most commonly by varying the spacing and sizes of solid, single-color dots or lines. Some techniques (like [halftones](https://en.wikipedia.org/wiki/Halftone)) even predate modern digital technologies because of their usefulness in traditional printmaking and engraving processes. There are even relevant techniques in the fields of painting and drawing; see [stippling](https://en.wikipedia.org/wiki/Stippling) and [pointillism](https://en.wikipedia.org/wiki/Pointillism)!
+Creates the illusion of depth in an image using a limited color palette, most commonly by varying the spacing or sizes of solid, single-color dots or lines. Some techniques (like [halftones](https://en.wikipedia.org/wiki/Halftone)) even predate modern digital technologies because of their usefulness in traditional printmaking and engraving processes. There are even relevant techniques in the fields of painting and drawing; see [stippling](https://en.wikipedia.org/wiki/Stippling) and [pointillism](https://en.wikipedia.org/wiki/Pointillism)!
 
 Useful for realizing grayscale images with various digital fabrication equipment like laser cutters, pen plotters, CNC routers/mills, and more.
 
@@ -737,22 +737,36 @@ _Key terms:_
 
 _Articles:_
 * [Marching cubes](https://en.wikipedia.org/wiki/Marching_cubes) on Wikipedia
+* [Polygonising a scalar field](http://paulbourke.net/geometry/polygonise/) by Paul Bourke
+* [Voxel to Mesh Conversion: Marching Cube Algorithm](https://medium.com/zeg-ai/voxel-to-mesh-conversion-marching-cube-algorithm-43dbb0801359) by Smile Sikand
 
 ---
 
+<img src="https://answers.unity.com/storage/temp/97016-perlin2.png" width="300" align="right">
+
 ### Noise
+In the context of computer graphics, refers to pseudo-random functions useful for creating natural-looking textures and patterns. Often used to procedurally generate organic surface textures (bark, waves, rocks, etc) and to organically distribute objects across surfaces (like grass or barnacles). 
 
-```
-TODO
-```
+Useful for adding fine details and smooth asymmetry to otherwise pristine objects - use it in displacement maps for subtle natural features. 
 
-* Gradient noise
-* Perlin noise
-* Simplex noise
-* Simuation noise
-* Value noise
-* Wavelet noise
-* Worley noise
+Also helpful for creating looping animations because reproducable results can be achieved when using the same function inputs. Just iterate through a series of cyclical values (perhaps even based on frame count) and you'll end up with smoothly transitioning noise that can be mixed in with geometry, colors, and transformations that continuously loop.
+
+The `noise()` function in many creative coding frameworks usually makes use of Perlin noise.
+
+* [Gradient noise](https://en.wikipedia.org/wiki/Gradient_noise) - created by interpolation of a lattice of pseudorandom gradients
+  * [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise) ⭐ - extremely influential type of gradient noise developed by Ken Perlin in 1983
+* [Simplex noise](https://en.wikipedia.org/wiki/Simplex_noise) - method for constructing an n-dimensional noise function comparable to Perlin noise
+* [Simuation noise](https://en.wikipedia.org/wiki/Simulation_noise) - function that creates a divergence-free field
+* [Value noise](https://en.wikipedia.org/wiki/Value_noise) - created by interpolation of a lattice of pseudorandom values; differs from gradient noise
+* [Wavelet noise](https://en.wikipedia.org/wiki/Wavelet_noise) - alternative to Perlin noise which reduces problems of aliasing and detail loss
+* [Worley noise](https://en.wikipedia.org/wiki/Worley_noise) - noise function introduced by Steven Worley in 1996
+
+_Articles:_
+* [Noise](https://thebookofshaders.com/11/) chapter in The Book of Shaders by Patricio Gonzalez Vivo & Jen Lowe
+
+_Videos:_
+* [Coding Challenge #11: 3D Terrain Generation with Perlin Noise in Processing](https://www.youtube.com/watch?v=IKB1hWWedMk) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_011_PerlinNoiseTerrain) with source code for p5.js and Processing)
+* [Coding Challenge #136.1: Polar Perlin Noise Loops](https://www.youtube.com/watch?v=ZI1dmHv3MeM) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_136_Polar_Noise_Loop_1) [[2]](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_136_Polar_Noise_Loop_2) with source code for p5.js and Processing)
 
 ---
 
