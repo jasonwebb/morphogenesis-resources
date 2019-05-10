@@ -295,10 +295,9 @@ _Notable software:_
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/CornstarchCymatics_cc.jpg" width="300" align="right">
 
 ### Cymatics
+_See [Chladni plate](#chladni-plate)_
 
-```
-TODO
-```
+Study of the visible effects of sound and vibration on physical media. Typically involves the vibration of a plate or membrane onto which fine powder or fluids have been placed, which subsequently arrange themselves into highly symmetrical, complex patterns based on the intensity of displacement of various regions of the vibrating plate. Areas that are moving a lot will "kick" material away from them while areas that are moving very little allow material to settle and accumulate. These areas of relatively little vibration are caused by destructive interference of waves as they propagate across the plate/membrane and become out of phase with one another, creating "dead zones" where these waves cancel each other out.
 
 _Articles:_
 * [Cymatics](https://en.wikipedia.org/wiki/Cymatics) on Wikipedia
