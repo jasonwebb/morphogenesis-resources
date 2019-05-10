@@ -768,24 +768,48 @@ _Videos:_
 * [Coding Challenge #11: 3D Terrain Generation with Perlin Noise in Processing](https://www.youtube.com/watch?v=IKB1hWWedMk) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_011_PerlinNoiseTerrain) with source code for p5.js and Processing)
 * [Coding Challenge #136.1: Polar Perlin Noise Loops](https://www.youtube.com/watch?v=ZI1dmHv3MeM) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_136_Polar_Noise_Loop_1) [[2]](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_136_Polar_Noise_Loop_2) with source code for p5.js and Processing)
 
+```
+TODO: add note on curl noise
+```
+
 ---
 
+<img src="https://static.skillshare.com/uploads/video/thumbnails/c1c3da12ee479172705d9967ec9dca78/original" width="300" align="right">
+
 ### Particle system
+Collection of independent objects (often points, shapes, images/sprites/textures, or meshes) called _particles_ that are manipulated using dynamic forces and constraints to simulate a wide variety of natural phenomenon like fire, smoke/fog/clouds, fluids, bubbles, and so much more. Often combined with clever visual effects like transparency, blending, and light emission to create the appearance of a coherent but ever-changing entity.
+
+Particle systems are most useful when they can handle large quantities of particles, which means that performance and smart memory management is very important. Like [collision detection](#collision-detection), building your own particle system can be fun and educational, but if you need to achieve something complex at a large scale and/or with high framerates then it's definitely a good idea to leverage dedicated libraries and tools. Many [physics engines](#physics-engine) come with well-made particle systems out of necessity so be sure to consider them even if you don't need all the fun physics functionality.
+
+_Articles:_
+* [Particle system](https://en.wikipedia.org/wiki/Particle_system) on Wikipedia
+* [Intro to particle systems](https://www.khanacademy.org/computing/computer-programming/programming-natural-simulations/programming-particle-systems/a/intro-to-particle-systems) lesson on Khan Academy
+* [Chapter 4. Particle Systems](https://natureofcode.com/book/chapter-4-particle-systems/) from Nature of Code
+
+_Notable software:_
+* [Unity's VFX Graph](https://unity.com/visual-effect-graph)
+* [Blender's Particle System](https://docs.blender.org/manual/en/latest/physics/particles/index.html)
+
+---
+
+<img src="http://html5gamedevelopment.com/wp-content/uploads/2017/03/2017-03-29-12_59_02-Pyramid-Planck.js.png" width="300" align="right">
+
+### Physics engine
+_Related topics include [collision detection](#collision-detection) and [particle systems](#particle-system)_
 
 ```
 TODO
 ```
 
 _Articles:_
-* [Particle system](https://en.wikipedia.org/wiki/Particle_system) on Wikipedia
+* [Physics engine](https://en.wikipedia.org/wiki/Physics_engine) on Wikipedia
 
----
-
-### Physics engine
-
-```
-TODO
-```
+_Notable libraries:_
+* Box2D
+* Matter.js
+* Bullet
+* PhysX
+* Chrono
 
 ---
 
@@ -797,6 +821,23 @@ TODO
 
 _Articles:_
 * [Recursion](https://en.wikipedia.org/wiki/Recursion) on Wikipedia
+
+---
+
+### Shader
+
+```
+TODO
+```
+
+_Types of shaders:_
+* Vertex
+* Fragment
+* Compute
+
+_Key terms:_
+* GLSL
+* GPGPU
 
 ---
 
