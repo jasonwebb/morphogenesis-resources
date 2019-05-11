@@ -327,25 +327,56 @@ _Articles:_
 
 ---
 
+<img src="https://vignette.wikia.nocookie.net/golden-ratio/images/f/f1/Fibonacci.png/revision/latest?cb=20140624081839" width="300" align="right">
+
 ### Fibonacci sequence
 _Related to [Golden ratio](#golden-ratio)_
 
-```
-TODO
-```
+Sequence of numbers in which each number is the sum of it's two preceding numbers. [Binet's formula](https://en.wikipedia.org/wiki/Fibonacci_number#Binet's_formula) shows that the ratio of two consecutive numbers tends towards the golden ratio as the sequence progresses. Fibonacci numbers appear unexpectedly often in biology, having been observed in branching of trees, the arrangement of leaves on a stem, the fruit sprouts of a pineapple, the flowering of an artichoke, an uncurling fern and the arrangement of a pine cone's bracts.
 
+
+<table>
+ <thead>
+  <tr>
+   <th><center>Formula</center></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr> 
+   <td>
+    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3c667d91153450b3a161371582ee8227af85951f"><br>
+    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0fff1a1716fcc169546079870357f92757ade5fa">
+   </td>
+  </tr>
+ </tbody>
+</table>
+
+Sequence begins with:
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff1558cc1c547dba59ce03cf352c1662b87d10f1">
+
+_Articles:_
 * [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) on Wikipedia
+* [Fibonacci Sequence](https://www.mathsisfun.com/numbers/fibonacci-sequence.html) on Math Is Fun
+* [Fibonacci Number](http://mathworld.wolfram.com/FibonacciNumber.html) on Wolfram MathWorld
 
 ---
 
 <img src="https://i.stack.imgur.com/cfnQu.gif" width="300" align="right">
 
 ### Fourier series
+Series of sinusoidal wave functions that get added together to generate a different, more complex function. In the context of morphogenesis (form generation), any line drawing can be "deconstructed" into a series of arc segments which can in turn be represented by a series of circles whose radii and rotation speeds correspond to the radii and lengths of the arc segments.
 
-```
-TODO
-```
+Fourier series and Fourier transforms are deeply mathematical topics with applications and research far beyond the scope of this resource list. They are extremely useful in the field of digital signal processing for noise reduction, compression, audio analysis, and so much more. A very well-known algorithm known as the [fast Fourier transform (FFT)](https://en.wikipedia.org/wiki/Fast_Fourier_transform) enables extraction of waveforms from music for the purposes of audio visualization.
 
+_Articles:_
+* [Fourier series](https://en.wikipedia.org/wiki/Fourier_series) on Wikipedia
+* [Fourier Series](http://mathworld.wolfram.com/FourierSeries.html) on Wolfram MathWorld
+* [Fourier Series](https://www.mathsisfun.com/calculus/fourier-series.html) on Math Is Fun
+
+_Videos:_
+* [What is a Fourier Series? (Explained by drawing circles)](https://www.youtube.com/watch?v=ds0cmAV-Yek&vl=en) by Smarter Every Day
+* [But what is the Fourier Transform? A visual introduction](https://www.youtube.com/watch?v=spUNpyF58BY) by 3Blue1Brown
 * [Coding Challenge #125: Fourier Series](https://www.youtube.com/watch?v=Mm2eYfj0SgA) by Daniel Shiffman
 * [Coding Challenge #130.1: Drawing with Fourier Transform and Epicycles](https://www.youtube.com/watch?v=MY4luNgGfms) by Daniel Shiffman
 * [Coding Challenge #130.2: Fourier Transform User Drawing](https://www.youtube.com/watch?v=n9nfTxp_APM) by Daniel Shiffman
@@ -356,7 +387,7 @@ TODO
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mandel_zoom_08_satellite_antenna.jpg/320px-Mandel_zoom_08_satellite_antenna.jpg" width="300" align="right">
 
 ### Fractals
-Infinitely complex patterns generated via recursion that are self-similar across all scales. Thought to be found in abundance in nature, though "true" (infinite) fractals are not possible because nature uses physical matter, which has particular structures at the microscopic and smaller scales (molecules, atoms, elementary particles, etc).
+Infinitely complex patterns generated via [recursion](#recursion) that are self-similar across all scales. Thought to be found in abundance in nature, though "true" (infinite) fractals are not possible because nature uses physical matter, which has particular structures at the microscopic and smaller scales (molecules, atoms, elementary particles, etc).
 
 Fractal features can be observed in nature in tree branching structures, leaf veins, terrain, surface textures, coastlines, rivers, succulents, snowflakes, rivers, lightning bolts, nautilus shells (both form and pattern), and so much more.
 
@@ -730,6 +761,10 @@ _Videos:_
 
 ### Marching cubes
 3D version of [marching squares](#marching-squares). Whereas marching _squares_ uses lines and cells to trace the contours of a 2D scalar field, marching _cubes_ uses polygons and voxels to trace the contours of a 3D scalar field, resulting in a mesh.
+
+```
+TODO: add note on dual marching cubes
+```
 
 _Key terms:_
 * Isosurface - surface that represents points of a constant value within a volume of space
