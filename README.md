@@ -180,6 +180,9 @@ _Articles:_
 * [Physarum Simulations](https://softologyblog.wordpress.com/2019/04/11/physarum-simulations/) by Softology
 * [Physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) on Wikipedia
 
+_Code projects:_
+* [Simulating slime mold with WebGL](https://kaesve.nl/projects/mold/summary.html) by Ken **Voskuil**
+
 ---
 
 ### Primordial Particle System
@@ -422,12 +425,16 @@ _Notable software:_
 
 ---
 
+<img src="https://betterexplained.com/wp-content/uploads/2017/04/golden_ratio_example.png" width="300" align="right">
+
 ### Golden ratio
 _Related to [Fibonacci sequence](#fibonacci-sequence)_
 
 ```
 TODO
 ```
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d4010f92e33cc559bc8d7f24b4ed017273a0628d">
 
 _Articles:_
 * [Golden ratio](https://en.wikipedia.org/wiki/Golden_ratio) on Wikipedia
@@ -745,6 +752,10 @@ _Key terms:_
 * Isoline - contour line tracing a single data level, or _isovalue_.
 * Isoband - filled area between isolines.
 
+_Illustration of algorithm:_
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Marching_squares_algorithm.svg/710px-Marching_squares_algorithm.svg.png" width="500">
+
 _Articles:_
 * [Marching squares](https://en.wikipedia.org/wiki/Marching_squares) on Wikipedia
 * [Metaballs and Marching Squares](http://jamie-wong.com/2014/08/19/metaballs-and-marching-squares/) by Jamie Wong
@@ -831,19 +842,33 @@ _Notable software:_
 ### Physics engine
 _Related topics include [collision detection](#collision-detection) and [particle systems](#particle-system)_
 
-```
-TODO
-```
+Simulates the movements and reactions of objects using real-world concepts like mass, velocity, constraints, and forces (like drag, gravity, and friction). Makes use of extremely optimized algorithms for collision detection, physics calculations, geometry management, and more.
 
 _Articles:_
 * [Physics engine](https://en.wikipedia.org/wiki/Physics_engine) on Wikipedia
+* [Chapter 5. Physics Libraries](https://natureofcode.com/book/chapter-5-physics-libraries/) from Daniel Shiffman's Nature of Code book
+* [How to Create a Custom 2D Physics Engine: The Basics and Impulse Resolution](https://gamedevelopment.tutsplus.com/tutorials/how-to-create-a-custom-2d-physics-engine-the-basics-and-impulse-resolution--gamedev-6331) by Randy Gaul
 
-_Notable libraries:_
-* Box2D
-* Matter.js
-* Bullet
-* PhysX
-* Chrono
+_Notable open-source libraries:_
+* [Box2D](https://github.com/erincatto/Box2D) (C++)
+  * [LiquidFun](http://google.github.io/liquidfun/) (C++) - adds rigid-body and fluid dynamics on top of Box2D
+  * [box2d.js](https://github.com/kripken/box2d.js) (JavaScript via Emscripten)
+  * [Planck.js](https://github.com/shakiba/planck.js) (JavaScript, manually ported)
+* [Bullet](https://github.com/bulletphysics/bullet3) (C++)
+  * [ammo.js](https://github.com/kripken/ammo.js/) (direct JavaScript using Emscripten) 
+* [Matter.js](http://brm.io/matter-js/) (JavaScript)
+* [dyn4j](http://www.dyn4j.org/) (Java)
+* [cannon.js](http://schteppe.github.io/cannon.js/) (JavaScript)
+* [p2.js](https://github.com/schteppe/p2.js) (JavaScript)
+* [ReactPhysics3D](https://www.reactphysics3d.com/) (C++)
+* [Chrono](http://projectchrono.org/) (C++)
+* [Open Dynamics Engine (ODE)](https://www.ode.org/) (C++)
+
+_Commercial libraries:_
+* [PhysX](https://en.wikipedia.org/wiki/PhysX) by Nvidia. Integrated into both Unity and Unreal. Technically open-source now, but oriented more towards commercial/industry applications.
+* [Havok](https://www.havok.com/products/havok-physics/)
+
+If you're looking to do physical-based simulations, also take a look at game development and VFX environments like [Unity](https://unity3d.com/learn/tutorials/s/physics?_ga=2.158332858.1012620598.1557960859-2002016059.1556146318), [Unreal](https://docs.unrealengine.com/en-us/Engine/Physics), and [Houdini](https://www.sidefx.com/products/houdini/) for their built-in physics engines.
 
 ---
 
