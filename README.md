@@ -1,3 +1,7 @@
+[Digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis) is the exploration of how shapes, forms, and patterns emerge in nature through the use of computational modeling and generative systems based on biological, chemical, and physical processes. It draws upon research from practically every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, and more. 
+
+With such a cross-disciplinary topic it can be hard to keep track of and correlate all the interesting bits of knowledge that one comes across, which is where this list comes in. The goal of this list is to succinctly catalog various growth algorithms and lab experiments along with relevant math, physics, and programming concepts in one place in order to (1) serve as a sort of "cheat sheet" reference for developers and computer artists, and (2) spark new insights by making it easier to see relationships between seemingly disparate topics.
+
 <table>
   <thead>
     <tr>
@@ -60,17 +64,20 @@
           <p>
             <ul>
               <li><a href="#collision-detection">Collision detection</a></li>
+              <li><a href="#dithering">Dithering</a></li>
               <li><a href="#marching-squares">Marching squares</a></li>
               <li><a href="#marching-cubes">Marching cubes</a></li>
               <li><a href="#noise">Noise</a></li>
               <li><a href="#particle-system">Particle system</a></li>
               <li><a href="#physics-engine">Physics engine</a></li>
+              <li><a href="#recursion">Recursion</a></li>
+              <li><a href="#shaders">Shaders</a></li>
               <li><a href="#signed-distance-function-sdfs">Signed distance functions (SDFs)</a></li>
               <li><a href="#spatial-index">Spatial index</a></li>
             </ul>
           </p>
         </details>
-        ▸ <a href="#books">Books</a><br>
+        ▸ <a href="#books-and-publications">Books and publications</a><br>
         ▸ <a href="#software">Software</a>
       </td>
     </tr>
@@ -438,6 +445,8 @@ TODO
 
 _Articles:_
 * [Golden ratio](https://en.wikipedia.org/wiki/Golden_ratio) on Wikipedia
+* [Golden Ratio](https://www.mathsisfun.com/numbers/golden-ratio.html) on Math is Fun
+* [Golden Ratio](http://mathworld.wolfram.com/GoldenRatio.html) on Wolfram MathWorld
 
 ---
 
@@ -855,7 +864,7 @@ _Notable open-source libraries:_
   * [box2d.js](https://github.com/kripken/box2d.js) (JavaScript via Emscripten)
   * [Planck.js](https://github.com/shakiba/planck.js) (JavaScript, manually ported)
 * [Bullet](https://github.com/bulletphysics/bullet3) (C++)
-  * [ammo.js](https://github.com/kripken/ammo.js/) (direct JavaScript using Emscripten) 
+  * [ammo.js](https://github.com/kripken/ammo.js/) (direct JavaScript port using Emscripten) 
 * [Matter.js](http://brm.io/matter-js/) (JavaScript)
 * [dyn4j](http://www.dyn4j.org/) (Java)
 * [cannon.js](http://schteppe.github.io/cannon.js/) (JavaScript)
@@ -873,6 +882,7 @@ If you're looking to do physical-based simulations, also take a look at game dev
 ---
 
 ### Recursion
+_See [recursion](#recursion)._
 
 ```
 TODO
@@ -938,7 +948,8 @@ TODO
 _Articles:_
 * [Metaballs](https://en.wikipedia.org/wiki/Metaballs) on Wikipedia
 
-## Books
+## Books and publications
+### Books
 * [On Growth and Form](https://smile.amazon.com/Growth-Form-Complete-Revised/dp/0486671356/) by D'Arcy Wentworth Thompson
 * Nature's Patterns: A Tapestry in Three Parts by Philip Ball
   * [Flow](https://smile.amazon.com/Flow-Natures-Patterns-Tapestry-Three/dp/0199604878/)
@@ -946,6 +957,9 @@ _Articles:_
   * [Shapes](https://smile.amazon.com/Shapes-Natures-Patterns-Tapestry-Three/dp/0199237964/)
 * [Fractal Concepts in Surface Growth](https://smile.amazon.com/Fractal-Concepts-Surface-Albert-Laszlo-Barabasi/dp/0521483182) by Albert-László Barabási
 * [Fractal Growth Phenomena](https://smile.amazon.com/gp/product/9810206690/) by Tamas Vicsek
+
+### Publications
+* [Zygote Quarterly](https://zqjournal.org/)
 
 ## Software
 
