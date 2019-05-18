@@ -437,13 +437,17 @@ _Notable software:_
 <img src="https://betterexplained.com/wp-content/uploads/2017/04/golden_ratio_example.png" width="300" align="right">
 
 ### Golden ratio
-_Related to [Fibonacci sequence](#fibonacci-sequence)_
+_Related to the [Fibonacci sequence](#fibonacci-sequence)._
 
-```
-TODO
-```
+Also expressed as the Greek letter _phi_ (`φ`), this irrational number pops up when the ratio of two numbers is the same as the ratio of their sum to the largest of the two numbers. It has been observed in many fields of the natural sciences at every scale and is has become associated with aesthetic beauty, giving it a nearly mythic reputation for some. 
+
+_Expressed algebraicly:_
 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d4010f92e33cc559bc8d7f24b4ed017273a0628d">
+
+_Expressed as line segments:_
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Golden_ratio_line.svg">
 
 _Articles:_
 * [Golden ratio](https://en.wikipedia.org/wiki/Golden_ratio) on Wikipedia
