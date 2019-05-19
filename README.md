@@ -279,6 +279,8 @@ _Videos:_
   * [Part III: Shaping Growth](https://vimeo.com/170073079)
 * [Coding Challenge #13: Reaction Diffusion Algorithm in p5.js](https://www.youtube.com/watch?v=BV9ny785UNc) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_013_ReactionDiffusion) with both p5.js and Processing source code)
 
+<br>
+
 ## Math and physics topics
 <img src="https://c1.staticflickr.com/1/915/42277964325_431501c7c0_o.gif" width="300" align="right">
 
@@ -690,6 +692,8 @@ _Articles:_
 _Notable software:_
 * [StippleGen](https://wiki.evilmadscientist.com/StippleGen) from Evil Mad Scientist Laboratories can [calculate TSP paths](https://wiki.evilmadscientist.com/StippleGen#Calculating_the_TSP_Path).
 
+<br>
+
 ## Lab experiments
 
 ### Hele-Shaw cell experiment
@@ -711,6 +715,8 @@ TODO
 ```
 TODO
 ```
+
+<br>
 
 ## Useful code patterns and techniques
 
