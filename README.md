@@ -88,6 +88,8 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
   </tbody>
 </table>
 
+<br>
+
 ## Growth algorithms
 
 ### Dielectric breakdown model (DBM)
