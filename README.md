@@ -509,7 +509,7 @@ _Videos:_
 
 ---
 
-<img src="http://welfenlab.de/archive/mirror/brown00/Figs/PlaneMA3.jpg" width="300" align="right">
+<img src="https://www.researchgate.net/profile/Christoph_Kinkeldey/publication/237408245/figure/fig2/AS:299459092205573@1448408019217/Medial-axis-of-a-body-in-2D-Euklidian-space-Wolter-2001.png" width="300" align="right">
 
 ### Medial axis
 
