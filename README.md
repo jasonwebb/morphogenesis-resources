@@ -77,7 +77,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#shaders">Shaders</a></li>
               <li><a href="#signed-distance-function-sdfs">Signed distance functions (SDFs)</a></li>
               <li><a href="#spatial-index">Spatial index</a></li>
-              <li><a href="#wave-function-collapse-wcf">Wave Function Collapse (WFC)</a></li>
+              <li><a href="#wave-function-collapse-wfc">Wave Function Collapse (WFC)</a></li>
             </ul>
           </p>
         </details>
