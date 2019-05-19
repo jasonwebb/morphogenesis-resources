@@ -2,7 +2,7 @@
 
 With such a cross-disciplinary topic it can be hard to keep track of and correlate all the interesting bits of knowledge that one comes across, which is where this list comes in. The goal of this list is to succinctly catalog various growth algorithms and lab experiments along with relevant math, physics, and programming concepts in one place in order to (1) serve as a sort of "cheat sheet" reference for developers and computer artists, and (2) spark new insights by making it easier to see relationships between seemingly disparate topics.
 
----
+.
 
 <table>
   <thead>
@@ -108,7 +108,7 @@ _Articles:_
 ### Diffusion-limited aggregation (DLA)
 Process in which particles of matter stick together (_aggregate_) as they chaotically move (_diffuse_) through a medium that provides some sort of resistive (_limiting_) force. As these particles clump together over time they form characteristic fractal branching structures known as [Brownian trees](https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBrownian_tree).
 
-Very interesting macro-structures begin to emerge at around the 1-10 million particle range in 3D, but in order to get there you'll need to be smart about your rendering pipe and make use of optimized code in a performant language or environment (C/C++, CUDA, GLSL shaders, Houdini, etc).
+Very interesting macro-structures begin to emerge at around the 1-10 million particle range in 3D, but in order to get there you'll need to be smart about your rendering pipeline and make use of optimized code in a performant language or environment (C/C++, CUDA, GLSL shaders, Houdini, etc).
 
 _Key terms:_
 * Walker - randomly-moving particle not attached to any other particle
@@ -188,11 +188,16 @@ TODO
 ```
 
 _Articles:_
+* [Characteristics of Pattern Formation and Evolution in Approximations of Physarum Transport Networks](http://eprints.uwe.ac.uk/15260/1/artl.2010.16.2.pdf) (PDF) by Jeff Jones - original paper
 * [Physarum Simulations](https://softologyblog.wordpress.com/2019/04/11/physarum-simulations/) by Softology
 * [Physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) on Wikipedia
 
 _Code projects:_
-* [Simulating slime mold with WebGL](https://kaesve.nl/projects/mold/summary.html) by Ken **Voskuil**
+* [Simulating slime mold with WebGL](https://kaesve.nl/projects/mold/summary.html) by Ken Voskuil
+
+_Creative projects:_
+* [physarum](https://sagejenson.com/physarum) by Sage Jenson (mxsage)
+* [Slime mold](http://ch3.gr/2018/slime-mold/) by Georgios Cherouvim
 
 ---
 
