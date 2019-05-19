@@ -69,6 +69,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#dithering">Dithering</a></li>
               <li><a href="#marching-squares">Marching squares</a></li>
               <li><a href="#marching-cubes">Marching cubes</a></li>
+              <li><a href="#metaballs">Metaballs</a></li>
               <li><a href="#noise">Noise</a></li>
               <li><a href="#particle-system">Particle system</a></li>
               <li><a href="#physics-engine">Physics engine</a></li>
@@ -76,6 +77,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#shaders">Shaders</a></li>
               <li><a href="#signed-distance-function-sdfs">Signed distance functions (SDFs)</a></li>
               <li><a href="#spatial-index">Spatial index</a></li>
+              <li><a href="#wave-function-collapse-wcf">Wave Function Collapse (WFC)</a></li>
             </ul>
           </p>
         </details>
@@ -816,6 +818,18 @@ _Articles:_
 
 ---
 
+### Metaballs
+_Related to [marching squares](#marching-squares) (2D) and [marching cubes](#marching-cubes) (3D)_
+
+```
+TODO
+```
+
+_Articles:_
+* [Metaballs](https://en.wikipedia.org/wiki/Metaballs) on Wikipedia
+
+---
+
 <img src="https://answers.unity.com/storage/temp/97016-perlin2.png" width="300" align="right">
 
 ### Noise
@@ -958,15 +972,19 @@ _Articles:_
 
 ---
 
-### Metaballs
-_Related to [marching squares](#marching-squares) (2D) and [marching cubes](#marching-cubes) (3D)_
+<img src="https://camo.githubusercontent.com/dc39c61e02aa67abd0f923628cf241120d14f517/687474703a2f2f692e696d6775722e636f6d2f734e75425653722e676966" width="300" align="right">
+
+### Wave Function Collapse (WFC)
+Method of procedurally generating textures and tilemaps that are similar to a single source image using ideas from quantum mechanics.
 
 ```
-TODO
+TODO - add description of algorithm
 ```
 
 _Articles:_
-* [Metaballs](https://en.wikipedia.org/wiki/Metaballs) on Wikipedia
+* Original [WaveFunctionCollapse Github repo](https://github.com/mxgmn/WaveFunctionCollapse) by Maxim Gumin (mxgmn)
+* [Generating Worlds With Wave Function Collapse](http://www.procjam.com/tutorials/wfc/) by Joseph Parker
+* [Doodle Insights #19: Logic Data Generation (feat. WFC made easy)](https://trasevol.dog/2017/09/01/di19/) by Rémy Devaux (TRASEVOL_DOG)
 
 ## Books and publications
 ### Books
