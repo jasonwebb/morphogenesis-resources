@@ -456,11 +456,25 @@ _Articles:_
 
 ---
 
-### Inverse and forward kinematics
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/5R_robot.gif" width="300" align="right">
 
-```
-TODO
-```
+### Inverse and forward kinematics
+Equations used to calaculate the positions of a series of rigidly-linked segments (called the _kinematic chain_) based on the location of the end effector, usually located at the tip of the last segment. Useful for robotic systems like drawing machines, robot arms, and more.
+
+**Inverse** kinematics calculate the angles of each linked segment given the desired location of the end effector. Will give you the angles of each segment, which can in turn be converted into motor positions for a robot.
+
+**Forward** kinematics calculate the location of the end effector given the angles and lengths of each linked segment. 
+
+_Articles:_
+* [Kinematics](https://en.wikipedia.org/wiki/Kinematics) on Wikipedia
+* [Inverse kinematics](https://en.wikipedia.org/wiki/Inverse_kinematics) on Wikipedia
+* [Forward kinematics](https://en.wikipedia.org/wiki/Forward_kinematics) on Wikipedia
+
+_Videos:_
+* [Coding Challenge #64.1: Forward Kinematics](https://www.youtube.com/watch?v=xXjRlEr7AGk) by Daniel Shiffman
+* [Coding Challenge #64.2: Inverse Kinematics](https://www.youtube.com/watch?v=hbgDqyy8bIw) b Daniel Shiffman
+* [Coding Challenge #64.3: Inverse Kinematics - Fixed Point](https://www.youtube.com/watch?v=RTc6i-7N3ms) by Daniel Shiffman
+* [Coding Challenge #64.4: Inverse Kinematics - Multiple](https://www.youtube.com/watch?v=10st01Z0jxc) by Daniel Shiffman
 
 ---
 
