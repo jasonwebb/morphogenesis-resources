@@ -999,6 +999,8 @@ _Articles:_
 * [Generating Worlds With Wave Function Collapse](http://www.procjam.com/tutorials/wfc/) by Joseph Parker
 * [Doodle Insights #19: Logic Data Generation (feat. WFC made easy)](https://trasevol.dog/2017/09/01/di19/) by Rémy Devaux (TRASEVOL_DOG)
 
+<br>
+
 ## Books and publications
 ### Books
 * [On Growth and Form](https://smile.amazon.com/Growth-Form-Complete-Revised/dp/0486671356/) by D'Arcy Wentworth Thompson
@@ -1011,6 +1013,8 @@ _Articles:_
 
 ### Publications
 * [Zygote Quarterly](https://zqjournal.org/)
+
+<br>
 
 ## Software
 
