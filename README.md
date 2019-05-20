@@ -38,6 +38,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#fibonacci-sequence">Fibonacci sequence</a></li>
               <li><a href="#fourier-series">Fourier series</a></li>
               <li><a href="#fractals">Fractals</a></li>
+              <li><a href="#golden-angle">Golden angle</a></li>
               <li><a href="#golden-ratio">Golden ratio</a></li>
               <li><a href="#inverse-and-forward-kinematics">Inverse and forward kinematics</a></li>
               <li><a href="#laplace-transform">Laplace transform</a></li>
@@ -101,6 +102,7 @@ TODO
 * Rigid and elastic bond models
 
 _Articles:_
+* [Dielectric breakdown model](https://en.wikipedia.org/wiki/Dielectric_breakdown_model) on Wikipedia
 * [Fractal Dimension of Dielectric Breakdown](http://laplace.ucv.cl/Patterns/Referencias/Pietronero-prl52-1033.pdf) (PDF) by L. Niemeyer, L. Pietronero, and H. J. Wiesmann
 
 ---
@@ -445,6 +447,15 @@ _Notable software:_
 
 ---
 
+### Golden angle
+_Related to the [golden ratio](#golden-ratio)._
+
+```
+TODO
+```
+
+---
+
 <img src="https://betterexplained.com/wp-content/uploads/2017/04/golden_ratio_example.png" width="300" align="right">
 
 ### Golden ratio
@@ -555,16 +566,32 @@ _Articles:_
 
 ---
 
-<img src="http://3.bp.blogspot.com/_gP2wXZHi-kE/SMf1_O3V9LI/AAAAAAAAAJg/GPHwq_qJgZo/s400/fathom_phylo2.jpg" width="300" align="right">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Aloe_polyphylla_1.jpg/564px-Aloe_polyphylla_1.jpg" width="300" align="right">
 
 ### Phyllotaxis
+_Related topics include the [golden ratio](#golden-ratio) and the [Fibonacci sequence](#fibonacci-sequence)._
 
-```
-TODO
-```
+Refers to the arrangement (_taxis_) of leaves (_phyllo_) on a plant stem. Also can refer to seed arrangements and succulent geometry.
+
+There are several types of phyllotaxis seen in nature (see list below), but the 
+
+_Types:_
+* Opposite - two leaves arise from the stem at the same level on opposite sides of the stem
+* Alternate - each leaf arises at a different point (node) on the stem
+* [Whorled](https://en.wikipedia.org/wiki/Whorl_(botany)) - arrangement of leaves that radiate from a single point and surround or wrap around the stem
+* Distichous - special case of either opposite or alternate leaf arrangement where the leaves on a stem are arranged in two vertical columns on opposite sides of the stem
+* Decussate - occurs when successsive pairs of leaves arranged in the opposite pattern are 90 degrees apart, as in [Aizoaceae](https://en.wikipedia.org/wiki/Aizoaceae) family
 
 _Articles:_
 * [Phyllotaxis](https://en.wikipedia.org/wiki/Phyllotaxis) on Wikipedia
+* [Chapter 4: Phyllotaxis](http://algorithmicbotany.org/papers/abop/abop-ch4.pdf) from Algorithmic Botany book
+* [Phyllotaxis](http://mathworld.wolfram.com/Phyllotaxis.html) on Wolfram MathWorld
+
+_Code projects:_
+* [ofxPhyllotaxis](https://github.com/edap/ofxPhyllotaxis) by Davide Prati (edap)
+
+_Videos:_
+* [Coding Challenge #30: Phyllotaxis](https://www.youtube.com/watch?v=KWoJgHFYWxY) by Daniel Shiffman
 
 ---
 
