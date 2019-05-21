@@ -573,12 +573,10 @@ _Related topics include the [golden ratio](#golden-ratio) and the [Fibonacci seq
 
 Refers to the arrangement (_taxis_) of leaves (_phyllo_) on a plant stem. Also can refer to seed arrangements and succulent geometry.
 
-There are several types of phyllotaxis seen in nature (see list below), but the 
-
 _Types:_
 * Opposite - two leaves arise from the stem at the same level on opposite sides of the stem
 * Alternate - each leaf arises at a different point (node) on the stem
-* [Whorled](https://en.wikipedia.org/wiki/Whorl_(botany)) - arrangement of leaves that radiate from a single point and surround or wrap around the stem
+* [Whorled](https://en.wikipedia.org/wiki/Whorl_(botany)) - arrangement of leaves that radiate from a single point and surround or wrap around the stem, as seen in the thumbnail for this section.
 * Distichous - special case of either opposite or alternate leaf arrangement where the leaves on a stem are arranged in two vertical columns on opposite sides of the stem
 * Decussate - occurs when successsive pairs of leaves arranged in the opposite pattern are 90 degrees apart, as in [Aizoaceae](https://en.wikipedia.org/wiki/Aizoaceae) family
 
