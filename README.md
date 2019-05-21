@@ -447,12 +447,21 @@ _Notable software:_
 
 ---
 
-### Golden angle
-_Related to the [golden ratio](#golden-ratio)._
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Golden_Angle.svg/479px-Golden_Angle.svg.png" width="300" align="right">
 
-```
-TODO
-```
+### Golden angle
+_Related to the [golden ratio](#golden-ratio) and [phyllotaxis](#phyllotaxis)._
+
+Radial version of the [golden ratio](#golden-ratio). It is the smaller of the two angles created by sectioning the circumference of a circle according to the golden ratio; that is, into two arcs such that the ratio of the length of the smaller arc to the length of the larger arc is the same as the ratio of the length of the larger arc to the full circumference of the circle.
+
+In degrees the angle is approximately `137.5077640500 ...`, or just `137.5` for brevity.
+
+_Articles:_
+* [Golden angle](https://en.wikipedia.org/wiki/Golden_angle) on Wikipedia
+* [The Golden Angle](http://gofiguremath.org/natures-favorite-math/the-golden-ratio/the-golden-angle/) by Go Figure
+
+_Creative projects:_
+* [Golden Angle](http://www.johnedmark.com/phi) sculpture series by John Edmark
 
 ---
 
@@ -569,7 +578,7 @@ _Articles:_
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Aloe_polyphylla_1.jpg/564px-Aloe_polyphylla_1.jpg" width="300" align="right">
 
 ### Phyllotaxis
-_Related topics include the [golden ratio](#golden-ratio) and the [Fibonacci sequence](#fibonacci-sequence)._
+_Related topics include the [golden ratio](#golden-ratio), the [golden angle](#golden-angle), and the [Fibonacci sequence](#fibonacci-sequence)._
 
 Refers to the arrangement (_taxis_) of leaves (_phyllo_) on a plant stem. Also can refer to seed arrangements and succulent geometry.
 
