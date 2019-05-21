@@ -662,6 +662,7 @@ _Equations:_
 _Articles:_
 * [Superellipse](https://en.wikipedia.org/wiki/Superellipse) on Wikipedia
 * [Superellipse](http://mathworld.wolfram.com/Superellipse.html) on Wolfram MathWorld
+* [Supershapes (Superformula)](http://paulbourke.net/geometry/supershape/) by Paul Bourke
 
 _Videos:_
 * [Coding Challenge #23: 2D Supershapes](https://www.youtube.com/watch?v=ksRoh-10lak) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_023_SuperShape2D) with Processing and p5.js code)
@@ -697,21 +698,16 @@ _Equations:_
  </tr>
 </table>
 
-_Parameters:_
-
-| Param | Effect (loosely) |
-|---    |---               |
-| `a`   | |
-| `b`   | |
-| `m1`  | |
-| `m2`  | |
-| `n1`  | |
-| `n2`  | |
-| `n3`  | |
-
 _Articles:_
 * [Superformula](https://en.wikipedia.org/wiki/Superformula) on Wikipedia
 * [Supershapes / Superformula](http://paulbourke.net/geometry/supershape/) by Paul Bourke
+
+_Code projects:_
+* [SuperformulaSVG-for-web](https://github.com/jasonwebb/SuperformulaSVG-for-web) by Jason Webb (Javascript, p5.js)
+* [SuperformulaSVG](https://github.com/jasonwebb/SuperformulaSVG) by Jason Webb (Processing)
+* [Visualize: Superformula](http://formandcode.com/code-examples/visualize-superformula) from FORM+CODE book
+* [glsl-superformula](https://github.com/Softwave/glsl-superformula) by JC Leyba (Software)
+* [supershape.js](https://github.com/ahoiin/supershape.js) by Sebastian Sadowski (ahoiin)
 
 _Videos:_
 * [Coding Challenge #26: 3D Supershapes](https://www.youtube.com/watch?v=akM4wMZIBWg) by Daniel Shiffman ([Processing sketch](https://github.com/CodingTrain/website/blob/master/CodingChallenges/CC_026_SuperShape3D/Processing/CC_026_SuperShape3D/CC_026_SuperShape3D.pde) on Github)
