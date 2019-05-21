@@ -966,10 +966,9 @@ _Articles:_
 ---
 
 ### Shader
+Shaders are programs that are evaluated on the GPU when processing a certain unit of rendering, usually vertices or pixels/fragments; they allow rendering programmers to manipulate their rendering output in any way they see fit.
 
-```
-TODO
-```
+While shaders, as the name implies, were originally conceived to allow different kinds of lighting/shading calculations, today they're used for a variety of things from lighting calculation through stylized rendering to 2D compositing or post-processing.
 
 _Types of shaders:_
 * Vertex
@@ -977,19 +976,37 @@ _Types of shaders:_
 * Compute
 
 _Key terms:_
+* HLSL
 * GLSL
 * GPGPU
+* CUDA
+
+_Articles:_
+* [The Book Of Shaders](https://thebookofshaders.com/)
+
+_Software:_
+* [RenderMonkey](https://gpuopen.com/archive/gamescgi/rendermonkey-toolsuite/)
+* [Bonzomatic](https://github.com/Gargaj/Bonzomatic)
+
+_Videos:_
+* [Shader Coding seminar at Revision 2019](https://www.youtube.com/watch?v=uFFR31t1WMM)
 
 ---
 
 ### Signed distance function (SDFs)
+A signed distance function is a function that returns the distance of a point in space to a mathematically/algorithmically defined surface. This allows algorithms like raymarching to efficiently render complex 3D surfaces in 2D.
 
-```
-TODO
-```
+SDFs are increasingly commonly used in computer art, where defining an SDF that describes a large 3D scene entirely in a single pixel shader allows the code to be ran entirely on the GPU.
 
 _Articles:_
 * [Signed distance function](https://en.wikipedia.org/wiki/Signed_distance_function) on Wikipedia
+* [Distance functions](http://iquilezles.org/www/articles/distfunctions/distfunctions.htm)  (GLSL)
+
+_Notable open-source libraries:_
+* [hg_sdf](http://mercury.sexy/hg_sdf/) (GLSL)
+
+_Videos:_
+* [How to Create Content with Signed Distance Functions by Johann Korndörfer](https://www.youtube.com/watch?v=s8nFqwOho-s)
 
 ---
 
