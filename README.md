@@ -543,13 +543,19 @@ _Videos:_
 <img src="https://www.researchgate.net/profile/Christoph_Kinkeldey/publication/237408245/figure/fig2/AS:299459092205573@1448408019217/Medial-axis-of-a-body-in-2D-Euklidian-space-Wolter-2001.png" width="300" align="right">
 
 ### Medial axis
+The medial axis is sort of like the "skeleton" of a shape. It consists of a set of lines and curves upon which every point is equidistant between at least one closest point on the shape's boundary. In 2D this skeleton can also be thought of as a set of lines/curves whose points are the centers of circles that are tangent to at least two points on the shape's boundary.
 
-```
-TODO
-```
+Has applications in computer vision, pose estimation, 2D/3D character rigging, architecture, BIM (escape route optimization), and more.
+
+_Related terms:_
+* Medial-axis transform - medial axis together with the associated radius function of the maximally inscribed discs. Can be used to reconstruct a shape.
+* [Topological Skeleton](https://en.wikipedia.org/wiki/Topological_skeleton)
+* [Straight skeleton](https://en.wikipedia.org/wiki/Straight_skeleton) - similar to medial, except always is made up of straight line segments whereas medial axis may contain curves.
+* [Scale Axis Transform](http://www.balintmiklos.com/scale-axis/theory_socg_2009.html) - generalization of medial axis transform
 
 _Articles:_
 * [Medial axis](https://en.wikipedia.org/wiki/Medial_axis) on Wikipedia
+* ["A transformation for extracting new descriptors of shape"](http://pageperso.lif.univ-mrs.fr/~edouard.thiel/rech/1967-blum.pdf) by Henry Blum
 
 ---
 
