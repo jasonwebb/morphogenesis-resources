@@ -976,10 +976,10 @@ _Articles:_
 
 ---
 
-### Shader
-Shaders are programs that are evaluated on the GPU when processing a certain unit of rendering, usually vertices or pixels/fragments; they allow rendering programmers to manipulate their rendering output in any way they see fit.
+### Shaders
+Shaders are programs that are run on the GPU when processing a certain unit of rendering, usually vertices or pixels/fragments; they allow rendering programmers to manipulate their rendering output in any way they see fit.
 
-While shaders, as the name implies, were originally conceived to allow different kinds of lighting/shading calculations, today they're used for a variety of things from lighting calculation through stylized rendering to 2D compositing or post-processing.
+While shaders, as the name implies, were originally conceived to allow different kinds of lighting/shading calculations, today they're used for a variety of things from lighting calculation through stylized rendering to 2D compositing or post-processing, and even complex geometry manipulations and particle effects.
 
 _Types of shaders:_
 * Vertex
@@ -987,17 +987,25 @@ _Types of shaders:_
 * Compute
 
 _Key terms:_
-* HLSL
-* GLSL
-* GPGPU
-* CUDA
+* [HLSL (High-Level Shading Language)](https://en.wikipedia.org/wiki/High-Level_Shading_Language) - shading language used by DirectX
+* [GLSL (OpenGL Shading Language)](https://en.wikipedia.org/wiki/OpenGL_Shading_Language) - shading language used by OpenGL
+* [GPGPU (General-purpose computing on GPUs)](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units)
+* [CUDA](https://en.wikipedia.org/wiki/CUDA) - 
+* [Cg](https://en.wikipedia.org/wiki/Cg_(programming_language) - shading language developed by Nvidia in close collaboration with Microsoft
+* [Shading language](https://en.wikipedia.org/wiki/Shading_language)
 
 _Articles:_
-* [The Book Of Shaders](https://thebookofshaders.com/)
+* [The Book of Shaders](https://thebookofshaders.com/) by Patricio Gonzalez Vivo and Jen Lowe
+* [Shaders](https://learnopengl.com/Getting-started/Shaders) by Learn OpenGL
+* [GLSL Shaders](https://developer.mozilla.org/en-US/docs/Games/Techniques/3D_on_the_web/GLSL_Shaders) on MDN web docs
+* [Shaders](https://processing.org/tutorials/pshader/) (Processing) tutorial by Andres Colubi
+* [Introducing Shaders](https://openframeworks.cc/ofBook/chapters/shaders.html) (openFrameworks) by Lucasz Karluk, Joshua Noble, Jordi Puig
+* [Shader modules](https://vulkan-tutorial.com/Drawing_a_triangle/Graphics_pipeline_basics/Shader_modules) (Vulkan)
 
 _Software:_
 * [RenderMonkey](https://gpuopen.com/archive/gamescgi/rendermonkey-toolsuite/)
 * [Bonzomatic](https://github.com/Gargaj/Bonzomatic)
+* [Shadertoy](https://www.shadertoy.com/)
 
 _Videos:_
 * [Shader Coding seminar at Revision 2019](https://www.youtube.com/watch?v=uFFR31t1WMM)
