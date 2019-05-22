@@ -990,8 +990,8 @@ _Key terms:_
 * [HLSL (High-Level Shading Language)](https://en.wikipedia.org/wiki/High-Level_Shading_Language) - shading language used by DirectX
 * [GLSL (OpenGL Shading Language)](https://en.wikipedia.org/wiki/OpenGL_Shading_Language) - shading language used by OpenGL
 * [GPGPU (General-purpose computing on GPUs)](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units)
-* [CUDA](https://en.wikipedia.org/wiki/CUDA) - 
-* [Cg](https://en.wikipedia.org/wiki/Cg_(programming_language) - shading language developed by Nvidia in close collaboration with Microsoft
+* [CUDA](https://en.wikipedia.org/wiki/CUDA) - parallel computing API that makes it easier to use GPGPU for complicated tasks
+* [Cg](https://en.wikipedia.org/wiki/Cg_(programming_language)) - shading language developed by Nvidia in close collaboration with Microsoft
 * [Shading language](https://en.wikipedia.org/wiki/Shading_language)
 
 _Articles:_
