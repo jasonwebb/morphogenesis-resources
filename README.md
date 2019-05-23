@@ -36,6 +36,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#cymatics">Cymatics</a></li>
               <li><a href="#delaunay-triangulation-and-voronoi-diagrams">Delaunay triangulation and Voronoi diagrams</a></li>
               <li><a href="#fibonacci-sequence">Fibonacci sequence</a></li>
+              <li><a href="#fluid-simulation">Fluid simulation</a></li>
               <li><a href="#fourier-series">Fourier series</a></li>
               <li><a href="#fractals">Fractals</a></li>
               <li><a href="#golden-angle">Golden angle</a></li>
@@ -43,7 +44,6 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#inverse-and-forward-kinematics">Inverse and forward kinematics</a></li>
               <li><a href="#laplace-transform">Laplace transform</a></li>
               <li><a href="#lissajous-curves">Lissajous curves</a></li>
-              <li><a href="#navier-stokes-equations">Navier-Stokes equations</a></li>
               <li><a href="#packing-problems">Packing problems</a></li>
               <li><a href="#phyllotaxis">Phyllotaxis</a></li>
               <li><a href="#strange-attractors">Strange attractors</a></li>
@@ -387,6 +387,31 @@ _Articles:_
 
 ---
 
+### Fluid simulation
+
+```
+TODO
+```
+
+_Related terms:_
+* [Reynolds number](https://en.wikipedia.org/wiki/Reynolds_number) (Re) - dimensionless quantity used to predict fluid flow patterns. [Laminar](https://en.wikipedia.org/wiki/Laminar_flow) (smooth) flow occurs at low Re, while [turbulent](https://en.wikipedia.org/wiki/Turbulence) flow occurs at high Re.
+* [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) on Wikipedia
+
+_Articles:_
+* [Computational fluid dynamics](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) on Wikipedia
+
+_Code projects:_
+* [Fluid Simulation for Dummies](https://mikeash.com/pyblog/fluid-simulation-for-dummies.html) by Mike Ash
+* [Lily Pad](https://github.com/weymouth/lily-pad) by Dr. Gabriel David Weymouth
+* [MSAFluid](https://www.memo.tv/msafluid/) by Memo Akten
+* [Real-Time Fluid Dynamics for Games](http://www.dgp.toronto.edu/people/stam/reality/Research/pdf/GDC03.pdf) (PDF) by Jos Stam
+
+_Videos:_
+* [Coding Challenge #132: Fluid Simulation](https://www.youtube.com/watch?v=alhpH6ECFvQ) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_132_FluidSimulation) with source code for p5.js and Processing)
+* [Why Laminar Flow is AWESOME - Smarter Every Day 208](https://www.youtube.com/watch?v=y7Hyc3MRKno&feature=youtu.be) by Smarter Every Day
+
+---
+
 <img src="https://i.stack.imgur.com/cfnQu.gif" width="300" align="right">
 
 ### Fourier series
@@ -556,14 +581,6 @@ _Related terms:_
 _Articles:_
 * [Medial axis](https://en.wikipedia.org/wiki/Medial_axis) on Wikipedia
 * ["A transformation for extracting new descriptors of shape"](http://pageperso.lif.univ-mrs.fr/~edouard.thiel/rech/1967-blum.pdf) by Henry Blum
-
----
-
-### Navier-Stokes equations
-Mathematical equation that describe the motion of viscous fluids.
-
-_Articles:_
-* [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) on Wikipedia
 
 ---
 
