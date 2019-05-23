@@ -387,24 +387,28 @@ _Articles:_
 
 ---
 
+<img src="https://media0.giphy.com/media/ocBO7ASoiQCXu/giphy.gif?cid=790b76115ce71d6b316b69464def3cf0&rid=giphy.gif" width="300" align="right">
+
 ### Fluid simulation
 
-```
-TODO
-```
+Simulates the high complex and dynamic nature of flow of and within fluid volumes using computationally-efficient implementations of the [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations). Can be thought of a 2D or 3D flow field that is constantly changing based on the velocity, viscocity, and density of the fluid at each point in space and its surrounding area. This flow field is made visible through the use of digital "dyes" (colored blobs) that get distributed, diffused, sheared, and blended through the system by the flow forces.
+
+To appear realistic it is necessary for these simulations to have very high fidelity, which introduces significant computational challenges, especially if one wants to run the simulation in real-time. This all but requires the use of GPU technology (see [shaders](#shaders)), making this is a difficult topic to explore independently as a hobbyist. Many VFX, CAD, and game development tools like Blender, Houdini, Unity and Unreal include robust fluid simulation functionality built in, often accessible via APIs and visual UIs.
 
 _Related terms:_
 * [Reynolds number](https://en.wikipedia.org/wiki/Reynolds_number) (Re) - dimensionless quantity used to predict fluid flow patterns. [Laminar](https://en.wikipedia.org/wiki/Laminar_flow) (smooth) flow occurs at low Re, while [turbulent](https://en.wikipedia.org/wiki/Turbulence) flow occurs at high Re.
 * [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) on Wikipedia
+* [Lattice Boltzmann methods](https://en.wikipedia.org/wiki/Lattice_Boltzmann_methods) (LBM) on Wikipedia
 
 _Articles:_
-* [Computational fluid dynamics](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) on Wikipedia
+* [Computational fluid dynamics](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) (CFD) on Wikipedia
+* [Fluid Simulation for Dummies](https://mikeash.com/pyblog/fluid-simulation-for-dummies.html) by Mike Ash
+* [Real-Time Fluid Dynamics for Games](http://www.dgp.toronto.edu/people/stam/reality/Research/pdf/GDC03.pdf) (PDF) by Jos Stam
+* [Chapter 38. Fast Fluid Dynamics Simulation on the GPU](http://developer.download.nvidia.com/books/HTML/gpugems/gpugems_ch38.html) from GPU Gems book
 
 _Code projects:_
-* [Fluid Simulation for Dummies](https://mikeash.com/pyblog/fluid-simulation-for-dummies.html) by Mike Ash
 * [Lily Pad](https://github.com/weymouth/lily-pad) by Dr. Gabriel David Weymouth
 * [MSAFluid](https://www.memo.tv/msafluid/) by Memo Akten
-* [Real-Time Fluid Dynamics for Games](http://www.dgp.toronto.edu/people/stam/reality/Research/pdf/GDC03.pdf) (PDF) by Jos Stam
 
 _Videos:_
 * [Coding Challenge #132: Fluid Simulation](https://www.youtube.com/watch?v=alhpH6ECFvQ) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_132_FluidSimulation) with source code for p5.js and Processing)
@@ -768,6 +772,15 @@ TODO
 ```
 TODO
 ```
+
+### Schlieren imaging
+
+```
+TODO
+```
+
+_Articles:_
+* [Schlieren imaging](https://en.wikipedia.org/wiki/Schlieren_imaging) on Wikipedia
 
 <br>
 
@@ -1190,3 +1203,4 @@ _Articles:_
 * Turing patterns
 * Viscous fingering, a.k.a. Saffman–Taylor instability
 * Percolation theory
+* Flow field (math or code concept?)
