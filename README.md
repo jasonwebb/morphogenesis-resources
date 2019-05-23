@@ -387,7 +387,7 @@ _Articles:_
 
 ---
 
-<img src="https://media0.giphy.com/media/ocBO7ASoiQCXu/giphy.gif?cid=790b76115ce71d6b316b69464def3cf0&rid=giphy.gif" width="300" align="right">
+<img src="https://i.imgur.com/VfBlnB5.gif" width="300" align="right">
 
 ### Fluid simulation
 
