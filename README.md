@@ -56,7 +56,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           <summary>Lab experiments</summary>
           <p>
             <ul>
-              <li><a href="#belousov-zhabtinsky-reaction">Belousov–Zhabotinsky reaction</a></li>
+              <li><a href="#belousovzhabotinsky-reaction">Belousov–Zhabotinsky reaction</a></li>
               <li><a href="#chladni-plate">Chladni plate</a></li>
               <li><a href="#hele-shaw-cell-experiment">Hele-Shaw cell experiment</a></li>
               <li><a href="#schlieren-imaging">Schlieren imaging</a></li>
