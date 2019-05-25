@@ -69,7 +69,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           <summary>Useful code patterns and techniques</summary>
           <p>
             <ul>
-              <li><a href="#agentbased-modelling">Agent-based modelling</a></li>
+              <li><a href="#agent-based-modelling">Agent-based modelling</a></li>
               <li><a href="#collision-detection">Collision detection</a></li>
               <li><a href="#dithering">Dithering</a></li>
               <li><a href="#marching-squares">Marching squares</a></li>
