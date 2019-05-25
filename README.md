@@ -48,6 +48,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#minimal-surface">Minimal surface</a></li>
               <li><a href="#packing-problems">Packing problems</a></li>
               <li><a href="#phyllotaxis">Phyllotaxis</a></li>
+              <li><a href="#saffman-taylor-instability">Saffman–Taylor instability</a></li>
               <li><a href="#strange-attractors">Strange attractors</a></li>
               <li><a href="#superellipse">Superellipse</a></li>
               <li><a href="#superformula">Superformula</a></li>
@@ -641,6 +642,18 @@ _Code projects:_
 
 _Videos:_
 * [Coding Challenge #30: Phyllotaxis](https://www.youtube.com/watch?v=KWoJgHFYWxY) by Daniel Shiffman
+
+---
+
+### Saffman–Taylor instability
+Also known as viscous fingering.
+
+```
+TODO
+```
+
+_Articless:_
+* [Saffman–Taylor instability](https://en.wikipedia.org/wiki/Saffman%E2%80%93Taylor_instability) on Wikipedia
 
 ---
 
@@ -1269,7 +1282,6 @@ _Articles:_
   * [OPENRNDR](https://openrndr.org/)
 
 ## Uncategorized (TODO)
-* Viscous fingering, a.k.a. Saffman–Taylor instability
 * Percolation theory
 * Flow field (math or code concept?)
 * Soap experiments (see Frei Otto)
