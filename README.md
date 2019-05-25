@@ -44,6 +44,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#inverse-and-forward-kinematics">Inverse and forward kinematics</a></li>
               <li><a href="#laplace-transform">Laplace transform</a></li>
               <li><a href="#lissajous-curves">Lissajous curves</a></li>
+              <li><a href="#medial-axis">Medial axis</a></li>
               <li><a href="#minimal-surface">Minimal surface</a></li>
               <li><a href="#packing-problems">Packing problems</a></li>
               <li><a href="#phyllotaxis">Phyllotaxis</a></li>
