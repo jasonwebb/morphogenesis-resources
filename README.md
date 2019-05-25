@@ -946,8 +946,6 @@ _Code projects:_
 TODO
 ```
 
----
-
 _Articles:_
 * [Vector field](https://en.wikipedia.org/wiki/Vector_field) on Wikipedia
 * [Flow Fields, Part I](https://medium.com/@bit101/flow-fields-part-i-3ebebc688fd8) by Keith Peters
