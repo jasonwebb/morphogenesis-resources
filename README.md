@@ -1205,3 +1205,6 @@ _Articles:_
 * Viscous fingering, a.k.a. Saffman–Taylor instability
 * Percolation theory
 * Flow field (math or code concept?)
+* [Minimal surface](https://en.wikipedia.org/wiki/Minimal_surface)
+* Soap experiments (see Frei Otto)
+* [Agent-based modelling](https://en.wikipedia.org/wiki/Agent-based_model), Boids
