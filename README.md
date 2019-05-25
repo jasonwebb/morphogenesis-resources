@@ -358,7 +358,7 @@ _Articles:_
 ### Fibonacci sequence
 _Related to [Golden ratio](#golden-ratio)_
 
-Sequence of numbers in which each number is the sum of it's two preceding numbers. [Binet's formula](https://en.wikipedia.org/wiki/Fibonacci_number#Binet's_formula) shows that the ratio of two consecutive numbers tends towards the golden ratio as the sequence progresses. Fibonacci numbers appear unexpectedly often in biology, having been observed in branching of trees, the arrangement of leaves on a stem, the fruit sprouts of a pineapple, the flowering of an artichoke, an uncurling fern and the arrangement of a pine cone's bracts.
+Sequence of numbers in which each number is the sum of it's two preceding numbers. [Binet's formula](https://en.wikipedia.org/wiki/Fibonacci_number#Binet's_formula) shows that the ratio of two consecutive numbers tends towards the [golden ratio](#golden-ratio) as the sequence progresses. Fibonacci numbers appear unexpectedly often in biology, having been observed in branching of trees, the arrangement of leaves on a stem, the fruit sprouts of a pineapple, the flowering of an artichoke, an uncurling fern and the arrangement of a pine cone's bracts.
 
 
 <table>
@@ -1093,20 +1093,27 @@ _Videos:_
 
 ---
 
-### Spatial index
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Point_quadtree.svg" width="300" align="right">
 
-```
-TODO
-```
+### Spatial index
+Data structure (most commonly a binary tree) that enables fast and efficient storage, manipulation, and querying of large amounts of spatial data (points in space). Commonly used by [particle systems](#particle-system).
 
 _Common types:_
-* Quadtree
-* Octree
-* kd-tree
-* R tree
+* [Quadtree](https://en.wikipedia.org/wiki/Quadtree) - each node has exactly four children
+* [Octree](https://en.wikipedia.org/wiki/Octree) - each node has exactly eight children
+* [k-d tree](https://en.wikipedia.org/wiki/K-d_tree)
+* [R-tree](https://en.wikipedia.org/wiki/R-tree)
+
+_Related topics:_
+* [k-nearest neighbhor (knn) search](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
+* [Spatial database](https://en.wikipedia.org/wiki/Spatial_database) on Wikipedia
+* [Binary space partitioning](https://en.wikipedia.org/wiki/Binary_space_partitioning) on Wikipedia
 
 _Articles:_
 * [Spatial index](https://en.wikipedia.org/wiki/Spatial_database#Spatial_index) section on Wikipedia article for Spatial database
+
+_Videos:_
+* Coding Challenge #98: [Part 1](https://www.youtube.com/watch?v=OJxEcs0w_kE), [Part 2](https://www.youtube.com/watch?v=QQx_NmCIuCY), [Part 3](https://www.youtube.com/watch?v=z0YFFg_nBjw) by Daniel Shiffman
 
 ---
 
