@@ -44,6 +44,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#inverse-and-forward-kinematics">Inverse and forward kinematics</a></li>
               <li><a href="#laplace-transform">Laplace transform</a></li>
               <li><a href="#lissajous-curves">Lissajous curves</a></li>
+              <li><a href="#minimal-surface">Minimal surface</a></li>
               <li><a href="#packing-problems">Packing problems</a></li>
               <li><a href="#phyllotaxis">Phyllotaxis</a></li>
               <li><a href="#strange-attractors">Strange attractors</a></li>
@@ -587,6 +588,17 @@ _Related terms:_
 _Articles:_
 * [Medial axis](https://en.wikipedia.org/wiki/Medial_axis) on Wikipedia
 * ["A transformation for extracting new descriptors of shape"](http://pageperso.lif.univ-mrs.fr/~edouard.thiel/rech/1967-blum.pdf) by Henry Blum
+
+---
+
+### Minimal surface
+
+```
+TODO
+```
+
+_Articles:_
+* [Minimal surface](https://en.wikipedia.org/wiki/Minimal_surface)
 
 ---
 
@@ -1259,5 +1271,4 @@ _Articles:_
 * Viscous fingering, a.k.a. Saffman–Taylor instability
 * Percolation theory
 * Flow field (math or code concept?)
-* [Minimal surface](https://en.wikipedia.org/wiki/Minimal_surface)
 * Soap experiments (see Frei Otto)
