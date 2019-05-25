@@ -67,6 +67,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           <summary>Useful code patterns and techniques</summary>
           <p>
             <ul>
+              <li><a href="#agentbased-modelling">Agent-based modelling</a></li>
               <li><a href="#collision-detection">Collision detection</a></li>
               <li><a href="#dithering">Dithering</a></li>
               <li><a href="#marching-squares">Marching squares</a></li>
@@ -820,6 +821,20 @@ _Articles:_
 
 ## Useful code patterns and techniques
 
+### Agent-based modelling
+
+```
+TODO
+```
+
+_Notables systems:_
+* [Boids](https://en.wikipedia.org/wiki/Boids)
+
+_Articles:_
+* [Agent-based model](https://en.wikipedia.org/wiki/Agent-based_model) on Wikipedia
+
+---
+
 <img src="https://cdn-images-1.medium.com/max/800/1*CHhG6Ea1664UrKwaJhiDTQ.png" width="300" align="right">
 
 ### Collision detection
@@ -1241,10 +1256,8 @@ _Articles:_
   * [OPENRNDR](https://openrndr.org/)
 
 ## Uncategorized (TODO)
-* Turing patterns
 * Viscous fingering, a.k.a. Saffman–Taylor instability
 * Percolation theory
 * Flow field (math or code concept?)
 * [Minimal surface](https://en.wikipedia.org/wiki/Minimal_surface)
 * Soap experiments (see Frei Otto)
-* [Agent-based modelling](https://en.wikipedia.org/wiki/Agent-based_model), Boids
