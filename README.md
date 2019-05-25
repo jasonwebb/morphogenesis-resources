@@ -75,6 +75,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#agent-based-modelling">Agent-based modelling</a></li>
               <li><a href="#collision-detection">Collision detection</a></li>
               <li><a href="#dithering">Dithering</a></li>
+              <li><a href="#flow-field">Flow field</a></li>
               <li><a href="#marching-squares">Marching squares</a></li>
               <li><a href="#marching-cubes">Marching cubes</a></li>
               <li><a href="#metaballs">Metaballs</a></li>
@@ -939,6 +940,24 @@ _Code projects:_
 
 ---
 
+### Flow field
+
+```
+TODO
+```
+
+---
+
+_Articles:_
+* [Vector field](https://en.wikipedia.org/wiki/Vector_field) on Wikipedia
+* [Flow Fields, Part I](https://medium.com/@bit101/flow-fields-part-i-3ebebc688fd8) by Keith Peters
+* [Flow Fields, Part II](https://medium.com/@bit101/flow-fields-part-ii-f3c24c1b777d) by Keith Peters
+
+_Videos:_
+* [Coding Challenge #24: Perlin Noise Flow Field](https://www.youtube.com/watch?v=BjoM9oKOAKY) by Daniel Shiffman
+
+---
+
 <img src="http://www.bushwalking101.org/wp-content/uploads/2016/09/elevation.png" width="300" align="right">
 
 ### Marching squares
@@ -1295,5 +1314,4 @@ _Articles:_
   * [OPENRNDR](https://openrndr.org/)
 
 ## Uncategorized (TODO)
-* Flow field (math or code concept?)
 * Soap experiments (see Frei Otto)
