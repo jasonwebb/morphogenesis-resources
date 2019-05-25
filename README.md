@@ -660,6 +660,8 @@ _Videos:_
 ---
 
 ### Saffman–Taylor instability
+_Related to the [Hele-Shaw cell](#hele-shaw-cell-experiment) experiment._
+
 Also known as viscous fingering.
 
 ```
@@ -828,6 +830,7 @@ TODO
 <img src="http://n-e-r-v-o-u-s.com/blog/wp-content/uploads/2011/04/5597278928_fed4566d5b_b.jpg" width="300" align="right" alt="Hele-Shaw cell experiment by Nervous System">
 
 ### Hele-Shaw cell experiment
+_Related to [Saffman-Taylor instability](#saffmantaylor-instability)._
 
 ```
 TODO
