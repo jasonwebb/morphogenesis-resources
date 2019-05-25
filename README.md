@@ -754,11 +754,25 @@ _Notable software:_
 
 ## Lab experiments
 
+<img src="https://live.staticflickr.com/3626/3572095252_a43ca95002_b.jpg" width="300" align="right">
+
 ### Belousov–Zhabotinsky reaction
 
 ```
 TODO
 ```
+
+_Articles:_
+* [Belousov–Zhabotinsky reaction](https://en.wikipedia.org/wiki/Belousov%E2%80%93Zhabotinsky_reaction) on Wikipedia
+* [Belousov-Zhabotinsky reaction](http://www.scholarpedia.org/article/Belousov-Zhabotinsky_reaction) on Scholarpedia
+
+_Code projects:_
+* [Simulating the Belousov-Zhabotinsky reaction](https://scipython.com/blog/simulating-the-belousov-zhabotinsky-reaction/) (Python) by Christian Hill
+
+_Videos:_
+* [Belousov-Zhabotinsky Reaction](https://www.youtube.com/watch?v=IBa4kgXI4Cg) by nater06
+
+---
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Quadratic_Chladni_plate.JPG/760px-Quadratic_Chladni_plate.JPG" width="300" align="right">
 
@@ -768,11 +782,30 @@ TODO
 TODO
 ```
 
+---
+
+<img src="http://n-e-r-v-o-u-s.com/blog/wp-content/uploads/2011/04/5597278928_fed4566d5b_b.jpg" width="300" align="right" alt="Hele-Shaw cell experiment by Nervous System">
+
 ### Hele-Shaw cell experiment
 
 ```
 TODO
 ```
+
+_Articles:_
+* [Hele-Shaw flow](https://en.wikipedia.org/wiki/Hele-Shaw_flow) on Wikipedia
+
+_Videos:_
+* [Hele-Shaw cell experiments](https://vimeo.com/22212386) by Nervous System
+* [Hele Shaw Cell](https://www.youtube.com/watch?v=yys3q_XBRI4) using ferrofluid and a magnet by manf1234
+* [Viscous Fingering in Multiport Hele Shaw Cell for Controlled Shaping of Fluids](https://www.youtube.com/watch?v=wegYlxGXhW8) by Tanveer ul Islam and Prasanna S. Gandhi
+
+_Images:_
+* [Schlieren Imaging of Viscous Fingering and Buoyancy Driven Convection](https://art-csep.cnsi.ucsb.edu/gallery/schlieren-imaging-viscous-fingering-and-buoyancy-driven-convection) by Simone Stewart
+
+---
+
+<img src="https://66.media.tumblr.com/5870353e177a43d3c6499cfbd952acb2/tumblr_nom1mwy8zg1qabnxjo1_1280.gif" width="300" align="right">
 
 ### Schlieren imaging
 
