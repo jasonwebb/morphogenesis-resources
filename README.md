@@ -48,7 +48,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#minimal-surface">Minimal surface</a></li>
               <li><a href="#packing-problems">Packing problems</a></li>
               <li><a href="#phyllotaxis">Phyllotaxis</a></li>
-              <li><a href="#saffman-taylor-instability">Saffman–Taylor instability</a></li>
+              <li><a href="#saffmantaylor-instability">Saffman–Taylor instability</a></li>
               <li><a href="#spherical-harmonics">Spherical harmonics</a></li>
               <li><a href="#strange-attractors">Strange attractors</a></li>
               <li><a href="#superellipse">Superellipse</a></li>
