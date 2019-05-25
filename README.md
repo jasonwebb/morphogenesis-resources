@@ -47,6 +47,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#medial-axis">Medial axis</a></li>
               <li><a href="#minimal-surface">Minimal surface</a></li>
               <li><a href="#packing-problems">Packing problems</a></li>
+              <li><a href="#percolation-theory">Percolation theory</a></li>
               <li><a href="#phyllotaxis">Phyllotaxis</a></li>
               <li><a href="#saffmantaylor-instability">Saffman–Taylor instability</a></li>
               <li><a href="#spherical-harmonics">Spherical harmonics</a></li>
@@ -616,6 +617,17 @@ TODO
 _Articles:_
 * [Packing problems](https://en.wikipedia.org/wiki/Packing_problems) on Wikipedia
 * [Random space filling of the plane](http://paulbourke.net/fractals/randomtile/) by Paul Bourke
+
+---
+
+### Percolation theory
+
+```
+TODO
+```
+
+_Articles:_
+* [Percolation theory](https://en.wikipedia.org/wiki/Percolation_theory) on Wikipedia
 
 ---
 
@@ -1283,6 +1295,5 @@ _Articles:_
   * [OPENRNDR](https://openrndr.org/)
 
 ## Uncategorized (TODO)
-* Percolation theory
 * Flow field (math or code concept?)
 * Soap experiments (see Frei Otto)
