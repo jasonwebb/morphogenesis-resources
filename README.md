@@ -1240,7 +1240,7 @@ _Articles:_
       <td valign="top">
         <ul>
           <li>Free with watermarked renders for non-commercial users (Apprentice)</li>
-          <li>$269 for no watermarks for commercial <$100k annual profit (Indie)</li>
+          <li>$269/yr for no watermarks for commercial <$100k annual profit (Indie)</li>
           <li>Thousands for commercial users, with complex pricing model</li>
         </ul>
       </td>
@@ -1270,7 +1270,8 @@ _Articles:_
     <tr>
       <td valign="top"><a href="https://unity.com/" target="_blank">Unity</a></td>
       <td valign="top">
-      Full-featured game engine with tools for interactivity, physics, lighting, level/character design, and more. Direct competitor of Unreal, with a reputation for being more focused on "user friendliness" and less on hyper-realism, though the gap is shrinking rapidly.<br><br>
+      Full-featured game engine with tools for interactivity, physics, lighting, level/character design, and more.<br><br>
+      Direct competitor of Unreal, with a reputation for being more focused on "user friendliness" and less on hyper-realism, though the gap is shrinking rapidly.<br><br>
         <details>
           <summary>Notable features</summary>
           <p>
@@ -1292,7 +1293,8 @@ _Articles:_
     </tr>
     <tr>
       <td valign="top"><a href="https://www.unrealengine.com/en-US/)" target="_blank">Unreal</a></td>
-      <td valign="top">Full-featured game engine with very similar feature set to Unity (it's direct competitor). Has reputation for being more focused on hyper-realism, and thus is used more by high-end games studios. [?]</td>
+      <td valign="top">Full-featured game engine with very similar feature set to Unity (it's direct competitor).<br><br>
+      Has reputation for being more focused on hyper-realism, and thus is used more by high-end games studios. [?]</td>
       <td valign="top">Free with <a href="https://www.unrealengine.com/en-US/faq" target="_blank">royalty on commercial products</a></td>
     </tr>
     <tr>
@@ -1309,7 +1311,7 @@ _Articles:_
 </table>
 
 ### Languages and frameworks
-* Shaders (GLSL / GLslang / OpenGL Shader Language)
+* [Shaders](#shaders)
   * [Shadertoy](https://www.shadertoy.com/)
 * C++
   * [boost](https://www.boost.org/)
