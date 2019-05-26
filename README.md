@@ -1247,17 +1247,7 @@ _Articles:_
     </tr>
     <tr>
       <td valign="top"><a href="https://www.rhino3d.com/" target="_blank">Rhino</a></td>
-      <td valign="top">NURBS-based CAD program popular with architects and designers.</td>
-      <td valign="top">
-        <ul>
-          <li>Rhino 6 for Win - $995</li>
-          <li>Rhino 5 for Mac - $695</li>
-          <li>$195 for students (both platforms)</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3">
+      <td valign="top">NURBS-based CAD program popular with architects and industrial designers. Strong ecosystem of advanced computational design plugins built by highly skilled community. Less focus on rendering, animation, and interactivity; more for form-finding with fabrication in mind.<br><br>
         <details>
           <summary>List of useful Rhino plugins</summary>
           <p>
@@ -1269,26 +1259,51 @@ _Articles:_
           </p>
         </details>
       </td>
+      <td valign="top">
+        <ul>
+          <li>Rhino 6 for Win - $995</li>
+          <li>Rhino 5 for Mac - $695</li>
+          <li>$195 for students (both platforms)</li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td><a href="http://structuresynth.sourceforge.net/" target="_blank">Structure Synth</a></td>
-      <td>Application for generating surprising and complex fractal 3D structures using a design grammar.</td>
-      <td>Free</td>
+      <td valign="top"><a href="https://unity.com/" target="_blank">Unity</a></td>
+      <td valign="top">
+      Full-featured game engine with tools for interactivity, physics, lighting, level/character design, and more. Direct competitor of Unreal, with a reputation for being more focused on "user friendliness" and less on hyper-realism, though the gap is shrinking rapidly.<br><br>
+        <details>
+          <summary>Notable features</summary>
+          <p>
+            <ul>
+              <li><a href="https://unity.com/shader-graph" target="_blank">Shader Graph</a> visual node-based editor for shaders</li>
+              <li><a href="https://unity.com/visual-effect-graph" target="_blank">Visual Effect Graph</a> for particles</li>
+              <li><a href="https://docs.unity3d.com/Packages/com.unity.render-pipelines.high-definition@6.7/manual/index.html" target="_blank">High Definition Rendering Pipeline</a> (HDRP)</li>
+            </ul>
+          </p>
+        </details>
+      </td>
+      <td valign="top">
+        <ul>
+          <li><a href="https://store.unity.com/products/unity-personal" target="_blank">Personal</a> - free for hobbyists</li>
+          <li><a href="https://store.unity.com/products/unity-plus" target="_blank">Plus</a> - $35/mo or ~$25/mo for prepaid year</li>
+          <li><a href="https://store.unity.com/products/unity-pro" target="_blank">Pro</a> - $125/mo</li>
+        </ul>
+      </td>
     </tr>
     <tr>
-      <td><a href="https://www.derivative.ca/" target="_blank">TouchDesigner</a></td>
-      <td></td>
-      <td></td>
+      <td valign="top"><a href="https://www.unrealengine.com/en-US/)" target="_blank">Unreal</a></td>
+      <td valign="top">Full-featured game engine with very similar feature set to Unity (it's direct competitor). Has reputation for being more focused on hyper-realism, and thus is used more by high-end games studios. [?]</td>
+      <td valign="top">Free with <a href="https://www.unrealengine.com/en-US/faq" target="_blank">royalty on commercial products</a></td>
     </tr>
     <tr>
-      <td><a href="https://unity.com/" target="_blank">Unity</a></td>
-      <td></td>
-      <td>Free for hobbyists</td>
+      <td valign="top"><a href="http://structuresynth.sourceforge.net/" target="_blank">Structure Synth</a></td>
+      <td valign="top">Application for generating surprising and complex fractal 3D structures using a design grammar.</td>
+      <td valign="top">Free</td>
     </tr>
     <tr>
-      <td><a href="https://www.unrealengine.com/en-US/)" target="_blank">Unreal</a></td>
-      <td></td>
-      <td>Free with <a href="https://www.unrealengine.com/en-US/faq" target="_blank">royalty on commercial products</a></td>
+      <td valign="top"><a href="https://www.derivative.ca/" target="_blank">TouchDesigner</a></td>
+      <td valign="top"></td>
+      <td valign="top"></td>
     </tr>
   </tbody>
 </table>
