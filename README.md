@@ -1236,7 +1236,7 @@ _Articles:_
   <tbody>
     <tr>
       <td valign="top"><a href="https://www.sidefx.com/products/houdini/" target="_blank">Houdini</a></td>
-      <td valign="top">Industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms.</td>
+      <td valign="top">Industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms. Allows for scripting with <a href="https://www.sidefx.com/docs/houdini/hom/index.html" target="_blank">Python</a> and <a href="https://www.sidefx.com/docs/houdini/vex/index.html" target="_blank">VEX</a> (proprietary language).</td>
       <td valign="top">
         <ul>
           <li>Free with watermarked renders for non-commercial users (Apprentice)</li>
@@ -1247,7 +1247,7 @@ _Articles:_
     </tr>
     <tr>
       <td valign="top"><a href="https://www.rhino3d.com/" target="_blank">Rhino</a></td>
-      <td valign="top">NURBS-based CAD program popular with architects and industrial designers. Strong ecosystem of advanced computational design plugins built by highly skilled community. Less focus on rendering, animation, and interactivity; more for form-finding with fabrication in mind.<br><br>
+      <td valign="top">NURBS-based CAD program popular with architects and industrial designers. Strong ecosystem of advanced computational design plugins built by highly skilled community. Less focus on rendering, animation, and interactivity; more for form-finding with fabrication in mind. Allows for scripting with <a href="https://developer.rhino3d.com/guides/#rhinopython" target="_blank">Python</a>, <a href="https://developer.rhino3d.com/guides/#rhinoscript" target="_blank">RhinoScript</a>, and <a href="https://developer.rhino3d.com/guides/" target="_blank">more</a>.<br><br>
         <details>
           <summary>List of useful Rhino plugins</summary>
           <p>
@@ -1270,7 +1270,7 @@ _Articles:_
     <tr>
       <td valign="top"><a href="https://unity.com/" target="_blank">Unity</a></td>
       <td valign="top">
-      Full-featured game engine with tools for interactivity, physics, lighting, level/character design, and more.<br><br>
+      Full-featured game engine with tools for interactivity, physics, lighting, level/character design, and more. Allows for scripting with <a href="https://docs.unity3d.com/Manual/ScriptingSection.html" target="_blank">C#</a>.<br><br>
       Direct competitor of Unreal, with a reputation for being more focused on "user friendliness" and less on hyper-realism, though the gap is shrinking rapidly.<br><br>
         <details>
           <summary>Notable features</summary>
@@ -1332,4 +1332,4 @@ _Articles:_
   * [OPENRNDR](https://openrndr.org/)
 
 ## Uncategorized (TODO)
-* Soap experiments (see Frei Otto)
+* Soap experiments (see Frei Otto and [Joseph Plateau's experiments](https://medium.com/designscience/1842-1868-9c6e0954b549))
