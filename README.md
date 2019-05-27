@@ -943,6 +943,8 @@ _Code projects:_
 
 ---
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/VectorField.svg/500px-VectorField.svg.png" width="300" align="right">
+
 ### Flow field
 
 ```
@@ -1239,8 +1241,8 @@ _Articles:_
       <td valign="top">Industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms. Allows for scripting with <a href="https://www.sidefx.com/docs/houdini/hom/index.html" target="_blank">Python</a> and <a href="https://www.sidefx.com/docs/houdini/vex/index.html" target="_blank">VEX</a> (proprietary language).</td>
       <td valign="top">
         <ul>
-          <li>Free with watermarked renders for non-commercial users (Apprentice)</li>
-          <li>$269/yr for no watermarks for commercial <$100k annual profit (Indie)</li>
+          <li>Aprrentice - free for non-commercial users with watermarked renders </li>
+          <li>Indie - $269/yr for no watermarks for commercial <$100k annual profit</li>
           <li>Thousands for commercial users, with complex pricing model</li>
         </ul>
       </td>
