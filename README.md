@@ -1304,8 +1304,19 @@ _Articles:_
     </tr>
     <tr>
       <td valign="top"><a href="https://www.derivative.ca/" target="_blank">TouchDesigner</a></td>
-      <td valign="top"></td>
-      <td valign="top"></td>
+      <td valign="top">Visual node-based environment for real-time interactive multimedia content useful for performances, installations, and fixed media works. Has roots in Houdini 4 and is considered a <a href="https://en.wikipedia.org/wiki/Houdini_(software)#TouchDesigner" target="_blank">spin-off</a> optimized for real-time performance work (hence the company name, Derivative).</td>
+      <td valign="top">
+        <ul>
+          <li>Educational - $300 for schools, educators, schools only</li>
+          <li>Commercial - $600</li>
+          <li>Pro - $2200</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+     <td valign="top"><a href="https://www.maxon.net/en-us/" target="_blank">Cinema 4D</a></li>
+     <td valign="top"></td>
+     <td valign="top">Four versions ranging from $995-$3695</td>
     </tr>
   </tbody>
 </table>
