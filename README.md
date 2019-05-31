@@ -36,7 +36,6 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#cymatics">Cymatics</a></li>
               <li><a href="#delaunay-triangulation-and-voronoi-diagrams">Delaunay triangulation and Voronoi diagrams</a></li>
               <li><a href="#fibonacci-sequence">Fibonacci sequence</a></li>
-              <li><a href="#fluid-simulation">Fluid simulation</a></li>
               <li><a href="#fourier-series">Fourier series</a></li>
               <li><a href="#fractals">Fractals</a></li>
               <li><a href="#golden-angle">Golden angle</a></li>
@@ -76,6 +75,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#collision-detection">Collision detection</a></li>
               <li><a href="#dithering">Dithering</a></li>
               <li><a href="#flow-field">Flow field</a></li>
+              <li><a href="#fluid-simulation">Fluid simulation</a></li>
               <li><a href="#marching-squares">Marching squares</a></li>
               <li><a href="#marching-cubes">Marching cubes</a></li>
               <li><a href="#metaballs">Metaballs</a></li>
@@ -392,57 +392,6 @@ _Articles:_
 * [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) on Wikipedia
 * [Fibonacci Sequence](https://www.mathsisfun.com/numbers/fibonacci-sequence.html) on Math Is Fun
 * [Fibonacci Number](http://mathworld.wolfram.com/FibonacciNumber.html) on Wolfram MathWorld
-
----
-
-<img src="https://i.kinja-img.com/gawker-media/image/upload/s--L-0h8ess--/c_scale,f_auto,fl_progressive,q_80,w_800/qnkqt6em2iy0rh6drxa0.jpg" width="300" align="right">
-
-### Fluid simulation
-
-Simulates the high complex and dynamic nature of flow of and within fluid volumes using computationally-efficient implementations of the [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations). Can be thought of a 2D or 3D flow field that is constantly changing based on the velocity, viscocity, and density of the fluid at each point in space and its surrounding area. This flow field is made visible through the use of digital "dyes" (colored blobs) that get distributed, diffused, sheared, and blended through the system by the flow forces.
-
-To appear realistic it is necessary for these simulations to have very high fidelity, which introduces significant computational challenges, especially if one wants to run the simulation in real-time. This all but requires the use of GPU technology (see [shaders](#shaders)), making this is a difficult topic to explore from scratch as a beginner. Luckily, there are several great code packages available, and many VFX, CAD, and game development tools like Blender, Houdini, Unity and Unreal include robust fluid simulation functionality built in, often accessible via APIs and visual UIs.
-
-Fluid simulation has many practical and visual applications across a variety of disciplines. It's used in analysis of aerodynamics for objects, vehicles, and buildings, weather simulation and prediction, engine and combustion analysis, industrial systems design and analysis (plumbing, HVAC, public utilities, etc), visual effects for TV, movies, and games, and more.
-
-_Related terms:_
-* FLIP (FLuid Simulation Using Implicit Particles) method
-* PIC (Particle in Cell) method
-* [Reynolds number](https://en.wikipedia.org/wiki/Reynolds_number) (Re) - dimensionless quantity used to predict fluid flow patterns. [Laminar](https://en.wikipedia.org/wiki/Laminar_flow) (smooth) flow occurs at low Re, while [turbulent](https://en.wikipedia.org/wiki/Turbulence) flow occurs at high Re.
-* [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) on Wikipedia
-* [Lattice Boltzmann methods](https://en.wikipedia.org/wiki/Lattice_Boltzmann_methods) (LBM) on Wikipedia
-* [Rheology](https://en.wikipedia.org/wiki/Rheology) - branch of physics which deals with the deformation and flow of materials, both solids and liquids
-
-_Articles and papers:_
-* [Fluid Simulation Using Implicit Particles](http://www.danenglesson.com/images/portfolio/FLIP/rapport.pdf) (PDF) by Dan Englesson, Joakim Kilby, and Joel Ek
-* [Computational fluid dynamics](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) (CFD) on Wikipedia
-* [Fluid Simulation for Dummies](https://mikeash.com/pyblog/fluid-simulation-for-dummies.html) by Mike Ash
-* [Real-Time Fluid Dynamics for Games](http://www.dgp.toronto.edu/people/stam/reality/Research/pdf/GDC03.pdf) (PDF) by Jos Stam
-* [Chapter 38. Fast Fluid Dynamics Simulation on the GPU](http://developer.download.nvidia.com/books/HTML/gpugems/gpugems_ch38.html) from GPU Gems book
-
-_Books:_
-* [Fluid Simulation for Computer Graphics](https://smile.amazon.com/Simulation-Computer-Graphics-Robert-Bridson/dp/1482232839/ref=dp_ob_title_bk) by Robert Bridson
-
-_Code projects:_
-* [Lily Pad](https://github.com/weymouth/lily-pad) (Processing) by Dr. Gabriel David Weymouth
-* [MSAFluid](https://www.memo.tv/msafluid/) by Memo Akten
-  * [ofxMSAFluid](https://github.com/memo/ofxMSAFluid) (openFrameworks)
-  * [p5-MSAFluid](https://github.com/memo/p5-MSAFluid) (Processing)
-* [OpenFOAM](https://www.openfoam.com/)
-* [mantaflow](http://mantaflow.com/index.html)
-* [Fluidity](https://fluidityproject.github.io/)
-
-_Notable tools:_
-* [FLIP Solver](https://www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html) (Houdini)
-* [FLIP Fluids](https://github.com/rlguy/Blender-FLIP-Fluids) (Blender)
-* [Obi Fluids](https://assetstore.unity.com/packages/tools/physics/obi-fluid-63067?aid=1011l34eQ&utm_source=aff) (Unity)
-* [Butterfly](https://www.ladybug.tools/butterfly.html) (Grasshopper for Rhino)
-* [RhinoCFD](http://rhinocfd.com/) (Rhino)
-* [RealFlow](http://www.nextlimit.com/realflow/) (Standalone, or via plugins for 3ds Max, Maya, and Cinema4D)
-
-_Videos:_
-* [Coding Challenge #132: Fluid Simulation](https://www.youtube.com/watch?v=alhpH6ECFvQ) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_132_FluidSimulation) with source code for p5.js and Processing)
-* [Why Laminar Flow is AWESOME - Smarter Every Day 208](https://www.youtube.com/watch?v=y7Hyc3MRKno&feature=youtu.be) by Smarter Every Day
 
 ---
 
@@ -996,6 +945,57 @@ _Articles:_
 
 _Videos:_
 * [Coding Challenge #24: Perlin Noise Flow Field](https://www.youtube.com/watch?v=BjoM9oKOAKY) by Daniel Shiffman
+
+---
+
+<img src="https://i.kinja-img.com/gawker-media/image/upload/s--L-0h8ess--/c_scale,f_auto,fl_progressive,q_80,w_800/qnkqt6em2iy0rh6drxa0.jpg" width="300" align="right">
+
+### Fluid simulation
+
+Simulates the high complex and dynamic nature of flow of and within fluid volumes using computationally-efficient implementations of the [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations). Can be thought of a 2D or 3D flow field that is constantly changing based on the velocity, viscocity, and density of the fluid at each point in space and its surrounding area. This flow field is made visible through the use of digital "dyes" (colored blobs) that get distributed, diffused, sheared, and blended through the system by the flow forces.
+
+To appear realistic it is necessary for these simulations to have very high fidelity, which introduces significant computational challenges, especially if one wants to run the simulation in real-time. This all but requires the use of GPU technology (see [shaders](#shaders)), making this is a difficult topic to explore from scratch as a beginner. Luckily, there are several great code packages available, and many VFX, CAD, and game development tools like Blender, Houdini, Unity and Unreal include robust fluid simulation functionality built in, often accessible via APIs and visual UIs.
+
+Fluid simulation has many practical and visual applications across a variety of disciplines. It's used in analysis of aerodynamics for objects, vehicles, and buildings, weather simulation and prediction, engine and combustion analysis, industrial systems design and analysis (plumbing, HVAC, public utilities, etc), visual effects for TV, movies, and games, and more.
+
+_Related terms:_
+* FLIP (FLuid Simulation Using Implicit Particles) method
+* PIC (Particle in Cell) method
+* [Reynolds number](https://en.wikipedia.org/wiki/Reynolds_number) (Re) - dimensionless quantity used to predict fluid flow patterns. [Laminar](https://en.wikipedia.org/wiki/Laminar_flow) (smooth) flow occurs at low Re, while [turbulent](https://en.wikipedia.org/wiki/Turbulence) flow occurs at high Re.
+* [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) on Wikipedia
+* [Lattice Boltzmann methods](https://en.wikipedia.org/wiki/Lattice_Boltzmann_methods) (LBM) on Wikipedia
+* [Rheology](https://en.wikipedia.org/wiki/Rheology) - branch of physics which deals with the deformation and flow of materials, both solids and liquids
+
+_Articles and papers:_
+* [Fluid Simulation Using Implicit Particles](http://www.danenglesson.com/images/portfolio/FLIP/rapport.pdf) (PDF) by Dan Englesson, Joakim Kilby, and Joel Ek
+* [Computational fluid dynamics](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) (CFD) on Wikipedia
+* [Fluid Simulation for Dummies](https://mikeash.com/pyblog/fluid-simulation-for-dummies.html) by Mike Ash
+* [Real-Time Fluid Dynamics for Games](http://www.dgp.toronto.edu/people/stam/reality/Research/pdf/GDC03.pdf) (PDF) by Jos Stam
+* [Chapter 38. Fast Fluid Dynamics Simulation on the GPU](http://developer.download.nvidia.com/books/HTML/gpugems/gpugems_ch38.html) from GPU Gems book
+
+_Books:_
+* [Fluid Simulation for Computer Graphics](https://smile.amazon.com/Simulation-Computer-Graphics-Robert-Bridson/dp/1482232839/ref=dp_ob_title_bk) by Robert Bridson
+
+_Code projects:_
+* [Lily Pad](https://github.com/weymouth/lily-pad) (Processing) by Dr. Gabriel David Weymouth
+* [MSAFluid](https://www.memo.tv/msafluid/) by Memo Akten
+  * [ofxMSAFluid](https://github.com/memo/ofxMSAFluid) (openFrameworks)
+  * [p5-MSAFluid](https://github.com/memo/p5-MSAFluid) (Processing)
+* [OpenFOAM](https://www.openfoam.com/)
+* [mantaflow](http://mantaflow.com/index.html)
+* [Fluidity](https://fluidityproject.github.io/)
+
+_Notable tools:_
+* [FLIP Solver](https://www.sidefx.com/docs/houdini/nodes/dop/flipsolver.html) (Houdini)
+* [FLIP Fluids](https://github.com/rlguy/Blender-FLIP-Fluids) (Blender)
+* [Obi Fluids](https://assetstore.unity.com/packages/tools/physics/obi-fluid-63067?aid=1011l34eQ&utm_source=aff) (Unity)
+* [Butterfly](https://www.ladybug.tools/butterfly.html) (Grasshopper for Rhino)
+* [RhinoCFD](http://rhinocfd.com/) (Rhino)
+* [RealFlow](http://www.nextlimit.com/realflow/) (Standalone, or via plugins for 3ds Max, Maya, and Cinema4D)
+
+_Videos:_
+* [Coding Challenge #132: Fluid Simulation](https://www.youtube.com/watch?v=alhpH6ECFvQ) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_132_FluidSimulation) with source code for p5.js and Processing)
+* [Why Laminar Flow is AWESOME - Smarter Every Day 208](https://www.youtube.com/watch?v=y7Hyc3MRKno&feature=youtu.be) by Smarter Every Day
 
 ---
 
