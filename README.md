@@ -629,17 +629,33 @@ _Articles:_
 
 ---
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/15_circles_in_a_square.svg/480px-15_circles_in_a_square.svg.png" width="300" align="right">
+
 ### Packing problems
+Class of optimization problems that involve determining efficient ways to arrange (_pack_) objects into containers. Packing problems can be tackled using discrete mathematical methods, physics systems (as seen in Nervous System's [Kinematics](https://n-e-r-v-o-u-s.com/blog/?p=7162) series), and even genetic algorithms and machine learning. 
 
-```
-TODO
-```
+Has major applications in digital fabrication, manufacturing, and shipping logistics where material and space usage is directly related to costs. In 2D, packing/nesting problem solutions are useful for minimizing waste material in sheet goods like plywood and sheet steel, even for hobbyists. In 3D these solutions are useful for fitting as many objects as possible into 3D printer build envelopes (see article from [Sculpteo](https://www.sculpteo.com/blog/2017/07/19/3d-printing-software-how-we-optimize-our-batch-using-our-nesting-tool/)).
 
-* Circle packing
+_Related terms:_
+* [Nesting (process)](https://en.wikipedia.org/wiki/Nesting_(process))
 
 _Articles:_
 * [Packing problems](https://en.wikipedia.org/wiki/Packing_problems) on Wikipedia
 * [Random space filling of the plane](http://paulbourke.net/fractals/randomtile/) by Paul Bourke
+* [Optimal Packing](http://datagenetics.com/blog/june32014/index.html) from Data Genetics
+* [Circle Packing](http://mathworld.wolfram.com/CirclePacking.html) on Wolfram MathWorld
+* [Bin packing problem](https://en.wikipedia.org/wiki/Bin_packing_problem) on Wikipedia
+* [Sphere packing](https://en.wikipedia.org/wiki/Sphere_packing) on Wikipedia
+* [Close-packing of equal spheres](https://en.wikipedia.org/wiki/Close-packing_of_equal_spheres) on Wikipedia
+* [Packing Problems](https://www.ime.usp.br/~egbirgin/packing/) - collection of papers by Ernesto Birgin and collaborators
+
+_Notable tools:_
+* [RhinoNest](https://www.tdmsolutions.com/rhinonest/) (Rhino)
+* [DeepNest](https://deepnest.io/) (Standalone)
+* [SVGnest](https://svgnest.com/) (Web app)
+
+_Videos:_
+* [Coding Challenge #50.1: Animated Circle Packing - Part 1](https://www.youtube.com/watch?v=QHEQuoIKgNE) by Daniel Shiffman
 
 ---
 
