@@ -57,6 +57,20 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           </p>
         </details>
         <details>
+          <summary>Natural phenomena</summary>
+          <p>
+            <strong>Biology</strong>
+            <ul>
+              <li>Diatoms</li>
+              <li>Radiolarians and foramnifera</li>
+            </ul>
+            <strong>Geology</strong>
+            <ul>
+              <li>Giant's Causeway</li>
+            </ul>
+          </p>
+        </details>
+        <details>
           <summary>Lab experiments</summary>
           <p>
             <ul>
