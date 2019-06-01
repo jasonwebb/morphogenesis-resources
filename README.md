@@ -59,14 +59,18 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
         <details>
           <summary>Natural phenomena</summary>
           <p>
-            <strong>Biology</strong>
             <ul>
-              <li>Diatoms</li>
-              <li>Radiolarians and foramnifera</li>
-            </ul>
-            <strong>Geology</strong>
-            <ul>
-              <li>Giant's Causeway</li>
+              <li>Biology
+                <ul>
+                  <li>Diatoms</li>
+                  <li>Radiolarians and foramnifera</li>
+                </ul>
+              </li>
+              <li>Geology
+                <ul>
+                  <li>Giant's Causeway</li>
+                </ul>
+              </li>
             </ul>
           </p>
         </details>
