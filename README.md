@@ -62,19 +62,24 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           <summary>Natural phenomena <a href="#natural-phenomena">[#]</a></summary>
           <p>
             <ul>
-              <li>Biology
-                <ul>
-                  <li>Ammonite</li>
-                  <li>Conus textile shells</li>
-                  <li>Diatoms</li>
-                  <li>Coral</li>
-                  <li>Leaf venation</li>
-                  <li>Nautilus shell</li>
-                  <li>Nudibranchs</li>
-                  <li>Physarum polycephalum</li>
-                  <li>Radiolarians and foramnifera</li>
-                  <li>Trilobites</li>
-                </ul>
+              <li>
+                <details>
+                  <summary>Biology</summary>
+                  <p>
+                    <ul>
+                      <li>Ammonite</li>
+                      <li>Conus textile shells</li>
+                      <li>Diatoms</li>
+                      <li>Coral</li>
+                      <li>Leaf venation</li>
+                      <li>Nautilus shell</li>
+                      <li>Nudibranchs</li>
+                      <li>Physarum polycephalum</li>
+                      <li>Radiolarians and foramnifera</li>
+                      <li>Trilobites</li>
+                    </ul>
+                  </p>
+                </details>
               </li>
               <li>Geology
                 <ul>
