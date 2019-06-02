@@ -100,7 +100,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
                       <li>Chrysocolla</li>
                       <li>Clinoclase</li>
                       <li>Malachite</li>
-                      <li>Pyrite<li>
+                      <li>Pyrite</li>
                       <li>Quartz</li>
                       <li>Scolecite</li>
                     </ul>
