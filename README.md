@@ -2,6 +2,8 @@
 
 With such a cross-disciplinary topic it can be hard to keep track of and correlate all the interesting bits of knowledge that one comes across, which is where this list comes in. The goal of this list is to succinctly catalog various growth algorithms and lab experiments along with relevant math, physics, and programming concepts in one place in order to (1) serve as a sort of "cheat sheet" reference for developers and computer artists, and (2) spark new insights by making it easier to see relationships between seemingly disparate topics.
 
+[Contributions](https://github.com/jasonwebb/morphogenesis-resources/blob/master/CONTRIBUTING.md) are always welcome! If you'd like to add a description for any topic, or have some interesting and relevant links to share, or know of a topic that should be included somewhere in this document, please feel free to [open an issue](https://github.com/jasonwebb/morphogenesis-resources/issues/new) or a PR with your changes.
+
 <br>
 
 <table>
