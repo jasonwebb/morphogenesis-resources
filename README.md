@@ -64,13 +64,32 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
             <ul>
               <li>Biology
                 <ul>
+                  <li>Ammonite</li>
+                  <li>Conus textile shells</li>
                   <li>Diatoms</li>
+                  <li>Coral</li>
+                  <li>Leaf venation</li>
+                  <li>Nautilus shell</li>
+                  <li>Nudibranchs</li>
+                  <li>Physarum polycephalum</li>
                   <li>Radiolarians and foramnifera</li>
+                  <li>Trilobites</li>
                 </ul>
               </li>
               <li>Geology
                 <ul>
                   <li>Giant's Causeway</li>
+                </ul>
+              </li>
+              <li>Minerals
+                <ul>
+                  <li>Bismuth</li>
+                  <li>Chrysocolla</li>
+                  <li>Clinoclase</li>
+                  <li>Malachite</li>
+                  <li>Pyrite<li>
+                  <li>Quartz</li>
+                  <li>Scolecite</li>
                 </ul>
               </li>
             </ul>
