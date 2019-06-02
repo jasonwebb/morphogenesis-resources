@@ -16,7 +16,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
     <tr>
       <td>
         <details>
-          <summary>Growth algorithms</summary>
+          <summary>Growth algorithms <a href="#growth-algorithms">[#]</a></summary>
           <p>
             <ul>
               <li><a href="#dielectric-breakdown-model-dbm">Dielectric breakdown model (DBM)</a></li>
@@ -31,7 +31,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           </p>
         </details>
         <details>
-          <summary>Math and physics topics</summary>
+          <summary>Math and physics topics <a href="#math-and-physics-topics">[#]</a></summary>
           <p>
             <ul>
               <li><a href="#cellular-automata-ca">Cellular automata</a></li>
@@ -59,7 +59,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           </p>
         </details>
         <details>
-          <summary>Natural phenomena</summary>
+          <summary>Natural phenomena <a href="#natural-phenomena">[#]</a></summary>
           <p>
             <ul>
               <li>Biology
@@ -77,7 +77,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           </p>
         </details>
         <details>
-          <summary>Lab experiments</summary>
+          <summary>Lab experiments <a href="#lab-experiments">[#]</a></summary>
           <p>
             <ul>
               <li><a href="#belousovzhabotinsky-reaction">Belousov–Zhabotinsky reaction</a></li>
@@ -88,7 +88,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           </p>
         </details>
         <details>
-          <summary>Useful code patterns and techniques</summary>
+          <summary>Useful code patterns and techniques <a href="#useful-code-patterns-and-techniques">[#]</a></summary>
           <p>
             <ul>
               <li><a href="#agent-based-modelling">Agent-based modelling</a></li>
