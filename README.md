@@ -61,7 +61,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
         <details>
           <summary>Natural phenomena <a href="#natural-phenomena">[#]</a></summary>
           <p>
-            <ul>
+            <ul type="none">
               <li>
                 <details>
                   <summary>Biology</summary>
@@ -81,21 +81,31 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
                   </p>
                 </details>
               </li>
-              <li>Geology
-                <ul>
-                  <li>Giant's Causeway</li>
-                </ul>
+              <li>
+                <details>
+                  <summary>Geology</summary>
+                  <p>
+                    <ul>
+                      <li>Giant's Causeway</li>
+                    </ul>
+                  </p>
+                </details>
               </li>
-              <li>Minerals
-                <ul>
-                  <li>Bismuth</li>
-                  <li>Chrysocolla</li>
-                  <li>Clinoclase</li>
-                  <li>Malachite</li>
-                  <li>Pyrite<li>
-                  <li>Quartz</li>
-                  <li>Scolecite</li>
-                </ul>
+              <li>
+                <details>
+                  <summary>Minerals</summary>
+                  <p>
+                    <ul>
+                      <li>Bismuth</li>
+                      <li>Chrysocolla</li>
+                      <li>Clinoclase</li>
+                      <li>Malachite</li>
+                      <li>Pyrite<li>
+                      <li>Quartz</li>
+                      <li>Scolecite</li>
+                    </ul>
+                  </p>
+                </details>
               </li>
             </ul>
           </p>
