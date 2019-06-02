@@ -40,6 +40,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#fibonacci-sequence">Fibonacci sequence</a></li>
               <li><a href="#fourier-series">Fourier series</a></li>
               <li><a href="#fractals">Fractals</a></li>
+              <li><a href="#geodesic-dome">Geodesic dome</a></li>
               <li><a href="#golden-angle">Golden angle</a></li>
               <li><a href="#golden-ratio">Golden ratio</a></li>
               <li><a href="#inverse-and-forward-kinematics">Inverse and forward kinematics</a></li>
@@ -67,16 +68,24 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
                   <summary>Biology</summary>
                   <p>
                     <ul>
-                      <li>Ammonite</li>
+                      <li>Ammonites</li>
                       <li>Conus textile shells</li>
-                      <li>Diatoms</li>
                       <li>Coral</li>
+                      <li>Diatoms</li>
+                      <li>Dinoflagellates</li>
+                      <li>Insect eggs</li>
                       <li>Leaf venation</li>
+                      <li>Lichen</li>
+                      <li>Mycelium and hyphae</li>
                       <li>Nautilus shell</li>
                       <li>Nudibranchs</li>
                       <li>Physarum polycephalum</li>
+                      <li>Pollen</li>
                       <li>Radiolarians and foramnifera</li>
+                      <li>Romanesco broccoli</li>
                       <li>Trilobites</li>
+                      <li>Seeds</li>
+                      <li>Succulents</li>
                     </ul>
                   </p>
                 </details>
@@ -86,7 +95,8 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
                   <summary>Geology</summary>
                   <p>
                     <ul>
-                      <li>Giant's Causeway</li>
+                      <li>Alluvial fan</li>
+                      <li>Slot canyons</li>
                     </ul>
                   </p>
                 </details>
@@ -99,10 +109,39 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
                       <li>Bismuth</li>
                       <li>Chrysocolla</li>
                       <li>Clinoclase</li>
+                      <li>Fordite</li>
                       <li>Malachite</li>
                       <li>Pyrite</li>
                       <li>Quartz</li>
                       <li>Scolecite</li>
+                    </ul>
+                  </p>
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>Places</summary>
+                  <p>
+                    <ul>
+                      <li>Ah-Shi-Sle-Pah Wilderness Study Area, New Mexico, USA</li>
+                      <li>Cave of the Crystals, Mexico</li>
+                      <li>Crowley Lake Columns, California, USA</li>
+                      <li>Danakil Depression, Ethiopia</li>
+                      <li>Danxia Landforms, China</li>
+                      <li>Fantasy Canyon, Utah, USA</li>
+                      <li>Fosso Bianco, Italy</li>
+                      <li>Giant's Causeway</li>
+                      <li>Glowworm Tunnel, Australia</li>
+                      <li>Indian Echo Caverns, Pennysylvania, USA</li>
+                      <li>Parc National de l’Ankarana, Madagascar</li>
+                      <li>Rodadero Slides, Cusco, Peru</li>
+                      <li>Socotra Island, Yemen</li>
+                      <li>Tatami-ishi, Japan</li> 
+                      <li>The Wave, Arizona, USA</li>
+                      <li>Toadstool Geologic Park, Nebraska, USA</li>
+                      <li>Vale da Lua, Brazil</li>
+                      <li>Wave Rock, Australia</li>
+                      <li>Yangykala Canyon, Turkmenistan</li>
                     </ul>
                   </p>
                 </details>
@@ -506,6 +545,17 @@ _Articles:_
 
 _Notable software:_
 * [glChAoS.P](https://github.com/BrutPitt/glChAoS.P) by Michele Morrone (BrutPitt)
+
+---
+
+### Geodesic dome
+
+```
+TODO
+```
+
+_Articles:_
+* [Geodesic dome](https://en.wikipedia.org/wiki/Geodesic_dome) on Wikipedia
 
 ---
 
