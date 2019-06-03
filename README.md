@@ -83,9 +83,10 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
                       <li>Pollen</li>
                       <li>Radiolarians and foramnifera</li>
                       <li>Romanesco broccoli</li>
-                      <li>Trilobites</li>
                       <li>Seeds</li>
+                      <li>Silk worms</li>
                       <li>Succulents</li>
+                      <li>Trilobites</li>
                     </ul>
                   </p>
                 </details>
@@ -125,22 +126,34 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
                     <ul>
                       <li>Ah-Shi-Sle-Pah Wilderness Study Area, New Mexico, USA</li>
                       <li>Cave of the Crystals, Mexico</li>
+                      <li>Chocolate Hills, Philippines</li>
                       <li>Crowley Lake Columns, California, USA</li>
                       <li>Danakil Depression, Ethiopia</li>
                       <li>Danxia Landforms, China</li>
+                      <li>Devil's Tower, Wyoming, USA</li>
+                      <li>Eisriesenwelt, Austria</li>
                       <li>Fantasy Canyon, Utah, USA</li>
+                      <li>Fingal's Cave, Scotland</li>
+                      <li>Fly Geyser, Nevada, USA</li>  
                       <li>Fosso Bianco, Italy</li>
-                      <li>Giant's Causeway</li>
+                      <li>Giant's Causeway, Ireland</li>
                       <li>Glowworm Tunnel, Australia</li>
                       <li>Indian Echo Caverns, Pennysylvania, USA</li>
+                      <li>Moeraki Boulders of Koekohe Beach, New Zealand</li>
+                      <li>Pamukkale, Turkey</li>
                       <li>Parc National de l’Ankarana, Madagascar</li>
+                      <li>Punakaiki Pancake Rocks, New Zealand</li>
                       <li>Rodadero Slides, Cusco, Peru</li>
                       <li>Socotra Island, Yemen</li>
                       <li>Tatami-ishi, Japan</li> 
+                      <li>Tessellated Pavement, Eaglehawk Neck, Tasmania</li>
                       <li>The Wave, Arizona, USA</li>
                       <li>Toadstool Geologic Park, Nebraska, USA</li>
+                      <li>Stone Forest, China</li>
+                      <li>Svartifoss waterfall at Skaftafell National Park, Iceland</li>
                       <li>Vale da Lua, Brazil</li>
                       <li>Wave Rock, Australia</li>
+                      <li>White Desert, Egypt</li>
                       <li>Yangykala Canyon, Turkmenistan</li>
                     </ul>
                   </p>
@@ -1360,6 +1373,9 @@ _Articles:_
   * [Shapes](https://smile.amazon.com/Shapes-Natures-Patterns-Tapestry-Three/dp/0199237964/)
 * [Fractal Concepts in Surface Growth](https://smile.amazon.com/Fractal-Concepts-Surface-Albert-Laszlo-Barabasi/dp/0521483182) by Albert-László Barabási
 * [Fractal Growth Phenomena](https://smile.amazon.com/gp/product/9810206690/) by Tamas Vicsek
+* [Animal Architecture](https://smile.amazon.com/Animal-Architecture-Ingo-Arndt/dp/1419711652) by Ingo Amdt and Jurgen Tautz
+* [Art Forms in Nature](https://smile.amazon.com/Art-Forms-Nature-Prints-Haeckel/dp/3791319906/) by Ernst Haeckel
+* [Art Forms from the Ocean: The Radiolarian Prints of Ernst Haeckel](https://smile.amazon.com/Art-Forms-Ocean-Radiolarian-Haeckel/dp/3791333275/) by Olaf Breidbach
 
 ### Publications
 * [Zygote Quarterly](https://zqjournal.org/)
