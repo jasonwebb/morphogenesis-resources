@@ -33,9 +33,13 @@
 * Succulents
 * Trilobites
 
+<br>
+
 ## Geology
 * Alluvial fan
 * Slot canyons
+
+<br>
 
 ## Minerals
 * Bismuth
@@ -46,6 +50,8 @@
 * Pyrite
 * Quartz
 * Scolecite
+
+<br>
 
 ## Places
 * Ah-Shi-Sle-Pah Wilderness Study Area, New Mexico, USA
