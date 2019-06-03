@@ -69,11 +69,31 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
                   <p>
                     <ul>
                       <li>Ammonites</li>
+                      <li>Bird nests
+                        <ul>
+                          <li>Baya Weavers</li>
+                          <li>Bowerbirds</li>
+                          <li>Montezuma Oropendola</li>
+                          <li>Red Ovenbird</li>
+                          <li>Swallows</li>
+                          <li>Weaverbirds (and Sociable Weavers)</li>
+                        </ul>
+                      </li>
                       <li>Conus textile shells</li>
                       <li>Coral</li>
                       <li>Diatoms</li>
                       <li>Dinoflagellates</li>
                       <li>Insect eggs</li>
+                      <li>Insects
+                        <ul>
+                          <li>Australian weaver ants</li>
+                          <li>Beavers</li>  
+                          <li>Caddisfly</li>
+                          <li>Honeybee hives</li>
+                          <li>Silk worms</li>
+                          <li>Wasp nests</li>
+                        </ul>
+                      </li>
                       <li>Leaf venation</li>
                       <li>Lichen</li>
                       <li>Mycelium and hyphae</li>
@@ -84,7 +104,6 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
                       <li>Radiolarians and foramnifera</li>
                       <li>Romanesco broccoli</li>
                       <li>Seeds</li>
-                      <li>Silk worms</li>
                       <li>Succulents</li>
                       <li>Trilobites</li>
                     </ul>
