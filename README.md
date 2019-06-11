@@ -99,7 +99,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
             </ul>
           </p>
         </details>
-        ▸ <a href="#books-and-publications">Books and publications</a><br>
+        ▸ <a href="#books-publications-and-talks">Books, publications, and talks</a><br>
         ▸ <a href="#software">Software</a>
       </td>
     </tr>
@@ -953,18 +953,22 @@ _Code projects:_
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/VectorField.svg/500px-VectorField.svg.png" width="300" align="right">
 
 ### Flow field
+_Related topics include [fluid simulation](#fluid-simulation)._
 
-```
-TODO
-```
+Also known as a vector field, this technique involves assigning a unique vector to each point in a 2D or 3D space describing the direction and magnitude of varying forces. Flow fields are often used together with [particle systems](#particle-system) to model complex, dynamic movement caused by wind, fluid flow, electromagnetism, and more.
+
+Vector fields are often populated using data generated with [noise](#noise) or image data. Curiously, flow fields have also been [used in pathfinding](https://gamedevelopment.tutsplus.com/tutorials/understanding-goal-based-vector-field-pathfinding--gamedev-9007).
 
 _Articles:_
 * [Vector field](https://en.wikipedia.org/wiki/Vector_field) on Wikipedia
 * [Flow Fields, Part I](https://medium.com/@bit101/flow-fields-part-i-3ebebc688fd8) by Keith Peters
 * [Flow Fields, Part II](https://medium.com/@bit101/flow-fields-part-ii-f3c24c1b777d) by Keith Peters
 
+_Code projects:_
+* [ofxVectorField](https://github.com/mantissa/ofxVectorField) (openFrameworks add-on) by Jeremy Rotzstain (mantissa)
+
 _Videos:_
-* [Coding Challenge #24: Perlin Noise Flow Field](https://www.youtube.com/watch?v=BjoM9oKOAKY) by Daniel Shiffman
+* [Coding Challenge #24: Perlin Noise Flow Field](https://www.youtube.com/watch?v=BjoM9oKOAKY) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_024_PerlinNoiseFlowField) with source code for p5.js and Processing)
 
 ---
 
@@ -1119,6 +1123,7 @@ Particle systems are most useful when they can handle large quantities of partic
 _Articles:_
 * [Particle system](https://en.wikipedia.org/wiki/Particle_system) on Wikipedia
 * [Intro to particle systems](https://www.khanacademy.org/computing/computer-programming/programming-natural-simulations/programming-particle-systems/a/intro-to-particle-systems) lesson on Khan Academy
+* [The physics of particle systems](https://www.khanacademy.org/partner-content/pixar/effects/particle-physics/a/start-here-fx)
 * [Chapter 4. Particle Systems](https://natureofcode.com/book/chapter-4-particle-systems/) from Nature of Code
 
 _Notable software:_
@@ -1267,7 +1272,7 @@ _Articles:_
 
 <br>
 
-## Books and publications
+## Books, publications, and talks
 ### Books
 * [On Growth and Form](https://smile.amazon.com/Growth-Form-Complete-Revised/dp/0486671356/) by D'Arcy Wentworth Thompson
 * Nature's Patterns: A Tapestry in Three Parts by Philip Ball
@@ -1282,6 +1287,9 @@ _Articles:_
 
 ### Publications
 * [Zygote Quarterly](https://zqjournal.org/)
+
+### Talks
+* [Nervous System - Eyeo Festival 2011](https://vimeo.com/33369209)
 
 <br>
 
@@ -1407,3 +1415,6 @@ _Articles:_
 
 ## Uncategorized (TODO)
 * Soap experiments (see Frei Otto and [Joseph Plateau's experiments](https://medium.com/designscience/1842-1868-9c6e0954b549))
+* Mesh relaxation
+* CMC surface (same as minimal surface, or can be combined?)
+* Surface evolver - see [Ken Brakke's work](https://facstaff.susqu.edu/brakke/evolver/evolver.html). Is there an underlying algorithm that can be decoupled from his particular implementation?
