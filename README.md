@@ -1055,17 +1055,52 @@ _Videos:_
 ### Marching cubes
 3D version of [marching squares](#marching-squares). Whereas marching _squares_ uses lines and cells to trace the contours of a 2D scalar field, marching _cubes_ uses polygons and voxels to trace the contours of a 3D scalar field, resulting in a mesh.
 
+Originally developed by William Lorensen and Harvey Cline of General Electric in 1987 (see original paper in _Articles_ section) for use in the medical imaging (MRI/CT) field, this algorithm has become widely used in many areas of computer graphics
+
 ```
 TODO: add note on dual marching cubes
 ```
+
+_Algorithm [[link](https://en.wikipedia.org/wiki/Marching_cubes#Algorithm_)]:_
+
+The algorithm proceeds through the scalar field, taking eight neighbor locations at a time (thus forming an imaginary cube), then determining the polygon(s) needed to represent the part of the isosurface that passes through this cube. The individual polygons are then fused into the desired surface.
+
+1. Choose a threshold (called an _isovalue_) to determine which level of values are considered inside or outside the mesh, thus setting where the mesh boundary is created.
+2. Pre-compute an array of all 256 (`2^8`) possible polygon configurations within a cube, where each entry is a set of identifying numbers associated with edges of the cube (see _Figure B_ below).
+      * Note that of these 256 configurations, only 15 are unique (see _Figure A_ below). 
+3. For each set of 8 scalar values (forming a cube), compute an 8-bit integer where each bit corresponds to a unique scalar value (corner of the cube).
+      * If the scalar value is higher than the isovalue (i.e. inside of mesh), set bit to 1
+      * If lower, set bit to 0
+4. The resulting integer value represented by these bits corresponds to an index in the polygon lookup table created in step 2.
+5. Each vertex of the generated polygons is placed on the appropriate position along the cube's edge by linearly interpolating the two scalar values that are connected by that edge.
+6. Calculate normals - TODO: how?
+
+<table>
+ <thead> 
+  <tr>
+   <td valign="top">(Figure A) diagram of 15 possible polygon configurations based on vertex bit values</td>
+   <td valign="top">(Figure B) diagram of edge and vertex numbering</td>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td valign="top"><img src="https://i.imgur.com/VnmsvDF.png" width="500"></td>
+   <td valign="top"><img src="https://i.imgur.com/wOzaG9W.png" width="500"></td>
+  </tr>
+ </tbody>
+</table>
 
 _Key terms:_
 * Isosurface - surface that represents points of a constant value within a volume of space
 
 _Articles:_
+* [Marching Cubes: A High-Resolution 3D Surface Construction Algorithm](http://academy.cba.mit.edu/classes/scanning_printing/MarchingCubes.pdf) (PDF) - original paper by William Lorensen and Harvey Cline
 * [Marching cubes](https://en.wikipedia.org/wiki/Marching_cubes) on Wikipedia
 * [Polygonising a scalar field](http://paulbourke.net/geometry/polygonise/) by Paul Bourke
 * [Voxel to Mesh Conversion: Marching Cube Algorithm](https://medium.com/zeg-ai/voxel-to-mesh-conversion-marching-cube-algorithm-43dbb0801359) by Smile Sikand
+
+_Videos:_
+* [Marching Cubes Animation](https://www.youtube.com/watch?v=B_xk71YopsA) by Algorithms Visualized
 
 ---
 
