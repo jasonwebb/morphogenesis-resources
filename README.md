@@ -1167,15 +1167,30 @@ If you're looking to do physical-based simulations, also take a look at game dev
 
 ---
 
+<img src="https://cdn-images-1.medium.com/max/1200/1*appBwh6_RtvocVxwqpplHA.jpeg" width="300" align="right">
+
 ### Recursion
 _See [recursion](#recursion)._
 
+Method of solving a problem where the solution depends on solutions to smaller instances of the same problem (as opposed to _iteration_). In programming terms, recursion is when a function calls itself during execution. Recursion is fundamentally connected to the concept of [fractals](#fractals).
+
+_Example: computing factorial_
 ```
-TODO
+function factorialize(n) {
+  if(n < 0) {
+    return -1;
+  } else if(n == 0) {
+    return 1;
+  } else {
+    return n * factorialize(n - 1);
+  }
+}
 ```
 
 _Articles:_
 * [Recursion](https://en.wikipedia.org/wiki/Recursion) on Wikipedia
+* [Recursion (computer science)](https://en.wikipedia.org/wiki/Recursion_(computer_science)) on Wikipedia
+* [Droste effect](https://en.wikipedia.org/wiki/Droste_effect) on Wikipedia
 
 ---
 
