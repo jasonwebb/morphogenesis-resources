@@ -1078,8 +1078,8 @@ The algorithm proceeds through the scalar field, taking eight neighbor locations
 <table>
  <thead> 
   <tr>
-   <td valign="top">(Figure A) diagram of 15 possible polygon configurations based on vertex bit values</td>
-   <td valign="top">(Figure B) diagram of edge and vertex numbering</td>
+   <th><cneter>(Figure A) diagram of 15 possible polygon configurations based on vertex bit values</center></th>
+   <th><center>(Figure B) diagram of edge and vertex numbering</center></th>
   </tr>
  </thead>
  <tbody>
