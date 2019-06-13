@@ -1071,12 +1071,12 @@ The algorithm proceeds through the scalar field, taking eight neighbor locations
 3. For each set of 8 scalar values (forming a cube), compute an 8-bit integer where each bit corresponds to a unique scalar value (corner of the cube).
       * If the scalar value is higher than the isovalue (i.e. inside of mesh), set bit to 1
       * If lower, set bit to 0
-4. Generate polygons for each set of scalar values using 
-5. The resulting integer value represented by these bits corresponds to an index in the polygon lookup table created in step 2.
-      * For example, `00101001` =  `41`. Therefore 
-6. Each vertex of the generated polygons is placed on the appropriate position along the cube's edge by linearly interpolating the two scalar values that are connected by that edge.
-7. Calculate normals - TODO: how?
-8. Perform boolean union with all polygon fragments to form a mesh
+4. Generate polygons for each set of scalar values by drawing lines between the edges referenced in the polygon lookup table from step 2.
+      * To do this, parse the 8 bits from step 3 into an integer, then use that integer as an index in the lookup table.
+      * For example `00101001` =  `41`. Therefore the list of edges to draw lines between can be found in `lookupTable[41]`.
+5. Each vertex of the generated polygons is placed on the appropriate position along the cube's edge by linearly interpolating the two scalar values that are connected by that edge.
+6. Calculate normals - TODO: how?
+7. Perform boolean union with all polygon fragments to form a mesh
 
 <table>
  <thead> 
@@ -1484,3 +1484,4 @@ _Articles:_
 * Mesh relaxation
 * CMC surface (same as minimal surface, or can be combined?)
 * Surface evolver - see [Ken Brakke's work](https://facstaff.susqu.edu/brakke/evolver/evolver.html). Is there an underlying algorithm that can be decoupled from his particular implementation?
+* Implicit surfaces / modelling
