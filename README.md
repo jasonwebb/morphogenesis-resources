@@ -1053,7 +1053,7 @@ _Videos:_
 <img src="https://i.ytimg.com/vi/LC0IbOZ0jkw/maxresdefault.jpg" width="300" align="right">
 
 ### Marching cubes
-3D version of [marching squares](#marching-squares). Whereas marching _squares_ uses lines and cells to trace the contours of a 2D scalar field, marching _cubes_ uses polygons and voxels to trace the contours of a 3D scalar field, resulting in a mesh.
+3D version of [marching squares](#marching-squares). Whereas marching _squares_ uses lines and cells to trace the contours of a 2D scalar field, marching _cubes_ uses polygons and voxels to trace the contours of a 3D scalar field, resulting in a mesh. Marching cubes can be thought of as a mesh conversion algorithm that produces meshes based on 3D scalar fields.
 
 Originally developed by William Lorensen and Harvey Cline of General Electric in 1987 (see original paper in _Articles_ section) for use in the medical imaging (MRI/CT) field, this algorithm has become widely used in many areas of computer graphics
 
@@ -1066,14 +1066,17 @@ _Algorithm [[link](https://en.wikipedia.org/wiki/Marching_cubes#Algorithm_)]:_
 The algorithm proceeds through the scalar field, taking eight neighbor locations at a time (thus forming an imaginary cube), then determining the polygon(s) needed to represent the part of the isosurface that passes through this cube. The individual polygons are then fused into the desired surface.
 
 1. Choose a threshold (called an _isovalue_) to determine which level of values are considered inside or outside the mesh, thus setting where the mesh boundary is created.
-2. Pre-compute an array of all 256 (`2^8`) possible polygon configurations within a cube, where each entry is a set of identifying numbers associated with edges of the cube (see _Figure B_ below).
-      * Note that of these 256 configurations, only 15 are unique (see _Figure A_ below). 
+2. Pre-compute an array of all 256 (`2^8`) possible polygon configurations within a cube, where each entry is a set of IDs associated with edges of the cube (see _Figure B_ below).
+      * Note that of these 256 configurations, only 15 are unique due to repetition and symmetry (see _Figure A_ below). 
 3. For each set of 8 scalar values (forming a cube), compute an 8-bit integer where each bit corresponds to a unique scalar value (corner of the cube).
       * If the scalar value is higher than the isovalue (i.e. inside of mesh), set bit to 1
       * If lower, set bit to 0
-4. The resulting integer value represented by these bits corresponds to an index in the polygon lookup table created in step 2.
-5. Each vertex of the generated polygons is placed on the appropriate position along the cube's edge by linearly interpolating the two scalar values that are connected by that edge.
-6. Calculate normals - TODO: how?
+4. Generate polygons for each set of scalar values using 
+5. The resulting integer value represented by these bits corresponds to an index in the polygon lookup table created in step 2.
+      * For example, `00101001` =  `41`. Therefore 
+6. Each vertex of the generated polygons is placed on the appropriate position along the cube's edge by linearly interpolating the two scalar values that are connected by that edge.
+7. Calculate normals - TODO: how?
+8. Perform boolean union with all polygon fragments to form a mesh
 
 <table>
  <thead> 
@@ -1104,15 +1107,28 @@ _Videos:_
 
 ---
 
+<img src="http://www.geisswerks.com/ryan/BLOBS/post6.gif" width="300" align="right">
+
 ### Metaballs
 _Related to [marching squares](#marching-squares) (2D) and [marching cubes](#marching-cubes) (3D)_
 
-```
-TODO
-```
+Often confused with [marching cubes](#marching-cubes), this is more of a mathmematical concept that describes a way to define the _values_ in 2D or 3D scalar fields based on distance to one or more points in space. They are a type of implicit surface that define blobby shapes as pure mathematical formulas rather than explicit polygons and vertices. 
+
+They can be visualized using the [marching squares](#marching-squares) (2D) or [marching cubes](#marching-cubes) (3D) rendering algorithms. Can be used for naive [fluid simulations](#fluid-simulation) by applying [physics](#physics-engine) to the metaball center points as if they were [particles](#particle-system). They can also be helpful in modelling soft bodies by adding elastic constraints between the center points.
+
+A typical function chosen for metaballs is:
+
+<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/57f61a8e5638955d4bdf579e746e2b09d709b505">
+
+Where <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/39177ddeeb9f9a393b664e522bc8e3bf0face153"> is the center of the metaball.
 
 _Articles:_
 * [Metaballs](https://en.wikipedia.org/wiki/Metaballs) on Wikipedia
+* [Metaballs (also known as: Blobs)](http://www.geisswerks.com/ryan/BLOBS/blobs.html) by Ryan Geiss
+* [Exploring Metaballs and Isosurfaces in 2D](https://www.gamedev.net/articles/programming/graphics/exploring-metaballs-and-isosurfaces-in-2d-r2556) by Stephen Whitmore
+
+_Videos:_
+* [Coding Challenge #28: Metaballs](https://www.youtube.com/watch?v=ccYLb7cLB1I) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_028_MetaBalls) with source code for p5.js and Processing)
 
 ---
 
