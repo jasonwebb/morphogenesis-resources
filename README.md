@@ -871,17 +871,42 @@ _Articles:_
 
 ## Useful code patterns and techniques
 
+<img src="https://flashyprogramming.files.wordpress.com/2010/03/boids0168.png" width="300" align="right">
+
 ### Agent-based modelling
+
+Methods for simulating the actions and interactions of autonomous entities and the complex emergent behavior they exhibit collectively. Used for simulating and analyzing collective social and biological phenomena like flocking animals (e.g. birds or fish), colony behaviors (e.g. ants and termites), crowd movement, and more. 
+
+This topic has a lot in common with the related topic of [multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system), but with a different intent. Agent-based models tend to seek explanatory insight into the collective behavior of agents (often real-world organisms or systems), whereas multi-agent systems tend to be more focused on solving practical or engineering problems through optimization of the design of agents.
+
+Insights from this topic can be directly applicable in large-scale kinetic art or LED installations, [swarm robotics research](https://en.wikipedia.org/wiki/Swarm_robotics), architecture, and city planning.
+
+Characteristics of agent-based models relevant to biological modelling [[1](https://en.wikipedia.org/wiki/Agent-based_model_in_biology)]:
+1. Modular structure: The behavior of an agent-based model is defined by the rules of its agents. Existing agent rules can be modified or new agents can be added without having to modify the entire model.
+2. Emergent properties: Through the use of the individual agents that interact locally with rules of behavior, agent-based models result in a synergy that leads to a higher level whole with much more intricate behavior than those of each individual agent.
+3. Abstraction: Either by excluding non-essential details or when details are not available, agent-based models can be constructed in the absence of complete knowledge of the system under study. This allows the model to be as simple and verifiable as possible.
+4. Stochasticity: Biological systems exhibit behavior that appears to be random. The probability of a particular behavior can be determined for a system as a whole and then be translated into rules for the individual agents.
+
+_Notables systems:_
+* [Boids](#boids)
+
+_Articles:_
+* [Agent-based model](https://en.wikipedia.org/wiki/Agent-based_model) on Wikipedia
+* [Multi-agent system](https://en.wikipedia.org/wiki/Multi-agent_system) on Wikipedia
+* [Agent-based model in biology](https://en.wikipedia.org/wiki/Agent-based_model_in_biology) on Wikipedia
+* [Emergence](https://en.wikipedia.org/wiki/Emergence) on Wikipedia
+* [Swarm intelligence](https://en.wikipedia.org/wiki/Swarm_intelligence) on Wikipedia
+
+---
+
+### Boids
 
 ```
 TODO
 ```
 
-_Notables systems:_
-* [Boids](https://en.wikipedia.org/wiki/Boids)
-
 _Articles:_
-* [Agent-based model](https://en.wikipedia.org/wiki/Agent-based_model) on Wikipedia
+* [Boids](https://en.wikipedia.org/wiki/Boids) on Wikipedia
 
 ---
 
