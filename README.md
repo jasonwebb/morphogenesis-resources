@@ -34,6 +34,8 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           <summary>Math and physics topics <a href="#math-and-physics-topics">[#]</a></summary>
           <p>
             <ul>
+              <li><a href="#agent-based-modelling">Agent-based modelling</a></li>
+              <li><a href="#boids">Boids</a></li>
               <li><a href="#cellular-automata-ca">Cellular automata</a></li>
               <li><a href="#cymatics">Cymatics</a></li>
               <li><a href="#delaunay-triangulation-and-voronoi-diagrams">Delaunay triangulation and Voronoi diagrams</a></li>
@@ -899,14 +901,28 @@ _Articles:_
 
 ---
 
-### Boids
+<img src="https://fat.gfycat.com/EcstaticFatArctichare.gif" width="300" align="right">
 
-```
-TODO
-```
+### Boids
+_Related topics include [agent-based modelling](#agent-based-modelling)._
+
+Well-known type of [agent-based system](#agent-based-modelling) that realistically simulates the complex flocking behaviors of birds and fish using simple rules. Each "boid" is an autonomous agent that is only aware of its immediate neighbor boids, all following the same three rules:
+
+1. Separation (collision avoidance): steer to avoid crowding local flockmates
+2. Alignment (velocity matching): steer towards the average heading of local flockmates
+     * _Note:_ remember that a vector is a combination of a speed and a direction (heading)!
+3. Cohesion (flock centering): steer to move towards the average position (center of mass) of local flockmates
+
+Additional rules can be implemented to simulate specific behaviors like obstacle avoidance, predator-prey interactions, [bait balls](https://en.wikipedia.org/wiki/Bait_ball), and more.
 
 _Articles:_
+* [Flocks, Herds, and Schools: A Distributed Behavioral Model](https://team.inria.fr/imagine/files/2014/10/flocks-hers-and-schools.pdf) - original 1987 paper by Craig Reynolds
 * [Boids](https://en.wikipedia.org/wiki/Boids) on Wikipedia
+* [Chapter 6. Autonomous Agents](https://natureofcode.com/book/chapter-6-autonomous-agents/) from Nature of Code
+* [Boids](https://www.red3d.com/cwr/boids/) by Craig Reynolds
+
+_Videos:_
+* [Coding Challenge #124: Flocking Simulation](https://www.youtube.com/watch?v=mhjuuHl6qHM) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_124_Flocking_Boids) with source code for p5.js and Processing)
 
 ---
 
