@@ -243,9 +243,13 @@ TODO
 
 _Articles:_
 * [Modeling Trees with a Space Colonization Algorithm](http://algorithmicbotany.org/papers/colonization.egwnp2007.large.pdf) (PDF) paper by Adam Runions, Brendan Lane, and Przemyslaw Prusinkiewicz
+* [Procedurally Generated Trees with Space Colonization Algorithm in XNA C#](http://www.jgallant.com/procedurally-generating-trees-with-space-colonization-algorithm-in-xna/) by Jon Gallant
+* [Part 26: Trees](http://www.sea-of-memes.com/LetsCode26/LetsCode26.html) by Michael Goodfellow
 
 _Code projects:_
 * [ofxSpaceColoinzation](https://github.com/edap/ofxSpaceColonization) add-on for openFrameworks
+* [space-colonization](https://github.com/nicknikolov/space-colonization) (JavaScript) by Nick Nikolov
+* [Dendrite](https://github.com/mattatz/Dendrite) (Unity) by mattatz
 
 _Videos:_
 * [Coding Challenge #17: Fractal Trees - Space Colonization](https://www.youtube.com/watch?v=kKT0v3qhIQY) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_017_SpaceColonizer) with source code for p5.js and Processing)
@@ -809,7 +813,7 @@ _Notable software:_
 
 ### Belousov–Zhabotinsky (BZ) reaction
 
-Oscillating chemical reaction that can produce cmoplex, regularly-spaced shapes that intersect (combining or cancelling) in predictable ways. The actual chemical reaction is very complex and is thought to involve around 18 distinct steps; the original discoverers struggled to get their work published because of their difficulties in explaining the underlying mechanisms of this reaction!
+Oscillating chemical reaction that can produce complex, regularly-spaced shapes that intersect (combining or cancelling) in predictable ways. The actual chemical reaction is very complex and is thought to involve around 18 distinct steps; the original discoverers struggled to get their work published because of their difficulties in explaining the underlying mechanisms of this reaction!
 
 It may be possible to simulate this reaction, at least superficially, using either [reaction-diffusion systems](#reaction-diffusion) or [cellular automata](#cellular-automata-ca) (see the Hodgepodge Machine specifically).
 
@@ -874,6 +878,7 @@ _Related to [Saffman-Taylor instability](#saffmantaylor-instability)._
 Apparatus for demonstrating and studying a pheonmenon known as [viscous fingering](#saffman%E2%80%93taylor-instability) (a.k.a. Saffman-Taylor instability), which is defined as "the formation of patterns in a morphologically unstable interface between two fluids in a porous medium" [[1](https://en.wikipedia.org/wiki/Saffman%E2%80%93Taylor_instability)]. It occurs when a less viscous fluid is injected into a more viscous fluid, displacing it in a series of blobby, fractal-like fingers resembling (perhaps related to) the patterns formed by [diffusion-limited aggregation](#diffusion-limited-aggregation-dla) or [differential growth](#differential-growth).
 
 _Setup:_
+
 The Hele-Shaw cell typically consists of two plates, usually glass or plexiglass, separated by a very short distance (`TODO: how short?`). A viscous fluid such as glycerin is injected through a hole either in the center of one of the plates or between the plates from the side, followed by colored water. As the colored water is injected and pressure is built up, the glycerin partially resists it's flow resulting in complex, wavy lines where the two liquids meet. For added effect, illuminate the cell by placing a light underneath, shining towards the viewer through the cell.
 
 ```
@@ -901,12 +906,32 @@ _Images:_
 
 ### Schlieren imaging
 
-```
-TODO
-```
+Technique for visualizing density variations in transparent media, usually air. Essentially exaggerates the effects of refraction in different densities of air caused by heat (hot air expands, cool air contracts) or pressure (like ultrasonic transducers). Effect can be observed using just a few low-cost components:
+
+1. Concave mirror with a long focal length (3-4ft or more) - spherical mirrors work best, but parabolic mirrors can work
+2. Point light source - the brightest, smallest light source you can find/make. Lasers don't work well, but a simple LED with a pinhole cover or a strand of fiber optic will work. Doesn't need to be very bright.
+3. Razor blade or color filter
+4. Camera
+
+_Diagram of typical setup:_
+
+<img src="http://www.ian.org/Schlieren/SchlierenDiagram.png">
 
 _Articles:_
+* [Schlieren](https://en.wikipedia.org/wiki/Schlieren) on Wikipedia
 * [Schlieren imaging](https://en.wikipedia.org/wiki/Schlieren_imaging) on Wikipedia
+* [Schlieren photography](https://en.wikipedia.org/wiki/Schlieren_photography) on Wikipedia
+* [Schielren Optics](https://sciencedemonstrations.fas.harvard.edu/presentations/schlieren-optics) by Harvard Natural Sciences Lecture Demonstrations
+
+_DIY projects:_
+* [Schlieren Imaging: How to See Air Flow!](https://www.instructables.com/id/Schlieren-Imaging-How-to-see-air-flow/) by Bryan Rolfe
+* [DIY Schlieren Flow Visualization](https://www.instructables.com/id/DIY-Schlieren-Flow-Visualization/) by Jonathan Lansey (jlansey)
+
+_Videos:_
+* [Seeing the Invisible: SLOW MOTION Schlieren Imaging](https://www.youtube.com/watch?v=4tgOyU34D44) by Veritasium
+* [Schlieren Imaging in Color!](https://www.youtube.com/watch?v=K7pQsR8WFSo) by Veritasium
+* [How To: Build Your Own Schlieren Setup](https://www.youtube.com/watch?v=IZ0bYi9UFv8) by JoshTheEngineer
+* [Visualizing Ultrasound with Schlieren Optics Part I](https://www.youtube.com/watch?v=MBPh410Gnes) [[Part II](https://www.youtube.com/watch?v=VrgyKFBPQW4)] [[Part III](https://www.youtube.com/watch?v=doxDOlwEblg)] by Harvard Natural Sciences Lecture Demonstrations
 
 <br>
 
@@ -1436,6 +1461,14 @@ _Articles:_
 
 ### Talks
 * [Nervous System - Eyeo Festival 2011](https://vimeo.com/33369209)
+* [Algorithmic Design with Houdini](https://vimeo.com/305061631#t=1500s) by Junichiro Horikawa at SIGGRAPH Asia 2018
+
+```
+TODO: Add link 
+
+
+ Entagma's Patreon series
+```
 
 <br>
 
