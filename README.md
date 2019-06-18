@@ -838,9 +838,32 @@ _Videos:_
 
 ### Chladni plate
 
-```
-TODO
-```
+Apparatus consisting of a suspended metal plate covered in a light dusting of fine sand or powder, then vibrated by either a bow or a voice coil (speaker). Beautiful, consistent nodal patterns known as [Chladni figures](https://en.wikipedia.org/wiki/Ernst_Chladni#Chladni_figures) emerge based on the specific resonance characteristics of the plate and the frequency of vibration inducued in it. Different sizes, shapes, and thicknesses of plates create different patterns, as do different frequencies, vibration methods, and audio samples.
+
+_Examples of Chladni figures:_
+<img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/06/7dd4c3f74f006b34bb1d70d7adebd54e58.jpg">
+
+_Articles:_
+* [Chladni figures](https://en.wikipedia.org/wiki/Ernst_Chladni#Chladni_figures) on Wikipedia
+
+_DIY projects:_
+* [Easy Chladni Plate](https://www.instructables.com/id/Easy-Chladni-Plate/) by Aron Hoekstra
+* [Building a Chladni Plate](https://medium.com/@MarioTheMaker/building-a-chladni-plate-e46cdfce1807) by Mario Cruz (MarioTheMaker)
+* [How to sculpt sound into Chladni figures](http://www.makery.info/en/2017/05/09/comment-sculpter-le-son-en-figures-de-chladni/) by Nicolas Barrial
+* [Chladni Plate](https://makezine.com/projects/chladni-plate/) by Edwin Wise
+
+_Products:_
+
+Due to its popularity as a demonstration aid in science classrooms, good-quaity Chladni plate's are available from multiple dealers including:
+* [Arbor Scientific](https://www.arborsci.com/products/chladni-plates-kit)
+* [PASCO](https://www.pasco.com/prodCatalog/WA/WA-9607_chladni-plates-kit/index.cfm)
+
+_Videos:_
+* [Weekend Projects: Visualizing Sound with a Chladni Plate](https://www.youtube.com/watch?v=hKmPc0Q0kKg) by Make
+* [Singing plates - Standing Waves on Chladni plates](https://www.youtube.com/watch?v=wYoxOJDrZzw) by Diana Cowern (Physics Girl)
+* [Chladni Figures - random couscous snaps into beautiful patterns](https://www.youtube.com/watch?v=CR_XL192wXw) by Steve Mould
+* [Resonance Experiment! (Full Version - With Tones)](https://www.youtube.com/watch?v=1yaqUI4b974) by brusspup
+* [Moving Particles with Vibration, Making the Chladni Plate](https://www.youtube.com/watch?v=9po11qjCWxA) by Mehdi Sadaghdar (ElectroBOOM)
 
 ---
 
