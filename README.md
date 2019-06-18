@@ -34,8 +34,6 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           <summary>Math and physics topics <a href="#math-and-physics-topics">[#]</a></summary>
           <p>
             <ul>
-              <li><a href="#agent-based-modelling">Agent-based modelling</a></li>
-              <li><a href="#boids">Boids</a></li>
               <li><a href="#cellular-automata-ca">Cellular automata</a></li>
               <li><a href="#cymatics">Cymatics</a></li>
               <li><a href="#delaunay-triangulation-and-voronoi-diagrams">Delaunay triangulation and Voronoi diagrams</a></li>
@@ -83,6 +81,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           <p>
             <ul>
               <li><a href="#agent-based-modelling">Agent-based modelling</a></li>
+              <li><a href="#boids">Boids</a></li>
               <li><a href="#collision-detection">Collision detection</a></li>
               <li><a href="#dithering">Dithering</a></li>
               <li><a href="#flow-field">Flow field</a></li>
