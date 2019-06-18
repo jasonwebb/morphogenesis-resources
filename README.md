@@ -71,7 +71,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           <summary>Lab experiments <a href="#lab-experiments">[#]</a></summary>
           <p>
             <ul>
-              <li><a href="#belousovzhabotinsky-reaction">Belousov–Zhabotinsky reaction</a></li>
+              <li><a href="#belousovzhabotinsky-bz-reaction">Belousov–Zhabotinsky (BZ) reaction</a></li>
               <li><a href="#chladni-plate">Chladni plate</a></li>
               <li><a href="#hele-shaw-cell">Hele-Shaw cell</a></li>
               <li><a href="#schlieren-imaging">Schlieren imaging</a></li>
@@ -808,21 +808,29 @@ _Notable software:_
 
 <img src="https://live.staticflickr.com/3626/3572095252_a43ca95002_b.jpg" width="300" align="right">
 
-### Belousov–Zhabotinsky reaction
+### Belousov–Zhabotinsky (BZ) reaction
+
+Oscillating chemical reaction that can produce cmoplex, regularly-spaced shapes that intersect (combining or cancelling) in predictable ways. The actual chemical reaction is very complex and is thought to involve around 18 distinct steps; the original discoverers struggled to get their work published because of their difficulties in explaining the underlying mechanisms of this reaction!
+
+It may be possible to simulate this reaction, at least superficially, using either [reaction-diffusion systems](#reaction-diffusion) or [cellular automata](#cellular-automata-ca) (see the Hodgepodge Machine specifically).
 
 ```
-TODO
+TODO: is it possible to succinctly describe "recipe" for reliable BZ reaction in petri dish?
 ```
 
 _Articles:_
 * [Belousov–Zhabotinsky reaction](https://en.wikipedia.org/wiki/Belousov%E2%80%93Zhabotinsky_reaction) on Wikipedia
 * [Belousov-Zhabotinsky reaction](http://www.scholarpedia.org/article/Belousov-Zhabotinsky_reaction) on Scholarpedia
+* [The Belousov-Zhabotinsky Reaction and The Hodgepodge Machine](https://softologyblog.wordpress.com/2017/02/04/the-belousov-zhabotinsky-reaction-and-the-hodgepodge-machine/) by Softology
 
 _Code projects:_
 * [Simulating the Belousov-Zhabotinsky reaction](https://scipython.com/blog/simulating-the-belousov-zhabotinsky-reaction/) (Python) by Christian Hill
 
 _Videos:_
 * [Belousov-Zhabotinsky Reaction](https://www.youtube.com/watch?v=IBa4kgXI4Cg) by nater06
+* [Recreating one of the weirdest reactions](https://www.youtube.com/watch?v=LL3kVtc-4vY) by NilesRed
+* [Preparation of a Belousov--Zhabotinsky reaction for use in a Petri-dish Part 1](https://www.youtube.com/watch?v=1_Vtz1KG4gg) by Nigel Baldwin
+* [Preparation of a Belousov--Zhabotinsky reaction for use in a Petri-dish Part 2](https://www.youtube.com/watch?v=EWmm9tgLgMc) by Nigel Baldwin
 
 ---
 
