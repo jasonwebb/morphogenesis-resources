@@ -73,7 +73,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
             <ul>
               <li><a href="#belousovzhabotinsky-reaction">Belousov–Zhabotinsky reaction</a></li>
               <li><a href="#chladni-plate">Chladni plate</a></li>
-              <li><a href="#hele-shaw-cell-experiment">Hele-Shaw cell experiment</a></li>
+              <li><a href="#hele-shaw-cell">Hele-Shaw cell</a></li>
               <li><a href="#schlieren-imaging">Schlieren imaging</a></li>
             </ul>
           </p>
@@ -669,7 +669,7 @@ _Videos:_
 ---
 
 ### Saffman–Taylor instability
-_Related to the [Hele-Shaw cell](#hele-shaw-cell-experiment) experiment._
+_Related to the [Hele-Shaw cell](#hele-shaw-cell) experiment._
 
 Also known as viscous fingering.
 
@@ -838,11 +838,20 @@ TODO
 
 <img src="http://n-e-r-v-o-u-s.com/blog/wp-content/uploads/2011/04/5597278928_fed4566d5b_b.jpg" width="300" align="right" alt="Hele-Shaw cell experiment by Nervous System">
 
-### Hele-Shaw cell experiment
+### Hele-Shaw cell
 _Related to [Saffman-Taylor instability](#saffmantaylor-instability)._
 
+Apparatus for demonstrating and studying a pheonmenon known as [viscous fingering](#saffman%E2%80%93taylor-instability) (a.k.a. Saffman-Taylor instability), which is defined as "the formation of patterns in a morphologically unstable interface between two fluids in a porous medium" [[1](https://en.wikipedia.org/wiki/Saffman%E2%80%93Taylor_instability)]. It occurs when a less viscous fluid is injected into a more viscous fluid, displacing it in a series of blobby, fractal-like fingers resembling (perhaps related to) the patterns formed by [diffusion-limited aggregation](#diffusion-limited-aggregation-dla) or [differential growth](#differential-growth).
+
+_Setup:_
+The Hele-Shaw cell typically consists of two plates, usually glass or plexiglass, separated by a very short distance (`TODO: how short?`). A viscous fluid such as glycerin is injected through a hole either in the center of one of the plates or between the plates from the side, followed by colored water. As the colored water is injected and pressure is built up, the glycerin partially resists it's flow resulting in complex, wavy lines where the two liquids meet. For added effect, illuminate the cell by placing a light underneath, shining towards the viewer through the cell.
+
 ```
-TODO
+TODO: provide more details step-by-step instructions
+```
+
+```
+TODO: note about lifted Hele-Shaw cells
 ```
 
 _Articles:_
