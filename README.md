@@ -132,6 +132,13 @@ Process in which particles of matter stick together (_aggregate_) as they chaoti
 
 Very interesting macro-structures begin to emerge at around the 1-10 million particle range in 3D, but in order to get there you'll need to be smart about your rendering pipeline and make use of optimized code in a performant language or environment (C/C++, CUDA, GLSL shaders, Houdini, etc).
 
+_Algorithm at a glance:_
+1. Add initial point(s) or shapes to seed growth.
+2. Add a number of walker particles.
+3. In each tick of the simulation, do the following:
+   1. Move each walker a small amount in a random direction.
+   2. If any walker particle is colliding with a fixed/clustered particle, convert that walker particle into a fixed/clustered particle.
+
 _Key terms:_
 * Walker - randomly-moving particle not attached to any other particle
 * Cluster - group of multiple particles stuck together
