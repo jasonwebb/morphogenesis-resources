@@ -1,4 +1,4 @@
-[Digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis) is the exploration of how shapes, forms, and patterns emerge in nature through the use of computational modeling and generative systems based on biological, chemical, and physical processes. It draws upon research from practically every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, and more. 
+[Digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis) is the exploration of how shapes, forms, and patterns emerge in nature through the use of computational modeling and generative systems based on biological, chemical, and physical processes. It draws upon research from practically every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, and more.
 
 With such a cross-disciplinary topic it can be hard to keep track of and correlate all the interesting bits of knowledge that one comes across, which is where this list comes in. The goal of this list is to succinctly catalog various growth algorithms and lab experiments along with relevant math, physics, and programming concepts in one place in order to (1) serve as a sort of "cheat sheet" reference for developers and computer artists, and (2) spark new insights by making it easier to see relationships between seemingly disparate topics.
 
@@ -235,15 +235,17 @@ _Articles:_
 
 ---
 
+<img src="https://i.imgur.com/2dp2szl.gif" width="300" align="right">
+
 ### Space colonization
 
-```
-TODO
-```
+Process for iteratively growing networks of branching lines based on the distribution of "food" sources to which the lines are attracted. Originally described by Adam Runions and collaborators at the [Algorithmic Botany group](http://algorithmicbotany.org/) at the University of Calgary, this system can be used to simulate the growth of leaf venation patterns and tree-like structures, as well as many other vein-like systems like Gorgonian sea fans, circulatory systems, root systems, and more.
+
+The original algorithm describes methods for generating both "open" (as seen in the example GIF) and "closed" venation networks, referring to whether or not secondary or tertiary veins connect together to form loops (or _anastomoses_).
 
 _Articles and papers:_
-* [Modeling and visualization of leaf venation patterns](http://algorithmicbotany.org/papers/venation.sig2005.pdf) (PDF) paper by Adam Runions, Martin Fuhrer, Brendan Lane, Pavol Federl, Anne−Gaëlle Rolland−Lagan, and Przemyslaw Prusinkiewicz
-* [Modeling Trees with a Space Colonization Algorithm](http://algorithmicbotany.org/papers/colonization.egwnp2007.large.pdf) (PDF) paper by Adam Runions, Brendan Lane, and Przemyslaw Prusinkiewicz
+* [Modeling and visualization of leaf venation patterns](http://algorithmicbotany.org/papers/venation.sig2005.pdf) (PDF) original 2005 paper by Adam Runions, Martin Fuhrer, Brendan Lane, Pavol Federl, Anne−Gaëlle Rolland−Lagan, and Przemyslaw Prusinkiewicz
+* [Modeling Trees with a Space Colonization Algorithm](http://algorithmicbotany.org/papers/colonization.egwnp2007.large.pdf) (PDF) 2007 paper by Adam Runions, Brendan Lane, and Przemyslaw Prusinkiewicz
 * [Procedurally Generated Trees with Space Colonization Algorithm in XNA C#](http://www.jgallant.com/procedurally-generating-trees-with-space-colonization-algorithm-in-xna/) by Jon Gallant
 * [Part 26: Trees](http://www.sea-of-memes.com/LetsCode26/LetsCode26.html) by Michael Goodfellow
 
@@ -267,7 +269,7 @@ _Videos:_
 
 ### Reaction-diffusion
 
-Grid-based process that generates complex and dynamic patterns based the interactions of two chemicals as they _diffuse_ through a medium. At every location on the grid these chemicals (usually referred to as `A` and `B`) have a chance of causing a _reaction_ that converts chemicals of one type to another based on their relative concentrations at that location. 
+Grid-based process that generates complex and dynamic patterns based the interactions of two chemicals as they _diffuse_ through a medium. At every location on the grid these chemicals (usually referred to as `A` and `B`) have a chance of causing a _reaction_ that converts chemicals of one type to another based on their relative concentrations at that location.
 
 Throughout the simulation chemical `A` is added at a particular _feed rate_ (`f`) and chemical `B` is removed at a particular _kill rate_ (`k`) - adjusting these rates can result in wildly different emergent patterns.
 
@@ -316,7 +318,7 @@ _Videos:_
 <img src="https://c1.staticflickr.com/1/915/42277964325_431501c7c0_o.gif" width="300" align="right">
 
 ### Cellular automata (CA)
-A regular grid of _cells_ with _states_ that are updated each iteration in according to _rules_. Developed by Stanislaw Ulam and John von Neumann at the Los Alamos National Laboratory in the 1940s, this system has been used to model physical, biological, and social phenomena with remarkable variety and accuracy. 
+A regular grid of _cells_ with _states_ that are updated each iteration in according to _rules_. Developed by Stanislaw Ulam and John von Neumann at the Los Alamos National Laboratory in the 1940s, this system has been used to model physical, biological, and social phenomena with remarkable variety and accuracy.
 
 _Key terms:_
 * Cell - a discrete location on the grid
@@ -369,7 +371,7 @@ _Creative projects:_
 ### Delaunay triangulation and Voronoi diagrams
 _Delaunay triangulation_ is a way of connecting a set of points to form a network of non-overlapping triangles. One of the key properties of Delaunay triangulations is that the [circumcircles](https://en.wikipedia.org/wiki/Circumscribed_circle) associated with each triangle contains no other points than their three triangle vertices. When extended into 3D, Delaunay triangulation is useful for creating meshes.
 
-_Voronoi diagrams_ are the [dual](https://observablehq.com/@mbostock/the-delaunays-dual) of Delaunay triangulations. This means that once a Delaunay triangulation has been computed for a set of points, a Voronoi diagram can be drawn without any additional data - just draw lines connecting the centers of the circumcircles! 
+_Voronoi diagrams_ are the [dual](https://observablehq.com/@mbostock/the-delaunays-dual) of Delaunay triangulations. This means that once a Delaunay triangulation has been computed for a set of points, a Voronoi diagram can be drawn without any additional data - just draw lines connecting the centers of the circumcircles!
 
 Voronoi diagrams are very useful for efficiently and organically partitioning (splitting up) both 2D and 3D space. They are especially good for accurately modelling the way soft bodies (like biological cells) get smushed together in constrained environments, like embryonic cells undergoing mitosis.
 
@@ -396,7 +398,7 @@ Sequence of numbers in which each number is the sum of it's two preceding number
   </tr>
  </thead>
  <tbody>
-  <tr> 
+  <tr>
    <td>
     <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3c667d91153450b3a161371582ee8227af85951f"><br>
     <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0fff1a1716fcc169546079870357f92757ade5fa">
@@ -510,7 +512,7 @@ _Creative projects:_
 ### Golden ratio
 _Related to the [Fibonacci sequence](#fibonacci-sequence)._
 
-Also expressed as the Greek letter _phi_ (`φ`), this irrational number pops up when the ratio of two numbers is the same as the ratio of their sum to the largest of the two numbers. It has been observed in many fields of the natural sciences at every scale and is has become associated with aesthetic beauty, giving it a nearly mythic reputation for some. 
+Also expressed as the Greek letter _phi_ (`φ`), this irrational number pops up when the ratio of two numbers is the same as the ratio of their sum to the largest of the two numbers. It has been observed in many fields of the natural sciences at every scale and is has become associated with aesthetic beauty, giving it a nearly mythic reputation for some.
 
 _Expressed algebraicly:_
 
@@ -534,7 +536,7 @@ Equations used to calaculate the positions of a series of rigidly-linked segment
 
 **Inverse** kinematics calculate the angles of each linked segment given the desired location of the end effector. Will give you the angles of each segment, which can in turn be converted into motor positions for a robot.
 
-**Forward** kinematics calculate the location of the end effector given the angles and lengths of each linked segment. 
+**Forward** kinematics calculate the location of the end effector given the angles and lengths of each linked segment.
 
 _Articles:_
 * [Kinematics](https://en.wikipedia.org/wiki/Kinematics) on Wikipedia
@@ -613,7 +615,7 @@ _Articles:_
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/15_circles_in_a_square.svg/480px-15_circles_in_a_square.svg.png" width="300" align="right">
 
 ### Packing problems
-Class of optimization problems that involve determining efficient ways to arrange (_pack_) objects into containers. Packing problems can be tackled using discrete mathematical methods, physics systems (as seen in Nervous System's [Kinematics](https://n-e-r-v-o-u-s.com/blog/?p=7162) series), and even genetic algorithms and machine learning. 
+Class of optimization problems that involve determining efficient ways to arrange (_pack_) objects into containers. Packing problems can be tackled using discrete mathematical methods, physics systems (as seen in Nervous System's [Kinematics](https://n-e-r-v-o-u-s.com/blog/?p=7162) series), and even genetic algorithms and machine learning.
 
 Has major applications in digital fabrication, manufacturing, and shipping logistics where material and space usage is directly related to costs. In 2D, packing/nesting problem solutions are useful for minimizing waste material in sheet goods like plywood and sheet steel, even for hobbyists. In 3D these solutions are useful for fitting as many objects as possible into 3D printer build envelopes (see article from [Sculpteo](https://www.sculpteo.com/blog/2017/07/19/3d-printing-software-how-we-optimize-our-batch-using-our-nesting-tool/)).
 
@@ -729,7 +731,7 @@ _Articles:_
 
 ### Superellipse
 
-Also known as the Lamé curve, this equation describes a closed curve that can generate shapes that look like pinched or inflated ellipses. At the extremes of the parameter space the shapes can range from an outline of a plus (`+`) symbol to a nearly rectangular shape with rounded corners. 
+Also known as the Lamé curve, this equation describes a closed curve that can generate shapes that look like pinched or inflated ellipses. At the extremes of the parameter space the shapes can range from an outline of a plus (`+`) symbol to a nearly rectangular shape with rounded corners.
 
 _Equations:_
 <table>
@@ -756,7 +758,7 @@ _Videos:_
 <a href="https://github.com/Softwave/glsl-superformula" target="_blank"><img src="https://camo.githubusercontent.com/5da22383c27146107d848fd73659ba12e2a38d4a/687474703a2f2f692e696d6775722e636f6d2f744131755263662e706e67" width="300" align="right" alt="Screenshot from GLSL Supershapes by Softwave"></a>
 
 ### Superformula
-Generalized version of the superellipse formula proposed by Johan Giellis around 2000, capable of far more variety than the original superellipse. Unfortunately, Johan has patented use of the formula (via his company [Genicap](http://www.genicap.com/)) in both the US and the EU, which means you should avoid using it for any kind of commercial work, or work that could be commercialized in some way later. 
+Generalized version of the superellipse formula proposed by Johan Giellis around 2000, capable of far more variety than the original superellipse. Unfortunately, Johan has patented use of the formula (via his company [Genicap](http://www.genicap.com/)) in both the US and the EU, which means you should avoid using it for any kind of commercial work, or work that could be commercialized in some way later.
 
 The superformula can be used to generate both 2D and 3D forms. To create 2D forms, use the general form equation to obtain [polar coordinates](http://mathworld.wolfram.com/PolarCoordinates.html) that can be converted into Cartesian coordinates for drawing on a screen. To create 3D forms, compute the polar coordinates for _two_ 2D supershapes, then "mix" them together using the 3D equations below.
 
@@ -765,7 +767,7 @@ _Equations:_
  <tr>
   <td valign="top">General form</td>
   <td>
-   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8071dcb3a49044816f7885114c2335d805d7ad30"> 
+   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8071dcb3a49044816f7885114c2335d805d7ad30">
 
    Where `r` is a radius and `φ` (phi) is an angle
   </td>
@@ -948,7 +950,7 @@ _Videos:_
 
 ### Agent-based modelling
 
-Methods for simulating the actions and interactions of autonomous entities and the complex emergent behavior they exhibit collectively. Used for simulating and analyzing collective social and biological phenomena like flocking animals (e.g. birds or fish), colony behaviors (e.g. ants and termites), crowd movement, and more. 
+Methods for simulating the actions and interactions of autonomous entities and the complex emergent behavior they exhibit collectively. Used for simulating and analyzing collective social and biological phenomena like flocking animals (e.g. birds or fish), colony behaviors (e.g. ants and termites), crowd movement, and more.
 
 This topic has a lot in common with the related topic of [multi-agent systems](https://en.wikipedia.org/wiki/Multi-agent_system), but with a different intent. Agent-based models tend to seek explanatory insight into the collective behavior of agents (often real-world organisms or systems), whereas multi-agent systems tend to be more focused on solving practical or engineering problems through optimization of the design of agents.
 
@@ -1138,7 +1140,7 @@ _Videos:_
 <img src="http://www.bushwalking101.org/wp-content/uploads/2016/09/elevation.png" width="300" align="right">
 
 ### Marching squares
-Method of generating contours for a 2D scalar field (a grid of individual numerical values), like turning elevation data into a banded topographical map. The scalar values get associated with vertices of the 2D grid, then lines are drawn across each cell in different ways based on the values of their four corner vertices. 
+Method of generating contours for a 2D scalar field (a grid of individual numerical values), like turning elevation data into a banded topographical map. The scalar values get associated with vertices of the 2D grid, then lines are drawn across each cell in different ways based on the values of their four corner vertices.
 
 There is only a finite number of lines possible, so they can be precomputed into a lookup table and referenced quickly later for faster performance. These lines can also be linearly interpolated to smoothly transition from cell to cell, resulting in very realistic blobby / fluid structures.
 
@@ -1179,7 +1181,7 @@ The algorithm proceeds through the scalar field, taking eight neighbor locations
 
 1. Choose a threshold (called an _isovalue_) to determine which level of values are considered inside or outside the mesh, thus setting where the mesh boundary is created.
 2. Pre-compute an array of all 256 (`2^8`) possible polygon configurations within a cube, where each entry is a set of IDs associated with edges of the cube (see _Figure B_ below).
-      * Note that of these 256 configurations, only 15 are unique due to repetition and symmetry (see _Figure A_ below). 
+      * Note that of these 256 configurations, only 15 are unique due to repetition and symmetry (see _Figure A_ below).
 3. For each set of 8 scalar values (forming a cube), compute an 8-bit integer where each bit corresponds to a unique scalar value (corner of the cube).
       * If the scalar value is higher than the isovalue (i.e. inside of mesh), set bit to 1
       * If lower, set bit to 0
@@ -1191,7 +1193,7 @@ The algorithm proceeds through the scalar field, taking eight neighbor locations
 7. Perform boolean union with all polygon fragments to form a mesh
 
 <table>
- <thead> 
+ <thead>
   <tr>
    <th><cneter>(Figure A) diagram of 15 possible polygon configurations based on vertex bit values</center></th>
    <th><center>(Figure B) diagram of edge and vertex numbering</center></th>
@@ -1224,7 +1226,7 @@ _Videos:_
 ### Metaballs
 _Related to [marching squares](#marching-squares) (2D) and [marching cubes](#marching-cubes) (3D)_
 
-Often confused with [marching cubes](#marching-cubes), this is more of a mathmematical concept that describes a way to define the _values_ in 2D or 3D scalar fields based on distance to one or more points in space. They are a type of implicit surface that define blobby shapes as pure mathematical formulas rather than explicit polygons and vertices. 
+Often confused with [marching cubes](#marching-cubes), this is more of a mathmematical concept that describes a way to define the _values_ in 2D or 3D scalar fields based on distance to one or more points in space. They are a type of implicit surface that define blobby shapes as pure mathematical formulas rather than explicit polygons and vertices.
 
 They can be visualized using the [marching squares](#marching-squares) (2D) or [marching cubes](#marching-cubes) (3D) rendering algorithms. Can be used for naive [fluid simulations](#fluid-simulation) by applying [physics](#physics-engine) to the metaball center points as if they were [particles](#particle-system). They can also be helpful in modelling soft bodies by adding elastic constraints between the center points.
 
@@ -1247,9 +1249,9 @@ _Videos:_
 <img src="https://answers.unity.com/storage/temp/97016-perlin2.png" width="300" align="right">
 
 ### Noise
-In the context of computer graphics, refers to pseudo-random functions useful for creating natural-looking textures and patterns. Often used to procedurally generate organic surface textures (bark, waves, rocks, etc) and to organically distribute objects across surfaces (like grass or barnacles). 
+In the context of computer graphics, refers to pseudo-random functions useful for creating natural-looking textures and patterns. Often used to procedurally generate organic surface textures (bark, waves, rocks, etc) and to organically distribute objects across surfaces (like grass or barnacles).
 
-Useful for adding fine details and smooth asymmetry to otherwise pristine objects - use it in displacement maps for subtle natural features. 
+Useful for adding fine details and smooth asymmetry to otherwise pristine objects - use it in displacement maps for subtle natural features.
 
 Also helpful for creating looping animations because reproducable results can be achieved when using the same function inputs. Just iterate through a series of cyclical values (perhaps even based on frame count) and you'll end up with smoothly transitioning noise that can be mixed in with geometry, colors, and transformations that continuously loop.
 
@@ -1313,7 +1315,7 @@ _Notable open-source libraries:_
   * [box2d.js](https://github.com/kripken/box2d.js) (JavaScript via Emscripten)
   * [Planck.js](https://github.com/shakiba/planck.js) (JavaScript, manually ported)
 * [Bullet](https://github.com/bulletphysics/bullet3) (C++)
-  * [ammo.js](https://github.com/kripken/ammo.js/) (direct JavaScript port using Emscripten) 
+  * [ammo.js](https://github.com/kripken/ammo.js/) (direct JavaScript port using Emscripten)
 * [Matter.js](http://brm.io/matter-js/) (JavaScript)
 * [dyn4j](http://www.dyn4j.org/) (Java)
 * [cannon.js](http://schteppe.github.io/cannon.js/) (JavaScript)
@@ -1471,7 +1473,7 @@ _Articles:_
 * [Algorithmic Design with Houdini](https://vimeo.com/305061631#t=1500s) by Junichiro Horikawa at SIGGRAPH Asia 2018
 
 ```
-TODO: Add link 
+TODO: Add link
 
 
  Entagma's Patreon series
