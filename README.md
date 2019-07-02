@@ -180,6 +180,17 @@ _Videos:_
 ### Differential growth
 Process that acts on continuous chains of nodes connected by lines using simple rules (attraction, repulsion, alignment; not unlike boids) in order to produce undulating, buckling forms that mimic or simulate meandering rivers, rippled surface textures of plants/seeds/fruits, space-filling behaviors of worms, snakes, intestines, and much more.
 
+_Algorithm at a glance:_
+
+2D:
+1. Begin with a set of nodes connected in a chain-like fashion to form a path (or multiple paths). Each node should have a maximum of two neighbors (one preceding, one following).
+2. In each tick of the simulation, for each node:
+   1. Move node towards it's connected neighbor nodes (attraction).
+   2. If node gets too close to _any_ nearby nodes (connected or not), move it away from them (repulsion).
+   3. Move node towards the midpoint of an imaginary line between it's preceding and following nodes (alignment). It wants to rest equidistance between them with as little deflection as possible.
+3. In each tick of the simulation, evaluate the distances between each pair of connected nodes. If too great, insert a new node between them (adaptive subdivision).
+4. At some interval, insert new nodes in the chain to over-constrain the system and induce growth. The bends and undulations that emerge are a result of the system trying to equalize the forces using the rules defined in step 2.
+
 _Articles and discussions:_
 * [Exploring 2D differential growth with JavaScript](https://medium.com/@jason.webb/2d-differential-growth-in-js-1843fd51b0ce) by Jason Webb
 * [Differential line](https://inconvergent.net/generative/differential-line/) by Anders Hoff (inconvergent)
