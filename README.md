@@ -34,6 +34,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
           <summary>Math and physics topics <a href="#math-and-physics-topics">[#]</a></summary>
           <p>
             <ul>
+              <li><a href="#archimedean-solids">Archimedean solids</a></li>
               <li><a href="#cellular-automata-ca">Cellular automata</a></li>
               <li><a href="#cymatics">Cymatics</a></li>
               <li><a href="#delaunay-triangulation-and-voronoi-diagrams">Delaunay triangulation and Voronoi diagrams</a></li>
@@ -52,6 +53,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#packing-problems">Packing problems</a></li>
               <li><a href="#percolation-theory">Percolation theory</a></li>
               <li><a href="#phyllotaxis">Phyllotaxis</a></li>
+              <li><a href="#platonic-solids">Platonic solids</a></li>
               <li><a href="#saffmantaylor-instability">Saffman–Taylor instability</a></li>
               <li><a href="#spherical-harmonics">Spherical harmonics</a></li>
               <li><a href="#strange-attractors">Strange attractors</a></li>
@@ -335,6 +337,18 @@ _Videos:_
 <br>
 
 ## Math and physics topics
+
+### Archimedean solids
+
+```
+TODO
+```
+
+_Articles:_
+* [Archimedean solid](https://en.wikipedia.org/wiki/Archimedean_solid)
+
+---
+
 <img src="https://c1.staticflickr.com/1/915/42277964325_431501c7c0_o.gif" width="300" align="right">
 
 ### Cellular automata (CA)
@@ -716,6 +730,17 @@ _Code projects:_
 
 _Videos:_
 * [Coding Challenge #30: Phyllotaxis](https://www.youtube.com/watch?v=KWoJgHFYWxY) by Daniel Shiffman
+
+---
+
+### Platonic solids
+
+```
+TODO
+```
+
+_Articles:_
+* [Platonic solid](https://en.wikipedia.org/wiki/Platonic_solid)
 
 ---
 
