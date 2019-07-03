@@ -43,6 +43,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#geodesic-dome">Geodesic dome</a></li>
               <li><a href="#golden-angle">Golden angle</a></li>
               <li><a href="#golden-ratio">Golden ratio</a></li>
+              <li><a href="#implicit-surface">Implicit surface</a></li>
               <li><a href="#inverse-and-forward-kinematics">Inverse and forward kinematics</a></li>
               <li><a href="#laplace-transform">Laplace transform</a></li>
               <li><a href="#lissajous-curves">Lissajous curves</a></li>
@@ -92,6 +93,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#noise">Noise</a></li>
               <li><a href="#particle-system">Particle system</a></li>
               <li><a href="#physics-engine">Physics engine</a></li>
+              <li><a href="#ray-tracing">Ray tracing</a></li>
               <li><a href="#recursion">Recursion</a></li>
               <li><a href="#shaders">Shaders</a></li>
               <li><a href="#signed-distance-function-sdfs">Signed distance functions (SDFs)</a></li>
@@ -547,6 +549,20 @@ _Articles:_
 
 ---
 
+### Implicit surface
+
+```
+TODO
+```
+
+_Articles:_
+* [Implicit surface](https://en.wikipedia.org/wiki/Implicit_surface) on Wikipedia
+
+_Notable software:_
+* [K3DSurf](http://k3dsurf.sourceforge.net/)
+
+---
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/5R_robot.gif" width="300" align="right">
 
 ### Inverse and forward kinematics
@@ -624,6 +640,11 @@ _Articles:_
 ```
 TODO
 ```
+
+* Soap experiments (see Frei Otto and [Joseph Plateau's experiments](https://medium.com/designscience/1842-1868-9c6e0954b549))
+* Mesh relaxation
+* CMC surface (same as minimal surface, or can be combined?)
+* Surface evolver - see [Ken Brakke's work](https://facstaff.susqu.edu/brakke/evolver/evolver.html). Is there an underlying algorithm that can be decoupled from his particular implementation?
 
 _Articles:_
 * [Minimal surface](https://en.wikipedia.org/wiki/Minimal_surface)
@@ -1350,6 +1371,24 @@ If you're looking to do physical-based simulations, also take a look at game dev
 
 ---
 
+### Ray tracing
+
+```
+TODO
+```
+
+_Articles:_
+* [Ray tracing (graphics)](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) on Wikipedia
+
+_Code projects:_
+* [appleseed](https://appleseedhq.net/)
+* [Intel Embree](https://www.embree.org/)
+* [Intel OSPRay](https://www.ospray.org/)
+* [POV-Ray](http://www.povray.org/)
+* [Mitsuba](https://www.mitsuba-renderer.org/)
+
+---
+
 <img src="https://cdn-images-1.medium.com/max/1200/1*appBwh6_RtvocVxwqpplHA.jpeg" width="300" align="right">
 
 ### Recursion
@@ -1618,10 +1657,3 @@ TODO: Add link
   * [nannou](https://github.com/nannou-org/nannou)
 * Kotlin
   * [OPENRNDR](https://openrndr.org/)
-
-## Uncategorized (TODO)
-* Soap experiments (see Frei Otto and [Joseph Plateau's experiments](https://medium.com/designscience/1842-1868-9c6e0954b549))
-* Mesh relaxation
-* CMC surface (same as minimal surface, or can be combined?)
-* Surface evolver - see [Ken Brakke's work](https://facstaff.susqu.edu/brakke/evolver/evolver.html). Is there an underlying algorithm that can be decoupled from his particular implementation?
-* Implicit surfaces / modelling
