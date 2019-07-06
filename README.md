@@ -733,14 +733,26 @@ _Videos:_
 
 ---
 
+<img src="https://www.mathlearnit.com/images/platonic-solids.png" width="300" align="right">
+
 ### Platonic solids
 
-```
-TODO
-```
+Set of regular, convex polyhedra constructed using congruent, regular polygonal faces with the same number of faces meeting at each vertex. Euclid (and perhaps [Theaetetus](https://en.wikipedia.org/wiki/Theaetetus_(mathematician)) proved mathematically that there are only five shapes that fit this criteria (below).
+
+| Name         | Polygon type | Faces | Edges | Vertices | Image |
+|---           |---           |---    |---    |---       |---       |
+| Tetrahedron  | Triangle     | 4     | 6     | 4        | <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Tetrahedron.gif" width="50"> |
+| Cube         | Square       | 6     | 12    | 8        | <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Hexahedron.gif" width="50"> |
+| Octahedron   | Triangle     | 8     | 12     | 6       | <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Octahedron.gif" width="50"> |
+| Dodecahedron | Pentagon     | 12    | 30    | 20       | <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Dodecahedron.gif" width="50"> |
+| Icosahedron  | Triangle     | 20    | 30    | 12       | <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Icosahedron.gif" width="50"> |
 
 _Articles:_
-* [Platonic solid](https://en.wikipedia.org/wiki/Platonic_solid)
+* [Platonic solid](https://en.wikipedia.org/wiki/Platonic_solid) on Wikipedia
+* [Platonic Solids](https://tutors.com/math-tutors/geometry-help/platonic-solids) on Tutors.com
+
+_Videos:_
+* [5 Platonic Solids](https://www.youtube.com/watch?v=gVzu1_12FUc) by Numberphile
 
 ---
 
