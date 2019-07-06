@@ -338,14 +338,38 @@ _Videos:_
 
 ## Math and physics topics
 
+<img src="https://cdn.britannica.com/04/197704-004-F0376BA1.jpg" width="300" align="right">
+
 ### Archimedean solids
 
-```
-TODO
-```
+Set of 13 semi-regular convex polyhedra composed of regular polygons meeting in identical vertices, excluding the 5 [Platonic solids](#platonic-solids) (which are composed of only one type of polygon) and excluding the prisms and antiprisms.
+
+Each shape [can be constructed](https://en.wikipedia.org/wiki/Archimedean_solid#Construction_of_Archimedean_solids) by starting with one of the [Platonic solids](#platonic-solids) and truncating it's corners or edges in various ways.
+
+_List of Archimedean solids:_
+| Name                        | Faces                                      | Edges | Vertices | Image |
+|---                          |---                                         |---    |---       |---    |
+| Truncated tetrahedron       | 4 triangles<br>4 hexagons                  | 18    | 12       | <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Truncatedtetrahedron.gif" width="50"> |
+| Cuboctahedron               | 8 triangles<br>6 squares                   | 24    | 12       | <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Cuboctahedron.gif" width="50"> |
+| Truncated cube              | 8 triangles<br>6 octagons                  | 36    | 24       | <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Truncatedhexahedron.gif" width="50"> |
+| Truncated octahedron        | 6 squares<br>8 hexagons                    | 36    | 24       | <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Truncatedoctahedron.gif" width="50"> |
+| Rhombicuboctahedron         | 8 triangles<br>18 squares                  | 48    | 24       | <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Rhombicuboctahedron.gif" width="50"> |
+| Truncated cuboctahedron     | 12 squres<br>8 hexagons<br>6 octagons      | 72    | 48       | <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Truncatedcuboctahedron.gif" width="50"> |
+| Snub cube                   | 32 triangles<br>6 squares                  | 60    | 24       | <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Snubhexahedronccw.gif" width="50"> |
+| Icosidodecahedron           | 20 triangles<br>12 pentagons               | 60    | 30       | <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Icosidodecahedron.gif" width="50"> |
+| Truncated dodecahedron      | 20 triangles<br>12 decagons                | 90    | 60       | <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Truncateddodecahedron.gif" width="50"> |
+| Truncated icosahedron       | 12 pentagons<br>20 hexagons                | 90    | 60       | <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Truncatedicosahedron.gif" width="50"> |
+| Rhombicosidodecahedron      | 20 triangles<br>30 squares<br>12 pentagons | 120   | 60       | <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Rhombicosidodecahedron.gif" width="50"> |
+| Truncated icosidodecahedron | 30 squares<br>20 hexagons<br>12 decagons   | 180   | 120      | <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Truncatedicosidodecahedron.gif" width="50"> |
+| Snub dodecahedron           | 80 triangles<br>12 pentagons               | 150   | 60       | <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Snubdodecahedroncw.gif" width="50"> |
 
 _Articles:_
-* [Archimedean solid](https://en.wikipedia.org/wiki/Archimedean_solid)
+* [Archimedean solid](https://en.wikipedia.org/wiki/Archimedean_solid) on Wikipedia
+* [Archimedean Solid](http://mathworld.wolfram.com/ArchimedeanSolid.html) on Wolfram MathWorld
+* [Archimedean Polyhedra](https://www.georgehart.com/virtual-polyhedra/archimedean-info.html) by George Hart
+
+_Videos:_
+* [Platonic and Archimedean solids](https://www.youtube.com/watch?v=U3cTXqvW3XU) by Henry Segerman
 
 ---
 
@@ -1694,3 +1718,6 @@ TODO: Add link
   * [nannou](https://github.com/nannou-org/nannou)
 * Kotlin
   * [OPENRNDR](https://openrndr.org/)
+
+# Uncategorized
+* CSG
