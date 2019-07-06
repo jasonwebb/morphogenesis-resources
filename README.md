@@ -347,6 +347,7 @@ Set of 13 semi-regular convex polyhedra composed of regular polygons meeting in 
 Each shape [can be constructed](https://en.wikipedia.org/wiki/Archimedean_solid#Construction_of_Archimedean_solids) by starting with one of the [Platonic solids](#platonic-solids) and truncating it's corners or edges in various ways.
 
 _List of Archimedean solids:_
+
 | Name                        | Faces                                      | Edges | Vertices | Image |
 |---                          |---                                         |---    |---       |---    |
 | Truncated tetrahedron       | 4 triangles<br>4 hexagons                  | 18    | 12       | <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Truncatedtetrahedron.gif" width="50"> |
