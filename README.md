@@ -733,7 +733,7 @@ _Videos:_
 
 ---
 
-<img src="https://www.mathlearnit.com/images/platonic-solids.png" width="250" align="right">
+<img src="https://www.mathlearnit.com/images/platonic-solids.png" width="300" align="right">
 
 ### Platonic solids
 
