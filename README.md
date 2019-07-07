@@ -86,6 +86,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#agent-based-modelling">Agent-based modelling</a></li>
               <li><a href="#boids">Boids</a></li>
               <li><a href="#collision-detection">Collision detection</a></li>
+              <li><a href="#constructive-solid-geometry-csg">Constructive solid geometry (CSG)</a></li>
               <li><a href="#dithering">Dithering</a></li>
               <li><a href="#flow-field">Flow field</a></li>
               <li><a href="#fluid-simulation">Fluid simulation</a></li>
@@ -1100,6 +1101,17 @@ _Videos:_
 
 ---
 
+### Constructive solid geometry (CSG)
+
+```
+TODO
+```
+
+_Articles:_
+* [Constructive solid geometry](https://en.wikipedia.org/wiki/Constructive_solid_geometry) on Wikipedia
+
+---
+
 <img src="https://cdn-images-1.medium.com/max/800/1*CHhG6Ea1664UrKwaJhiDTQ.png" width="300" align="right">
 
 ### Collision detection
@@ -1719,6 +1731,3 @@ TODO: Add link
   * [nannou](https://github.com/nannou-org/nannou)
 * Kotlin
   * [OPENRNDR](https://openrndr.org/)
-
-# Uncategorized
-* CSG
