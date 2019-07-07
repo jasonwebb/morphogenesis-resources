@@ -1107,6 +1107,7 @@ _Videos:_
 Technique for 3D solid modeling that allows for the creation of complex surfaces by using Boolean operators to combine simpler objects (usually primitives like cubes, spheres, cylinders, etc). Most CAD and 3D modeling applications (like Blender, Fusion, Rhino, and more) include CSG operations, sometimes even through parametric or procedural interfaces.
 
 _Operations:_
+
 | Name         | Descriptionn                           | Illustration |
 |---           |---                                     |---           |
 | Union        | Merger of two objects into one         | <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Boolean_union.PNG" width="200">      |
