@@ -588,14 +588,26 @@ _Articles:_
 
 ---
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Metamorphose-torus-4ppfl.svg/400px-Metamorphose-torus-4ppfl.svg.png" width="300" align="right">
+
 ### Implicit surface
 
-```
-TODO
-```
+A surface defined by an equation in the form of <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f797686e3ef2f8f21155bd4f035b8d40f288ab95">. The surface itself is defined by the set of zeros of such a function. Implicit surfaces are infinitely scalable, and are much more smooth / "blobby" than surfaces defined explicitly by vertices and faces. However, they are more difficult and computationally expensive to render, requiring an algorithm like raymarching or [marching cubes](#marching-cubes) in order to represent the surface on a 2D screen.
+
+_Examples of implicit surface equations:_
+
+| Surface               | Equation |
+|---                    |---       |
+| Plane                 | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/97213f15273c199899e51cd13b6fd15bdd3dccdb"> |
+| Sphere                | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/643600b6c85601e1b38f7541f0ef279c39017629"> |
+| Torus                 | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9aa3e6979c2e591870fea3f75c89056571a2c517"> |
+| Surface of genus 2    | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/156dc228cb99c1a7e5944c22d3d3725cdefabafc"> |
+| Surface of revolution | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1b47cba95850ec6ee2a2858d24c1de7e91e1742"> |
 
 _Articles:_
 * [Implicit surface](https://en.wikipedia.org/wiki/Implicit_surface) on Wikipedia
+* [Implicit surfaces](http://paulbourke.net/geometry/implicitsurf/) by Paul Bourke
+* [Implicit surface a.k.a (signed) distance field: definition](http://rodolphe-vaillant.fr/?e=86) by Rodolphe Vaillant
 
 _Notable software:_
 * [K3DSurf](http://k3dsurf.sourceforge.net/)
@@ -1325,9 +1337,9 @@ _Videos:_
 <img src="http://www.geisswerks.com/ryan/BLOBS/post6.gif" width="300" align="right">
 
 ### Metaballs
-_Related to [marching squares](#marching-squares) (2D) and [marching cubes](#marching-cubes) (3D)_
+_Related to [implicit surfaces](#implicit-surface), [marching squares](#marching-squares) (2D) and [marching cubes](#marching-cubes) (3D)_
 
-Often confused with [marching cubes](#marching-cubes), this is more of a mathmematical concept that describes a way to define the _values_ in 2D or 3D scalar fields based on distance to one or more points in space. They are a type of implicit surface that define blobby shapes as pure mathematical formulas rather than explicit polygons and vertices.
+Often confused with [marching cubes](#marching-cubes), this is more of a mathmematical concept that describes a way to define the _values_ in 2D or 3D scalar fields based on distance to one or more points in space. They are a type of [implicit surface](#implicit-surface) that define blobby shapes as pure mathematical formulas rather than explicit polygons and vertices.
 
 They can be visualized using the [marching squares](#marching-squares) (2D) or [marching cubes](#marching-cubes) (3D) rendering algorithms. Can be used for naive [fluid simulations](#fluid-simulation) by applying [physics](#physics-engine) to the metaball center points as if they were [particles](#particle-system). They can also be helpful in modelling soft bodies by adding elastic constraints between the center points.
 
@@ -1515,13 +1527,16 @@ _Videos:_
 ---
 
 ### Signed distance function (SDFs)
-A signed distance function is a function that returns the distance of a point in space to a mathematically/algorithmically defined surface. This allows algorithms like raymarching to efficiently render complex 3D surfaces in 2D.
+_Related to [implicit surfaces](#implicit-surface)._
 
-SDFs are increasingly commonly used in computer art, where defining an SDF that describes a large 3D scene entirely in a single pixel shader allows the code to be ran entirely on the GPU.
+A function that returns the distance between a point in space to a mathematically/algorithmically defined surface (called an [implicit surface](#implicit-surface)). This allows algorithms like raymarching and [marching cubes](#marching-cubes) to efficiently render complex 3D surfaces in 2D.
+
+SDFs are increasingly commonly used in computer art, where defining an SDF that describes a large 3D scene entirely in a single pixel [shader](#shaders) allows the code to be ran entirely on the GPU.
 
 _Articles:_
 * [Signed distance function](https://en.wikipedia.org/wiki/Signed_distance_function) on Wikipedia
 * [Distance functions](http://iquilezles.org/www/articles/distfunctions/distfunctions.htm)  (GLSL)
+* [Ray Marching and Signed Distance Functions](http://jamie-wong.com/2016/07/15/ray-marching-signed-distance-functions/) by Jamie Wong
 
 _Notable open-source libraries:_
 * [hg_sdf](http://mercury.sexy/hg_sdf/) (GLSL)
