@@ -86,6 +86,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#agent-based-modelling">Agent-based modelling</a></li>
               <li><a href="#boids">Boids</a></li>
               <li><a href="#collision-detection">Collision detection</a></li>
+              <li><a href="#constructive-solid-geometry-csg">Constructive solid geometry (CSG)</a></li>
               <li><a href="#dithering">Dithering</a></li>
               <li><a href="#flow-field">Flow field</a></li>
               <li><a href="#fluid-simulation">Fluid simulation</a></li>
@@ -1112,6 +1113,28 @@ _Videos:_
 
 ---
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Csg_tree.png/542px-Csg_tree.png" width="300" align="right">
+
+### Constructive solid geometry (CSG)
+Technique for 3D solid modeling that allows for the creation of complex surfaces by using Boolean operators to combine simpler objects (usually primitives like cubes, spheres, cylinders, etc). Most CAD and 3D modeling applications (like Blender, Fusion, Rhino, and more) include CSG operations, sometimes even through parametric or procedural interfaces.
+
+_Operations:_
+
+| Name         | Descriptionn                           | Illustration |
+|---           |---                                     |---           |
+| Union        | Merger of two objects into one         | <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Boolean_union.PNG" width="200">      |
+| Difference   | Subtraction of one object from another | <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Boolean_difference.PNG" width="200"> |
+| Intersection | Portion common to both objects         | <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Boolean_intersect.PNG" width="200">  |
+
+_Articles:_
+* [Constructive solid geometry](https://en.wikipedia.org/wiki/Constructive_solid_geometry) on Wikipedia
+
+_Code projects:_
+* [csg.js](https://github.com/evanw/csg.js/) (JavaScript) by Evan Wallace
+* [CGAL 4.14- 3D Boolean Operations on Nef Polyhedra](https://doc.cgal.org/latest/Nef_3/index.html) (C++)
+
+---
+
 <img src="https://cdn-images-1.medium.com/max/800/1*CHhG6Ea1664UrKwaJhiDTQ.png" width="300" align="right">
 
 ### Collision detection
@@ -1734,6 +1757,3 @@ TODO: Add link
   * [nannou](https://github.com/nannou-org/nannou)
 * Kotlin
   * [OPENRNDR](https://openrndr.org/)
-
-# Uncategorized
-* CSG
