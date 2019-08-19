@@ -1331,7 +1331,7 @@ The algorithm proceeds through the scalar field, taking eight neighbor locations
 <table>
  <thead>
   <tr>
-   <th><cneter>(Figure A) diagram of 15 possible polygon configurations based on vertex bit values</center></th>
+   <th><center>(Figure A) diagram of 15 possible polygon configurations based on vertex bit values</center></th>
    <th><center>(Figure B) diagram of edge and vertex numbering</center></th>
   </tr>
  </thead>
@@ -1757,3 +1757,6 @@ TODO: Add link
   * [nannou](https://github.com/nannou-org/nannou)
 * Kotlin
   * [OPENRNDR](https://openrndr.org/)
+
+## Uncategorized
+* [Conway operators](https://en.wikipedia.org/wiki/Conway_polyhedron_notation#Operators)
