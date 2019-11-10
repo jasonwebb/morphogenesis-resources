@@ -1491,11 +1491,19 @@ If you're looking to do physical-based simulations, also take a look at game dev
 
 ---
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Glasses_800_edit.png/800px-Glasses_800_edit.png" width="300" align="right">
+
 ### Ray tracing
 
-```
-TODO
-```
+Rendering technique used to create photorealistic images of 3D scenes by tracing the path of individual light rays. Rather than simulate all light rays' journeys from every light source to the camera, only the light rays that actually reach the camera are simulated.
+
+For each pixel of the screen, a ray is cast into the scene until it hits an object. Based on the scene's lighting and the material properties of the hit object, a color value is calculated for the corresponding screen pixel. Using the angle of the specific triangle that was hit along with material properties like surface roughness, refraction, diffusion, one can also determine what direction that light ray must have come from, tracing _that_ path and incorporating it's color information into the pixel color calculation.
+
+The number of "bounces" examined can increase the photorealism of the resulting image, at the cost of computational resources / time.
+
+This process is extremely computationally expensive, so it has historically only been used in pre-rendered applications like movies, animations, and still images. However, recent advancements in graphics card technology (like [NVIDIA's RTX series](https://en.wikipedia.org/wiki/Nvidia_RTX)) are beginning to make this technique available in real-time applications.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ray_trace_diagram.svg/1280px-Ray_trace_diagram.svg.png">
 
 _Articles:_
 * [Ray tracing (graphics)](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) on Wikipedia
