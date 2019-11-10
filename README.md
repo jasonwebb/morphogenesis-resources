@@ -226,7 +226,7 @@ _Articles:_
 
 ---
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/sage-jenson-physarum.gif?raw=true" width="150" align="right">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/sage-jenson-physarum.gif?raw=true" width="300" align="right">
 
 ### Physarum
 
