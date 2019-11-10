@@ -1503,7 +1503,7 @@ The number of "bounces" examined can increase the photorealism of the resulting 
 
 This process is extremely computationally expensive, so it has historically only been used in pre-rendered applications like movies, animations, and still images. However, recent advancements in graphics card technology (like [NVIDIA's RTX series](https://en.wikipedia.org/wiki/Nvidia_RTX)) are beginning to make this technique available in real-time applications.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ray_trace_diagram.svg/1280px-Ray_trace_diagram.svg.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ray_trace_diagram.svg/1280px-Ray_trace_diagram.svg.png" width="500">
 
 _Articles:_
 * [Ray tracing (graphics)](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) on Wikipedia
