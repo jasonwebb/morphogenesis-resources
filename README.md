@@ -226,10 +226,18 @@ _Articles:_
 
 ---
 
+<img src="https://payload.cargocollective.com/1/18/598881/13800048/network_2.gif" width="150" align="right">
+
 ### Physarum
 
+_Image credit to [Sage Jenson](https://www.sagejenson.com/physarum) ([@mxsage](https://www.instagram.com/mxsage/))_
+
+Technique for modelling the observed behaviors of the slime mold [physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) using a large-scale [particle system](#particle-system) and [agent-based modelling](#agent-based-modelling). Originally described in 2010 by Jeff Jones, and more recently popularized by artist Sage Jensen (@mxsage), this algorithm produces highly dynamic and organic-looking webs that can seem very life-like and biological in nature.
+
+_Algorithms at a glance:_
+
 ```
-TODO
+Do you have a good grasp of the fundamental steps of this algorithm? Share them in a PR or a new Issue!
 ```
 
 _Articles:_
@@ -239,6 +247,10 @@ _Articles:_
 
 _Code projects:_
 * [Simulating slime mold with WebGL](https://kaesve.nl/projects/mold/summary.html) by Ken Voskuil
+* [physarum](https://github.com/nicoptere/physarum) (JavaScript with ThreeJS) by Nicolas Barradeau
+* [Physarum](https://github.com/DenizBicer/Physarum) (Unity) by Deniz Bicer
+* [Physarealm](https://github.com/maajor/Physarealm) (Rhino + Grasshopper) by Ma Yidong
+* [Physarum](https://github.com/janivanecky/Physarum) (C++, with 2D and 3D implementations) by Jan Ivanecky
 
 _Creative projects:_
 * [physarum](https://sagejenson.com/physarum) by Sage Jenson (mxsage)
