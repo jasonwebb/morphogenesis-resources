@@ -226,7 +226,7 @@ _Articles:_
 
 ---
 
-<img src="https://payload.cargocollective.com/1/18/598881/13800048/network_2.gif" width="150" align="right">
+<img src="https://i.giphy.com/media/Sr9oT4AiIonNPd058l/source.gif" width="150" align="right">
 
 ### Physarum
 
