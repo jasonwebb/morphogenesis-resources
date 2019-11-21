@@ -293,7 +293,10 @@ _Code projects:_
 * [ofxSpaceColoinzation](https://github.com/edap/ofxSpaceColonization) add-on for openFrameworks
 * [space-colonization](https://github.com/nicknikolov/space-colonization) (JavaScript) by Nick Nikolov
 * [Dendrite](https://github.com/mattatz/Dendrite) (Unity) by mattatz
-* [Hyphae](https://github.com/inconvergent/hyphae) (Python) by Anders Hoff (inconvergent) ([live examples and short writeup](https://inconvergent.net/generative/hyphae/))
+* [Grower](https://github.com/joesfer/Grower) (Maya plugin) by Jose Esteve
+* [Venation](https://github.com/nielmclaren/Venation) (Processing) by Niel McLaren
+* [hyphae](https://github.com/jblondin/hyphae) (Julia) by Jamie Blondin
+* [hyphae](https://github.com/inconvergent/hyphae) and [hyphae_ani](https://github.com/inconvergent/hyphae_ani) by Anders Hoff (inconvergent)
 
 _Videos:_
 * [Coding Challenge #17: Fractal Trees - Space Colonization](https://www.youtube.com/watch?v=kKT0v3qhIQY) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_017_SpaceColonizer) with source code for p5.js and Processing)
