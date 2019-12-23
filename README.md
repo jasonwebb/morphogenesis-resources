@@ -25,8 +25,8 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#eden-growth-model">Eden growth model</a></li>
               <li><a href="#physarum">Physarum</a></li>
               <li><a href="#primordial-particle-system">Primordial Particle System</a></li>
-              <li><a href="#space-colonization">Space colonization</a></li>
               <li><a href="#reaction-diffusion">Reaction diffusion</a></li>
+              <li><a href="#space-colonization">Space colonization</a></li>
             </ul>
           </p>
         </details>
@@ -270,6 +270,55 @@ _Articles:_
 
 ---
 
+<img src="https://cdna.artstation.com/p/assets/images/images/008/781/346/large/pascal-wiemers-new-graph-basecolor-17.jpg?1515275614" width="250" align="right">
+
+### Reaction-diffusion
+
+Grid-based process that generates complex and dynamic patterns based the interactions of two chemicals as they _diffuse_ through a medium. At every location on the grid these chemicals (usually referred to as `A` and `B`) have a chance of causing a _reaction_ that converts chemicals of one type to another based on their relative concentrations at that location.
+
+Throughout the simulation chemical `A` is added at a particular _feed rate_ (`f`) and chemical `B` is removed at a particular _kill rate_ (`k`) - adjusting these rates can result in wildly different emergent patterns.
+
+_Equation (via [Karl Sims](https://www.karlsims.com/rd.html)):_
+![Reaction-diffusion equation from Karl Sims](https://www.karlsims.com/rd-equation.png)
+
+_Key terms:_
+* Feed rate - rate at which chemical `A` is added to system
+* Kill rate - rate at which chemical `B` is removed from the system
+* Diffusion rate - rate at which each chemical spreads, which acts as a kind of scaler to a 3x3 [Laplacian transform](#laplace-transform)
+* Reaction chance - probability that one `A` will be converted to a `B` when in the presence of two `B`s.
+* Gray-Scott model
+* [Pearson's classification](http://mrob.com/pub/comp/xmorphia/pearson-classes.html)
+* [Turing patterns](https://en.wikipedia.org/wiki/Turing_pattern)
+
+_Articles:_
+* [Reaction-diffusion system](https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system) on Wikipedia
+* [Reaction-Diffusion Tutorial](https://www.karlsims.com/rd.html) by Karl Sims
+* [Reaction-Diffusion by the Gray-Scott Model: Pearson's Parametrization](https://mrob.com/pub/comp/xmorphia/) by Robert Munafo (mrob)
+* [Reaction Diffusion: The Gray-Scott Algorithm](https://www.algosome.com/articles/reaction-diffusion-gray-scott.html) by Algosome
+* [The Chemical Basis of Morphogenesis](http://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf) (PDF) paper by Alan Turing (1951)
+
+_Code projects:_
+* [simutils-0001: Gray-Scott reaction diffusion](http://toxiclibs.org/2010/02/simutils-grayscott/) by toxiclibs
+* [ofxReactionDiffusion](https://github.com/matsune/ofxReactionDiffusion) add-on for openFrameworks by Yuma Matsune
+* [ofxRD](https://github.com/aanrii/ofxRD) add-on for openFrameworks by aanrii
+
+_Creative projects:_
+* [3D Printed Reaction Diffusion Patterns](https://www.instructables.com/id/3D-Printed-Reaction-Diffusion-Patterns/) Instructable by Reza Ali
+* [Processing: Reaction Diffusion Halftone patterns](https://vimeo.com/233530691) by Ignazio Lucenti
+* [Coral Cup](https://n-e-r-v-o-u-s.com/blog/?p=8222) by Nervous System
+* [Reaction Lamps](https://n-e-r-v-o-u-s.com/projects/albums/reaction-products/) by Nervous System
+* [Reaction Table](https://n-e-r-v-o-u-s.com/projects/albums/reaction-table/) by Nervous System
+* [Reaction-Diffusion Media Wall](http://www.karlsims.com/rd-exhibit.html) by Karl Sims
+
+_Videos:_
+* Reaction Diffusion video series for Houdini by Entagma:
+  * [Part I: Theory](https://vimeo.com/170073061)
+  * [Part II: Implementation](https://vimeo.com/170073069)
+  * [Part III: Shaping Growth](https://vimeo.com/170073079)
+* [Coding Challenge #13: Reaction Diffusion Algorithm in p5.js](https://www.youtube.com/watch?v=BV9ny785UNc) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_013_ReactionDiffusion) with both p5.js and Processing source code)
+
+---
+
 <img src="https://i.imgur.com/WQoYWBx.gif" width="300" align="right">
 
 ### Space colonization
@@ -328,55 +377,6 @@ _Code projects:_
 
 _Videos:_
 * [Coding Challenge #17: Fractal Trees - Space Colonization](https://www.youtube.com/watch?v=kKT0v3qhIQY) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_017_SpaceColonizer) with source code for p5.js and Processing)
-
----
-
-<img src="https://cdna.artstation.com/p/assets/images/images/008/781/346/large/pascal-wiemers-new-graph-basecolor-17.jpg?1515275614" width="250" align="right">
-
-### Reaction-diffusion
-
-Grid-based process that generates complex and dynamic patterns based the interactions of two chemicals as they _diffuse_ through a medium. At every location on the grid these chemicals (usually referred to as `A` and `B`) have a chance of causing a _reaction_ that converts chemicals of one type to another based on their relative concentrations at that location.
-
-Throughout the simulation chemical `A` is added at a particular _feed rate_ (`f`) and chemical `B` is removed at a particular _kill rate_ (`k`) - adjusting these rates can result in wildly different emergent patterns.
-
-_Equation (via [Karl Sims](https://www.karlsims.com/rd.html)):_
-![Reaction-diffusion equation from Karl Sims](https://www.karlsims.com/rd-equation.png)
-
-_Key terms:_
-* Feed rate - rate at which chemical `A` is added to system
-* Kill rate - rate at which chemical `B` is removed from the system
-* Diffusion rate - rate at which each chemical spreads, which acts as a kind of scaler to a 3x3 [Laplacian transform](#laplace-transform)
-* Reaction chance - probability that one `A` will be converted to a `B` when in the presence of two `B`s.
-* Gray-Scott model
-* [Pearson's classification](http://mrob.com/pub/comp/xmorphia/pearson-classes.html)
-* [Turing patterns](https://en.wikipedia.org/wiki/Turing_pattern)
-
-_Articles:_
-* [Reaction-diffusion system](https://en.wikipedia.org/wiki/Reaction%E2%80%93diffusion_system) on Wikipedia
-* [Reaction-Diffusion Tutorial](https://www.karlsims.com/rd.html) by Karl Sims
-* [Reaction-Diffusion by the Gray-Scott Model: Pearson's Parametrization](https://mrob.com/pub/comp/xmorphia/) by Robert Munafo (mrob)
-* [Reaction Diffusion: The Gray-Scott Algorithm](https://www.algosome.com/articles/reaction-diffusion-gray-scott.html) by Algosome
-* [The Chemical Basis of Morphogenesis](http://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf) (PDF) paper by Alan Turing (1951)
-
-_Code projects:_
-* [simutils-0001: Gray-Scott reaction diffusion](http://toxiclibs.org/2010/02/simutils-grayscott/) by toxiclibs
-* [ofxReactionDiffusion](https://github.com/matsune/ofxReactionDiffusion) add-on for openFrameworks by Yuma Matsune
-* [ofxRD](https://github.com/aanrii/ofxRD) add-on for openFrameworks by aanrii
-
-_Creative projects:_
-* [3D Printed Reaction Diffusion Patterns](https://www.instructables.com/id/3D-Printed-Reaction-Diffusion-Patterns/) Instructable by Reza Ali
-* [Processing: Reaction Diffusion Halftone patterns](https://vimeo.com/233530691) by Ignazio Lucenti
-* [Coral Cup](https://n-e-r-v-o-u-s.com/blog/?p=8222) by Nervous System
-* [Reaction Lamps](https://n-e-r-v-o-u-s.com/projects/albums/reaction-products/) by Nervous System
-* [Reaction Table](https://n-e-r-v-o-u-s.com/projects/albums/reaction-table/) by Nervous System
-* [Reaction-Diffusion Media Wall](http://www.karlsims.com/rd-exhibit.html) by Karl Sims
-
-_Videos:_
-* Reaction Diffusion video series for Houdini by Entagma:
-  * [Part I: Theory](https://vimeo.com/170073061)
-  * [Part II: Implementation](https://vimeo.com/170073069)
-  * [Part III: Shaping Growth](https://vimeo.com/170073079)
-* [Coding Challenge #13: Reaction Diffusion Algorithm in p5.js](https://www.youtube.com/watch?v=BV9ny785UNc) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_013_ReactionDiffusion) with both p5.js and Processing source code)
 
 <br>
 
