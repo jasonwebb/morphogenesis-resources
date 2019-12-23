@@ -270,13 +270,40 @@ _Articles:_
 
 ---
 
-<img src="https://i.imgur.com/2dp2szl.gif" width="300" align="right">
+<img src="https://i.imgur.com/WQoYWBx.gif" width="300" align="right">
 
 ### Space colonization
 
-Process for iteratively growing networks of branching lines based on the distribution of "food" sources to which the lines are attracted. Originally described by Adam Runions and collaborators at the [Algorithmic Botany group](http://algorithmicbotany.org/) at the University of Calgary, this system can be used to simulate the growth of leaf venation patterns and tree-like structures, as well as many other vein-like systems like Gorgonian sea fans, circulatory systems, root systems, and more.
+Process for iteratively growing networks of branching lines based on the distribution of growth hormone sources (called "auxin" sources) to which the lines are attracted. Originally described by Adam Runions and collaborators at the [Algorithmic Botany group](http://algorithmicbotany.org/) at the University of Calgary, this system can be used to simulate the growth of leaf venation patterns and tree-like structures, as well as many other vein-like systems like Gorgonian sea fans, circulatory systems, root systems, and more.
 
 The original algorithm describes methods for generating both "open" (as seen in the example GIF) and "closed" venation networks, referring to whether or not secondary or tertiary veins connect together to form loops (or _anastomoses_).
+
+_Algorithm at a glance:_
+
+For both the open and closed variants of this algorithm, begin by placing a set of points on the canvas representing sources of either the auxin growth hormone (as in leaves) or ambient nutrients (as in trees).
+
+Open venation:
+
+1. Associate each auxin source with the single closest vein segment within a pre-defined _attraction distance_.
+2. For each vein segment that is associated with at least one auxin source, calculate the average direction towards them as a normalized vector and generate a new vein segment that extends in that direction at a pre-defined segment length (by scaling the normalized direction vector by that length).
+3. Remove any auxin sources that have vein segments within a pre-defined _kill distance_ around it.
+
+Closed venation:
+
+1. Associate each auxin source with all of the vein segments that are both within a pre-defined _attraction distance_ and within the source's  _relative neighborhood_.
+2. For each vein segment that is associated with at least one auxin source, calculate the average direction towards them as a normalized vector and generate a new vein segment that extends in that direction at a pre-defined segment length (by scaling the normalized direction vector by that length).
+3. Remove any auxin sources that have been reached by _all_ of their associated vein segments.
+
+Auxin flux canalization:
+
+1. Give each vein segment a uniform default thickness to start with.
+2. Beginning at each terminal vein segment (that is, segments with no child segments), traverse "upwards" through each parent vein segment, adding their child vein segment thickness to their own until you reach a root vein segment (a segment with no parent segment).
+
+_Key terms:_
+
+* Auxin source = a discrete location towards which vein segments are attracted. In biology, auxin is a hormone found in plants that promotes growth.
+* Auxin flux canalization = process by which veins become thicker as they grow longer. The longer a vein gets, the more auxin flows through it ("flux"), causing veins to progressively thicken from their tips to their roots. "Canalization" references the process by which "canals" of water form.
+* [Relative neighborhood](https://en.wikipedia.org/wiki/Relative_neighborhood_graph) = point _P_ is a relative neighbor of a point _Q_ if there is no other point _R_ closer to _P_ and _Q_ than they are to each other.
 
 _Articles and papers:_
 * [Modeling and visualization of leaf venation patterns](http://algorithmicbotany.org/papers/venation.sig2005.pdf) (PDF) original 2005 paper by Adam Runions, Martin Fuhrer, Brendan Lane, Pavol Federl, Anne−Gaëlle Rolland−Lagan, and Przemyslaw Prusinkiewicz
