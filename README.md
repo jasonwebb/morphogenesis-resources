@@ -309,7 +309,7 @@ _Code projects:_
 
 _Creative projects:_
 * [Jonathan McCabe](http://www.jonathanmccabe.com/)'s multi-scale Turing pattern series. See [Diatomaceous](https://www.flickr.com/photos/jonathanmccabe/albums/72157623472782429), [Bone Music](https://www.flickr.com/photos/jonathanmccabe/albums/72157614896989696) [[2]](https://www.flickr.com/photos/jonathanmccabe/albums/72157624469963762) [[3]](https://www.flickr.com/photos/jonathanmccabe/albums/72157625117546281), [Multi-Scale Turing Patterns](https://www.flickr.com/photos/jonathanmccabe/albums/72157644907151060) and [others](https://www.flickr.com/photos/jonathanmccabe/albums)
-  * See his paper [Cyclic Symmetric Multi-Scale Turing Patterns](http://www.jonathanmccabe.com/Cyclic_Symmetric_Multi-Scale_Turing_Patterns.pdf), and [this post from Softology](https://softologyblog.wordpress.com/2011/07/05/multi-scale-turing-patterns/) explaining it.
+  * See his paper [Cyclic Symmetric Multi-Scale Turing Patterns](http://www.jonathanmccabe.com/Cyclic_Symmetric_Multi-Scale_Turing_Patterns.pdf) (PDF), and [this post from Softology](https://softologyblog.wordpress.com/2011/07/05/multi-scale-turing-patterns/) explaining it.
 * [3D Printed Reaction Diffusion Patterns](https://www.instructables.com/id/3D-Printed-Reaction-Diffusion-Patterns/) Instructable by Reza Ali
 * [Processing: Reaction Diffusion Halftone patterns](https://vimeo.com/233530691) by Ignazio Lucenti
 * [Coral Cup](https://n-e-r-v-o-u-s.com/blog/?p=8222) by Nervous System
@@ -1795,6 +1795,7 @@ TODO: Add link
       <td valign="top">Visual node-based environment for real-time interactive multimedia content useful for performances, installations, and fixed media works. Has roots in Houdini 4 and is considered a <a href="https://en.wikipedia.org/wiki/Houdini_(software)#TouchDesigner" target="_blank">spin-off</a> optimized for real-time performance work (hence the company name, Derivative).</td>
       <td valign="top">
         <ul>
+          <li>Free for non-commercial projects</li>
           <li>Educational - $300 for schools, educators, schools only</li>
           <li>Commercial - $600</li>
           <li>Pro - $2200</li>
