@@ -297,18 +297,28 @@ _Articles:_
 * [Reaction Diffusion: The Gray-Scott Algorithm](https://www.algosome.com/articles/reaction-diffusion-gray-scott.html) by Algosome
 * [The Chemical Basis of Morphogenesis](http://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf) (PDF) paper by Alan Turing (1951)
 
+_Notable tools:_
+* [Ready](https://github.com/GollyGang/ready)
+
 _Code projects:_
 * [simutils-0001: Gray-Scott reaction diffusion](http://toxiclibs.org/2010/02/simutils-grayscott/) by toxiclibs
 * [ofxReactionDiffusion](https://github.com/matsune/ofxReactionDiffusion) add-on for openFrameworks by Yuma Matsune
-* [ofxRD](https://github.com/aanrii/ofxRD) add-on for openFrameworks by aanrii
+* [ofxRD](https://github.com/aanrii/ofxRD) add-on for openFrameworks by aanri
+* [ReaDDy](https://readdy.github.io/) (C++ with Python bindings)
+* [RDSystem](https://github.com/keijiro/RDSystem) (Unity) by Keijiro Takahashi
 
 _Creative projects:_
+* [Jonathan McCabe](http://www.jonathanmccabe.com/)'s multi-scale Turing pattern series. See [Diatomaceous](https://www.flickr.com/photos/jonathanmccabe/albums/72157623472782429), [Bone Music](https://www.flickr.com/photos/jonathanmccabe/albums/72157614896989696) [[2]](https://www.flickr.com/photos/jonathanmccabe/albums/72157624469963762) [[3]](https://www.flickr.com/photos/jonathanmccabe/albums/72157625117546281), [Multi-Scale Turing Patterns](https://www.flickr.com/photos/jonathanmccabe/albums/72157644907151060) and [others](https://www.flickr.com/photos/jonathanmccabe/albums)
+  * See his paper [Cyclic Symmetric Multi-Scale Turing Patterns](http://www.jonathanmccabe.com/Cyclic_Symmetric_Multi-Scale_Turing_Patterns.pdf), and [this post from Softology](https://softologyblog.wordpress.com/2011/07/05/multi-scale-turing-patterns/) explaining it.
 * [3D Printed Reaction Diffusion Patterns](https://www.instructables.com/id/3D-Printed-Reaction-Diffusion-Patterns/) Instructable by Reza Ali
 * [Processing: Reaction Diffusion Halftone patterns](https://vimeo.com/233530691) by Ignazio Lucenti
 * [Coral Cup](https://n-e-r-v-o-u-s.com/blog/?p=8222) by Nervous System
 * [Reaction Lamps](https://n-e-r-v-o-u-s.com/projects/albums/reaction-products/) by Nervous System
-* [Reaction Table](https://n-e-r-v-o-u-s.com/projects/albums/reaction-table/) by Nervous System
+* [Reaction Table](https://n-e-r-v-o-u-s.com/projects/albums/reaction-table/) and [reaction shelf](https://n-e-r-v-o-u-s.com/blog/?p=992) by Nervous System
 * [Reaction-Diffusion Media Wall](http://www.karlsims.com/rd-exhibit.html) by Karl Sims
+* [DIFFUSION](http://kouheinakama.com/diffusion/) by Kouhei Nakama
+* [Reaction Diffusion](https://vimeo.com/267338427) using point clouds by David Grzesik. See his [write-up here](http://davidgrzesik.com/breakdown_docs/S17_V350_P1_GrzesikDavid_ReactionDiffusion.pdf) (PDF)
+* [Grey Scott’s Reaction Diffusion - Houdini VEX](https://vimeo.com/104572358) by Ali Seiffouri
 
 _Videos:_
 * Reaction Diffusion video series for Houdini by Entagma:
