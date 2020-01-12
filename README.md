@@ -326,6 +326,7 @@ _Videos:_
   * [Part II: Implementation](https://vimeo.com/170073069)
   * [Part III: Shaping Growth](https://vimeo.com/170073079)
 * [Coding Challenge #13: Reaction Diffusion Algorithm in p5.js](https://www.youtube.com/watch?v=BV9ny785UNc) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_013_ReactionDiffusion) with both p5.js and Processing source code)
+* [Reaction Diffusion: A Visual Explanation](https://www.youtube.com/watch?v=LMzYrsfTiEw) by Arsiliath
 
 ---
 
