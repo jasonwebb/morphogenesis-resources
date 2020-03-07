@@ -370,6 +370,7 @@ _Articles and papers:_
 * [Modeling Trees with a Space Colonization Algorithm](http://algorithmicbotany.org/papers/colonization.egwnp2007.large.pdf) (PDF) 2007 paper by Adam Runions, Brendan Lane, and Przemyslaw Prusinkiewicz
 * [Procedurally Generated Trees with Space Colonization Algorithm in XNA C#](http://www.jgallant.com/procedurally-generating-trees-with-space-colonization-algorithm-in-xna/) by Jon Gallant
 * [Part 26: Trees](http://www.sea-of-memes.com/LetsCode26/LetsCode26.html) by Michael Goodfellow
+* [Art-directing procedural vegetation in Houdini using a space colonization algorithm](https://pdfs.semanticscholar.org/b907/013067a5f669de7598845d7a8b45a41815f0.pdf?_ga=2.245171206.200415744.1583546111-797165566.1583546111) (PDF) by Marta Feriani
 
 _Creative projects:_
 * [Hyphae](https://n-e-r-v-o-u-s.com/shop/line.php?code=8) and [Xylem](https://n-e-r-v-o-u-s.com/shop/line.php?code=6) series by Nervous System
