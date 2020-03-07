@@ -454,6 +454,7 @@ _Articles:_
 
 _Creative projects:_
 * [KnitYak: Custom mathematical knit scarves](https://www.kickstarter.com/projects/fbz/knityak-custom-mathematical-knit-scarves) by Fabienne "fbz" Serriere
+* [3D printed Game of Life shoes](https://www.dezeen.com/2014/09/26/francis-bitonti-3d-printed-molecule-shoes-adobe-stratasys/) by Francis Bitonti
 
 _Notable software:_
 * [MCell](http://psoup.math.wisc.edu/mcell/) (Mirek's Cellebration)
