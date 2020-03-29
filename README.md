@@ -1685,6 +1685,9 @@ _Articles:_
 _Code projects:_
 * [ofxWFC3D](https://github.com/action-script/ofxWFC3D) (openFrameworks add-on) by Nuño de la Serna
 
+_Videos:_
+* [WaveFunctionCollapse Supercharged with PDG for Level Generation](https://vimeo.com/400993662) talk by Paul Ambrosiussen at HOUDINI HIVE GAMEDEV
+
 <br>
 
 ## Books, publications, and talks
