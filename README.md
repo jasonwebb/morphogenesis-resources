@@ -368,6 +368,7 @@ _Key terms:_
 _Articles and papers:_
 * [Modeling and visualization of leaf venation patterns](http://algorithmicbotany.org/papers/venation.sig2005.pdf) (PDF) original 2005 paper by Adam Runions, Martin Fuhrer, Brendan Lane, Pavol Federl, Anne−Gaëlle Rolland−Lagan, and Przemyslaw Prusinkiewicz
 * [Modeling Trees with a Space Colonization Algorithm](http://algorithmicbotany.org/papers/colonization.egwnp2007.large.pdf) (PDF) 2007 paper by Adam Runions, Brendan Lane, and Przemyslaw Prusinkiewicz
+* [Modeling organic branching structures with the space colonization algorithm and JavaScript](https://medium.com/@jason.webb/space-colonization-algorithm-in-javascript-6f683b743dc5) by Jason Webb
 * [Procedurally Generated Trees with Space Colonization Algorithm in XNA C#](http://www.jgallant.com/procedurally-generating-trees-with-space-colonization-algorithm-in-xna/) by Jon Gallant
 * [Part 26: Trees](http://www.sea-of-memes.com/LetsCode26/LetsCode26.html) by Michael Goodfellow
 * [Art-directing procedural vegetation in Houdini using a space colonization algorithm](https://pdfs.semanticscholar.org/b907/013067a5f669de7598845d7a8b45a41815f0.pdf?_ga=2.245171206.200415744.1583546111-797165566.1583546111) (PDF) by Marta Feriani
