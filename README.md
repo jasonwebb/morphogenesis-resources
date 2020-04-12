@@ -301,9 +301,16 @@ _Notable tools:_
 * [Ready](https://github.com/GollyGang/ready)
 
 _Code projects:_
+* [Gray–Scott Reaction Diffusion](https://observablehq.com/@mbostock/gray-scott-reaction-diffusion) (JavaScript + WebGL) by Mike Bostock
+* [Gray-Scott - JavaScript experiments](https://github.com/pmneila/jsexp) by @pmneila
 * [simutils-0001: Gray-Scott reaction diffusion](http://toxiclibs.org/2010/02/simutils-grayscott/) by toxiclibs
 * [ofxReactionDiffusion](https://github.com/matsune/ofxReactionDiffusion) add-on for openFrameworks by Yuma Matsune
 * [ofxRD](https://github.com/aanrii/ofxRD) add-on for openFrameworks by aanri
+* [Reaction Diffusion](https://www.redblobgames.com/x/1905-reaction-diffusion/) (JavaScript + WebGL) by Red Blob Games
+* [Reaction Diffusion](https://kaesve.nl/projects/reaction-diffusion/readme.html) by Ken Voskuil (look in the DOM)
+* [Reaction-Diffusion Simulation in Three.js](https://github.com/colejd/Reaction-Diffusion-ThreeJS) (JavaScript + ThreeJS) by Jonathan Cole
+* [Reaction diffusion with C++ and SFML](https://github.com/Deedone/Small-projects/tree/master/Reaction-diffusion) by Deedone
+* [Reaction-Diffusion simulation with C++, SFML, & Cuda](https://github.com/Solidsilver/PDEProj/tree/master/Numerics) by Luka Mattfield (@Solidsilver)
 * [ReaDDy](https://readdy.github.io/) (C++ with Python bindings)
 * [RDSystem](https://github.com/keijiro/RDSystem) (Unity) by Keijiro Takahashi
 
