@@ -1602,17 +1602,27 @@ Shaders are programs that are run on the GPU when processing a certain unit of r
 While shaders, as the name implies, were originally conceived to allow different kinds of lighting/shading calculations, today they're used for a variety of things from lighting calculation through stylized rendering to 2D compositing or post-processing, and even complex geometry manipulations and particle effects.
 
 _Types of shaders:_
-* Vertex
-* Fragment
-* Compute
+* [Compute](https://www.khronos.org/opengl/wiki/Compute_Shader)
+* [Fragment](https://www.khronos.org/opengl/wiki/Fragment_Shader)
+* [Geometry](https://www.khronos.org/opengl/wiki/Geometry_Shader)
+* [Tessellation](https://www.khronos.org/opengl/wiki/Tessellation)
+* [Vertex](https://www.khronos.org/opengl/wiki/Vertex_Shader)
 
-_Key terms:_
-* [HLSL (High-Level Shading Language)](https://en.wikipedia.org/wiki/High-Level_Shading_Language) - shading language used by DirectX
-* [GLSL (OpenGL Shading Language)](https://en.wikipedia.org/wiki/OpenGL_Shading_Language) - shading language used by OpenGL
-* [GPGPU (General-purpose computing on GPUs)](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units)
-* [CUDA](https://en.wikipedia.org/wiki/CUDA) - parallel computing API that makes it easier to use GPGPU for complicated tasks
-* [Cg](https://en.wikipedia.org/wiki/Cg_(programming_language)) - shading language developed by Nvidia in close collaboration with Microsoft
+_Key concepts:_
+* [FBO (framebuffer object)](https://en.wikipedia.org/wiki/Framebuffer_object)
+* [GPGPU (general-purpose computing on GPUs)](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units) - the concept of using the GPU to perform computation
+* [Ping pong]() - technique in which the output texture of one shader is fed to another shader as an input, sometimes cycling back and forth multiple times. The final texture gets sent to the display, then the shaders are swapped so that the most recent output becomes the input to the next iteration.
+* [Render to texture (RTT)](http://www.opengl-tutorial.org/intermediate-tutorials/tutorial-14-render-to-texture/) - instead of rendering a scene to the screen, in this technique it is rendered to an "offscreen" texture that can be reused later.
 * [Shading language](https://en.wikipedia.org/wiki/Shading_language)
+* [Textures](https://www.khronos.org/opengl/wiki/Texture)
+* [Uniform](https://www.khronos.org/opengl/wiki/Uniform_(GLSL)) - a [type qualifier](https://www.khronos.org/opengl/wiki/Type_Qualifier_(GLSL)) indicating a read-only variable passed to a shader from the CPU side of the program. These values will not change within a draw call, and are available to every shader that declares it.
+* [Varying](https://www.lighthouse3d.com/tutorials/glsl-12-tutorial/varying-variables/) - a [type qualifier](https://www.khronos.org/opengl/wiki/Type_Qualifier_(GLSL)) indicating a variable that can change within the vertex shader, then passed to the fragment shader as a read-only value.
+
+_Languages:_
+* [Cg](https://en.wikipedia.org/wiki/Cg_(programming_language)) - shading language developed by Nvidia in close collaboration with Microsoft
+* [CUDA](https://en.wikipedia.org/wiki/CUDA) - parallel computing API that makes it easier to use GPGPU for complicated tasks
+* [GLSL (OpenGL Shading Language)](https://en.wikipedia.org/wiki/OpenGL_Shading_Language) - shading language used by OpenGL
+* [HLSL (High-Level Shading Language)](https://en.wikipedia.org/wiki/High-Level_Shading_Language) - shading language used by DirectX
 
 _Articles:_
 * [The Book of Shaders](https://thebookofshaders.com/) by Patricio Gonzalez Vivo and Jen Lowe
@@ -1622,9 +1632,10 @@ _Articles:_
 * [Introducing Shaders](https://openframeworks.cc/ofBook/chapters/shaders.html) (openFrameworks) by Lucasz Karluk, Joshua Noble, Jordi Puig
 * [Shader modules](https://vulkan-tutorial.com/Drawing_a_triangle/Graphics_pipeline_basics/Shader_modules) (Vulkan)
 
-_Software:_
-* [RenderMonkey](https://gpuopen.com/archive/gamescgi/rendermonkey-toolsuite/)
+_Code tools:_
 * [Bonzomatic](https://github.com/Gargaj/Bonzomatic)
+* [glslsandbox](http://glslsandbox.com/)
+* [RenderMonkey](https://gpuopen.com/archive/gamescgi/rendermonkey-toolsuite/)
 * [Shadertoy](https://www.shadertoy.com/)
 
 _Videos:_
