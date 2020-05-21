@@ -25,7 +25,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#eden-growth-model">Eden growth model</a></li>
               <li><a href="#physarum">Physarum</a></li>
               <li><a href="#primordial-particle-system">Primordial Particle System</a></li>
-              <li><a href="#reaction-diffusion">Reaction diffusion</a></li>
+              <li><a href="#reaction-diffusion">Reaction-diffusion</a></li>
               <li><a href="#space-colonization">Space colonization</a></li>
             </ul>
           </p>
@@ -313,6 +313,8 @@ _Code projects:_
 * [Reaction-Diffusion simulation with C++, SFML, & Cuda](https://github.com/Solidsilver/PDEProj/tree/master/Numerics) by Luka Mattfield (@Solidsilver)
 * [ReaDDy](https://readdy.github.io/) (C++ with Python bindings)
 * [RDSystem](https://github.com/keijiro/RDSystem) (Unity) by Keijiro Takahashi
+* [Multiscale Turing Patterns](https://github.com/rreusser/rreusser.github.io/tree/master/src/src/multiscale-turing-patterns) (JavaScript, GLSL, regl) by Ricky Reusser
+  * Read his [write-up](http://rreusser.github.io/multiscale-turing-pattern-gallery/) and try the [live version here](https://rreusser.github.io/multiscale-turing-patterns).
 
 _Creative projects:_
 * [Jonathan McCabe](http://www.jonathanmccabe.com/)'s multi-scale Turing pattern series. See [Diatomaceous](https://www.flickr.com/photos/jonathanmccabe/albums/72157623472782429), [Bone Music](https://www.flickr.com/photos/jonathanmccabe/albums/72157614896989696) [[2]](https://www.flickr.com/photos/jonathanmccabe/albums/72157624469963762) [[3]](https://www.flickr.com/photos/jonathanmccabe/albums/72157625117546281), [Multi-Scale Turing Patterns](https://www.flickr.com/photos/jonathanmccabe/albums/72157644907151060) and [others](https://www.flickr.com/photos/jonathanmccabe/albums)
