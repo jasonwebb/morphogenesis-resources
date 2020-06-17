@@ -762,6 +762,9 @@ _Articles:_
 * [Medial axis](https://en.wikipedia.org/wiki/Medial_axis) on Wikipedia
 * ["A transformation for extracting new descriptors of shape"](http://pageperso.lif.univ-mrs.fr/~edouard.thiel/rech/1967-blum.pdf) by Henry Blum
 
+_Notable Tools:_
+* [Skeleton-Tracing](https://github.com/LingDong-/skeleton-tracing), a code library for computing topological skeletons as a set of polylines from binary images. Provides implementations in C, C++, Java, JavaScript, Python, Go, C#/Unity, Swift, Rust, Julia, Processing, and OpenFrameworks.
+
 ---
 
 ### Minimal surface
@@ -1705,6 +1708,7 @@ _Articles:_
 
 _Code projects:_
 * [ofxWFC3D](https://github.com/action-script/ofxWFC3D) (openFrameworks add-on) by Nuño de la Serna
+* [ndwfc](https://github.com/LingDong-/ndwfc) JavaScript/Node implementation of Wave Function Collapse, with an infinite canvas in an arbitrary number of dimensions. By Lingdong Huang.
 
 _Videos:_
 * [WaveFunctionCollapse Supercharged with PDG for Level Generation](https://vimeo.com/400993662) talk by Paul Ambrosiussen at HOUDINI HIVE GAMEDEV
