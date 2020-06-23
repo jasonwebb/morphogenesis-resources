@@ -1242,7 +1242,7 @@ _Books:_
 
 ---
 
-<img src="https://www.visgraf.impa.br/Courses/ip00/proj/Dithering1/image/lena%20ordered.gif" width="300" align="right">
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Michelangelo%27s_David_-_Floyd-Steinberg.png" width="300" align="right">
 
 ### Dithering
 Creates the illusion of depth in an image using a limited color palette, most commonly by varying the spacing or sizes of solid, single-color dots or lines. Some techniques (like [halftones](https://en.wikipedia.org/wiki/Halftone)) even predate modern digital technologies because of their usefulness in traditional printmaking and engraving processes. There are even relevant techniques in the fields of painting and drawing; see [stippling](https://en.wikipedia.org/wiki/Stippling) and [pointillism](https://en.wikipedia.org/wiki/Pointillism)!
