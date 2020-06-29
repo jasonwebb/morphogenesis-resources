@@ -236,9 +236,52 @@ Technique for modelling the observed behaviors of the slime mold [physarum polyc
 
 _Algorithms at a glance:_
 
+
+
+Components:
+
+* Physarum agent: stores its position **x, y** and direction of movement as angle  **θ**: {x, y, θ}. 
+* Trail texture: 2D texture. It needs only 1 channel to store the trails.
+
+
+
+Initialization:
+
+1. Place multiple agents at random position and moving direction.
+2. Initialize an empty trail texture
+
+
+
+Update: (in a loop during the simulation )
+
+ 1. update position and direction of all **agents**.
+
+    ​	i. Sample trail intensity at 3 points in front of the agent from the **trail texture**: Front (**F**), Front Left (**FL**), Front Right (**FR**)
+
 ```
-Do you have a good grasp of the fundamental steps of this algorithm? Share them in a PR or a new Issue!
+
+	if((F > FL) && (F > FR) 
+		turn right
+	else if	((F < FL) && (F < FR))
+	  turn random (left or right)
+	else if	(FL < FR)
+		turn right
+	else if	(FR < FL )
+		turn left
 ```
+
+​		ii. move one step towards the new direction
+
+​		iii. leave a mark on the trail texture at the new position
+
+ (1.2) Optional: Add **stimulus** marks on the trail texture to make some regions more attractive to the agents. 
+
+2. Apply mean filter on the  **trail texture**
+3. Add a **decay** factor to each pixel, to fade out trails.
+
+3. Draw the final trail texture on the screen
+
+   
 
 _Articles:_
 * [Characteristics of Pattern Formation and Evolution in Approximations of Physarum Transport Networks](http://eprints.uwe.ac.uk/15260/1/artl.2010.16.2.pdf) (PDF) by Jeff Jones - original paper
