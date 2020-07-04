@@ -1245,12 +1245,13 @@ _Books:_
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Michelangelo%27s_David_-_Floyd-Steinberg.png" width="300" align="right">
 
 ### Dithering
-Creates the illusion of depth in an image using a limited color palette, most commonly by varying the spacing or sizes of solid, single-color dots or lines. Some techniques (like [halftones](https://en.wikipedia.org/wiki/Halftone)) even predate modern digital technologies because of their usefulness in traditional printmaking and engraving processes. There are even relevant techniques in the fields of painting and drawing; see [stippling](https://en.wikipedia.org/wiki/Stippling) and [pointillism](https://en.wikipedia.org/wiki/Pointillism)!
+In an image using a limited color palette, dithering can provide an illusion of a continuous gradient, or a field of color not in the palette. Using colors that are close to the target color, the technique applies a granular pattern of varying sizes and spacing of solid, single-color dots or lines. The human eye then interpolates between the colors at a larger scale.
 
-Useful for realizing grayscale images with various digital fabrication equipment like laser cutters, pen plotters, CNC routers/mills, and more.
+Some techniques (like [halftones](https://en.wikipedia.org/wiki/Halftone)) predate modern digital technologies because of their usefulness in traditional printmaking and engraving processes. There are even relevant techniques in the fields of painting and drawing; see [stippling](https://en.wikipedia.org/wiki/Stippling) and [pointillism](https://en.wikipedia.org/wiki/Pointillism)! In digital imaging, modern palettes are usually comprehensive enough to reach a satisfactory visual fidelity for general purposes, but limits are still often reached in professional contexts.
+
+Dithering is useful for realizing grayscale images with various digital fabrication equipment like laser cutters, pen plotters, CNC routers/mills, and more.
 
 _Types of dithering:_
-* Threshold (a.k.a average)
 * Random
 * Patterned
 * Ordered
