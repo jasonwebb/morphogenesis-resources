@@ -1189,7 +1189,7 @@ _Articles:_
 * [Boids](https://www.red3d.com/cwr/boids/) by Craig Reynolds
 
 _Code projects:_
-* [Implementation of Craig Reynolds' Boids in javascript](https://lab.puga.com.br/boids/) 
+* [Boids](https://lab.puga.com.br/boids/) ([source](https://github.com/lexicalgap/boids)) by [Marcio Puga](https://puga.com.br/) (JavaScript, PixiJS)
 
 _Videos:_
 * [Coding Challenge #124: Flocking Simulation](https://www.youtube.com/watch?v=mhjuuHl6qHM) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_124_Flocking_Boids) with source code for p5.js and Processing)
