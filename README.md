@@ -1188,6 +1188,9 @@ _Articles:_
 * [Chapter 6. Autonomous Agents](https://natureofcode.com/book/chapter-6-autonomous-agents/) from Nature of Code
 * [Boids](https://www.red3d.com/cwr/boids/) by Craig Reynolds
 
+_Code projects:_
+* [Implementation of Craig Reynolds' Boids in javascript](https://lab.puga.com.br/boids/) 
+
 _Videos:_
 * [Coding Challenge #124: Flocking Simulation](https://www.youtube.com/watch?v=mhjuuHl6qHM) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_124_Flocking_Boids) with source code for p5.js and Processing)
 
