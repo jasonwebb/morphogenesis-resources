@@ -90,6 +90,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#dithering">Dithering</a></li>
               <li><a href="#flow-field">Flow field</a></li>
               <li><a href="#fluid-simulation">Fluid simulation</a></li>
+              <li><a href="#lloyds-relaxation">Lloyd's relaxation</a></li>
               <li><a href="#marching-squares">Marching squares</a></li>
               <li><a href="#marching-cubes">Marching cubes</a></li>
               <li><a href="#metaballs">Metaballs</a></li>
@@ -1354,6 +1355,30 @@ _Notable tools:_
 _Videos:_
 * [Coding Challenge #132: Fluid Simulation](https://www.youtube.com/watch?v=alhpH6ECFvQ) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_132_FluidSimulation) with source code for p5.js and Processing)
 * [Why Laminar Flow is AWESOME - Smarter Every Day 208](https://www.youtube.com/watch?v=y7Hyc3MRKno&feature=youtu.be) by Smarter Every Day
+
+---
+
+<img src="https://media.giphy.com/media/IdyOo1zOMnjQkROpiz/giphy.gif" alt="Screen recording of Lloyd's relaxation from Jason Davies' live demo" width="300" align="right">
+
+### Lloyd's relaxation
+_Related to [voronoi diagrams](#delaunay-triangulation-and-voronoi-diagrams)._
+
+As [explained by Jason Davies](https://www.jasondavies.com/lloyd), Lloyd’s relaxation algorithm (named after Stuart P. Lloyd) generates a centroidal Voronoi tessellation, which is where the seed point for each Voronoi region is also its centroid.
+
+The algorithm computes the Voronoi diagram for a set of points, moves each point towards the centroid of its Voronoi region, and repeats.
+
+_Important concepts:_
+* [Convergence](https://en.wikipedia.org/wiki/Lloyd's_algorithm#Convergence) - every point that is being "relaxed" is moving towards the center point of a Voronoi cell, but due to computational limits in numerical precision it may not ever perfectly reach it. Therefore it is a good idea to use some sort of preset distance threshold value that causes points to stop moving once they are close enough to their target point.
+
+_Articles:_
+* [Lloyd's algorithm](https://en.wikipedia.org/wiki/Lloyd's_algorithm) on Wikipedia
+* [Voronoi relaxation (Lloyd's algorithm) in Processing](http://www.codeplastic.com/2017/12/30/voronoi-relaxation-lloyds-algorithm-in-processing/) by Alberto Giachino
+
+_Code projects:_
+* [Javascript implementation of Steven Fortune's algorithm to compute Voronoi diagrams - Demo 5: Lloyd's relaxation](http://www.raymondhill.net/voronoi/rhill-voronoi-demo5.html) by Raymond Hill (JavaScript) ([source repo](https://github.com/gorhill/Javascript-Voronoi))
+* [Lloyd's Algorithm](https://observablehq.com/@mbostock/lloyds-algorithm) by Mike Bostock on Observable (JavaScript and D3.js)
+* [Lloyd's Relaxation](https://bl.ocks.org/lsbardel/8f42b5664b25fe7134f216fea5220b86) by Luca Sbardella (JavaScript and D3.js)
+* [Lloyd's Relaxation](https://www.jasondavies.com/lloyd) by Jason Davies (JavaScript, see DOM for source code)
 
 ---
 
