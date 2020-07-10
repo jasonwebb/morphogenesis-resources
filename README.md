@@ -1741,7 +1741,7 @@ _Key concepts:_
 
 _Algebraic operations:_
 
-| Operation | Using two vectors | Using a vector and a scalar |
+| Operation | <div style="width: 50%">Using two vectors</div> | Using a vector and a scalar |
 |---        |---                |---                          |
 | [Addition](https://natureofcode.com/book/chapter-1-vectors/#13-vector-addition) | `v1 + v2` = `{v1.x + v2.x, v1.y + v2.y, ...}` | `v1 + 10` = `{v1.x + 10, v1.y + 10, ...}` |
 | [Subtraction](https://natureofcode.com/book/chapter-1-vectors/#vector-subtraction) | `v1 - v2` = `{v1.x - v2.x, v1.y - v2.y, ...}` | `v1 - 10` = `{v1.x - 10, v1.y - 10, ...}` |
