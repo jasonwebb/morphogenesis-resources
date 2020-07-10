@@ -1779,7 +1779,7 @@ _Articles:_
 
 _Code projects:_
 * [ofxWFC3D](https://github.com/action-script/ofxWFC3D) (openFrameworks add-on) by Nuño de la Serna
-* [ndwfc](https://github.com/LingDong-/ndwfc) JavaScript/Node implementation of Wave Function Collapse, with an infinite canvas in an arbitrary number of dimensions. By Lingdong Huang.
+* [ndwfc](https://github.com/LingDong-/ndwfc) (JavaScript, Node.js) by Lingdong Huang.
 
 _Videos:_
 * [WaveFunctionCollapse Supercharged with PDG for Level Generation](https://vimeo.com/400993662) talk by Paul Ambrosiussen at HOUDINI HIVE GAMEDEV
