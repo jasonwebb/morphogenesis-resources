@@ -102,6 +102,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#shaders">Shaders</a></li>
               <li><a href="#signed-distance-function-sdfs">Signed distance functions (SDFs)</a></li>
               <li><a href="#spatial-index">Spatial index</a></li>
+              <li><a href="#vectors">Vectors</a></li>
               <li><a href="#wave-function-collapse-wfc">Wave Function Collapse (WFC)</a></li>
             </ul>
           </p>
@@ -1718,6 +1719,47 @@ _Articles:_
 
 _Videos:_
 * Coding Challenge #98: [Part 1](https://www.youtube.com/watch?v=OJxEcs0w_kE), [Part 2](https://www.youtube.com/watch?v=QQx_NmCIuCY), [Part 3](https://www.youtube.com/watch?v=z0YFFg_nBjw) by Daniel Shiffman
+
+---
+
+<img src="https://i.imgur.com/d8Q6v5h.png" alt="Illustration of a vector by Daniel Shiffman from natureofcode.com" width="300" align="right">
+
+### Vectors
+Vectors (specifically _Euclidean_ or _geometric_ vectors) are simple data structures that store spatial information representing discrete points, displacement, or forces.
+
+They can be manipulated using familiar algebraic operations like addition, subtraction, multiplication, and division, which makes them extremely useful when simulating physics-based systems with objects (or agents) in motion. We can have one vector that represents a point in space and another that represents a force (like gravity or wind), then apply that force to the point by adding the two vectors together.
+
+The term "vector" has slightly different meanings and uses in mathematics, physics, machine learning, biology, and more. However, in the context of morphogenesis we are mainly interested in its use in physics-based simulations
+
+_Properties:_
+* [Magnitude / length](https://natureofcode.com/book/chapter-1-vectors/#15-vector-magnitude) (`||v||`) = the "size" of a vector obtained by taking the square root of the sum of the square of each of the vector's components (an abstraction of the Pythagorean Formula). Mathematically, `||v|| = sqrt(v.x*v.x + v.y*v.y, + v.z*v.z + ...)`.
+* Heading / direction / angle = the direction in which a vector is pointing
+
+_Key concepts:_
+* Unit vector = a vector with a magnitude (length) of exactly 1.
+* [Normalization](https://natureofcode.com/book/chapter-1-vectors/#16-normalizing-vectors) = operation whereby a vector is divided by its own magnitude, resulting in a _unit vector_ with the same heading (direction) as the original vector.
+
+_Algebraic operations:_
+
+| Operation | Two vectors | Vector and scalar |
+|---        |---          |---                |
+| [Addition](https://natureofcode.com/book/chapter-1-vectors/#13-vector-addition) | `v1 + v2` = `{v1.x + v2.x, v1.y + v2.y, ...}` | `v1 + 10` = `{v1.x + 10, v1.y + 10, ...}` |
+| [Subtraction](https://natureofcode.com/book/chapter-1-vectors/#vector-subtraction) | `v1 - v2` = `{v1.x - v2.x, v1.y - v2.y, ...}` | `v1 - 10` = `{v1.x - 10, v1.y - 10, ...}` |
+| [Multiplication](https://natureofcode.com/book/chapter-1-vectors/#vector-multiplication) | `v1 * v2` = `{v1.x * v2.x, v1.y * v2.y, ...}` | `v1 * 10` = `{v1.x * 10, v1.y * 10, ...}` |
+| Division       | `v1 / v2` = `{v1.x / v2.x, v1.y / v2.y, ...}` | `v1 / 10` = `{v1.x / 10, v1.y / 10, ...}` |
+| [Dot product](https://www.mathsisfun.com/algebra/vectors-dot-product.html) | `v1 · v2` = `(v1.x * v2.x) + (v1.y * v2.y) + ...` (produces a single number) | _Not applicable._
+| [Cross product](https://www.mathsisfun.com/algebra/vectors-cross-product.html) | `v1 × v2` = `|v1| * |v2| * sin(θ) * n`, where `θ` is the angle between `v1` and `v2`, and `n` is the unit vector at right angles to both `v1` and `v2`. Produces a vector. | _Not applicable._ |
+
+_Articles:_
+* [Euclidean vector](https://en.wikipedia.org/wiki/Euclidean_vector) on Wikipedia
+* [Chapter 1. Vectors](https://natureofcode.com/book/chapter-1-vectors/) in The Nature of Code
+* [Vectors](https://www.mathsisfun.com/algebra/vectors.html) from Math is Fun
+
+_Videos:_
+* [What is a Vector?](https://thecodingtrain.com/learning/nature-of-code/1.1-what-is-a-vector.html) - Nature of Code lesson #1.1
+* [Getting Started with Vector Math](https://thecodingtrain.com/learning/nature-of-code/1.2-vector-math.html) - Nature of Code lesson #1.2
+* [A Random Vector](https://thecodingtrain.com/learning/nature-of-code/1.3-random-vector.html)
+* [Unit: Vectors](https://www.khanacademy.org/math/algebra-home/alg-vectors) series from Khan Academy
 
 ---
 
