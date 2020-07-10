@@ -1744,9 +1744,9 @@ _Algebraic operations:_
 <table>
   <thead>
     <tr>
-      <th scope="col">Operation</th>
-      <th scope="col" width="40%">Using two vectors</th>
-      <th scope="col">Using a vector and a scalar</th>
+      <th scope="col" align="left">Operation</th>
+      <th scope="col" width="45%" align="left">Using two vectors</th>
+      <th scope="col" align="left">Using a vector and a scalar</th>
     </tr>
   </thead>
   <tbody>
@@ -1777,7 +1777,7 @@ _Algebraic operations:_
     </tr>
     <tr valign="top">
       <td><a href="https://www.mathsisfun.com/algebra/vectors-cross-product.html">Cross product</a></td>
-      <td><code>v1 × v2</code> = <code>mag(v1) * mag(v2) * sin(θ) * n</code> where `θ` is the angle between `v1` and `v2`, and `n` is the unit vector at right angles to both `v1` and `v2`. Produces a vector.</td>
+      <td><code>v1 × v2</code> = <code>mag(v1) * mag(v2) * sin(θ) * n</code> where <code>θ</code> is the angle between <code>v1</code> and <code>v2</code>, and <code>n</code> is the unit vector at right angles to both <code>v1</code> and <code>v2</code>. Produces a vector.</td>
       <td><em>Not applicable.</em></td>
     </tr>
   </tbody>
