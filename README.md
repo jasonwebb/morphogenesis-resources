@@ -1741,14 +1741,47 @@ _Key concepts:_
 
 _Algebraic operations:_
 
-| Operation | <div style="width: 50%">Using two vectors</div> | Using a vector and a scalar |
-|---        |---                |---                          |
-| [Addition](https://natureofcode.com/book/chapter-1-vectors/#13-vector-addition) | `v1 + v2` = `{v1.x + v2.x, v1.y + v2.y, ...}` | `v1 + 10` = `{v1.x + 10, v1.y + 10, ...}` |
-| [Subtraction](https://natureofcode.com/book/chapter-1-vectors/#vector-subtraction) | `v1 - v2` = `{v1.x - v2.x, v1.y - v2.y, ...}` | `v1 - 10` = `{v1.x - 10, v1.y - 10, ...}` |
-| [Multiplication](https://natureofcode.com/book/chapter-1-vectors/#vector-multiplication) | `v1 * v2` = `{v1.x * v2.x, v1.y * v2.y, ...}` | `v1 * 10` = `{v1.x * 10, v1.y * 10, ...}` |
-| Division       | `v1 / v2` = `{v1.x / v2.x, v1.y / v2.y, ...}` | `v1 / 10` = `{v1.x / 10, v1.y / 10, ...}` |
-| [Dot product](https://www.mathsisfun.com/algebra/vectors-dot-product.html) | `v1 · v2` = `(v1.x * v2.x) + (v1.y * v2.y) + ...` (produces a single number) | _Not applicable._
-| [Cross product](https://www.mathsisfun.com/algebra/vectors-cross-product.html) | `v1 × v2` = `mag(v1) * mag(v2) * sin(θ) * n`, where `θ` is the angle between `v1` and `v2`, and `n` is the unit vector at right angles to both `v1` and `v2`. Produces a vector. | _Not applicable._ |
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Operation</th>
+      <th scope="col" width="40%">Using two vectors</th>
+      <th scope="col">Using a vector and a scalar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr valign="top">
+      <td><a href="https://natureofcode.com/book/chapter-1-vectors/#13-vector-addition">Addition</a></td>
+      <td><code>v1 + v2</code> = <code>{v1.x + v2.x, v1.y + v2.y, ...}</code></td>
+      <td><code>v + 10</code> = <code>{v.x + 10, v.y + 10, ...}</code></td>
+    </tr>
+    <tr valign="top">
+      <td><a href="https://natureofcode.com/book/chapter-1-vectors/#vector-subtraction">Subtraction</a></td>
+      <td><code>v1 - v2</code> = <code>{v1.x - v2.x, v1.y - v2.y, ...}</code></td>
+      <td><code>v - 10</code> = <code>{v.x - 10, v.y - 10, ...}</code></td>
+    </tr>
+    <tr valign="top">
+      <td><a href="https://natureofcode.com/book/chapter-1-vectors/#vector-multiplication">Multiplication</a></td>
+      <td><code>v1 * v2</code> = <code>{v1.x * v2.x, v1.y * v2.y, ...}</code></td>
+      <td><code>v * 10</code> = <code>{v.x * 10, v.y * 10, ...}</code></td>
+    </tr>
+    <tr valign="top">
+      <td>Division</td>
+      <td><code>v1 / v2</code> = <code>{v1.x / v2.x, v1.y / v2.y, ...}</code></td>
+      <td><code>v / 10</code> = <code>{v.x / 10, v.y / 10, ...}</code></td>
+    </tr>
+    <tr valign="top">
+      <td><a href="https://www.mathsisfun.com/algebra/vectors-dot-product.html">Dot product</a></td>
+      <td><code>v1 · v2</code> = <code>(v1.x * v2.x) + (v1.y * v2.y) + ...</code> (produces a single number)</td>
+      <td><em>Not applicable.</em></td>
+    </tr>
+    <tr valign="top">
+      <td><a href="https://www.mathsisfun.com/algebra/vectors-cross-product.html">Cross product</a></td>
+      <td><code>v1 × v2</code> = <code>mag(v1) * mag(v2) * sin(θ) * n</code> where `θ` is the angle between `v1` and `v2`, and `n` is the unit vector at right angles to both `v1` and `v2`. Produces a vector.</td>
+      <td><em>Not applicable.</em></td>
+    </tr>
+  </tbody>
+</table>
 
 _Articles:_
 * [Euclidean vector](https://en.wikipedia.org/wiki/Euclidean_vector) on Wikipedia
