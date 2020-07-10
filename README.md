@@ -1761,6 +1761,16 @@ _Videos:_
 * [A Random Vector](https://thecodingtrain.com/learning/nature-of-code/1.3-random-vector.html)
 * [Unit: Vectors](https://www.khanacademy.org/math/algebra-home/alg-vectors) series from Khan Academy
 
+_Notable implementations:_
+* [PVector](https://processing.org/reference/PVector.html) in Processing ([JavaDoc reference](https://processing.github.io/processing-javadocs/core/processing/core/PVector.html) and [source code](https://github.com/processing/processing/blob/master/core/src/processing/core/PVector.java))
+  * [Vec2D](http://toxiclibs.org/docs/core/toxi/geom/Vec2D.html) and [Vec3d](http://toxiclibs.org/docs/core/toxi/geom/Vec3D.html) in toxiclibs for Processing
+* [p5.Vector](https://p5js.org/reference/#/p5.Vector) in p5.js
+* [Vector2](https://threejs.org/docs/#api/en/math/Vector2), [Vector3](https://threejs.org/docs/#api/en/math/Vector3), and [Vector4](https://threejs.org/docs/#api/en/math/Vector4) in Three.js
+* [ofVec2f](https://openframeworks.cc/documentation/math/ofVec2f/) and [ofVec3f](https://openframeworks.cc/documentation/math/ofVec3f/) in openFrameworks
+* [Vector data types](https://www.khronos.org/opengl/wiki/Data_Type_(GLSL)#Vectors) in GLSL
+* [Vector Type](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-vector) in HLSL
+* [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html), [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html), [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) in Unity
+
 ---
 
 <img src="https://camo.githubusercontent.com/dc39c61e02aa67abd0f923628cf241120d14f517/687474703a2f2f692e696d6775722e636f6d2f734e75425653722e676966" width="300" align="right">
