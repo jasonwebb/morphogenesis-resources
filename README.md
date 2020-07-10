@@ -1732,23 +1732,23 @@ They can be manipulated using familiar algebraic operations like addition, subtr
 The term "vector" has slightly different meanings and uses in mathematics, physics, machine learning, biology, and more. However, in the context of morphogenesis we are mainly interested in its use in physics-based simulations
 
 _Properties:_
-* [Magnitude / length](https://natureofcode.com/book/chapter-1-vectors/#15-vector-magnitude) (`||v||`) = the "size" of a vector obtained by taking the square root of the sum of the square of each of the vector's components (an abstraction of the Pythagorean Formula). Mathematically, `||v|| = sqrt(v.x*v.x + v.y*v.y, + v.z*v.z + ...)`.
-* Heading / direction / angle = the direction in which a vector is pointing
+* [Magnitude / length](https://natureofcode.com/book/chapter-1-vectors/#15-vector-magnitude) (`||v||`) = the "size" of a vector obtained by taking the square root of the sum of the square of each of the vector's components (an abstraction of the Pythagorean Formula). Mathematically, `||v|| = sqrt(v.x*v.x + v.y*v.y + v.z*v.z + ...)`.
+* Heading / direction / angle = the direction in which a vector is pointing. Applicable when using vectors to represent forces, but not so much when representing discrete points in space.
 
 _Key concepts:_
-* Unit vector = a vector with a magnitude (length) of exactly 1.
+* Unit vector = any vector with a magnitude (length) of exactly 1.
 * [Normalization](https://natureofcode.com/book/chapter-1-vectors/#16-normalizing-vectors) = operation whereby a vector is divided by its own magnitude, resulting in a _unit vector_ with the same heading (direction) as the original vector.
 
 _Algebraic operations:_
 
-| Operation | Two vectors | Vector and scalar |
-|---        |---          |---                |
+| Operation | Using two vectors | Using a vector and a scalar |
+|---        |---                |---                          |
 | [Addition](https://natureofcode.com/book/chapter-1-vectors/#13-vector-addition) | `v1 + v2` = `{v1.x + v2.x, v1.y + v2.y, ...}` | `v1 + 10` = `{v1.x + 10, v1.y + 10, ...}` |
 | [Subtraction](https://natureofcode.com/book/chapter-1-vectors/#vector-subtraction) | `v1 - v2` = `{v1.x - v2.x, v1.y - v2.y, ...}` | `v1 - 10` = `{v1.x - 10, v1.y - 10, ...}` |
 | [Multiplication](https://natureofcode.com/book/chapter-1-vectors/#vector-multiplication) | `v1 * v2` = `{v1.x * v2.x, v1.y * v2.y, ...}` | `v1 * 10` = `{v1.x * 10, v1.y * 10, ...}` |
 | Division       | `v1 / v2` = `{v1.x / v2.x, v1.y / v2.y, ...}` | `v1 / 10` = `{v1.x / 10, v1.y / 10, ...}` |
 | [Dot product](https://www.mathsisfun.com/algebra/vectors-dot-product.html) | `v1 · v2` = `(v1.x * v2.x) + (v1.y * v2.y) + ...` (produces a single number) | _Not applicable._
-| [Cross product](https://www.mathsisfun.com/algebra/vectors-cross-product.html) | `v1 × v2` = `|v1| * |v2| * sin(θ) * n`, where `θ` is the angle between `v1` and `v2`, and `n` is the unit vector at right angles to both `v1` and `v2`. Produces a vector. | _Not applicable._ |
+| [Cross product](https://www.mathsisfun.com/algebra/vectors-cross-product.html) | `v1 × v2` = `mag(v1) * mag(v2) * sin(θ) * n`, where `θ` is the angle between `v1` and `v2`, and `n` is the unit vector at right angles to both `v1` and `v2`. Produces a vector. | _Not applicable._ |
 
 _Articles:_
 * [Euclidean vector](https://en.wikipedia.org/wiki/Euclidean_vector) on Wikipedia
