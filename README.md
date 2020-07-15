@@ -464,6 +464,7 @@ _Articles:_
 * [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton) on Wikipedia
 * [Elementary Cellular Automaton](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) on Wolfram MathWorld
 * [Chapter 7. Cellular Automata](https://natureofcode.com/book/chapter-7-cellular-automata/) from Daniel Shiffman's Nature of Code book
+* [New Kind of Science](https://www.wolframscience.com/nks/) In-depth exploration of cellular automata and how they might relate to real-world physics
 
 _Creative projects:_
 * [KnitYak: Custom mathematical knit scarves](https://www.kickstarter.com/projects/fbz/knityak-custom-mathematical-knit-scarves) by Fabienne "fbz" Serriere
