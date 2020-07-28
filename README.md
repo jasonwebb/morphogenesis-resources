@@ -297,7 +297,7 @@ _Articles:_
 * [Reaction-Diffusion Tutorial](https://www.karlsims.com/rd.html) by Karl Sims
 * [Reaction-Diffusion by the Gray-Scott Model: Pearson's Parametrization](https://mrob.com/pub/comp/xmorphia/) by Robert Munafo (mrob)
 * [Reaction Diffusion: The Gray-Scott Algorithm](https://www.algosome.com/articles/reaction-diffusion-gray-scott.html) by Algosome
-* [The Chemical Basis of Morphogenesis](http://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf) (PDF) paper by Alan Turing (1951)
+* [The Chemical Basis of Morphogenesis](http://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf) (PDF) paper by Alan Turing (1952)
 
 _Notable tools:_
 * [Ready](https://github.com/GollyGang/ready)
@@ -330,6 +330,8 @@ _Creative projects:_
 * [DIFFUSION](http://kouheinakama.com/diffusion/) by Kouhei Nakama
 * [Reaction Diffusion](https://vimeo.com/267338427) using point clouds by David Grzesik. See his [write-up here](http://davidgrzesik.com/breakdown_docs/S17_V350_P1_GrzesikDavid_ReactionDiffusion.pdf) (PDF)
 * [Grey Scott’s Reaction Diffusion - Houdini VEX](https://vimeo.com/104572358) by Ali Seiffouri
+* [Healing series](http://www.blep.com/works/healing-series/) by Brian Knep
+* [Silhouect](https://cacheflowe.com/code/installation/silhouect) by Justin Gitlin (@cacheflowe)
 
 _Videos:_
 * Reaction Diffusion video series for Houdini by Entagma:
