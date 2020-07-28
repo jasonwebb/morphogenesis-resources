@@ -53,6 +53,29 @@
 
 <br>
 
+## Physics
+* Accelerator Physics
+* Active Matter
+  * Crowd Behavior
+  * Schooling, Flocking, and Swarming
+* Astrophysics
+* Computational Physics
+* Density Functional Theory (DFT)
+* Energy, Kinetic & Potential
+* Fluid Dynamics
+  * Aerodynamics
+  * Hydrodynamics
+* Fourier Analysis
+* Nuclear Magnetic Resonance Spectroscopy
+* Resonance
+* Signal Processing
+* Solid State Physics
+* Soft Condensed Matter Physics
+* Thermodynamics
+* Weather Prediction
+
+<br>
+
 ## Places
 * Ah-Shi-Sle-Pah Wilderness Study Area, New Mexico, USA
 * Cave of the Crystals, Mexico
