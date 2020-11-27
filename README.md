@@ -1845,6 +1845,7 @@ _Videos:_
   * [Branches](https://smile.amazon.com/Branches-Natures-Patterns-Tapestry-Three/dp/0199604886/)
   * [Shapes](https://smile.amazon.com/Shapes-Natures-Patterns-Tapestry-Three/dp/0199237964/)
 * [On Growth and Form](https://smile.amazon.com/Growth-Form-Complete-Revised/dp/0486671356/) by D'Arcy Wentworth Thompson
+* [The Algorithmic Beauty of Sea Shells](https://smile.amazon.com/Algorithmic-Beauty-Shells-Virtual-Laboratory/dp/3540921419) by Hans Meinhardt
 
 ### Publications
 * [Zygote Quarterly](https://zqjournal.org/)
