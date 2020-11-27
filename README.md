@@ -1835,16 +1835,16 @@ _Videos:_
 
 ## Books, publications, and talks
 ### Books
-* [On Growth and Form](https://smile.amazon.com/Growth-Form-Complete-Revised/dp/0486671356/) by D'Arcy Wentworth Thompson
+* [Animal Architecture](https://smile.amazon.com/Animal-Architecture-Ingo-Arndt/dp/1419711652) by Ingo Amdt and Jurgen Tautz
+* [Art Forms from the Ocean: The Radiolarian Prints of Ernst Haeckel](https://smile.amazon.com/Art-Forms-Ocean-Radiolarian-Haeckel/dp/3791333275/) by Olaf Breidbach
+* [Art Forms in Nature](https://smile.amazon.com/Art-Forms-Nature-Prints-Haeckel/dp/3791319906/) by Ernst Haeckel
+* [Fractal Concepts in Surface Growth](https://smile.amazon.com/Fractal-Concepts-Surface-Albert-Laszlo-Barabasi/dp/0521483182) by Albert-László Barabási
+* [Fractal Growth Phenomena](https://smile.amazon.com/gp/product/9810206690/) by Tamas Vicsek
 * Nature's Patterns: A Tapestry in Three Parts by Philip Ball
   * [Flow](https://smile.amazon.com/Flow-Natures-Patterns-Tapestry-Three/dp/0199604878/)
   * [Branches](https://smile.amazon.com/Branches-Natures-Patterns-Tapestry-Three/dp/0199604886/)
   * [Shapes](https://smile.amazon.com/Shapes-Natures-Patterns-Tapestry-Three/dp/0199237964/)
-* [Fractal Concepts in Surface Growth](https://smile.amazon.com/Fractal-Concepts-Surface-Albert-Laszlo-Barabasi/dp/0521483182) by Albert-László Barabási
-* [Fractal Growth Phenomena](https://smile.amazon.com/gp/product/9810206690/) by Tamas Vicsek
-* [Animal Architecture](https://smile.amazon.com/Animal-Architecture-Ingo-Arndt/dp/1419711652) by Ingo Amdt and Jurgen Tautz
-* [Art Forms in Nature](https://smile.amazon.com/Art-Forms-Nature-Prints-Haeckel/dp/3791319906/) by Ernst Haeckel
-* [Art Forms from the Ocean: The Radiolarian Prints of Ernst Haeckel](https://smile.amazon.com/Art-Forms-Ocean-Radiolarian-Haeckel/dp/3791333275/) by Olaf Breidbach
+* [On Growth and Form](https://smile.amazon.com/Growth-Form-Complete-Revised/dp/0486671356/) by D'Arcy Wentworth Thompson
 
 ### Publications
 * [Zygote Quarterly](https://zqjournal.org/)
