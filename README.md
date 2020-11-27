@@ -1281,11 +1281,12 @@ _Articles:_
 * [Dither](https://en.wikipedia.org/wiki/Dither#Digital_photography_and_image_processing) on Wikipedia
 
 _Code projects:_
-* [Coding Challenge #90: Floyd-Steinberg Dithering](https://www.youtube.com/watch?v=0L2n8Tg2FwI) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_090_dithering) with source code for p5.js and Processing)
 * [Atkinson Dithering, Live in Processing](https://www.evilmadscientist.com/2012/dithering/) by Windell Oskay of Evil Mad Scientist Laboratories
-* [#dithering-algorithms](https://github.com/topics/dithering-algorithms) on Github
-* [Digital Halftoning](https://engineering.purdue.edu/~bouman/ece637/notes/pdf/Halftoning.pdf) by C. A. Bouman
+* [Coding Challenge #90: Floyd-Steinberg Dithering](https://www.youtube.com/watch?v=0L2n8Tg2FwI) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_090_dithering) with source code for p5.js and Processing)
 * [Color Quantization and Dithering](http://www.imagemagick.org/Usage/quantize/) reference page for ImageMagick v6
+* [Digital Halftoning](https://engineering.purdue.edu/~bouman/ece637/notes/pdf/Halftoning.pdf) by C. A. Bouman
+* [#dithering-algorithms](https://github.com/topics/dithering-algorithms) on Github
+* [Tramage](http://lesporteslogiques.net/tricot-machine/tramage/) ([source](https://github.com/lesporteslogiques/tricot-machine)) by Pierre Commenge - utility to dither small images and prepare machine knitting files. (p5.js and Processing)
 
 ---
 
