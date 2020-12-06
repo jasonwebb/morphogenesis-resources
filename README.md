@@ -468,6 +468,9 @@ _Articles:_
 * [Chapter 7. Cellular Automata](https://natureofcode.com/book/chapter-7-cellular-automata/) from Daniel Shiffman's Nature of Code book
 * [New Kind of Science](https://www.wolframscience.com/nks/) In-depth exploration of cellular automata and how they might relate to real-world physics
 
+_Code projects:_
+* [Lifelike](https://lifelike.psychedelicio.us/) ([source](https://github.com/psychedelicious/lifelike)) by @psychedelicious
+
 _Creative projects:_
 * [KnitYak: Custom mathematical knit scarves](https://www.kickstarter.com/projects/fbz/knityak-custom-mathematical-knit-scarves) by Fabienne "fbz" Serriere
 * [3D printed Game of Life shoes](https://www.dezeen.com/2014/09/26/francis-bitonti-3d-printed-molecule-shoes-adobe-stratasys/) by Francis Bitonti
