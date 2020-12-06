@@ -1732,11 +1732,11 @@ _Videos:_
 <img src="https://i.imgur.com/d8Q6v5h.png" alt="Illustration of a vector by Daniel Shiffman from natureofcode.com" width="300" align="right">
 
 ### Vectors
-Vectors (specifically _Euclidean_ or _geometric_ vectors) are simple data structures that store spatial information representing discrete points, displacement, or forces.
+Vectors (specifically _Euclidean_ or _geometric_ vectors) are simple data structures that store spatial information representing discrete points, displacement, or forces. Understanding how to work with vectors is one of the most critical skills to learn when working with physically-based simulations and digital morphogenesis.
 
-They can be manipulated using familiar algebraic operations like addition, subtraction, multiplication, and division, which makes them extremely useful when simulating physics-based systems with objects (or agents) in motion. We can have one vector that represents a point in space and another that represents a force (like gravity or wind), then apply that force to the point by adding the two vectors together.
+Vectors can be manipulated using familiar algebraic operations like addition, subtraction, multiplication, and division, which makes them extremely useful when simulating physically-based systems with objects (or agents) in motion. We can have one vector that represents a point in space and another that represents a force (like gravity or wind), then apply that force to the point by adding the two vectors together.
 
-The term "vector" has slightly different meanings and uses in mathematics, physics, machine learning, biology, and more. However, in the context of morphogenesis we are mainly interested in its use in physics-based simulations
+The term "vector" has slightly different meanings and uses in mathematics, physics, machine learning, biology, and more. In the context of digital morphogenesis, you'll most often encounter vectors as they are used in physics, representing discrete physical properties like position, displacement, velocity, direction, and more.
 
 _Properties:_
 * [Magnitude / length](https://natureofcode.com/book/chapter-1-vectors/#15-vector-magnitude) (`||v||`) = the "size" of a vector obtained by taking the square root of the sum of the square of each of the vector's components (an abstraction of the Pythagorean Formula). Mathematically, `||v|| = sqrt(v.x*v.x + v.y*v.y + v.z*v.z + ...)`.
@@ -1792,13 +1792,13 @@ _Algebraic operations:_
 
 _Articles:_
 * [Euclidean vector](https://en.wikipedia.org/wiki/Euclidean_vector) on Wikipedia
-* [Chapter 1. Vectors](https://natureofcode.com/book/chapter-1-vectors/) in The Nature of Code
+* [Chapter 1. Vectors](https://natureofcode.com/book/chapter-1-vectors/) in The Nature of Code by Daniel Shiffman
 * [Vectors](https://www.mathsisfun.com/algebra/vectors.html) from Math is Fun
 
 _Videos:_
-* [What is a Vector?](https://thecodingtrain.com/learning/nature-of-code/1.1-what-is-a-vector.html) - Nature of Code lesson #1.1
-* [Getting Started with Vector Math](https://thecodingtrain.com/learning/nature-of-code/1.2-vector-math.html) - Nature of Code lesson #1.2
-* [A Random Vector](https://thecodingtrain.com/learning/nature-of-code/1.3-random-vector.html)
+* [What is a Vector?](https://thecodingtrain.com/learning/nature-of-code/1.1-what-is-a-vector.html) - Nature of Code lesson #1.1 by Daniel Shiffman
+* [Getting Started with Vector Math](https://thecodingtrain.com/learning/nature-of-code/1.2-vector-math.html) - Nature of Code lesson #1.2 by Daniel Shiffman
+* [A Random Vector](https://thecodingtrain.com/learning/nature-of-code/1.3-random-vector.html) - Nature of Code lesson #1.3 by Daniel Shiffman
 * [Unit: Vectors](https://www.khanacademy.org/math/algebra-home/alg-vectors) series from Khan Academy
 
 _Notable implementations:_
