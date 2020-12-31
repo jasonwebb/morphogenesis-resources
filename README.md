@@ -317,6 +317,7 @@ _Code projects:_
 * [RDSystem](https://github.com/keijiro/RDSystem) (Unity) by Keijiro Takahashi
 * [Multiscale Turing Patterns](https://github.com/rreusser/rreusser.github.io/tree/master/src/src/multiscale-turing-patterns) (JavaScript, GLSL, regl) by Ricky Reusser
   * Read his [write-up](http://rreusser.github.io/multiscale-turing-pattern-gallery/) and try the [live version here](https://rreusser.github.io/multiscale-turing-patterns).
+  * [Available on Observable too](https://observablehq.com/@rreusser/multiscale-turing-patterns-in-webgl).
 
 _Creative projects:_
 * [Jonathan McCabe](http://www.jonathanmccabe.com/)'s multi-scale Turing pattern series. See [Diatomaceous](https://www.flickr.com/photos/jonathanmccabe/albums/72157623472782429), [Bone Music](https://www.flickr.com/photos/jonathanmccabe/albums/72157614896989696) [[2]](https://www.flickr.com/photos/jonathanmccabe/albums/72157624469963762) [[3]](https://www.flickr.com/photos/jonathanmccabe/albums/72157625117546281), [Multi-Scale Turing Patterns](https://www.flickr.com/photos/jonathanmccabe/albums/72157644907151060) and [others](https://www.flickr.com/photos/jonathanmccabe/albums)
@@ -332,8 +333,10 @@ _Creative projects:_
 * [Grey Scott’s Reaction Diffusion - Houdini VEX](https://vimeo.com/104572358) by Ali Seiffouri
 * [Healing series](http://www.blep.com/works/healing-series/) by Brian Knep
 * [Silhouect](https://cacheflowe.com/code/installation/silhouect) by Justin Gitlin (@cacheflowe)
+* [Reaction diffusion](https://vimeo.com/401715181) by Artur Żarejko
 
 _Videos:_
+* [Fun with Reaction-Diffusion in Houdini](https://www.youtube.com/watch?v=K_7TkoIkFhk) by Dan Willis at SIGGRAPH Asia 2019.
 * Reaction Diffusion video series for Houdini by Entagma:
   * [Part I: Theory](https://vimeo.com/170073061)
   * [Part II: Implementation](https://vimeo.com/170073069)
@@ -829,6 +832,9 @@ TODO
 
 _Articles:_
 * [Percolation theory](https://en.wikipedia.org/wiki/Percolation_theory) on Wikipedia
+
+_Code projects:_
+* [“Barista's Secret”: Percolation on a lattice](https://www.complexity-explorables.org/explorables/baristas-secret/) by Dirk Brockmann
 
 ---
 
