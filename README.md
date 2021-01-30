@@ -310,6 +310,7 @@ _Code projects:_
 * [ofxRD](https://github.com/aanrii/ofxRD) add-on for openFrameworks by aanri
 * [Reaction Diffusion](https://www.redblobgames.com/x/1905-reaction-diffusion/) (JavaScript + WebGL) by Red Blob Games
 * [Reaction Diffusion](https://kaesve.nl/projects/reaction-diffusion/readme.html) by Ken Voskuil (look in the DOM)
+* [Reaction-Diffusion Playground](https://github.com/jasonwebb/reaction-diffusion-playground) (JavaScript, ThreeJS/WebGL, shaders) by Json Webb
 * [Reaction-Diffusion Simulation in Three.js](https://github.com/colejd/Reaction-Diffusion-ThreeJS) (JavaScript + ThreeJS) by Jonathan Cole
 * [Reaction diffusion with C++ and SFML](https://github.com/Deedone/Small-projects/tree/master/Reaction-diffusion) by Deedone
 * [Reaction-Diffusion simulation with C++, SFML, & Cuda](https://github.com/Solidsilver/PDEProj/tree/master/Numerics) by Luka Mattfield (@Solidsilver)
