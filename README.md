@@ -310,6 +310,7 @@ _Code projects:_
 * [ofxRD](https://github.com/aanrii/ofxRD) add-on for openFrameworks by aanri
 * [Reaction Diffusion](https://www.redblobgames.com/x/1905-reaction-diffusion/) (JavaScript + WebGL) by Red Blob Games
 * [Reaction Diffusion](https://kaesve.nl/projects/reaction-diffusion/readme.html) by Ken Voskuil (look in the DOM)
+* [Reaction-Diffusion Playground](https://github.com/jasonwebb/reaction-diffusion-playground) (JavaScript, ThreeJS/WebGL, shaders) by Jason Webb
 * [Reaction-Diffusion Simulation in Three.js](https://github.com/colejd/Reaction-Diffusion-ThreeJS) (JavaScript + ThreeJS) by Jonathan Cole
 * [Reaction diffusion with C++ and SFML](https://github.com/Deedone/Small-projects/tree/master/Reaction-diffusion) by Deedone
 * [Reaction-Diffusion simulation with C++, SFML, & Cuda](https://github.com/Solidsilver/PDEProj/tree/master/Numerics) by Luka Mattfield (@Solidsilver)
@@ -456,32 +457,65 @@ _Key terms:_
 * Cell - a discrete location on the grid
 * State - the "value" of a cell. Many CAs just have two states (on/off), but others use many.
 * Neighborhood - set of cells surrounding a given cell. Most common types are [Von Neumann](https://en.wikipedia.org/wiki/Von_Neumann_neighborhood) and [Moore](https://en.wikipedia.org/wiki/Moore_neighborhood), though others exist.
-* Rule(s) - if/else statement(s) that define what the next state of a cell should be based on various criteria like the states of that cell's neighbors.
+* Rule(s) - mathematical functions or if/else statement(s) that define what the next state of a cell should be based on various criteria like the states of that cell's neighbors. Sometimes called _transition rules_.
 * Generation - result of one iteration of the system.
 
-_Well-known rules:_
-* [Brian's Brain](https://en.wikipedia.org/wiki/Brian%27s_Brain)
-* [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
-* [Langton's Ant](https://en.wikipedia.org/wiki/Langton%27s_ant)
-* [Wireworld](http://mathworld.wolfram.com/WireWorld.html)
+_Types:_
+* [Asynchronous](https://en.wikipedia.org/wiki/Asynchronous_cellular_automaton) - automaton in which each cell is updated independantly of the others over time. Multiple [update schemes](https://en.wikipedia.org/wiki/Asynchronous_cellular_automaton#Update_Schemes) have been proposed by various researchers.
+* [Block](https://en.wikipedia.org/wiki/Block_cellular_automaton) - automaton in which the grid of cells is divided into non-overlapping blocks, with rules being applied to entire blocks rather than individual cells. Also known as a partitioning cellular automaton.
+* [Continuous](https://en.wikipedia.org/wiki/Continuous_automaton) - automaton in which each cell has a real number value instead of an integer state.
+* [Continuous spatial](https://en.wikipedia.org/wiki/Continuous_spatial_automaton) - automaton in which the cell _locations_ are continuous.
+* [Cyclic](https://en.wikipedia.org/wiki/Cyclic_cellular_automaton) - automaton in which cells are initialized with one of a number of states in a range, then can be "consumed" when a neighboring cell has a successor state, causing the cell's state to take on that successor state. In other words, if cells can take on a value in the range `[0,9]`, then a cell with value `2` can be "consumed" by a neighboring cell with value `3`, causing the cell to take on the value of `3`. When cells reach the state at the end of the range, they are reset to the state at the beginning of the range (wrapping around).
+* Discrete - the "default" configuration for cellular automata, in which a grid of regular square cells and integer states are used.
+* [Elementary](https://en.wikipedia.org/wiki/Elementary_cellular_automaton) - 1D cellular automata with two states and 256 possible rules. Thought to be the simplest possible cellular automaton.
+* [Life-like](https://en.wikipedia.org/wiki/Life-like_cellular_automaton) - any 2D outer totalistic automaton that uses two states and a Moore neighborhood, and whose transition rule can be expressed as a function of the number of neighboring cells that are in the "alive" state. [Three standard rule notations](https://en.wikipedia.org/wiki/Life-like_cellular_automaton#Notation_for_rules) exist, and a large number of [rules have been identified and researched](https://en.wikipedia.org/wiki/Life-like_cellular_automaton#A_selection_of_Life-like_rules).
+* [Reversible](https://en.wikipedia.org/wiki/Reversible_cellular_automaton) - automaton in which past grid states can be determined using later grid states. In other words, if you know the state at time `t`, you can compute the state at `t - 1`.
+* [Second-order](https://en.wikipedia.org/wiki/Second-order_cellular_automaton) - automaton in which cell states depend on their neighborhood in the last _two_ generations. In other words, the state at time `t` depends on the state at both `t - 1` and `t - 2`.
+* [Stochastic](https://en.wikipedia.org/wiki/Stochastic_cellular_automaton) - automaton with a transition rule that incorporates a probability distribution or, in other words, some degree of randomness. Also known as probabilistic (PCA) or random cellular automata.
+* [Totalistic](https://en.wikipedia.org/wiki/Cellular_automaton#Totalistic) - automaton in which the state of each cell is based on the sum of the values of its neighbor cells in the previous iteration. If it also depends on its own state in the previous iteration then the automaton can be called _outer totalistic_ or _semitotalistic_.
 
-_Articles:_
+_Wolfram's classification:_
+
+Stephan Wolfram defined four classes that can be used to describe any cellular automaton or other simple computational model based on their observed behaviors. These definitions are qualitative in nature, with some room for intepretation, but are nonetheless considered the most effective classification scheme that currently exists for cellular automata.
+
+* Class 1: Uniformity  -  nearly all initial patterns evolve quickly into a stable, homogeneous state. Any randomness in the initial pattern disappears.
+* Class 2: Repetition  -  nearly all initial patterns evolve quickly into stable or oscillating structures. Some of the randomness in the initial pattern may filter out, but some remains. Local changes to the initial pattern tend to remain local.
+* Class 3: Random  -  nearly all initial patterns evolve in a pseudo-random or chaotic manner. Any stable structures that appear are quickly destroyed by the surrounding noise. Local changes to the initial pattern tend to spread indefinitely.
+* Class 4: Complexity  -  nearly all initial patterns evolve into structures that interact in complex and interesting ways, with the formation of local structures that are able to survive for long periods of time.
+
+_Well-known rules:_
+* [Brian's Brain](https://en.wikipedia.org/wiki/Brian%27s_Brain) by Brian Silverman
+* [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) by John Conway
+* [Langton's Ant](https://en.wikipedia.org/wiki/Langton%27s_ant) by Chris Langton
+* [Larger than Life](https://www.conwaylife.com/wiki/Larger_than_Life) by Kellie Michele Evans
+* [Wireworld](http://mathworld.wolfram.com/WireWorld.html) by Brian Silverman
+
+_Articles and books:_
+* [Building simulations with a Go cellular automata framework](https://medium.com/swlh/building-simulations-with-a-go-cellular-automata-framework-89b2bb1246d3) by Sau Sheong
 * [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton) on Wikipedia
-* [Elementary Cellular Automaton](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) on Wolfram MathWorld
 * [Chapter 7. Cellular Automata](https://natureofcode.com/book/chapter-7-cellular-automata/) from Daniel Shiffman's Nature of Code book
-* [New Kind of Science](https://www.wolframscience.com/nks/) In-depth exploration of cellular automata and how they might relate to real-world physics
+* [Elementary Cellular Automaton](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) on Wolfram MathWorld
+* [New Kind of Science](https://www.wolframscience.com/nks/) - in-depth exploration of cellular automata and how they might relate to real-world physics
 
 _Code projects:_
+* [cellauto.js](http://sanojian.github.io/cellauto/) ([source](https://github.com/sanojian/cellauto)) by Jonas Olmstead (JavaScript)
+* [cellularAutomata](https://github.com/bollu/cellularAutomata) by Siddharth Bhat (Haskell)
+* [Cellular Automata Simulator (CAS)](https://github.com/ghjansen/cas) by Guilherme Humberto Jansen (Java)
+* [cellpylib](https://github.com/lantunes/cellpylib) by Luis Antunes (Python)
 * [Lifelike](https://lifelike.psychedelicio.us/) ([source](https://github.com/psychedelicious/lifelike)) by @psychedelicious
+* [sandspiel](https://sandspiel.club/) ([source](https://github.com/MaxBittker/sandspiel)) by Max Bittker (JavaScript)
+* [terra.js](https://rileyjshaw.com/terra/) ([source](https://github.com/rileyjshaw/terra)) by Riley Shaw (JavaScript)
 
 _Creative projects:_
-* [KnitYak: Custom mathematical knit scarves](https://www.kickstarter.com/projects/fbz/knityak-custom-mathematical-knit-scarves) by Fabienne "fbz" Serriere
 * [3D printed Game of Life shoes](https://www.dezeen.com/2014/09/26/francis-bitonti-3d-printed-molecule-shoes-adobe-stratasys/) by Francis Bitonti
+* [KnitYak: Custom mathematical knit scarves](https://www.kickstarter.com/projects/fbz/knityak-custom-mathematical-knit-scarves) by Fabienne "fbz" Serriere
 
 _Notable software:_
-* [MCell](http://psoup.math.wisc.edu/mcell/) (Mirek's Cellebration)
+* [cubes.io: 3d cellular automata](http://cubes.io/) by Charlie Deck
 * [Golly](http://golly.sourceforge.net/)
-* [Visions of Chaos](https://www.softology.com.au/voc.htm)
+* [MCell](http://psoup.math.wisc.edu/mcell/) (Mirek's Cellebration) by Mirek Wojtowicz
+* [Visions of Chaos](https://www.softology.com.au/voc.htm) by Jason Rampe
+* [WebCA / Cellular Automata Laboratory (CelLab)](https://www.fourmilab.ch/cellab/webca/) by Rudy Rucker and John Walker
 
 ---
 
