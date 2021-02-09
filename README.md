@@ -97,6 +97,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#noise">Noise</a></li>
               <li><a href="#particle-system">Particle system</a></li>
               <li><a href="#physics-engine">Physics engine</a></li>
+              <li><a href="#polygon-clipping">Polygon clipping</a></li>
               <li><a href="#ray-tracing">Ray tracing</a></li>
               <li><a href="#recursion">Recursion</a></li>
               <li><a href="#shaders">Shaders</a></li>
@@ -1622,6 +1623,25 @@ _Commercial libraries:_
 * [Havok](https://www.havok.com/products/havok-physics/)
 
 If you're looking to do physical-based simulations, also take a look at game development and VFX environments like [Unity](https://unity3d.com/learn/tutorials/s/physics?_ga=2.158332858.1012620598.1557960859-2002016059.1556146318), [Unreal](https://docs.unrealengine.com/en-us/Engine/Physics), and [Houdini](https://www.sidefx.com/products/houdini/) for their built-in physics engines.
+
+---
+
+<img src="https://www.cc.gatech.edu/grads/h/Hao-wei.Hsieh/Haowei.Hsieh/pic6.gif" width="300" align="right">
+
+### Polygon clipping
+Effectively a Boolean intersection operation that "clips" (removes) parts of one polygon that are outside of another polygon. This can be useful when working with geospatial datasets and vector graphics (like SVGs), which in turn make this useful for plotter artists.
+
+_Algorithms:_
+* [Sutherland–Hodgman](https://en.wikipedia.org/wiki/Sutherland%E2%80%93Hodgman_algorithm) ⭐
+* [Greiner–Hormann](https://en.wikipedia.org/wiki/Greiner%E2%80%93Hormann_clipping_algorithm)
+* [Vatti](https://en.wikipedia.org/wiki/Vatti_clipping_algorithm)
+* [Weiler–Atherton](https://en.wikipedia.org/wiki/Weiler%E2%80%93Atherton_clipping_algorithm)
+* [Martinez-Rueda-Feito](https://github.com/mfogel/polygon-clipping/blob/master/paper.pdf)
+
+_Code projects:_
+* [clipper-java](https://github.com/lightbringer/clipper-java) by Tobias Mahlmann (Java)
+* [ofxClipper](https://github.com/bakercp/ofxClipper) by Christopher Baker (openFrameworks / C++)
+* [polygon-clipping](https://github.com/mfogel/polygon-clipping) by Mike Fogel (JavaScript)
 
 ---
 
