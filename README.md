@@ -489,6 +489,7 @@ _Well-known rules:_
 * [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) by John Conway
 * [Langton's Ant](https://en.wikipedia.org/wiki/Langton%27s_ant) by Chris Langton
 * [Larger than Life](https://www.conwaylife.com/wiki/Larger_than_Life) by Kellie Michele Evans
+* [SmoothLife](https://arxiv.org/pdf/1111.1567.pdf) by Stephan Rafler (original paper, PDF)
 * [Wireworld](http://mathworld.wolfram.com/WireWorld.html) by Brian Silverman
 
 _Articles and books:_
@@ -496,7 +497,7 @@ _Articles and books:_
 * [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton) on Wikipedia
 * [Chapter 7. Cellular Automata](https://natureofcode.com/book/chapter-7-cellular-automata/) from Daniel Shiffman's Nature of Code book
 * [Elementary Cellular Automaton](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) on Wolfram MathWorld
-* [New Kind of Science](https://www.wolframscience.com/nks/) - in-depth exploration of cellular automata and how they might relate to real-world physics
+* [New Kind of Science](https://www.wolframscience.com/nks/) by Stephan Wolfram
 
 _Code projects:_
 * [cellauto.js](http://sanojian.github.io/cellauto/) ([source](https://github.com/sanojian/cellauto)) by Jonas Olmstead (JavaScript)
@@ -504,7 +505,10 @@ _Code projects:_
 * [Cellular Automata Simulator (CAS)](https://github.com/ghjansen/cas) by Guilherme Humberto Jansen (Java)
 * [cellpylib](https://github.com/lantunes/cellpylib) by Luis Antunes (Python)
 * [Lifelike](https://lifelike.psychedelicio.us/) ([source](https://github.com/psychedelicious/lifelike)) by @psychedelicious
+* [regl-smooth-life](https://github.com/rreusser/demos/tree/master/smooth-life) by Ricky Reusser (JavaScript, WebGL, GLSL)
 * [sandspiel](https://sandspiel.club/) ([source](https://github.com/MaxBittker/sandspiel)) by Max Bittker (JavaScript)
+* [SmoothLife](https://github.com/duckythescientist/SmoothLife) by Sean Murphy (Python)
+* [SmoothLife](https://sourceforge.net/projects/smoothlife/) by ionreq (C++, Matlab, BASIC)
 * [terra.js](https://rileyjshaw.com/terra/) ([source](https://github.com/rileyjshaw/terra)) by Riley Shaw (JavaScript)
 * Various packages and projects by Kevin Chapelier:
   * [cellular-automata](https://github.com/kchapelier/cellular-automata)
