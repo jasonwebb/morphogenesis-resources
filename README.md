@@ -506,6 +506,11 @@ _Code projects:_
 * [Lifelike](https://lifelike.psychedelicio.us/) ([source](https://github.com/psychedelicious/lifelike)) by @psychedelicious
 * [sandspiel](https://sandspiel.club/) ([source](https://github.com/MaxBittker/sandspiel)) by Max Bittker (JavaScript)
 * [terra.js](https://rileyjshaw.com/terra/) ([source](https://github.com/rileyjshaw/terra)) by Riley Shaw (JavaScript)
+* Various packages and projects by Kevin Chapelier:
+  * [cellular-automata](https://github.com/kchapelier/cellular-automata)
+  * [cellular-automata-gpu](https://github.com/kchapelier/cellular-automata-gpu)
+  * [cellular-automata-rule-parser](https://github.com/kchapelier/cellular-automata-rule-parser)
+  * [cellular-automata-voxel-shader](https://github.com/kchapelier/cellular-automata-voxel-shader)
 
 _Creative projects:_
 * [3D printed Game of Life shoes](https://www.dezeen.com/2014/09/26/francis-bitonti-3d-printed-molecule-shoes-adobe-stratasys/) by Francis Bitonti
