@@ -484,17 +484,20 @@ Stephan Wolfram defined four classes that can be used to describe any cellular a
 * Class 3: Random  -  nearly all initial patterns evolve in a pseudo-random or chaotic manner. Any stable structures that appear are quickly destroyed by the surrounding noise. Local changes to the initial pattern tend to spread indefinitely.
 * Class 4: Complexity  -  nearly all initial patterns evolve into structures that interact in complex and interesting ways, with the formation of local structures that are able to survive for long periods of time.
 
-_Well-known rules:_
+_Well-known rules and rule families:_
 * [Brian's Brain](https://en.wikipedia.org/wiki/Brian%27s_Brain) by Brian Silverman
 * [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) by John Conway
+* [Generations](https://conwaylife.com/wiki/Generations)
+* [Lenia](https://arxiv.org/abs/1812.05433) ([repo](https://github.com/Chakazul/Lenia)) by Bert Wang-Chak Chan
 * [Langton's Ant](https://en.wikipedia.org/wiki/Langton%27s_ant) by Chris Langton
 * [Larger than Life](https://www.conwaylife.com/wiki/Larger_than_Life) by Kellie Michele Evans
 * [SmoothLife](https://arxiv.org/pdf/1111.1567.pdf) by Stephan Rafler (original paper, PDF)
 * [Wireworld](http://mathworld.wolfram.com/WireWorld.html) by Brian Silverman
 
-_Articles and books:_
+_Articles, books, and other writings:_
 * [Building simulations with a Go cellular automata framework](https://medium.com/swlh/building-simulations-with-a-go-cellular-automata-framework-89b2bb1246d3) by Sau Sheong
 * [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton) on Wikipedia
+* [Cellular Automata rules lexicon](http://psoup.math.wisc.edu/mcell/ca_rules.html) in the MCell documentation by Mirek Wojtowicz
 * [Chapter 7. Cellular Automata](https://natureofcode.com/book/chapter-7-cellular-automata/) from Daniel Shiffman's Nature of Code book
 * [Elementary Cellular Automaton](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) on Wolfram MathWorld
 * [New Kind of Science](https://www.wolframscience.com/nks/) by Stephan Wolfram
