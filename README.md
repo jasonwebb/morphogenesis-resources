@@ -501,6 +501,7 @@ _Articles, books, and other writings:_
 * [Chapter 7. Cellular Automata](https://natureofcode.com/book/chapter-7-cellular-automata/) from Daniel Shiffman's Nature of Code book
 * [Elementary Cellular Automaton](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) on Wolfram MathWorld
 * [New Kind of Science](https://www.wolframscience.com/nks/) by Stephan Wolfram
+* [Understanding Multiple Neighborhood Cellular Automata](https://slackermanz.com/understanding-multiple-neighborhood-cellular-automata) by Slackermanz
 
 _Code projects:_
 * [cellauto.js](http://sanojian.github.io/cellauto/) ([source](https://github.com/sanojian/cellauto)) by Jonas Olmstead (JavaScript)
