@@ -497,7 +497,7 @@ _Well-known rules and rule families:_
 _Articles, books, and other writings:_
 * [Building simulations with a Go cellular automata framework](https://medium.com/swlh/building-simulations-with-a-go-cellular-automata-framework-89b2bb1246d3) by Sau Sheong
 * [Cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton) on Wikipedia
-* [Cellular Automata rules lexicon](http://psoup.math.wisc.edu/mcell/ca_rules.html) in the MCell documentation by Mirek Wojtowicz
+* [Cellular Automata rules lexicon](http://www.mirekw.com/ca/ca_rules.html) in the MCell documentation by Mirek Wojtowicz
 * [Chapter 7. Cellular Automata](https://natureofcode.com/book/chapter-7-cellular-automata/) from Daniel Shiffman's Nature of Code book
 * [Elementary Cellular Automaton](http://mathworld.wolfram.com/ElementaryCellularAutomaton.html) on Wolfram MathWorld
 * [New Kind of Science](https://www.wolframscience.com/nks/) by Stephan Wolfram
