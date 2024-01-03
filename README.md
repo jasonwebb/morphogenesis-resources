@@ -183,7 +183,8 @@ _Videos:_
 
 ---
 
-<img src="https://cdn-images-1.medium.com/max/1000/1*3hSi1w_W-1YMW0YQaCk8rQ.gif" width="300" height="300" align="right">
+<a href="https://www.jasonwebb.io/2019/05/differential-growth-experiments-in-javascript/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/differential-growth-1.gif?raw=true" width="300" height="300" align="right" title="Jason Webb - Differential growth experiments in JavaScript"></a>
 
 ### Differential growth
 Process that acts on continuous chains of nodes connected by lines using simple rules (attraction, repulsion, alignment; not unlike boids) in order to produce undulating, buckling forms that mimic or simulate meandering rivers, rippled surface textures of plants/seeds/fruits, space-filling behaviors of worms, snakes, intestines, and much more.
@@ -219,7 +220,8 @@ _Creative projects:_
 
 ---
 
-<img src="https://cdn.iopscience.com/images/1742-5468/2006/11/P11007/Full/3564901.jpg" width="150" align="right">
+<a href="https://www.researchgate.net/figure/color-online-A-small-Eden-cluster-with-6000-particles-The-border-is-depicted-in-red_fig1_1858140" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/eden-growth-model-1.gif?raw=true" width="300" align="right" title="Silvio Costa Ferraria et al - Figure 1 from Pitfalls on the determination of the universality class of radial clusters"></a>
 
 ### Eden growth model
 Created by Murray Eden in 1961, this is a type of surface fractal growth process where material randomly accumulates on the _boundary_ of clusters. Sort of like DLA but without all the empty space between branches. Thought to be a good way to model certain kinds of bacterial and lichen growth.
@@ -229,7 +231,7 @@ _Articles:_
 
 ---
 
-<a href="https://cargocollective.com/sagejenson/physarum" target="_blank"><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/physarum-1.gif?raw=true" width="300" align="right" title="Sage Jenson - Physarum></a>
+<a href="https://cargocollective.com/sagejenson/physarum" target="_blank"><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/physarum-1.gif?raw=true" width="300" align="right" title="Sage Jenson - Physarum"></a>
 
 ### Physarum
 
@@ -273,7 +275,7 @@ _Articles:_
 
 ---
 
-<img src="https://cdna.artstation.com/p/assets/images/images/008/781/346/large/pascal-wiemers-new-graph-basecolor-17.jpg?1515275614" width="250" align="right">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/reaction-diffusion-1.jpg?raw=true" width="250" align="right" title="Author unknown"></a>
 
 ### Reaction-diffusion
 
@@ -282,7 +284,7 @@ Grid-based process that generates complex and dynamic patterns based the interac
 Throughout the simulation chemical `A` is added at a particular _feed rate_ (`f`) and chemical `B` is removed at a particular _kill rate_ (`k`) - adjusting these rates can result in wildly different emergent patterns.
 
 _Equation (via [Karl Sims](https://www.karlsims.com/rd.html)):_
-![Reaction-diffusion equation from Karl Sims](https://www.karlsims.com/rd-equation.png)
+![Karl Sims - reaction-diffusion equation](images/reaction-diffusion-2.png)
 
 _Key terms:_
 * Feed rate - rate at which chemical `A` is added to system
@@ -348,7 +350,8 @@ _Videos:_
 
 ---
 
-<img src="https://i.imgur.com/WQoYWBx.gif" width="300" align="right">
+<a href="https://www.jasonwebb.io/2020/03/space-colonization-branching-experiments-in-javascript/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/space-colonization-1.gif?raw=true" width="300" height="300" align="right" title="Jason Webb - Space colonization experiments in JavaScript"></a>
 
 ### Space colonization
 
@@ -413,7 +416,8 @@ _Videos:_
 
 ## Math and physics topics
 
-<img src="https://cdn.britannica.com/04/197704-004-F0376BA1.jpg" width="300" align="right">
+<a href="https://kids.britannica.com/students/assembly/view/230371" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-1.webp?raw=true" width="300" align="right" title="Britannica Kids - Archimedean solids"></a>
 
 ### Archimedean solids
 
@@ -425,19 +429,19 @@ _List of Archimedean solids:_
 
 | Name                        | Faces                                      | Edges | Vertices | Image |
 |---                          |---                                         |---    |---       |---    |
-| Truncated tetrahedron       | 4 triangles<br>4 hexagons                  | 18    | 12       | <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Truncatedtetrahedron.gif" width="50"> |
-| Cuboctahedron               | 8 triangles<br>6 squares                   | 24    | 12       | <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Cuboctahedron.gif" width="50"> |
-| Truncated cube              | 8 triangles<br>6 octagons                  | 36    | 24       | <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Truncatedhexahedron.gif" width="50"> |
-| Truncated octahedron        | 6 squares<br>8 hexagons                    | 36    | 24       | <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Truncatedoctahedron.gif" width="50"> |
-| Rhombicuboctahedron         | 8 triangles<br>18 squares                  | 48    | 24       | <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Rhombicuboctahedron.gif" width="50"> |
-| Truncated cuboctahedron     | 12 squres<br>8 hexagons<br>6 octagons      | 72    | 48       | <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Truncatedcuboctahedron.gif" width="50"> |
-| Snub cube                   | 32 triangles<br>6 squares                  | 60    | 24       | <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Snubhexahedronccw.gif" width="50"> |
-| Icosidodecahedron           | 20 triangles<br>12 pentagons               | 60    | 30       | <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Icosidodecahedron.gif" width="50"> |
-| Truncated dodecahedron      | 20 triangles<br>12 decagons                | 90    | 60       | <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Truncateddodecahedron.gif" width="50"> |
-| Truncated icosahedron       | 12 pentagons<br>20 hexagons                | 90    | 60       | <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Truncatedicosahedron.gif" width="50"> |
-| Rhombicosidodecahedron      | 20 triangles<br>30 squares<br>12 pentagons | 120   | 60       | <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Rhombicosidodecahedron.gif" width="50"> |
-| Truncated icosidodecahedron | 30 squares<br>20 hexagons<br>12 decagons   | 180   | 120      | <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Truncatedicosidodecahedron.gif" width="50"> |
-| Snub dodecahedron           | 80 triangles<br>12 pentagons               | 150   | 60       | <img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Snubdodecahedroncw.gif" width="50"> |
+| Truncated tetrahedron       | 4 triangles<br>4 hexagons                  | 18    | 12       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-truncated-tetrahedron.gif?raw=true" width="50"> |
+| Cuboctahedron               | 8 triangles<br>6 squares                   | 24    | 12       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-cuboctahedron.gif?raw=true" width="50"> |
+| Truncated cube              | 8 triangles<br>6 octagons                  | 36    | 24       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-truncated-cube.gif?raw=true" width="50"> |
+| Truncated octahedron        | 6 squares<br>8 hexagons                    | 36    | 24       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-truncated-octahedron.gif?raw=true" width="50"> |
+| Rhombicuboctahedron         | 8 triangles<br>18 squares                  | 48    | 24       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-rhombicuboctahedron.gif?raw=true" width="50"> |
+| Truncated cuboctahedron     | 12 squres<br>8 hexagons<br>6 octagons      | 72    | 48       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-truncated-cuboctahedron.gif?raw=true" width="50"> |
+| Snub cube                   | 32 triangles<br>6 squares                  | 60    | 24       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-snub-cube.gif?raw=true" width="50"> |
+| Icosidodecahedron           | 20 triangles<br>12 pentagons               | 60    | 30       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-icosidodecahedron.gif?raw=true" width="50"> |
+| Truncated dodecahedron      | 20 triangles<br>12 decagons                | 90    | 60       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-truncated-dodecahedron.gif?raw=true" width="50"> |
+| Truncated icosahedron       | 12 pentagons<br>20 hexagons                | 90    | 60       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-truncated-icosahedron.gif?raw=true" width="50"> |
+| Rhombicosidodecahedron      | 20 triangles<br>30 squares<br>12 pentagons | 120   | 60       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-rhombicosidodecahedron.gif?raw=true" width="50"> |
+| Truncated icosidodecahedron | 30 squares<br>20 hexagons<br>12 decagons   | 180   | 120      | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-truncated-icosidodecahedron.gif?raw=true" width="50"> |
+| Snub dodecahedron           | 80 triangles<br>12 pentagons               | 150   | 60       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/archimedean-solids-snub-dodecahedron.gif?raw=true" width="50"> |
 
 _Articles:_
 * [Archimedean solid](https://en.wikipedia.org/wiki/Archimedean_solid) on Wikipedia
