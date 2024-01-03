@@ -133,7 +133,7 @@ _Articles:_
 
 ---
 
-<img src="https://cdn-images-1.medium.com/max/600/1*0G4K7Z5_VQG8snj639vHbw.gif" width="300" height="300" align="right">
+<a href="https://www.jasonwebb.io/2019/05/diffusion-limited-aggregation-experiments-in-javascript/" target="_blank"><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/diffusion-limited-aggregation-1.gif?raw=true" width="300" height="300" align="right" title="Jason Webb - Diffusion Limited Aggregation Experiments"></a>
 
 ### Diffusion-limited aggregation (DLA)
 Process in which particles of matter stick together (_aggregate_) as they chaotically move (_diffuse_) through a medium that provides some sort of resistive (_limiting_) force. As these particles clump together over time they form characteristic fractal branching structures known as [Brownian trees](https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBrownian_tree).
@@ -229,7 +229,7 @@ _Articles:_
 
 ---
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/sage-jenson-physarum.gif?raw=true" width="300" align="right">
+<a href="https://cargocollective.com/sagejenson/physarum" target="_blank"><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/physarum-1.gif?raw=true" width="300" align="right" title="Sage Jenson - Physarum></a>
 
 ### Physarum
 
