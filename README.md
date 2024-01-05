@@ -587,7 +587,7 @@ _Articles:_
 ---
 
 <a href="https://en.wikipedia.org/wiki/Fibonacci_sequence" target="_blank">
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-1.pngjpg?raw=true" width="300" align="right" title="Wikipedia - Fibonacci sequence"></a>
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-1.png?raw=true" width="300" align="right" title="Wikipedia - Fibonacci sequence"></a>
 
 ### Fibonacci sequence
 _Related to [Golden ratio](#golden-ratio)_
