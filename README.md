@@ -453,7 +453,8 @@ _Videos:_
 
 ---
 
-<img src="https://c1.staticflickr.com/1/915/42277964325_431501c7c0_o.gif" width="300" align="right">
+<a href="https://softologyblog.wordpress.com/2018/06/29/multiple-rules-cellular-automata/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/cellular-automata-1.gif?raw=true" width="300" align="right" title="Softology - Multiple Rules Cellular Automata"></a>
 
 ### Cellular automata (CA)
 A regular grid of _cells_ with _states_ that are updated each iteration in according to _rules_. Developed by Stanislaw Ulam and John von Neumann at the Los Alamos National Laboratory in the 1940s, this system has been used to model physical, biological, and social phenomena with remarkable variety and accuracy.
@@ -548,7 +549,8 @@ _Videos:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/07/CornstarchCymatics_cc.jpg" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Cymatics" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/cymatics-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Cymatics"></a>
 
 ### Cymatics
 _See [Chladni plate](#chladni-plate)_
@@ -566,7 +568,8 @@ _Creative projects:_
 
 ---
 
-<img src="https://i.imgur.com/iOr8mvo.png" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Delaunay_triangulation" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/delaunay-voronoi-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Delaunay triangulation"></a>
 
 ### Delaunay triangulation and Voronoi diagrams
 _Delaunay triangulation_ is a way of connecting a set of points to form a network of non-overlapping triangles. One of the key properties of Delaunay triangulations is that the [circumcircles](https://en.wikipedia.org/wiki/Circumscribed_circle) associated with each triangle contains no other points than their three triangle vertices. When extended into 3D, Delaunay triangulation is useful for creating meshes.
@@ -583,7 +586,8 @@ _Articles:_
 
 ---
 
-<img src="https://vignette.wikia.nocookie.net/golden-ratio/images/f/f1/Fibonacci.png/revision/latest?cb=20140624081839" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Fibonacci_sequence" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Fibonacci sequence"></a>
 
 ### Fibonacci sequence
 _Related to [Golden ratio](#golden-ratio)_
@@ -600,8 +604,8 @@ Sequence of numbers in which each number is the sum of it's two preceding number
  <tbody>
   <tr>
    <td>
-    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3c667d91153450b3a161371582ee8227af85951f"><br>
-    <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0fff1a1716fcc169546079870357f92757ade5fa">
+    <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-2.jpg?raw=true"><br>
+    <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-3.jpg?raw=true">
    </td>
   </tr>
  </tbody>
@@ -609,7 +613,7 @@ Sequence of numbers in which each number is the sum of it's two preceding number
 
 Sequence begins with:
 
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff1558cc1c547dba59ce03cf352c1662b87d10f1">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-4.jpg?raw=true">
 
 _Articles:_
 * [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) on Wikipedia
@@ -618,7 +622,7 @@ _Articles:_
 
 ---
 
-<img src="https://i.stack.imgur.com/cfnQu.gif" width="300" align="right">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fourier-series-1.gif?raw=true" width="300" align="right" title="Author unknown">
 
 ### Fourier series
 Series of sinusoidal wave functions that get added together to generate a different, more complex function. In the context of morphogenesis (form generation), any line drawing can be "deconstructed" into a series of arc segments which can in turn be represented by a series of circles whose radii and rotation speeds correspond to the radii and lengths of the arc segments.
@@ -640,7 +644,8 @@ _Videos:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mandel_zoom_08_satellite_antenna.jpg/320px-Mandel_zoom_08_satellite_antenna.jpg" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Mandelbrot_set" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fractals-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Mandelbrot set"></a>
 
 ### Fractals
 Infinitely complex patterns generated via [recursion](#recursion) that are self-similar across all scales. Thought to be found in abundance in nature, though "true" (infinite) fractals are not possible because nature uses physical matter, which has particular structures at the microscopic and smaller scales (molecules, atoms, elementary particles, etc).
@@ -689,7 +694,8 @@ _Articles:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Golden_Angle.svg/479px-Golden_Angle.svg.png" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Golden_angle" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/golden-angle-1.png?raw=true" width="300" align="right" title="Wikipedia - Golden angle"></a>
 
 ### Golden angle
 _Related to the [golden ratio](#golden-ratio) and [phyllotaxis](#phyllotaxis)._
@@ -707,7 +713,8 @@ _Creative projects:_
 
 ---
 
-<img src="https://betterexplained.com/wp-content/uploads/2017/04/golden_ratio_example.png" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Golden_ratio" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/golden-ratio-1.png?raw=true" width="300" align="right" title="Wikipedia - Golden ratio"></a>
 
 ### Golden ratio
 _Related to the [Fibonacci sequence](#fibonacci-sequence)._
@@ -716,11 +723,11 @@ Also expressed as the Greek letter _phi_ (`φ`), this irrational number pops up 
 
 _Expressed algebraicly:_
 
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d4010f92e33cc559bc8d7f24b4ed017273a0628d">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/golden-ratio-2.svg?raw=true">
 
 _Expressed as line segments:_
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Golden_ratio_line.svg">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/golden-ratio-3.svgg?raw=true">
 
 _Articles:_
 * [Golden ratio](https://en.wikipedia.org/wiki/Golden_ratio) on Wikipedia
@@ -729,7 +736,8 @@ _Articles:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Metamorphose-torus-4ppfl.svg/400px-Metamorphose-torus-4ppfl.svg.png" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Implicit_surface" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/implicit-surface-1.png?raw=true" width="300" align="right" title="Wikipedia - Implicit surface"></a>
 
 ### Implicit surface
 
@@ -739,11 +747,11 @@ _Examples of implicit surface equations:_
 
 | Surface               | Equation |
 |---                    |---       |
-| Plane                 | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/97213f15273c199899e51cd13b6fd15bdd3dccdb"> |
-| Sphere                | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/643600b6c85601e1b38f7541f0ef279c39017629"> |
-| Torus                 | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9aa3e6979c2e591870fea3f75c89056571a2c517"> |
-| Surface of genus 2    | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/156dc228cb99c1a7e5944c22d3d3725cdefabafc"> |
-| Surface of revolution | <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1b47cba95850ec6ee2a2858d24c1de7e91e1742"> |
+| Plane                 | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/implicit-surface-2.svg?raw=true"> |
+| Sphere                | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/implicit-surface-3.svg?raw=true"> |
+| Torus                 | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/implicit-surface-4.svg?raw=true"> |
+| Surface of genus 2    | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/implicit-surface-5.svg?raw=true"> |
+| Surface of revolution | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/implicit-surface-6.svg?raw=true"> |
 
 _Articles:_
 * [Implicit surface](https://en.wikipedia.org/wiki/Implicit_surface) on Wikipedia
@@ -755,7 +763,8 @@ _Notable software:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/5R_robot.gif" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Robot_kinematics" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/inverse-forward-kinematics-1.gif?raw=true" width="300" align="right" title="Wikipedia - Robot kinematics"></a>
 
 ### Inverse and forward kinematics
 Equations used to calaculate the positions of a series of rigidly-linked segments (called the _kinematic chain_) based on the location of the end effector, usually located at the tip of the last segment. Useful for robotic systems like drawing machines, robot arms, and more.
@@ -784,8 +793,6 @@ TODO
 ```
 ---
 
-<img src="https://thumbs.gfycat.com/AngelicDismalAmazonparrot-max-1mb.gif" width="300" align="right">
-
 ### Lissajous curves
 
 Also known as Bowditch curves, these figures plot the trajectories of a point as it follows the path of two simultaneous sinusoidal motions.
@@ -794,8 +801,8 @@ Can be created using various physical systems including [oscilloscopes](https://
 
 _Equations:_
 
-<img src="https://www.mathcurve.com/courbes2d.gb/lissajous/imageGSM.JPG"><br>
-<img src="https://www.mathcurve.com/courbes2d.gb/lissajous/imageRGH.JPG">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/lissajous-1.jpg?raw=true"><br>
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/lissajous-2.jpg?raw=true">
 
 _Articles:_
 * [Lissajous curve](https://en.wikipedia.org/wiki/Lissajous_curve) on Wikipedia
@@ -808,7 +815,8 @@ _Videos:_
 
 ---
 
-<img src="https://www.researchgate.net/profile/Christoph_Kinkeldey/publication/237408245/figure/fig2/AS:299459092205573@1448408019217/Medial-axis-of-a-body-in-2D-Euklidian-space-Wolter-2001.png" width="300" align="right">
+<a href="https://www.researchgate.net/figure/Medial-Axis-Transform_fig25_296196212" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/medial-axis-1.gif?raw=true" width="300" align="right" title="Ashish A Gupta - Figure 3 from Writer Dependent Handwriting Synthesis"></a>
 
 ### Medial axis
 The medial axis is sort of like the "skeleton" of a shape. It consists of a set of lines and curves upon which every point is equidistant between at least one closest point on the shape's boundary. In 2D this skeleton can also be thought of as a set of lines/curves whose points are the centers of circles that are tangent to at least two points on the shape's boundary.
@@ -846,7 +854,8 @@ _Articles:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/15_circles_in_a_square.svg/480px-15_circles_in_a_square.svg.png" width="300" align="right">
+<a href="https://en.m.wikipedia.org/wiki/Packing_problems" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/packing-problems-1.png?raw=true" width="300" align="right" title="Wikipedia - Packing problems"></a>
 
 ### Packing problems
 Class of optimization problems that involve determining efficient ways to arrange (_pack_) objects into containers. Packing problems can be tackled using discrete mathematical methods, physics systems (as seen in Nervous System's [Kinematics](https://n-e-r-v-o-u-s.com/blog/?p=7162) series), and even genetic algorithms and machine learning.
@@ -890,7 +899,8 @@ _Code projects:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Aloe_polyphylla_1.jpg/564px-Aloe_polyphylla_1.jpg" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Phyllotaxis" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/phyllotaxis-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Phyllotaxis"></a>
 
 ### Phyllotaxis
 _Related topics include the [golden ratio](#golden-ratio), the [golden angle](#golden-angle), and the [Fibonacci sequence](#fibonacci-sequence)._
@@ -917,7 +927,8 @@ _Videos:_
 
 ---
 
-<img src="https://www.mathlearnit.com/images/platonic-solids.png" width="300" align="right">
+<a href="https://mathmonks.com/platonic-solids" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-1.jpg?raw=true" width="300" align="right" title="Math Monks - Platonic Solids"></a>
 
 ### Platonic solids
 
@@ -925,11 +936,11 @@ Set of regular, convex polyhedra constructed using congruent, regular polygonal 
 
 | Name         | Polygon type | Faces | Edges | Vertices | Image |
 |---           |---           |---    |---    |---       |---       |
-| Tetrahedron  | Triangle     | 4     | 6     | 4        | <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Tetrahedron.gif" width="50"> |
-| Cube         | Square       | 6     | 12    | 8        | <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Hexahedron.gif" width="50"> |
-| Octahedron   | Triangle     | 8     | 12     | 6       | <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Octahedron.gif" width="50"> |
-| Dodecahedron | Pentagon     | 12    | 30    | 20       | <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Dodecahedron.gif" width="50"> |
-| Icosahedron  | Triangle     | 20    | 30    | 12       | <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Icosahedron.gif" width="50"> |
+| Tetrahedron  | Triangle     | 4     | 6     | 4        | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-tetrahedron.jpg?raw=true" width="50" title="Wikipedia - tetrahedron"> |
+| Cube         | Square       | 6     | 12    | 8        | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-cube.jpg?raw=true" width="50" title="Wikipedia - cube"> |
+| Octahedron   | Triangle     | 8     | 12     | 6       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-octahedron.jpg?raw=true" width="50" title="Wikipedia - octahedron"> |
+| Dodecahedron | Pentagon     | 12    | 30    | 20       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-dodecahedron.jpg?raw=true" width="50" title="Wikipedia - dodecahedron"> |
+| Icosahedron  | Triangle     | 20    | 30    | 12       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-icosahedron.jpg?raw=true" width="50" title="Wikipedia - icosahedron"> |
 
 _Articles:_
 * [Platonic solid](https://en.wikipedia.org/wiki/Platonic_solid) on Wikipedia
@@ -966,7 +977,8 @@ _Articles:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Attractor_Poisson_Saturne.jpg" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/File:Attractor_Poisson_Saturne.jpg" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/strange-attractors-1.jpg?raw=true" width="300" align="right" title="Wikipedia - File:Attractor Poisson Saturne.jpg"></a>
 
 ### Strange attractors
 
@@ -987,7 +999,8 @@ _Articles:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sf2d.png/800px-Sf2d.png" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Superformula" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/superellipse-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Superformula"></a>
 
 ### Superellipse
 
@@ -997,11 +1010,11 @@ _Equations:_
 <table>
  <tr>
   <td valign="top">General form</td>
-  <td><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b21da32fe407ff5714620b26c50343d21afed15"></td>
+  <td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/superellipse-2.svg?raw=true"></td>
  </tr>
  <tr>
   <td valign="top">Parametric</td>
-  <td><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5ecc6bff4267f2ec1ee1d16845b8c402009880ea"></td>
+  <td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/superellipse-3.svg?raw=true"></td>
  </tr>
 </table>
 
@@ -1015,7 +1028,8 @@ _Videos:_
 
 ---
 
-<a href="https://github.com/Softwave/glsl-superformula" target="_blank"><img src="https://camo.githubusercontent.com/5da22383c27146107d848fd73659ba12e2a38d4a/687474703a2f2f692e696d6775722e636f6d2f744131755263662e706e67" width="300" align="right" alt="Screenshot from GLSL Supershapes by Softwave"></a>
+<a href="https://andrewmarsh.com/software/supershapes-web/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/superformula-1.png?raw=true" width="300" align="right" title="Andrew Marsh - Supershapes"></a>
 
 ### Superformula
 Generalized version of the superellipse formula proposed by Johan Giellis around 2000, capable of far more variety than the original superellipse. Unfortunately, Johan has patented use of the formula (via his company [Genicap](http://www.genicap.com/)) in both the US and the EU, which means you should avoid using it for any kind of commercial work, or work that could be commercialized in some way later.
@@ -1027,7 +1041,7 @@ _Equations:_
  <tr>
   <td valign="top">General form</td>
   <td>
-   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8071dcb3a49044816f7885114c2335d805d7ad30">
+   <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/superformula-2.svg?raw=true">
 
    Where `r` is a radius and `φ` (phi) is an angle
   </td>
@@ -1035,9 +1049,9 @@ _Equations:_
  <tr>
   <td valign="top">3D equations</td>
   <td>
-   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4859fbe75c6a60f5769bebb1376693343c1aa3bd"><br>
-   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5b68c1caf5b0bf4b912a6f8c7278f004774952a"><br>
-   <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a8396e4a1a6c4dd9a7466e714c8a2759e4e95f82">
+   <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/superformula-3.svg?raw=true"><br>
+   <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/superformula-4.svg?raw=true"><br>
+   <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/superformula-5.svg?raw=true">
 
    Where `φ` (latitude) varies between −π/2 and π/2 and `θ` (longitude) between −π and π.
   </td>
@@ -1060,7 +1074,7 @@ _Videos:_
 
 ---
 
-<img src="http://mathworld.wolfram.com/images/eps-gif/TravelingSalesmanProblem_1000.gif" width="300" align="right">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/tsp-1.png?raw=true" width="300" align="right" title="Author unknown">
 
 ### Travelling salesman problem (TSP)
 Asks the question "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?" This classic problem is computer science classrooms to teach algorithm design and optimization techniques.
@@ -1078,7 +1092,8 @@ _Notable software:_
 
 ## Lab experiments
 
-<img src="https://live.staticflickr.com/3626/3572095252_a43ca95002_b.jpg" width="300" align="right">
+<a href="https://commons.wikimedia.org/wiki/File:Belousov_Zhabotinsky_reaction_(3572095252).jpg" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/belousov–zhabotinsky-1.png?raw=true" width="300" align="right" title="Wikipedia - File:Belousov Zhabotinsky reaction (3572095252).jpg"></a>
 
 ### Belousov–Zhabotinsky (BZ) reaction
 
@@ -1106,14 +1121,15 @@ _Videos:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Quadratic_Chladni_plate.JPG/760px-Quadratic_Chladni_plate.JPG" width="300" align="right">
+<a href="https://commons.wikimedia.org/wiki/File:Quadratic_Chladni_plate.JPG" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/chladni-1.jpg?raw=true" width="300" align="right" title="Wikipedia - File:Quadratic Chladni plate.JPG"></a>
 
 ### Chladni plate
 
 Apparatus consisting of a suspended metal plate covered in a light dusting of fine sand or powder, then vibrated by either a bow or a voice coil (speaker). Beautiful, consistent nodal patterns known as [Chladni figures](https://en.wikipedia.org/wiki/Ernst_Chladni#Chladni_figures) emerge based on the specific resonance characteristics of the plate and the frequency of vibration inducued in it. Different sizes, shapes, and thicknesses of plates create different patterns, as do different frequencies, vibration methods, and audio samples.
 
 _Examples of Chladni figures:_
-<img src="https://shanti-phula.net/ja/social/blog/wp-content/uploads/2016/06/7dd4c3f74f006b34bb1d70d7adebd54e58.jpg">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/chladni-2.jpg?raw=true">
 
 _Articles:_
 * [Chladni figures](https://en.wikipedia.org/wiki/Ernst_Chladni#Chladni_figures) on Wikipedia
@@ -1139,7 +1155,8 @@ _Videos:_
 
 ---
 
-<img src="http://n-e-r-v-o-u-s.com/blog/wp-content/uploads/2011/04/5597278928_fed4566d5b_b.jpg" width="300" align="right" alt="Hele-Shaw cell experiment by Nervous System">
+<a href="https://n-e-r-v-o-u-s.com/blog/?p=1546" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/hele-shaw-1.jpg?raw=true" width="300" align="right" title="Nervous System - experiments"></a>
 
 ### Hele-Shaw cell
 _Related to [Saffman-Taylor instability](#saffmantaylor-instability)._
@@ -1171,7 +1188,8 @@ _Images:_
 
 ---
 
-<img src="https://66.media.tumblr.com/5870353e177a43d3c6499cfbd952acb2/tumblr_nom1mwy8zg1qabnxjo1_1280.gif" width="300" align="right">
+<a href="https://sciencegifs.csullender.com/2017/12/09/Imaging-a-Flame-with-Schlieren-Photography.html" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/schlieren-imaging-1.gif?raw=true" width="300" align="right" title="Science GIFs - Imaging a Flame with Schlieren Photography"></a>
 
 ### Schlieren imaging
 
@@ -1184,7 +1202,8 @@ Technique for visualizing density variations in transparent media, usually air. 
 
 _Diagram of typical setup:_
 
-<img src="http://www.ian.org/Schlieren/SchlierenDiagram.png">
+<a href="http://www.ian.org/Schlieren/HowTo.html" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/schlieren-imaging-2.png?raw=true" title="Ian Smith - Schlieren Photography - How Does It Work?"></a>
 
 _Articles:_
 * [Schlieren](https://en.wikipedia.org/wiki/Schlieren) on Wikipedia
@@ -1206,7 +1225,8 @@ _Videos:_
 
 ## Useful code patterns and techniques
 
-<img src="https://flashyprogramming.files.wordpress.com/2010/03/boids0168.png" width="300" align="right">
+<a href="https://flashyprogramming.wordpress.com/2010/03/22/boids-perlin-noise-flow-field/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/agent-based-modelling-1.png?raw=true" width="300" align="right" title="Flashy Programming - Boids + Perlin Noise Flow Field"></a>
 
 ### Agent-based modelling
 
@@ -1234,7 +1254,8 @@ _Articles:_
 
 ---
 
-<img src="https://fat.gfycat.com/EcstaticFatArctichare.gif" width="300" align="right">
+<a href="https://ayearincode.tumblr.com/post/107414487116/this-morning-i-added-some-new-rules-to" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/boids-1.gif?raw=true" width="300" align="right" title="aYearInCode();"></a>
 
 ### Boids
 _Related topics include [agent-based modelling](#agent-based-modelling)._
@@ -1245,6 +1266,12 @@ Well-known type of [agent-based system](#agent-based-modelling) that realistical
 2. Alignment (velocity matching): steer towards the average heading of local flockmates
      * _Note:_ remember that a vector is a combination of a speed and a direction (heading)!
 3. Cohesion (flock centering): steer to move towards the average position (center of mass) of local flockmates
+
+And here is what those rules look like when applied to a set of agents (boids):
+
+| Separation  | Alignment  | Cohesion  |
+|---          |---         |---        |
+| <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/boids-2.gif?raw=true" width="150"> | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/boids-3.gif?raw=true" width="150"> | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/boids-4.gif?raw=true" width="150"> |
 
 Additional rules can be implemented to simulate specific behaviors like obstacle avoidance, predator-prey interactions, [bait balls](https://en.wikipedia.org/wiki/Bait_ball), and more.
 
@@ -1262,7 +1289,8 @@ _Videos:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Csg_tree.png/542px-Csg_tree.png" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Constructive_solid_geometry" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/csg-1.png?raw=true" width="300" align="right" title="Wikipedia - Constructive solid geometry"></a>
 
 ### Constructive solid geometry (CSG)
 Technique for 3D solid modeling that allows for the creation of complex surfaces by using Boolean operators to combine simpler objects (usually primitives like cubes, spheres, cylinders, etc). Most CAD and 3D modeling applications (like Blender, Fusion, Rhino, and more) include CSG operations, sometimes even through parametric or procedural interfaces.
@@ -1271,9 +1299,9 @@ _Operations:_
 
 | Name         | Descriptionn                           | Illustration |
 |---           |---                                     |---           |
-| Union        | Merger of two objects into one         | <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Boolean_union.PNG" width="200">      |
-| Difference   | Subtraction of one object from another | <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Boolean_difference.PNG" width="200"> |
-| Intersection | Portion common to both objects         | <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Boolean_intersect.PNG" width="200">  |
+| Union        | Merger of two objects into one         | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/csg-2.png?raw=true" width="200">      |
+| Difference   | Subtraction of one object from another | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/csg-3.png?raw=true" width="200"> |
+| Intersection | Portion common to both objects         | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/csg-4.png?raw=true" width="200">  |
 
 _Articles:_
 * [Constructive solid geometry](https://en.wikipedia.org/wiki/Constructive_solid_geometry) on Wikipedia
@@ -1284,7 +1312,8 @@ _Code projects:_
 
 ---
 
-<img src="https://cdn-images-1.medium.com/max/800/1*CHhG6Ea1664UrKwaJhiDTQ.png" width="300" align="right">
+<a href="https://euryperez.dev/android-pearls-pixel-perfect-collision-detection-with-no-framework-53a5137baca2" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/collision-detection-1.png?raw=true" width="300" align="right" title="Eury Pérez Beltré - Android pearls: Pixel perfect collision detection with no framework"></a>
 
 ### Collision detection
 Computational methods for determining when two or more shapes are intersecting either statically (right now) or predictively (in the future). In technical terms, _a posterior_ and _a priori_ respectively. Detecting and reacting to collisions is extremely important in videos games and physical simulations, and takes quite a lot of brains and computational muscle to do effectively in real-time, especially in large-scale systems.
@@ -1311,7 +1340,8 @@ _Books:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Michelangelo%27s_David_-_Floyd-Steinberg.png" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Dither" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/dithering-1.png?raw=true" width="300" align="right" title="Wikipedia - Dither"></a>
 
 ### Dithering
 In an image using a limited color palette, dithering can provide an illusion of a continuous gradient, or a field of color not in the palette. Using colors that are close to the target color, the technique applies a granular pattern of varying sizes and spacing of solid, single-color dots or lines. The human eye then interpolates between the colors at a larger scale.
@@ -1351,7 +1381,8 @@ _Code projects:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/VectorField.svg/500px-VectorField.svg.png" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/Vector_field" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/flow-field-1.png?raw=true" width="300" align="right" title="Wikipedia - Vector field"></a>
 
 ### Flow field
 _Related topics include [fluid simulation](#fluid-simulation)._
@@ -1373,7 +1404,8 @@ _Videos:_
 
 ---
 
-<img src="https://i.kinja-img.com/gawker-media/image/upload/s--L-0h8ess--/c_scale,f_auto,fl_progressive,q_80,w_800/qnkqt6em2iy0rh6drxa0.jpg" width="300" align="right">
+<a href="https://www.karlsims.com/fluid-flow.html" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fluid-simulation-1.jpg?raw=true" width="300" align="right" title="Karl Sims - Flow Field Tutorial"></a>
 
 ### Fluid simulation
 
@@ -1424,7 +1456,8 @@ _Videos:_
 
 ---
 
-<img src="https://media.giphy.com/media/IdyOo1zOMnjQkROpiz/giphy.gif" alt="Screen recording of Lloyd's relaxation from Jason Davies' live demo" width="300" align="right">
+<a href="https://www.jasondavies.com/lloyd/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/lloyds-relaxation.gif?raw=true" width="300" align="right" title="Jason Davies - Lloyd's Relaxation"></a>
 
 ### Lloyd's relaxation
 _Related to [voronoi diagrams](#delaunay-triangulation-and-voronoi-diagrams)._
@@ -1448,7 +1481,8 @@ _Code projects:_
 
 ---
 
-<img src="http://www.bushwalking101.org/wp-content/uploads/2016/09/elevation.png" width="300" align="right">
+<a href="https://catlikecoding.com/unity/tutorials/marching-squares-2/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/marching-squares-1.png?raw=true" width="300" align="right" title="Catlike Coding - Marching Squares 2"></a>
 
 ### Marching squares
 Method of generating contours for a 2D scalar field (a grid of individual numerical values), like turning elevation data into a banded topographical map. The scalar values get associated with vertices of the 2D grid, then lines are drawn across each cell in different ways based on the values of their four corner vertices.
@@ -1461,7 +1495,8 @@ _Key terms:_
 
 _Illustration of algorithm:_
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Marching_squares_algorithm.svg/710px-Marching_squares_algorithm.svg.png" width="500">
+<a href="https://en.wikipedia.org/wiki/Marching_squares" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/marching-squares-2.png?raw=true" width="500" title="Wikipedia - Marching squares"></a>
 
 _Articles:_
 * [Marching squares](https://en.wikipedia.org/wiki/Marching_squares) on Wikipedia
@@ -1475,7 +1510,8 @@ _Videos:_
 
 ---
 
-<img src="https://i.ytimg.com/vi/LC0IbOZ0jkw/maxresdefault.jpg" width="300" align="right">
+<a href="https://www.youtube.com/watch?app=desktop&v=LC0IbOZ0jkw" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/marching-cubes-1.jpg?raw=true" width="300" align="right" title="Screenshot from Proxy Design Studio - Marching Cubes Algorithm in Processing"></a>
 
 ### Marching cubes
 3D version of [marching squares](#marching-squares). Whereas marching _squares_ uses lines and cells to trace the contours of a 2D scalar field, marching _cubes_ uses polygons and voxels to trace the contours of a 3D scalar field, resulting in a mesh. Marching cubes can be thought of as a mesh conversion algorithm that produces meshes based on 3D scalar fields.
@@ -1512,8 +1548,8 @@ The algorithm proceeds through the scalar field, taking eight neighbor locations
  </thead>
  <tbody>
   <tr>
-   <td valign="top"><img src="https://i.imgur.com/VnmsvDF.png" width="500"></td>
-   <td valign="top"><img src="https://i.imgur.com/wOzaG9W.png" width="500"></td>
+   <td valign="top"><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/marching-cubes-2.png?raw=true" width="500"></td>
+   <td valign="top"><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/marching-cubes-3.png?raw=true" width="500"></td>
   </tr>
  </tbody>
 </table>
@@ -1532,7 +1568,8 @@ _Videos:_
 
 ---
 
-<img src="http://www.geisswerks.com/ryan/BLOBS/post6.gif" width="300" align="right">
+<a href="https://discourse.mcneel.com/t/how-to-grow-expand-curves-polygons-until-touch-each-other/65224" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/metaballs-1.gif?raw=true" width="300" align="right" title="Rhinoceros Forums thread 'How to grow/expand curves (polygons) until touch each other'"></a>
 
 ### Metaballs
 _Related to [implicit surfaces](#implicit-surface), [marching squares](#marching-squares) (2D) and [marching cubes](#marching-cubes) (3D)_
@@ -1543,9 +1580,9 @@ They can be visualized using the [marching squares](#marching-squares) (2D) or [
 
 A typical function chosen for metaballs is:
 
-<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/57f61a8e5638955d4bdf579e746e2b09d709b505">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/metaballs-2.svg?raw=true">
 
-Where <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/39177ddeeb9f9a393b664e522bc8e3bf0face153"> is the center of the metaball.
+Where <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/metaballs-3.svg?raw=true"> is the center of the metaball.
 
 _Articles:_
 * [Metaballs](https://en.wikipedia.org/wiki/Metaballs) on Wikipedia
@@ -1557,7 +1594,8 @@ _Videos:_
 
 ---
 
-<img src="https://answers.unity.com/storage/temp/97016-perlin2.png" width="300" align="right">
+<a href="https://blog.demofox.org/2021/04/11/perlin-noise-experiments/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/noise-1.png?raw=true" width="300" align="right" title="The blog at the bottom of the sea - Perlin Noise Experiments"></a>
 
 ### Noise
 In the context of computer graphics, refers to pseudo-random functions useful for creating natural-looking textures and patterns. Often used to procedurally generate organic surface textures (bark, waves, rocks, etc) and to organically distribute objects across surfaces (like grass or barnacles).
@@ -1589,7 +1627,8 @@ TODO: add note on curl noise
 
 ---
 
-<img src="https://static.skillshare.com/uploads/video/thumbnails/c1c3da12ee479172705d9967ec9dca78/original" width="300" align="right">
+<a href="https://www.udemy.com/course/blenderparticlesystemcourse/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/particle-system-1.jpg?raw=true" width="300" align="right" title="Stephen Pearson's Udemy course 'Beginners Guide to the Particle System in Blender"></a>
 
 ### Particle system
 Collection of independent objects (often points, shapes, images/sprites/textures, or meshes) called _particles_ that are manipulated using dynamic forces and constraints to simulate a wide variety of natural phenomenon like fire, smoke/fog/clouds, fluids, bubbles, and so much more. Often combined with clever visual effects like transparency, blending, and light emission to create the appearance of a coherent but ever-changing entity.
@@ -1608,7 +1647,8 @@ _Notable software:_
 
 ---
 
-<img src="http://html5gamedevelopment.com/wp-content/uploads/2017/03/2017-03-29-12_59_02-Pyramid-Planck.js.png" width="300" align="right">
+<a href="https://html5gamedevelopment.com/planck-js-javascript-rewrite-of-box2d-physics-engine/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/physics-engine-1.png?raw=true" width="300" align="right" title="HTML Game Development - Planck.js – JavaScript Rewrite of Box2D Physics Engine"></a>
 
 ### Physics engine
 _Related topics include [collision detection](#collision-detection) and [particle systems](#particle-system)_
@@ -1662,7 +1702,8 @@ _Code projects:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Glasses_800_edit.png/800px-Glasses_800_edit.png" width="300" align="right">
+<a href="https://en.wikipedia.org/wiki/File:Glasses_800_edit.png" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/ray-tracing-1.png?raw=true" width="300" align="right" title="Wikipedia - File:Glasses 800 edit.png"></a>
 
 ### Ray tracing
 
@@ -1674,7 +1715,8 @@ The number of "bounces" examined can increase the photorealism of the resulting 
 
 This process is extremely computationally expensive, so it has historically only been used in pre-rendered applications like movies, animations, and still images. However, recent advancements in graphics card technology (like [NVIDIA's RTX series](https://en.wikipedia.org/wiki/Nvidia_RTX)) are beginning to make this technique available in real-time applications.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ray_trace_diagram.svg/1280px-Ray_trace_diagram.svg.png" width="500">
+<a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/ray-tracing-2.png?raw=true" width="500" align="right" title="Wikipedia - Ray tracing (graphics)"></a>
 
 _Articles:_
 * [Ray tracing (graphics)](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) on Wikipedia
@@ -1688,7 +1730,8 @@ _Code projects:_
 
 ---
 
-<img src="https://cdn-images-1.medium.com/max/1200/1*appBwh6_RtvocVxwqpplHA.jpeg" width="300" align="right">
+<a href="https://www.flickr.com/photos/torley/2361164281" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/recursion-1.jpg?raw=true" width="300" align="right" title="TORLEY - Recusion: It recurs."></a>
 
 ### Recursion
 _See [recursion](#recursion)._
@@ -1782,7 +1825,8 @@ _Videos:_
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Point_quadtree.svg" width="300" align="right">
+<a href="https://commons.wikimedia.org/wiki/File:Point_quadtree.svg" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/quadtree-1.png?raw=true" width="300" align="right" title="Wikipedia - File:Point quadtree.svg"></a>
 
 ### Spatial index
 Data structure (most commonly a binary tree) that enables fast and efficient storage, manipulation, and querying of large amounts of spatial data (points in space). Commonly used by [particle systems](#particle-system).
@@ -1806,7 +1850,8 @@ _Videos:_
 
 ---
 
-<img src="https://i.imgur.com/d8Q6v5h.png" alt="Illustration of a vector by Daniel Shiffman from natureofcode.com" width="300" align="right">
+<a href="https://natureofcode.com/book/chapter-1-vectors/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/vectors-1.png?raw=true" width="300" align="right" title="Daniel Shiffman - Figure 1.3 of Chapter 1. Vectors"></a>
 
 ### Vectors
 Vectors (specifically _Euclidean_ or _geometric_ vectors) are simple data structures that store spatial information representing discrete points, displacement, or forces. Understanding how to work with vectors is one of the most critical skills to learn when working with physically-based simulations and digital morphogenesis.
@@ -1890,7 +1935,8 @@ _Notable implementations:_
 
 ---
 
-<img src="https://camo.githubusercontent.com/dc39c61e02aa67abd0f923628cf241120d14f517/687474703a2f2f692e696d6775722e636f6d2f734e75425653722e676966" width="300" align="right">
+<a href="https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/wfc-1.png?raw=true" width="300" align="right" title="Robert Heaton - The Wavefunction Collapse Algorithm explained very clearly"></a>
 
 ### Wave Function Collapse (WFC)
 Method of procedurally generating textures and tilemaps that are similar to a single source image using ideas from quantum mechanics.
