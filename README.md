@@ -569,7 +569,7 @@ _Creative projects:_
 ---
 
 <a href="https://en.wikipedia.org/wiki/Delaunay_triangulation" target="_blank">
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/delaunay-voronoi-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Delaunay triangulation"></a>
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/delaunay-voronoi-1.png?raw=true" width="300" align="right" title="Wikipedia - Delaunay triangulation"></a>
 
 ### Delaunay triangulation and Voronoi diagrams
 _Delaunay triangulation_ is a way of connecting a set of points to form a network of non-overlapping triangles. One of the key properties of Delaunay triangulations is that the [circumcircles](https://en.wikipedia.org/wiki/Circumscribed_circle) associated with each triangle contains no other points than their three triangle vertices. When extended into 3D, Delaunay triangulation is useful for creating meshes.
@@ -587,7 +587,7 @@ _Articles:_
 ---
 
 <a href="https://en.wikipedia.org/wiki/Fibonacci_sequence" target="_blank">
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Fibonacci sequence"></a>
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-1.pngjpg?raw=true" width="300" align="right" title="Wikipedia - Fibonacci sequence"></a>
 
 ### Fibonacci sequence
 _Related to [Golden ratio](#golden-ratio)_
@@ -604,8 +604,8 @@ Sequence of numbers in which each number is the sum of it's two preceding number
  <tbody>
   <tr>
    <td>
-    <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-2.jpg?raw=true"><br>
-    <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-3.jpg?raw=true">
+    <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-2.svg?raw=true"><br>
+    <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-3.svg?raw=true">
    </td>
   </tr>
  </tbody>
@@ -613,7 +613,7 @@ Sequence of numbers in which each number is the sum of it's two preceding number
 
 Sequence begins with:
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-4.jpg?raw=true">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/fibonacci-sequence-4.svg?raw=true">
 
 _Articles:_
 * [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) on Wikipedia
@@ -727,7 +727,7 @@ _Expressed algebraicly:_
 
 _Expressed as line segments:_
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/golden-ratio-3.svgg?raw=true">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/golden-ratio-3.svg?raw=true">
 
 _Articles:_
 * [Golden ratio](https://en.wikipedia.org/wiki/Golden_ratio) on Wikipedia
@@ -816,7 +816,7 @@ _Videos:_
 ---
 
 <a href="https://www.researchgate.net/figure/Medial-Axis-Transform_fig25_296196212" target="_blank">
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/medial-axis-1.gif?raw=true" width="300" align="right" title="Ashish A Gupta - Figure 3 from Writer Dependent Handwriting Synthesis"></a>
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/medial-axis-1.jpg?raw=true" width="300" align="right" title="Ashish A Gupta - Figure 3 from Writer Dependent Handwriting Synthesis"></a>
 
 ### Medial axis
 The medial axis is sort of like the "skeleton" of a shape. It consists of a set of lines and curves upon which every point is equidistant between at least one closest point on the shape's boundary. In 2D this skeleton can also be thought of as a set of lines/curves whose points are the centers of circles that are tangent to at least two points on the shape's boundary.
@@ -936,11 +936,11 @@ Set of regular, convex polyhedra constructed using congruent, regular polygonal 
 
 | Name         | Polygon type | Faces | Edges | Vertices | Image |
 |---           |---           |---    |---    |---       |---       |
-| Tetrahedron  | Triangle     | 4     | 6     | 4        | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-tetrahedron.jpg?raw=true" width="50" title="Wikipedia - tetrahedron"> |
-| Cube         | Square       | 6     | 12    | 8        | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-cube.jpg?raw=true" width="50" title="Wikipedia - cube"> |
-| Octahedron   | Triangle     | 8     | 12     | 6       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-octahedron.jpg?raw=true" width="50" title="Wikipedia - octahedron"> |
-| Dodecahedron | Pentagon     | 12    | 30    | 20       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-dodecahedron.jpg?raw=true" width="50" title="Wikipedia - dodecahedron"> |
-| Icosahedron  | Triangle     | 20    | 30    | 12       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-icosahedron.jpg?raw=true" width="50" title="Wikipedia - icosahedron"> |
+| Tetrahedron  | Triangle     | 4     | 6     | 4        | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-tetrahedron.gif?raw=true" width="50" title="Wikipedia - tetrahedron"> |
+| Cube         | Square       | 6     | 12    | 8        | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-cube.gif?raw=true" width="50" title="Wikipedia - cube"> |
+| Octahedron   | Triangle     | 8     | 12     | 6       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-octahedron.gif?raw=true" width="50" title="Wikipedia - octahedron"> |
+| Dodecahedron | Pentagon     | 12    | 30    | 20       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-dodecahedron.gif?raw=true" width="50" title="Wikipedia - dodecahedron"> |
+| Icosahedron  | Triangle     | 20    | 30    | 12       | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/platonic-solids-icosahedron.gif?raw=true" width="50" title="Wikipedia - icosahedron"> |
 
 _Articles:_
 * [Platonic solid](https://en.wikipedia.org/wiki/Platonic_solid) on Wikipedia
@@ -1000,7 +1000,7 @@ _Articles:_
 ---
 
 <a href="https://en.wikipedia.org/wiki/Superformula" target="_blank">
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/superellipse-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Superformula"></a>
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/superellipse-1.png?raw=true" width="300" align="right" title="Wikipedia - Superformula"></a>
 
 ### Superellipse
 
@@ -1074,7 +1074,7 @@ _Videos:_
 
 ---
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/tsp-1.png?raw=true" width="300" align="right" title="Author unknown">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/tsp-1.gif?raw=true" width="300" align="right" title="Author unknown">
 
 ### Travelling salesman problem (TSP)
 Asks the question "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?" This classic problem is computer science classrooms to teach algorithm design and optimization techniques.
@@ -1093,7 +1093,7 @@ _Notable software:_
 ## Lab experiments
 
 <a href="https://commons.wikimedia.org/wiki/File:Belousov_Zhabotinsky_reaction_(3572095252).jpg" target="_blank">
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/belousov–zhabotinsky-1.png?raw=true" width="300" align="right" title="Wikipedia - File:Belousov Zhabotinsky reaction (3572095252).jpg"></a>
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/belousov–zhabotinsky-1.jpg?raw=true" width="300" align="right" title="Wikipedia - File:Belousov Zhabotinsky reaction (3572095252).jpg"></a>
 
 ### Belousov–Zhabotinsky (BZ) reaction
 
@@ -1716,7 +1716,7 @@ The number of "bounces" examined can increase the photorealism of the resulting 
 This process is extremely computationally expensive, so it has historically only been used in pre-rendered applications like movies, animations, and still images. However, recent advancements in graphics card technology (like [NVIDIA's RTX series](https://en.wikipedia.org/wiki/Nvidia_RTX)) are beginning to make this technique available in real-time applications.
 
 <a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)" target="_blank">
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/ray-tracing-2.png?raw=true" width="500" align="right" title="Wikipedia - Ray tracing (graphics)"></a>
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/ray-tracing-2.png?raw=true" width="500" title="Wikipedia - Ray tracing (graphics)"></a>
 
 _Articles:_
 * [Ray tracing (graphics)](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) on Wikipedia
