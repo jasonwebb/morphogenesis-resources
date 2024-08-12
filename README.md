@@ -255,7 +255,7 @@ _Articles:_
 * [Characteristics of Pattern Formation and Evolution in Approximations of Physarum Transport Networks](http://eprints.uwe.ac.uk/15260/1/artl.2010.16.2.pdf) (PDF) by Jeff Jones - original paper
 * [Physarum Simulations](https://softologyblog.wordpress.com/2019/04/11/physarum-simulations/) by Softology
 * [Physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) on Wikipedia
-[Understanding the Physarum Simulation](https://denizbicer.com/202408-UnderstandingPhysarum.html) by Deniz Bicer ([breakdown thread](https://x.com/ojelibalon/status/1820839257793233164))
+* [Understanding the Physarum Simulation](https://denizbicer.com/202408-UnderstandingPhysarum.html) by Deniz Bicer ([breakdown thread](https://x.com/ojelibalon/status/1820839257793233164))
 
 _Code projects:_
 * [Simulating slime mold with WebGL](https://kaesve.nl/projects/mold/summary.html) by Ken Voskuil
