@@ -234,18 +234,25 @@ _Articles:_
 
 _Image credit to [Sage Jenson](https://www.sagejenson.com/physarum) ([@mxsage](https://www.instagram.com/mxsage/))_
 
-Technique for modelling the observed behaviors of the slime mold [physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) using a large-scale [particle system](#particle-system) and [agent-based modelling](#agent-based-modelling). Originally described in 2010 by Jeff Jones, and more recently popularized by artist Sage Jensen (@mxsage), this algorithm produces highly dynamic and organic-looking webs that can seem very life-like and biological in nature.
+Technique for modelling the observed behaviors of the slime mold [physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) using [agent-based modelling](#agent-based-modelling). Originally described in 2010 paper by Jeff Jones, and more recently popularized by artist Sage Jensen (@mxsage), this algorithm produces highly dynamic and organic-looking webs that can seem very life-like and biological in nature.
 
-_Algorithms at a glance:_
+_Algorithm at a glance:_
 
-```
-Do you have a good grasp of the fundamental steps of this algorithm? Share them in a PR or a new Issue!
-```
+_\* indicates a potential simulation parameter_
+
+1. Consider the simulation space as a grid, with each cell storing a number representing the combined strength of pheromones left by the agents who have passed through it.
+    * Pheromones in each cell diffuse at some rate\* to neighboring cells as they decay (at some rate\*) in each step of the simulation.
+1. Add a set of points, each representing an autonomous [agent](#agent-based-modelling).
+1. Each agent leaves a trail of decaying pheromones behind by adding a number\* to the cells it passes through.
+1. Each agent senses the total phermone strength of cells in front of it defined by a distance\* and a field of view angle\*.
+1. An agent will gradually adjust its direction\* to steer towards the cell(s) with the most pheromones.
+1. Render the trails (not the agents) by mapping the pheromone strength number in each cell to a range or gradient of colors.
 
 _Articles:_
 * [Characteristics of Pattern Formation and Evolution in Approximations of Physarum Transport Networks](http://eprints.uwe.ac.uk/15260/1/artl.2010.16.2.pdf) (PDF) by Jeff Jones - original paper
 * [Physarum Simulations](https://softologyblog.wordpress.com/2019/04/11/physarum-simulations/) by Softology
 * [Physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) on Wikipedia
+[Understanding the Physarum Simulation](https://denizbicer.com/202408-UnderstandingPhysarum.html) by Deniz Bicer ([breakdown thread](https://x.com/ojelibalon/status/1820839257793233164))
 
 _Code projects:_
 * [Simulating slime mold with WebGL](https://kaesve.nl/projects/mold/summary.html) by Ken Voskuil
