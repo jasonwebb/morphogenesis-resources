@@ -545,17 +545,6 @@ _Notable software:_
 
 ---
 
-### Collatz conjecture
-
-```
-TODO
-```
-
-_Videos:_
-* [Coding in the Cabana 2: Collatz Conjecture](https://www.youtube.com/watch?v=EYLWxwo1Ed8) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingInTheCabana/Cabana_002_Collatz_Conjecture) with code for p5.js and Processing)
-
----
-
 <a href="https://en.wikipedia.org/wiki/Cymatics" target="_blank">
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/master/images/cymatics-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Cymatics"></a>
 
