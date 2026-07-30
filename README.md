@@ -280,8 +280,8 @@ _Articles:_
 * [Primordial Particle Systems](http://zool33.uni-graz.at/artlife/PPS) from the Artificial Life Laboratory in Graz, Austria.
 * [How a life-like system emerges from a simple particle motion law](https://www.nature.com/articles/srep37969) Thomas Schmickl, Martin Stefanec & Karl Crailsheim
 
-_Interactive demo:_
-* [Particle Life](https://particlelife.app/) - a free, browser-based particle life simulator where colored particle families attract/repel each other to form emergent, life-like colonies — a modern, interactive take on particle-based artificial life systems.
+_Projects:_
+* [Particle Life](https://particlelife.app/) by Veronica Lynn, based on [particle-life-sim](https://github.com/veronicalynn0528/particle-life-sim).
 ---
 
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/reaction-diffusion-1.jpg?raw=true" width="250" align="right" title="Author unknown"></a>
