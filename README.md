@@ -281,7 +281,7 @@ _Articles:_
 * [How a life-like system emerges from a simple particle motion law](https://www.nature.com/articles/srep37969) Thomas Schmickl, Martin Stefanec & Karl Crailsheim
 
 _Projects:_
-* [Particle Life](https://particlelife.app/) by Veronica Lynn, based on [particle-life-sim](https://github.com/veronicalynn0528/particle-life-sim).
+* [Particle Life](https://particlelife.app/) by Veronica Lin, based on [particle-life-sim](https://github.com/veronicalynn0528/particle-life-sim).
 ---
 
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/reaction-diffusion-1.jpg?raw=true" width="250" align="right" title="Author unknown"></a>
