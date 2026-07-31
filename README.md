@@ -681,14 +681,43 @@ _Notable software:_
 
 ---
 
-### Geodesic dome
+<a href="https://picryl.com/media/a-crane-removes-the-protective-geodesic-radar-dome-fba002" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/geodesic-dome.jpg?raw=true" width="300" align="right" title="Defense Visual Information Distribution Service - A crane removes the protective geodesic radar dome"></a>
 
-```
-TODO
-```
+### Geodesic dome
+_Related to [Platonic solids](#platonic-solids)._
+
+Spherical shell structure of triangular struts whose vertices all lie on a circumscribed sphere. It's typically derived from a [Platonic solid](#platonic-solids) with triangular faces (usually an icosahedron) by subdividing each face some number of times (the dome's "frequency") and projecting the new vertices onto the sphere - higher frequencies mean more, smaller struts and a closer approximation of a sphere.
+
+Named for the [geodesic](https://en.wikipedia.org/wiki/Geodesic) - the shortest path between two points on a curved surface - since its edges approximate great-circle arcs. The shell distributes structural stress evenly, giving it a high strength-to-weight ratio. Popularized (though not invented) by Buckminster Fuller, whose name was later borrowed for the similarly-shaped carbon molecules called [buckminsterfullerenes](https://en.wikipedia.org/wiki/Buckminsterfullerene).
+
+_Key terms:_
+* [Geodesic](https://en.wikipedia.org/wiki/Geodesic) - generalization of a straight line to curved surfaces; the shortest path between two points on the surface.
+* [Geodesic polyhedron](https://en.wikipedia.org/wiki/Geodesic_polyhedron) - convex polyhedron made of triangles, usually derived from subdividing a Platonic or other simple polyhedron and projecting the vertices onto a sphere.
+* Frequency - the number of times each face of the base polyhedron is subdivided before projection onto the sphere; written as `nV` (e.g. `3V`), where a higher number means smaller, more numerous struts.
+* Strut - a single structural member (edge) connecting two vertices of the dome.
+* [Chord factor](https://en.wikipedia.org/wiki/Geodesic_dome#Types) - ratio used to calculate the length of a given strut relative to the radius of the sphere.
 
 _Articles:_
+* [Geodesic Domes](https://www.bfi.org/about-fuller/geodesic-domes/) by the Buckminster Fuller Institute
 * [Geodesic dome](https://en.wikipedia.org/wiki/Geodesic_dome) on Wikipedia
+* [Geodesic polyhedron](https://en.wikipedia.org/wiki/Geodesic_polyhedron) on Wikipedia
+* [Explaining Dome Frequency](http://www.domerama.com/dome-basics/explaining-dome-frequency/) by Domerama
+* [Geodesic Dome](https://mathworld.wolfram.com/GeodesicDome.html) on Wolfram MathWorld
+
+_Notable software:_
+* [Domerama calculators](https://www.domerama.com/calculators/) - strut-length and cover-pattern calculators for domes of various frequencies
+
+_Notable real-world geodesic domes:_
+* [Climatron](https://en.wikipedia.org/wiki/Climatron) at the Missouri Botanical Garden in St. Louis, MO, USA. Diameter = 42m (138ft).
+* [La Géode](https://en.wikipedia.org/wiki/La_G%C3%A9ode) at the City of Science and Industry in Paris, France. Diameter = 36m (118ft).
+* Long Beach Cruise Terminal (formerly The Spruce Goose Dome) in Long Beach, CA, USA. Diameter = 122m (400ft).
+* [Matrimandir](https://en.wikipedia.org/wiki/Matrimandir) in Bommayapalayam, India. The building structure is a geodesic dome covered in golden discs. Diameter = 36m (118ft).
+* [Montreal Biosphere](https://en.wikipedia.org/wiki/Montreal_Biosphere) in Montreal, Québec, Canada. Designed by Buckminster Fuller himself in 1967. Diameter = 76m (249ft) .
+* [Science World building](https://en.wikipedia.org/wiki/Science_World_%28Vancouver%29) in Vancouver, Canada.
+* [Spaceship Earth](https://en.wikipedia.org/wiki/Spaceship_Earth_(Epcot)) in the EPCOT theme park at Walt Disney World in Orlando, FL, USA. Diameter = 50m (165ft).
+* [The Eden Project](https://en.wikipedia.org/wiki/Eden_Project) in Cornwall, England. Features multiple domes merged together into large, multi-area buildings.
+* [The Desert Dome](https://en.wikipedia.org/wiki/Omaha%27s_Henry_Doorly_Zoo_and_Aquarium#Desert_Dome) at the Henry Doorly Zoo and Aquarium in Omaha, NE, USA. Diameter = 70m (230 ft).
 
 ---
 
