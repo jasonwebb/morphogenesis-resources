@@ -33,13 +33,13 @@
 * Succulents
 * Trilobites
 
-<br>
+---
 
 ## Geology
 * Alluvial fan
 * Slot canyons
 
-<br>
+---
 
 ## Minerals
 * Bismuth
@@ -51,7 +51,7 @@
 * Quartz
 * Scolecite
 
-<br>
+---
 
 ## Physics
 * Accelerator Physics
@@ -76,7 +76,7 @@
 * Thermodynamics
 * Weather Prediction
 
-<br>
+---
 
 ## Places
 * Ah-Shi-Sle-Pah Wilderness Study Area, New Mexico, USA
