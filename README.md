@@ -119,23 +119,51 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
 
 ## Growth algorithms
 
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/dielectric-breakdown-model.jpg?raw=true" width="300" align="right" title="Ellak Somfai - Dielectric breakdown model in 3 dimensions">
+
 ### Dielectric breakdown model (DBM)
 
-```
-TODO
-```
+_Image credit to Ellak Somfai, from his document titled [Dielectric breakdown model in 3 dimensions](https://warwick.ac.uk/fac/cross_fac/complexity/study/msc_and_phd/miniprojects/archive/miniprojects2009/0670234-100209-miniproj08-somfai-dbm.pdf)._
 
-* Rigid and elastic bond models
+_Related to [Diffusion-limited aggregation (DLA)](#diffusion-limited-aggregation-dla)._
+
+Generalization of [DLA](#diffusion-limited-aggregation-dla) that models how an electrical discharge propagates through an insulating (dielectric) material, producing the branching patterns known as [Lichtenberg figures](https://en.wikipedia.org/wiki/Lichtenberg_figure) - the same kind of patterns seen in lightning, [fulgurites](https://en.wikipedia.org/wiki/Fulgurite) in sand, and burn marks left by high-voltage discharge. 
+
+Rather than growing a cluster from randomly-walking particles like DLA, DBM solves Laplace's equation for the electric potential around the growing cluster at every step, then extends growth from whichever boundary site has the strongest local field.
+
+A single exponent, η (eta), controls how sharply growth concentrates at high-field points: at η = 1 the model is statistically equivalent to DLA, higher values produce sparser and more needle-like branches, and η = 0 produces smooth, non-fractal growth.
+
+_Algorithm at a glance:_
+
+_\* indicates a potential simulation parameter_
+
+1. Seed growth with an initial charged point or shape, and hold a distant boundary\* at zero potential (fully "discharged").
+2. Solve for the potential field filling the space around the cluster - either by repeatedly relaxing a grid (each free cell settles toward the average\* potential of its neighbors, over some number of iterations\*) until the field stabilizes, or by approximating it with a batch of random walkers\* launched from the boundary and recording where each one first touches the cluster.
+3. For each empty cell touching the cluster (a "candidate" site), calculate its local field strength as how much its potential has dropped relative to the cluster's fixed potential.
+4. Raise each candidate's field strength to the power of the growth exponent\* (η), normalize the results into probabilities, and randomly pick one (weighted by those probabilities) to add to the cluster.
+5. Repeat, resolving the field again after each new addition.
+
+_Key terms:_
+* η (eta) - exponent controlling how strongly growth favors high-field regions; DLA is the η = 1 case of DBM.
+* [Lichtenberg figure](https://en.wikipedia.org/wiki/Lichtenberg_figure) - branching discharge pattern that DBM was originally developed to explain.
+* Rigid and elastic bond models - DBM variants used to study electrical and mechanical breakdown (fracture) networks.
 
 _Articles:_
 * [Dielectric breakdown model](https://en.wikipedia.org/wiki/Dielectric_breakdown_model) on Wikipedia
-* [Fractal Dimension of Dielectric Breakdown](http://laplace.ucv.cl/Patterns/Referencias/Pietronero-prl52-1033.pdf) (PDF) by L. Niemeyer, L. Pietronero, and H. J. Wiesmann
+* [Lichtenberg figure](https://en.wikipedia.org/wiki/Lichtenberg_figure) on Wikipedia
+* [Fractal Dimension of Dielectric Breakdown](https://ifisc.uib-csic.es/~tomas/MFCS/EdenDLA/dielectric_break.pdf) (PDF) by L. Niemeyer, L. Pietronero, and H. J. Wiesmann. The original 1984 paper introducing DBM as a generalization of DLA.
+
+_Code projects:_
+* [Lichtenberg-Figures](https://github.com/epa058/Lichtenberg-Figures) - DBM-based simulation of Lichtenberg figure formation, accounting for the stochastic nature of dielectric breakdown
 
 ---
 
 <a href="https://www.jasonwebb.io/2019/05/diffusion-limited-aggregation-experiments-in-javascript/" target="_blank"><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/diffusion-limited-aggregation-1.gif?raw=true" width="300" height="300" align="right" title="Jason Webb - Diffusion Limited Aggregation Experiments"></a>
 
 ### Diffusion-limited aggregation (DLA)
+
+_Related to [Dielectric breakdown model (DBM)](#dielectric-breakdown-model-dbm)_
+
 Process in which particles of matter stick together (_aggregate_) as they chaotically move (_diffuse_) through a medium that provides some sort of resistive (_limiting_) force. As these particles clump together over time they form characteristic fractal branching structures known as [Brownian trees](https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBrownian_tree).
 
 Very interesting macro-structures begin to emerge at around the 1-10 million particle range in 3D, but in order to get there you'll need to be smart about your rendering pipeline and make use of optimized code in a performant language or environment (C/C++, CUDA, GLSL shaders, Houdini, etc).
