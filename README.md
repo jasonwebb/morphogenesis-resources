@@ -289,8 +289,7 @@ _Code projects:_
 
 _Image credit: detail of the example results from [Particle Life Simulation](https://github.com/hunar4321/particle-life) by Hunar Ahmad_
 
-_Related to [Primordial Particle System](#primordial-particle-system)_
-_Related to [Agent-based modelling](#agent-based-modelling)_
+_Related to [Primordial Particle System](#primordial-particle-system) and [agent-based modelling](#agent-based-modelling)._
 
 Family of particle systems in which every particle belongs to one of several _types_ (usually drawn as colors), and every ordered pair of types is assigned its own attraction or repulsion strength. Those strengths are held in a small matrix that can be filled randomly and then tuned by hand, which makes the system extremely easy to explore - each new matrix is effectively a new set of "physics" to play with.
 
@@ -382,8 +381,7 @@ _Creative projects:_
 
 _Image credit: detail of [Figure 3G](https://www.nature.com/articles/srep37969/figures/3) from Schmickl, Stefanec & Crailsheim (2016)_
 
-_Related to [Particle Life](#particle-life)_
-_Related to [Agent-based modelling](#agent-based-modelling)
+_Related to [Particle Life](#particle-life) and [agent-based modelling](#agent-based-modelling)._
 
 Described in 2016 by Thomas Schmickl, Martin Stefanec and Karl Crailsheim of the Artificial Life Lab in Graz, Austria, a Primordial Particle System (PPS) is a minimal [agent-based model](#agent-based-modelling) in which self-propelled particles move through continuous space while steering based only on how many neighbors they can see to their left and right - a motion law even simpler than [boids](#boids), with no cohesion, separation or alignment rules. It is a separate system from [Particle Life](#particle-life), where all of the behavior comes instead from multiple particle types with per-pair attraction rules.
 
@@ -1454,7 +1452,7 @@ _Articles:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/boids-1.gif?raw=true" width="300" align="right" title="aYearInCode();"></a>
 
 ### Boids
-_Related topics include [agent-based modelling](#agent-based-modelling)._
+_Related to [agent-based modelling](#agent-based-modelling)._
 
 Well-known type of [agent-based system](#agent-based-modelling) that realistically simulates the complex flocking behaviors of birds and fish using simple rules. Each "boid" is an autonomous agent that is only aware of its immediate neighbor boids, all following the same three rules:
 
@@ -1581,7 +1579,7 @@ _Code projects:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/flow-field-1.png?raw=true" width="300" align="right" title="Wikipedia - Vector field"></a>
 
 ### Flow field
-_Related topics include [fluid simulation](#fluid-simulation)._
+_Related to [fluid simulation](#fluid-simulation)._
 
 Also known as a vector field, this technique involves assigning a unique vector to each point in a 2D or 3D space describing the direction and magnitude of varying forces. Flow fields are often used together with [particle systems](#particle-system) to model complex, dynamic movement caused by wind, fluid flow, electromagnetism, and more.
 
