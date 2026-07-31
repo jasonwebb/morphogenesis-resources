@@ -252,10 +252,31 @@ _Creative projects:_
 <img src="https://raw.githubusercontent.com/jasonwebb/morphogenesis-resources/main/images/eden-growth-model-1.png" width="300" align="right" title="Silvio Costa Ferraria et al - Figure 1 from Pitfalls on the determination of the universality class of radial clusters"></a>
 
 ### Eden growth model
-Created by Murray Eden in 1961, this is a type of surface fractal growth process where material randomly accumulates on the _boundary_ of clusters. Sort of like DLA but without all the empty space between branches. Thought to be a good way to model certain kinds of bacterial and lichen growth.
+_Image credit: Silvio Costa Ferraria et al - Figure 1 from [Pitfalls on the determination of the universality class of radial clusters](https://www.researchgate.net/figure/color-online-A-small-Eden-cluster-with-6000-particles-The-border-is-depicted-in-red_fig1_1858140)_
+
+Created by Murray Eden in 1961 ([paper](https://projecteuclid.org/ebook/Download?urlId=bsmsp%2F1200512888&isFullBook=False&isResultClick=False) (PDF)), this is a type of surface fractal growth process where material randomly accumulates on the _boundary_ of clusters. Sort of like DLA but without all the empty space between branches. Thought to be a good way to model certain kinds of bacterial and lichen growth.
+
+_Algorithm at a glance:_
+
+_\* indicates a potential simulation parameter_
+
+1. Seed growth with a single occupied cell (or shape).
+2. Track the list of all empty cells touching the cluster - its "perimeter."
+3. Pick one perimeter cell to fill in - either uniformly at random\*, or weighted by how many cluster cells it touches\* - and add it to the cluster.
+4. Update the perimeter list: remove the cell just filled, and add any new empty cells it exposed.
+5. Repeat.
+
+_Key terms:_
+* Perimeter / boundary sites - the empty cells adjacent to the cluster; the pool of candidates for the next growth step.
+* Growth-site weighting - how a perimeter cell is chosen each step; picking uniformly among all perimeter cells produces a different texture than weighting by how many cluster neighbors a cell has.
+* [Kardar–Parisi–Zhang (KPZ) universality class](https://en.wikipedia.org/wiki/Kardar%E2%80%93Parisi%E2%80%93Zhang_equation) - broad category of surface-growth models that share the same statistical scaling behavior; the Eden model is a classic example used to study it.
 
 _Articles:_
+* [Eden growth model](https://en.wikipedia.org/wiki/Eden_growth_model) on Wikipedia
 * [A Two Dimensional Growth Process](https://projecteuclid.org/download/pdf_1/euclid.bsmsp/1200512888) by Murray Eden (original 1961 paper)
+
+_Code projects:_
+* [Eden_cluster_growthtests](https://github.com/Cup-cake-lover/Eden_cluster_growthtests) - Python implementation with a repulsion factor to model canopy shyness in trees
 
 ---
 
