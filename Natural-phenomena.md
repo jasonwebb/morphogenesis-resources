@@ -33,13 +33,13 @@
 * Succulents
 * Trilobites
 
-<br>
+---
 
 ## Geology
 * Alluvial fan
 * Slot canyons
 
-<br>
+---
 
 ## Minerals
 * Bismuth
@@ -51,7 +51,7 @@
 * Quartz
 * Scolecite
 
-<br>
+---
 
 ## Physics
 * Accelerator Physics
@@ -66,6 +66,8 @@
   * Aerodynamics
   * Hydrodynamics
 * Fourier Analysis
+* Fulgerites - branching structures of fused glass made by lightning when it strikes sand
+* Lichtenburg figures
 * Nuclear Magnetic Resonance Spectroscopy
 * Resonance
 * Signal Processing
@@ -74,7 +76,7 @@
 * Thermodynamics
 * Weather Prediction
 
-<br>
+---
 
 ## Places
 * Ah-Shi-Sle-Pah Wilderness Study Area, New Mexico, USA

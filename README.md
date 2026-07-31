@@ -42,6 +42,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#fibonacci-sequence">Fibonacci sequence</a></li>
               <li><a href="#fourier-series">Fourier series</a></li>
               <li><a href="#fractals">Fractals</a></li>
+              <li><a href="#geodesic">Geodesic</a></li>
               <li><a href="#geodesic-dome">Geodesic dome</a></li>
               <li><a href="#golden-angle">Golden angle</a></li>
               <li><a href="#golden-ratio">Golden ratio</a></li>
@@ -120,23 +121,51 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
 
 ## Growth algorithms
 
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/dielectric-breakdown-model.jpg?raw=true" width="300" align="right" title="Ellak Somfai - Dielectric breakdown model in 3 dimensions">
+
 ### Dielectric breakdown model (DBM)
 
-```
-TODO
-```
+_Image credit to Ellak Somfai, from his document titled [Dielectric breakdown model in 3 dimensions](https://warwick.ac.uk/fac/cross_fac/complexity/study/msc_and_phd/miniprojects/archive/miniprojects2009/0670234-100209-miniproj08-somfai-dbm.pdf)._
 
-* Rigid and elastic bond models
+_Related to [Diffusion-limited aggregation (DLA)](#diffusion-limited-aggregation-dla)._
+
+Generalization of [DLA](#diffusion-limited-aggregation-dla) that models how an electrical discharge propagates through an insulating (dielectric) material, producing the branching patterns known as [Lichtenberg figures](https://en.wikipedia.org/wiki/Lichtenberg_figure) - the same kind of patterns seen in lightning, [fulgurites](https://en.wikipedia.org/wiki/Fulgurite) in sand, and burn marks left by high-voltage discharge. 
+
+Rather than growing a cluster from randomly-walking particles like DLA, DBM solves Laplace's equation for the electric potential around the growing cluster at every step, then extends growth from whichever boundary site has the strongest local field.
+
+A single exponent, η (eta), controls how sharply growth concentrates at high-field points: at η = 1 the model is statistically equivalent to DLA, higher values produce sparser and more needle-like branches, and η = 0 produces smooth, non-fractal growth.
+
+_Algorithm at a glance:_
+
+_\* indicates a potential simulation parameter_
+
+1. Seed growth with an initial charged point or shape, and hold a distant boundary\* at zero potential (fully "discharged").
+2. Solve for the potential field filling the space around the cluster - either by repeatedly relaxing a grid (each free cell settles toward the average\* potential of its neighbors, over some number of iterations\*) until the field stabilizes, or by approximating it with a batch of random walkers\* launched from the boundary and recording where each one first touches the cluster.
+3. For each empty cell touching the cluster (a "candidate" site), calculate its local field strength as how much its potential has dropped relative to the cluster's fixed potential.
+4. Raise each candidate's field strength to the power of the growth exponent\* (η), normalize the results into probabilities, and randomly pick one (weighted by those probabilities) to add to the cluster.
+5. Repeat, resolving the field again after each new addition.
+
+_Key terms:_
+* η (eta) - exponent controlling how strongly growth favors high-field regions; DLA is the η = 1 case of DBM.
+* [Lichtenberg figure](https://en.wikipedia.org/wiki/Lichtenberg_figure) - branching discharge pattern that DBM was originally developed to explain.
+* Rigid and elastic bond models - DBM variants used to study electrical and mechanical breakdown (fracture) networks.
 
 _Articles:_
 * [Dielectric breakdown model](https://en.wikipedia.org/wiki/Dielectric_breakdown_model) on Wikipedia
-* [Fractal Dimension of Dielectric Breakdown](http://laplace.ucv.cl/Patterns/Referencias/Pietronero-prl52-1033.pdf) (PDF) by L. Niemeyer, L. Pietronero, and H. J. Wiesmann
+* [Lichtenberg figure](https://en.wikipedia.org/wiki/Lichtenberg_figure) on Wikipedia
+* [Fractal Dimension of Dielectric Breakdown](https://ifisc.uib-csic.es/~tomas/MFCS/EdenDLA/dielectric_break.pdf) (PDF) by L. Niemeyer, L. Pietronero, and H. J. Wiesmann. The original 1984 paper introducing DBM as a generalization of DLA.
+
+_Code projects:_
+* [Lichtenberg-Figures](https://github.com/epa058/Lichtenberg-Figures) - DBM-based simulation of Lichtenberg figure formation, accounting for the stochastic nature of dielectric breakdown
 
 ---
 
 <a href="https://www.jasonwebb.io/2019/05/diffusion-limited-aggregation-experiments-in-javascript/" target="_blank"><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/diffusion-limited-aggregation-1.gif?raw=true" width="300" height="300" align="right" title="Jason Webb - Diffusion Limited Aggregation Experiments"></a>
 
 ### Diffusion-limited aggregation (DLA)
+
+_Related to [Dielectric breakdown model (DBM)](#dielectric-breakdown-model-dbm)_
+
 Process in which particles of matter stick together (_aggregate_) as they chaotically move (_diffuse_) through a medium that provides some sort of resistive (_limiting_) force. As these particles clump together over time they form characteristic fractal branching structures known as [Brownian trees](https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBrownian_tree).
 
 Very interesting macro-structures begin to emerge at around the 1-10 million particle range in 3D, but in order to get there you'll need to be smart about your rendering pipeline and make use of optimized code in a performant language or environment (C/C++, CUDA, GLSL shaders, Houdini, etc).
@@ -225,10 +254,31 @@ _Creative projects:_
 <img src="https://raw.githubusercontent.com/jasonwebb/morphogenesis-resources/main/images/eden-growth-model-1.png" width="300" align="right" title="Silvio Costa Ferraria et al - Figure 1 from Pitfalls on the determination of the universality class of radial clusters"></a>
 
 ### Eden growth model
-Created by Murray Eden in 1961, this is a type of surface fractal growth process where material randomly accumulates on the _boundary_ of clusters. Sort of like DLA but without all the empty space between branches. Thought to be a good way to model certain kinds of bacterial and lichen growth.
+_Image credit: Silvio Costa Ferraria et al - Figure 1 from [Pitfalls on the determination of the universality class of radial clusters](https://www.researchgate.net/figure/color-online-A-small-Eden-cluster-with-6000-particles-The-border-is-depicted-in-red_fig1_1858140)_
+
+Created by Murray Eden in 1961 ([paper](https://projecteuclid.org/ebook/Download?urlId=bsmsp%2F1200512888&isFullBook=False&isResultClick=False) (PDF)), this is a type of surface fractal growth process where material randomly accumulates on the _boundary_ of clusters. Sort of like DLA but without all the empty space between branches. Thought to be a good way to model certain kinds of bacterial and lichen growth.
+
+_Algorithm at a glance:_
+
+_\* indicates a potential simulation parameter_
+
+1. Seed growth with a single occupied cell (or shape).
+2. Track the list of all empty cells touching the cluster - its "perimeter."
+3. Pick one perimeter cell to fill in - either uniformly at random\*, or weighted by how many cluster cells it touches\* - and add it to the cluster.
+4. Update the perimeter list: remove the cell just filled, and add any new empty cells it exposed.
+5. Repeat.
+
+_Key terms:_
+* Perimeter / boundary sites - the empty cells adjacent to the cluster; the pool of candidates for the next growth step.
+* Growth-site weighting - how a perimeter cell is chosen each step; picking uniformly among all perimeter cells produces a different texture than weighting by how many cluster neighbors a cell has.
+* [Kardar–Parisi–Zhang (KPZ) universality class](https://en.wikipedia.org/wiki/Kardar%E2%80%93Parisi%E2%80%93Zhang_equation) - broad category of surface-growth models that share the same statistical scaling behavior; the Eden model is a classic example used to study it.
 
 _Articles:_
+* [Eden growth model](https://en.wikipedia.org/wiki/Eden_growth_model) on Wikipedia
 * [A Two Dimensional Growth Process](https://projecteuclid.org/download/pdf_1/euclid.bsmsp/1200512888) by Murray Eden (original 1961 paper)
+
+_Code projects:_
+* [Eden_cluster_growthtests](https://github.com/Cup-cake-lover/Eden_cluster_growthtests) - Python implementation with a repulsion factor to model canopy shyness in trees
 
 ---
 
@@ -781,14 +831,62 @@ _Notable software:_
 
 ---
 
-### Geodesic dome
+<a href="https://www.researchgate.net/figure/A-geodesic-on-the-surface-of-a-sphere_fig3_363501147" target="_blank">
+<img src="https://raw.githubusercontent.com/jasonwebb/morphogenesis-resources/main/images/geodesic.jpg" width="300" align="right" title="Vikash Mittal - Geometric phase and its applications: topological phases, quantum walks and non-inertial quantum systems (FIGURE 2)"></a>
 
-```
-TODO
-```
+### Geodesic
+_Image credit: Vikash Mittal -  [Geometric phase and its applications: topological phases, quantum walks and non-inertial quantum systems (FIGURE 2)](https://www.researchgate.net/publication/363501147_Geometric_phase_and_its_applications_topological_phases_quantum_walks_and_non-inertial_quantum_systems?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ)._
+
+The shortest path between two points on a curved surface - a generalization of the concept of a "straight line" to curved geometry. On a flat plane a geodesic is just a straight line; on the surface of a sphere, geodesics are arcs of [great circles](https://en.wikipedia.org/wiki/Great_circle); on more complex curved surfaces they can bend and twist while still remaining locally "as straight as possible" at every point.
+
+_Related terms:_
+* [Great circle](https://en.wikipedia.org/wiki/Great_circle) - the specific case of a geodesic on the surface of a sphere, formed by a plane passing through the sphere's center.
+* [Geodesic curvature](https://en.wikipedia.org/wiki/Geodesic_curvature) - measure of how far a curve on a surface deviates from being a geodesic.
+* [Geodesic dome](#geodesic-dome) - structure whose triangulated struts approximate geodesic arcs across a sphere.
 
 _Articles:_
+* [Geodesic](https://en.wikipedia.org/wiki/Geodesic) on Wikipedia
+* [Geodesic](https://mathworld.wolfram.com/Geodesic.html) on Wolfram MathWorld
+
+---
+
+<a href="https://picryl.com/media/a-crane-removes-the-protective-geodesic-radar-dome-fba002" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/geodesic-dome.jpg?raw=true" width="300" align="right" title="Defense Visual Information Distribution Service - A crane removes the protective geodesic radar dome"></a>
+
+### Geodesic dome
+_Related to [Geodesic](#geodesic) and [Platonic solids](#platonic-solids)._
+
+Spherical shell structure of triangular struts whose vertices all lie on a circumscribed sphere. It's typically derived from a [Platonic solid](#platonic-solids) with triangular faces (usually an icosahedron) by subdividing each face some number of times (the dome's "frequency") and projecting the new vertices onto the sphere - higher frequencies mean more, smaller struts and a closer approximation of a sphere.
+
+Named for the [geodesic](https://en.wikipedia.org/wiki/Geodesic) - the shortest path between two points on a curved surface - since its edges approximate great-circle arcs. The shell distributes structural stress evenly, giving it a high strength-to-weight ratio. Popularized (though not invented) by Buckminster Fuller, whose name was later borrowed for the similarly-shaped carbon molecules called [buckminsterfullerenes](https://en.wikipedia.org/wiki/Buckminsterfullerene).
+
+_Key terms:_
+* [Geodesic](https://en.wikipedia.org/wiki/Geodesic) - generalization of a straight line to curved surfaces; the shortest path between two points on the surface.
+* [Geodesic polyhedron](https://en.wikipedia.org/wiki/Geodesic_polyhedron) - convex polyhedron made of triangles, usually derived from subdividing a Platonic or other simple polyhedron and projecting the vertices onto a sphere.
+* Frequency - the number of times each face of the base polyhedron is subdivided before projection onto the sphere; written as `nV` (e.g. `3V`), where a higher number means smaller, more numerous struts.
+* Strut - a single structural member (edge) connecting two vertices of the dome.
+* [Chord factor](https://en.wikipedia.org/wiki/Geodesic_dome#Types) - ratio used to calculate the length of a given strut relative to the radius of the sphere.
+
+_Articles:_
+* [Geodesic Domes](https://www.bfi.org/about-fuller/geodesic-domes/) by the Buckminster Fuller Institute
 * [Geodesic dome](https://en.wikipedia.org/wiki/Geodesic_dome) on Wikipedia
+* [Geodesic polyhedron](https://en.wikipedia.org/wiki/Geodesic_polyhedron) on Wikipedia
+* [Explaining Dome Frequency](http://www.domerama.com/dome-basics/explaining-dome-frequency/) by Domerama
+* [Geodesic Dome](https://mathworld.wolfram.com/GeodesicDome.html) on Wolfram MathWorld
+
+_Notable software:_
+* [Domerama calculators](https://www.domerama.com/calculators/) - strut-length and cover-pattern calculators for domes of various frequencies
+
+_Notable real-world geodesic domes:_
+* [Climatron](https://en.wikipedia.org/wiki/Climatron) at the Missouri Botanical Garden in St. Louis, MO, USA. Diameter = 42m (138ft).
+* [La Géode](https://en.wikipedia.org/wiki/La_G%C3%A9ode) at the City of Science and Industry in Paris, France. Diameter = 36m (118ft).
+* Long Beach Cruise Terminal (formerly The Spruce Goose Dome) in Long Beach, CA, USA. Diameter = 122m (400ft).
+* [Matrimandir](https://en.wikipedia.org/wiki/Matrimandir) in Bommayapalayam, India. The building structure is a geodesic dome covered in golden discs. Diameter = 36m (118ft).
+* [Montreal Biosphere](https://en.wikipedia.org/wiki/Montreal_Biosphere) in Montreal, Québec, Canada. Designed by Buckminster Fuller himself in 1967. Diameter = 76m (249ft) .
+* [Science World building](https://en.wikipedia.org/wiki/Science_World_%28Vancouver%29) in Vancouver, Canada.
+* [Spaceship Earth](https://en.wikipedia.org/wiki/Spaceship_Earth_(Epcot)) in the EPCOT theme park at Walt Disney World in Orlando, FL, USA. Diameter = 50m (165ft).
+* [The Eden Project](https://en.wikipedia.org/wiki/Eden_Project) in Cornwall, England. Features multiple domes merged together into large, multi-area buildings.
+* [The Desert Dome](https://en.wikipedia.org/wiki/Omaha%27s_Henry_Doorly_Zoo_and_Aquarium#Desert_Dome) at the Henry Doorly Zoo and Aquarium in Omaha, NE, USA. Diameter = 70m (230 ft).
 
 ---
 
