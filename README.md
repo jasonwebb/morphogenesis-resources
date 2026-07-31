@@ -23,6 +23,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#diffusion-limited-aggregation-dla">Diffusion-limited aggregation (DLA)</a></li>
               <li><a href="#differential-growth">Differential growth</a></li>
               <li><a href="#eden-growth-model">Eden growth model</a></li>
+              <li><a href="#particle-life">Particle Life</a></li>
               <li><a href="#physarum">Physarum</a></li>
               <li><a href="#primordial-particle-system">Primordial Particle System</a></li>
               <li><a href="#reaction-diffusion">Reaction-diffusion</a></li>
@@ -231,6 +232,60 @@ _Articles:_
 
 ---
 
+<a href="https://github.com/hunar4321/particle-life" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/particle-life-1.jpg?raw=true" width="300" align="right" title="Hunar Ahmad - example results from Particle Life Simulation"></a>
+
+### Particle Life
+
+_Image credit: detail of the example results from [Particle Life Simulation](https://github.com/hunar4321/particle-life) by Hunar Ahmad_
+
+_Related to [Primordial Particle System](#primordial-particle-system)_
+_Related to [Agent-based modelling](#agent-based-modelling)_
+
+Family of particle systems in which every particle belongs to one of several _types_ (usually drawn as colors), and every ordered pair of types is assigned its own attraction or repulsion strength. Those strengths are held in a small matrix that can be filled randomly and then tuned by hand, which makes the system extremely easy to explore - each new matrix is effectively a new set of "physics" to play with.
+
+Crucially, the matrix does not have to be symmetric: green can be attracted to red while red is repelled by green. That asymmetry is what lifts the results beyond simple clumping, producing cell-like clusters with membranes, wandering "creatures" that chase and flee each other, orbiting pairs, snaking chains, and blobs that pinch off copies of themselves - all within one parameter space.
+
+Originally explored by Jeffrey Ventrella as _Clusters_ and later popularized under the name "Particle Life" by CodeParade in 2018, this is one of the most approachable emergent systems to implement, since the core is just a nested loop over pairs of particles.
+
+Not to be confused with the [Primordial Particle System](#primordial-particle-system), which uses a single kind of particle steering by neighbor _counts_ - here the effects depend entirely on multiple types treating each other differently.
+
+_Algorithm at a glance:_
+
+_\* indicates a potential simulation parameter_
+
+1. Randomly place a number\* of particles, assigning each one of `k`\* types (colors).
+2. Build a `k × k` matrix\* of attraction values (commonly in the range `-1` to `1`), one for each ordered pair of types, where negative values mean repulsion. Random matrices are a good starting point, and the matrix need not be symmetric.
+3. In each tick of the simulation, for each particle:
+   1. Find nearby particles within a maximum interaction radius\*.
+   2. For each neighbor, compute a force: strong repulsion when closer than some minimum distance\* (so particles cannot collapse into a single point), and beyond that, an attraction or repulsion scaled by the matrix value for the pair of types involved. The exact shape of the falloff curve varies between implementations and has a big impact on the results.
+   3. Add the summed forces to the particle's velocity, apply friction/damping\*, then move it.
+4. Wrap or bounce particles at the edges of the world\*.
+
+_Key terms:_
+* Types (or families/colors) - the classes of particle whose interactions the matrix describes
+* Attraction matrix - `k × k` table of per-pair attraction and repulsion strengths
+* Minimum distance - radius inside which particles always repel each other
+* Maximum radius - distance beyond which particles ignore each other, usually enforced with a [spatial index](#spatial-index)
+* Friction - velocity damping, without which the system heats up and flies apart
+
+_Articles:_
+* [Clusters](https://www.ventrella.com/Clusters/) by Jeffrey Ventrella - the original system, along with an [introduction](https://www.ventrella.com/Clusters/intro.html) to the ideas behind it
+* [Clusters and Particle Life](https://softologyblog.wordpress.com/2018/11/08/clusters-and-particle-life/) by Softology - traces the lineage from Clusters to Particle Life and walks through the parameters
+
+_Videos:_
+* [Particle Life - A Game of Life Made of Particles](https://www.youtube.com/watch?v=Z_zmZ23grXE) by CodeParade
+* [Clusters: An Asymmetrical Particle System with Emergent Patterns](https://www.youtube.com/watch?v=h3U8jSUIjME) by Jeffrey Ventrella
+* [Particle Life Simulation](https://youtu.be/0Kx4Y9TVMGg) by Hunar Ahmad - code walkthrough of an implementation that fits on a page
+
+_Projects:_
+* [Particle Life](https://particlelife.app/) by Veronica Lin, based on [particle-life-sim](https://github.com/veronicalynn0528/particle-life-sim).
+* [Particle Life Simulation](https://github.com/hunar4321/particle-life) (C++, JavaScript, and Python) by Hunar Ahmad - includes browser demos in [2D](https://hunar4321.github.io/particle-life/particle_life.html) and [3D](https://hunar4321.github.io/particle-life/particle_life_3d.html)
+* [Particle Life](https://particle-life.com/) (Java) by Tom Mohr - desktop app using parallel processing and spatial partitioning to handle large particle counts ([Github repo](https://github.com/tom-mohr/particle-life-app)), built on a reusable [framework](https://github.com/tom-mohr/particle-life)
+* [Particle-Life](https://github.com/HackerPoet/Particle-Life) (C++) by CodeParade - the implementation from the video above
+
+---
+
 <a href="https://cargocollective.com/sagejenson/physarum" target="_blank"><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/physarum-1.gif?raw=true" width="300" align="right" title="Sage Jenson - Physarum"></a>
 
 ### Physarum
@@ -270,18 +325,63 @@ _Creative projects:_
 
 ---
 
+<a href="https://www.nature.com/articles/srep37969/figures/3" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/primordial-particle-system-1.jpg?raw=true" width="300" align="right" title="Schmickl, Stefanec & Crailsheim - detail of Figure 3G from 'How a life-like system emerges from a simple particle motion law'"></a>
+
 ### Primordial Particle System
 
-```
-TODO
-```
+_Image credit: detail of [Figure 3G](https://www.nature.com/articles/srep37969/figures/3) from Schmickl, Stefanec & Crailsheim (2016)_
+
+_Related to [Particle Life](#particle-life)_
+_Related to [Agent-based modelling](#agent-based-modelling)
+
+Described in 2016 by Thomas Schmickl, Martin Stefanec and Karl Crailsheim of the Artificial Life Lab in Graz, Austria, a Primordial Particle System (PPS) is a minimal [agent-based model](#agent-based-modelling) in which self-propelled particles move through continuous space while steering based only on how many neighbors they can see to their left and right - a motion law even simpler than [boids](#boids), with no cohesion, separation or alignment rules. It is a separate system from [Particle Life](#particle-life), where all of the behavior comes instead from multiple particle types with per-pair attraction rules.
+
+Despite containing no notion of cells, membranes or reproduction, the system spontaneously produces cell-like structures with a dense interior surrounded by a ring-like membrane, and those structures go through a full life cycle: they feed on the surrounding "nutrient" field of free particles, grow, divide into daughter cells and spores, and die when starved. Left running, the population of cells levels off along a sigmoidal curve much like bacteria growing in a petri dish, making this one of the most striking demonstrations of how self-structuring, self-reproducing and self-sustaining behaviors can emerge from a single line of math.
+
+_Motion law:_
+
+$$\Delta\phi = \alpha + \beta \cdot N_{t,r} \cdot \text{sign}(R_{t,r} - L_{t,r})$$
+
+Where `L` and `R` are the number of neighbors within radius `r` in the semicircles to the particle's left and right, `N` = `L` + `R` is the total number of neighbors, `α` is a fixed rotation, `β` is a rotation proportional to local crowding, and a positive `Δϕ` is a turn to the right.
+
+_Algorithm at a glance:_
+
+_\* indicates a potential simulation parameter_
+
+1. Randomly distribute particles across the habitat with random headings, at a density\* of around 0.08 particles per square unit (the paper uses a 250x250 unit space that wraps around at the edges).
+2. In each time step, visit every particle _once, in random order_, and for each one:
+   1. Count its neighbors within radius `r`\*, splitting them into those on its left (`L`) and those on its right (`R`).
+   2. Turn it by `Δϕ` using the motion law above, with a fixed angle `α`\* and a crowding-proportional angle `β`\*.
+   3. Move it forward by a constant velocity `v`\*.
+3. Update particles _asynchronously_ - each particle senses and moves within the same loop, so it sees the already-updated positions of the particles visited before it in that time step. Updating everything simultaneously instead will not produce the same results.
+4. Optionally color-code particles by local neighborhood size to make the structures legible (see below).
+
+_Reference parameter set:_ `PPS = ⟨r = 5, α = 180°, β = 17°, v = 0.67⟩`
+
+_Color coding (as used in the paper):_
+* Green (`N` ≤ 13) - free-floating "nutrient" particles
+* Brown (13 ≤ `N` ≤ 15) - premature spores
+* Magenta (more than 15 neighbors within a much smaller radius of 1.3) - mature spores
+* Blue (15 < `N` ≤ 35) - the bulk of cell structures, including their membranes
+* Yellow (`N` > 35) - the densest interiors of cells
 
 _Articles:_
-* [Primordial Particle Systems](http://zool33.uni-graz.at/artlife/PPS) from the Artificial Life Laboratory in Graz, Austria.
-* [How a life-like system emerges from a simple particle motion law](https://www.nature.com/articles/srep37969) Thomas Schmickl, Martin Stefanec & Karl Crailsheim
+* [How a life-like system emerges from a simple particle motion law](https://www.nature.com/articles/srep37969) by Thomas Schmickl, Martin Stefanec & Karl Crailsheim - original 2016 paper in Scientific Reports (open access, with pseudo-code in Figure 1).
+* [Primordial Particle Systems](https://alife.uni-graz.at/projects/primordial-particle-systems/) research track page from the Artificial Life Laboratory in Graz, Austria.
+* [A Primordial Particle System in three dimensions](https://arxiv.org/abs/1901.09293) by Thomas Schmickl & Martin Stefanec - extends the model into 3D, with pseudo-code and notes on what has to change.
+* [Complexity](https://www.thomasschmickl.eu/complexity) by Thomas Schmickl - short plain-language introduction from one of the authors.
+
+_Videos:_
+* [How life emerges from a simple particle motion law: Introducing the Primordial Particle System](https://www.youtube.com/watch?v=makaJpLvbow) by the Artificial Life Lab Graz
 
 _Projects:_
-* [Particle Life](https://particlelife.app/) by Veronica Lin, based on [particle-life-sim](https://github.com/veronicalynn0528/particle-life-sim).
+* [Primordial Particle System](https://nagualdesign.github.io/) (JavaScript, single-page HTML canvas) by nagualdesign ([Github repo](https://github.com/nagualdesign/Primordial-Particle-System))
+* [emergence](https://github.com/blobject/emergence) (C++ with OpenGL and OpenCL) by blobject - PPS visualiser and processor with live parameter controls
+* [pps](https://github.com/fzipp/pps) (Go, renders in the browser) by fzipp
+* [PPS](https://github.com/adamnb/PPS) (Processing) by Adam Brown
+* [pml_system](https://github.com/TimoLassmann/pml_system) (C) by Timo Lassmann
+* [PrimordialParticleSystems_Public](https://gitlab.com/thomasschmickl/primordialparticlesystems_public) by Thomas Schmickl - implementations shared by one of the original authors
 ---
 
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/reaction-diffusion-1.jpg?raw=true" width="250" align="right" title="Author unknown"></a>
