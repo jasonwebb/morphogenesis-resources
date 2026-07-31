@@ -41,6 +41,7 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
               <li><a href="#fibonacci-sequence">Fibonacci sequence</a></li>
               <li><a href="#fourier-series">Fourier series</a></li>
               <li><a href="#fractals">Fractals</a></li>
+              <li><a href="#geodesic">Geodesic</a></li>
               <li><a href="#geodesic-dome">Geodesic dome</a></li>
               <li><a href="#golden-angle">Golden angle</a></li>
               <li><a href="#golden-ratio">Golden ratio</a></li>
@@ -730,11 +731,30 @@ _Notable software:_
 
 ---
 
+<a href="https://www.researchgate.net/figure/A-geodesic-on-the-surface-of-a-sphere_fig3_363501147" target="_blank">
+<img src="https://raw.githubusercontent.com/jasonwebb/morphogenesis-resources/main/images/geodesic.jpg" width="300" align="right" title="Vikash Mittal - Geometric phase and its applications: topological phases, quantum walks and non-inertial quantum systems (FIGURE 2)"></a>
+
+### Geodesic
+_Image credit: Vikash Mittal -  [Geometric phase and its applications: topological phases, quantum walks and non-inertial quantum systems (FIGURE 2)](https://www.researchgate.net/publication/363501147_Geometric_phase_and_its_applications_topological_phases_quantum_walks_and_non-inertial_quantum_systems?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ)._
+
+The shortest path between two points on a curved surface - a generalization of the concept of a "straight line" to curved geometry. On a flat plane a geodesic is just a straight line; on the surface of a sphere, geodesics are arcs of [great circles](https://en.wikipedia.org/wiki/Great_circle); on more complex curved surfaces they can bend and twist while still remaining locally "as straight as possible" at every point.
+
+_Related terms:_
+* [Great circle](https://en.wikipedia.org/wiki/Great_circle) - the specific case of a geodesic on the surface of a sphere, formed by a plane passing through the sphere's center.
+* [Geodesic curvature](https://en.wikipedia.org/wiki/Geodesic_curvature) - measure of how far a curve on a surface deviates from being a geodesic.
+* [Geodesic dome](#geodesic-dome) - structure whose triangulated struts approximate geodesic arcs across a sphere.
+
+_Articles:_
+* [Geodesic](https://en.wikipedia.org/wiki/Geodesic) on Wikipedia
+* [Geodesic](https://mathworld.wolfram.com/Geodesic.html) on Wolfram MathWorld
+
+---
+
 <a href="https://picryl.com/media/a-crane-removes-the-protective-geodesic-radar-dome-fba002" target="_blank">
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/geodesic-dome.jpg?raw=true" width="300" align="right" title="Defense Visual Information Distribution Service - A crane removes the protective geodesic radar dome"></a>
 
 ### Geodesic dome
-_Related to [Platonic solids](#platonic-solids)._
+_Related to [Geodesic](#geodesic) and [Platonic solids](#platonic-solids)._
 
 Spherical shell structure of triangular struts whose vertices all lie on a circumscribed sphere. It's typically derived from a [Platonic solid](#platonic-solids) with triangular faces (usually an icosahedron) by subdividing each face some number of times (the dome's "frequency") and projecting the new vertices onto the sphere - higher frequencies mean more, smaller struts and a closer approximation of a sphere.
 
