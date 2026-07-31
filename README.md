@@ -125,9 +125,11 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
 
 ### Dielectric breakdown model (DBM)
 
-_Image credit to Ellak Somfai, from his document titled [Dielectric breakdown model in 3 dimensions](https://warwick.ac.uk/fac/cross_fac/complexity/study/msc_and_phd/miniprojects/archive/miniprojects2009/0670234-100209-miniproj08-somfai-dbm.pdf)._
+> [!NOTE]
+> Image credit to Ellak Somfai, from his document titled [Dielectric breakdown model in 3 dimensions](https://warwick.ac.uk/fac/cross_fac/complexity/study/msc_and_phd/miniprojects/archive/miniprojects2009/0670234-100209-miniproj08-somfai-dbm.pdf).
 
-_Related to [Diffusion-limited aggregation (DLA)](#diffusion-limited-aggregation-dla)._
+> [!NOTE]
+> Related to [Diffusion-limited aggregation (DLA)](#diffusion-limited-aggregation-dla).
 
 Generalization of [DLA](#diffusion-limited-aggregation-dla) that models how an electrical discharge propagates through an insulating (dielectric) material, producing the branching patterns known as [Lichtenberg figures](https://en.wikipedia.org/wiki/Lichtenberg_figure) - the same kind of patterns seen in lightning, [fulgurites](https://en.wikipedia.org/wiki/Fulgurite) in sand, and burn marks left by high-voltage discharge. 
 
