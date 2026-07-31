@@ -66,6 +66,8 @@
   * Aerodynamics
   * Hydrodynamics
 * Fourier Analysis
+* Fulgerites - branching structures of fused glass made by lightning when it strikes sand
+* Lichtenburg figures
 * Nuclear Magnetic Resonance Spectroscopy
 * Resonance
 * Signal Processing
