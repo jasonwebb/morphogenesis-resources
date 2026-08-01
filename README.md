@@ -1,4 +1,4 @@
-[Digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis) studies how forms, shapes, and patterns emerge in nature through computational models of biological, chemical, and physical processes, with applications in architecture, fabrication, art, engineering, biomedicine and more
+[Digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis) studies how forms, shapes, and patterns emerge in nature through computational models of biological, chemical, and physical processes, with applications in architecture, fabrication, art, engineering, biomedicine and more.
 
 This list is a compact reference of growth algorithms, lab experiments, and related math/physics/programming topics so readers can find unexpected relationships and patterns across disciplines. 
 
@@ -396,7 +396,7 @@ _Motion law:_
 
 $$\Delta\phi = \alpha + \beta \cdot N_{t,r} \cdot \text{sign}(R_{t,r} - L_{t,r})$$
 
-Where `L` and `R` are the number of neighbors within radius `r` in the semicircles to the particle's left and right, `N` = `L` + `R` is the total number of neighbors, `α` is a fixed rotation, `β` is a rotation proportional to local crowding, and a positive `Δϕ` is a turn to the right.
+Where $L$ and $R$ are the number of neighbors within radius $r$ in the semicircles to the particle's left and right, $N = L + R$ is the total number of neighbors, $\alpha$ is a fixed rotation, $\beta$ is a rotation proportional to local crowding, and a positive $\Delta\phi$ is a turn to the right.
 
 _Algorithm at a glance:_
 
@@ -404,20 +404,20 @@ _\* indicates a potential simulation parameter_
 
 1. Randomly distribute particles across the habitat with random headings, at a density\* of around 0.08 particles per square unit (the paper uses a 250x250 unit space that wraps around at the edges).
 2. In each time step, visit every particle _once, in random order_, and for each one:
-   1. Count its neighbors within radius `r`\*, splitting them into those on its left (`L`) and those on its right (`R`).
-   2. Turn it by `Δϕ` using the motion law above, with a fixed angle `α`\* and a crowding-proportional angle `β`\*.
-   3. Move it forward by a constant velocity `v`\*.
+   1. Count its neighbors within radius $r$\*, splitting them into those on its left ($L$) and those on its right ($R$).
+   2. Turn it by $\Delta\phi$ using the motion law above, with a fixed angle $\alpha$\* and a crowding-proportional angle $\beta$\*.
+   3. Move it forward by a constant velocity $v$\*.
 3. Update particles _asynchronously_ - each particle senses and moves within the same loop, so it sees the already-updated positions of the particles visited before it in that time step. Updating everything simultaneously instead will not produce the same results.
 4. Optionally color-code particles by local neighborhood size to make the structures legible (see below).
 
-_Reference parameter set:_ `PPS = ⟨r = 5, α = 180°, β = 17°, v = 0.67⟩`
+_Reference parameter set:_ $\text{PPS} = \langle r = 5, \alpha = 180°, \beta = 17°, v = 0.67 \rangle$
 
 _Color coding (as used in the paper):_
-* Green (`N` ≤ 13) - free-floating "nutrient" particles
-* Brown (13 ≤ `N` ≤ 15) - premature spores
+* Green ($N \leq 13$) - free-floating "nutrient" particles
+* Brown ($13 \leq N \leq 15$) - premature spores
 * Magenta (more than 15 neighbors within a much smaller radius of 1.3) - mature spores
-* Blue (15 < `N` ≤ 35) - the bulk of cell structures, including their membranes
-* Yellow (`N` > 35) - the densest interiors of cells
+* Blue ($15 < N \leq 35$) - the bulk of cell structures, including their membranes
+* Yellow ($N > 35$) - the densest interiors of cells
 
 _Articles:_
 * [How a life-like system emerges from a simple particle motion law](https://www.nature.com/articles/srep37969) by Thomas Schmickl, Martin Stefanec & Karl Crailsheim - original 2016 paper in Scientific Reports (open access, with pseudo-code in Figure 1).
@@ -748,25 +748,15 @@ _Articles:_
 Sequence of numbers in which each number is the sum of it's two preceding numbers. [Binet's formula](https://en.wikipedia.org/wiki/Fibonacci_number#Binet's_formula) shows that the ratio of two consecutive numbers tends towards the [golden ratio](#golden-ratio) as the sequence progresses. Fibonacci numbers appear unexpectedly often in biology, having been observed in branching of trees, the arrangement of leaves on a stem, the fruit sprouts of a pineapple, the flowering of an artichoke, an uncurling fern and the arrangement of a pine cone's bracts.
 
 
-<table>
- <thead>
-  <tr>
-   <th><center>Formula</center></th>
-  </tr>
- </thead>
- <tbody>
-  <tr>
-   <td>
-    <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/fibonacci-sequence-2.svg?raw=true"><br>
-    <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/fibonacci-sequence-3.svg?raw=true">
-   </td>
-  </tr>
- </tbody>
-</table>
+_Formula:_
 
-Sequence begins with:
+$$F_{0}=0,\quad F_{1}=1,$$
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/fibonacci-sequence-4.svg?raw=true">
+$$F_{n}=F_{n-1}+F_{n-2},$$
+
+_Sequence begins with:_
+
+$$(0,)\;1,\;1,\;2,\;3,\;5,\;8,\;13,\;21,\;34,\;55,\;89,\;144,\;\ldots$$
 
 _Articles:_
 * [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) on Wikipedia
@@ -931,11 +921,11 @@ Also expressed as the Greek letter _phi_ (`φ`), this irrational number pops up 
 
 _Expressed algebraicly:_
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/golden-ratio-2.svg?raw=true">
+$$\varphi = \frac{1 + \sqrt{5}}{2} = 1.6180339887\ldots$$
 
 _Expressed as line segments:_
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/golden-ratio-3.svg?raw=true">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/golden-ratio-3.svg?raw=true" style="background: white">
 
 _Articles:_
 * [Golden ratio](https://en.wikipedia.org/wiki/Golden_ratio) on Wikipedia
@@ -953,13 +943,20 @@ A surface defined by an equation in the form of <img src="https://wikimedia.org/
 
 _Examples of implicit surface equations:_
 
-| Surface               | Equation |
-|---                    |---       |
-| Plane                 | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/implicit-surface-2.svg?raw=true"> |
-| Sphere                | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/implicit-surface-3.svg?raw=true"> |
-| Torus                 | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/implicit-surface-4.svg?raw=true"> |
-| Surface of genus 2    | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/implicit-surface-5.svg?raw=true"> |
-| Surface of revolution | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/implicit-surface-6.svg?raw=true"> |
+Plane:
+$$x+2y-3z+1=0$$
+
+Sphere:
+$$x^{2}+y^{2}+z^{2}-4=0$$
+
+Torus:
+$$(x^{2}+y^{2}+z^{2}+R^{2}-a^{2})^{2}-4R^{2}(x^{2}+y^{2})=0$$
+
+Surface of genus 2:
+$$2y(y^{2}-3x^{2})(1-z^{2})+(x^{2}+y^{2})^{2}-(9z^{2}-1)(1-z^{2})=0$$
+
+Surface of revolution:
+$$x^{2}+y^{2}-(\ln(z+3.2))^{2}-0.02=0$$
 
 _Articles:_
 * [Implicit surface](https://en.wikipedia.org/wiki/Implicit_surface) on Wikipedia
@@ -1009,8 +1006,9 @@ Can be created using various physical systems including [oscilloscopes](https://
 
 _Equations:_
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/lissajous-1.jpg?raw=true"><br>
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/lissajous-2.jpg?raw=true">
+$$x = a \sin t,\quad y = b \sin(nt + \varphi)$$
+
+$$0 \leq \varphi \leq \frac{\pi}{2}, \quad n \geq 1$$
 
 _Articles:_
 * [Lissajous curve](https://en.wikipedia.org/wiki/Lissajous_curve) on Wikipedia
@@ -1219,16 +1217,14 @@ _Articles:_
 Also known as the Lamé curve, this equation describes a closed curve that can generate shapes that look like pinched or inflated ellipses. At the extremes of the parameter space the shapes can range from an outline of a plus (`+`) symbol to a nearly rectangular shape with rounded corners.
 
 _Equations:_
-<table>
- <tr>
-  <td valign="top">General form</td>
-  <td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/superellipse-2.svg?raw=true"></td>
- </tr>
- <tr>
-  <td valign="top">Parametric</td>
-  <td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/superellipse-3.svg?raw=true"></td>
- </tr>
-</table>
+
+General form:
+
+$$\left|\frac{x}{a}\right|^{n} + \left|\frac{y}{b}\right|^{n} = 1$$
+
+Parametric:
+
+$$\begin{aligned}x(t) &= \pm a \cos^{\frac{2}{n}} t \\y(t) &= \pm b \sin^{\frac{2}{n}} t\end{aligned} \qquad 0 \leq t \leq \frac{\pi}{2}$$
 
 _Articles:_
 * [Superellipse](https://en.wikipedia.org/wiki/Superellipse) on Wikipedia
@@ -1249,26 +1245,22 @@ Generalized version of the superellipse formula proposed by Johan Giellis around
 The superformula can be used to generate both 2D and 3D forms. To create 2D forms, use the general form equation to obtain [polar coordinates](http://mathworld.wolfram.com/PolarCoordinates.html) that can be converted into Cartesian coordinates for drawing on a screen. To create 3D forms, compute the polar coordinates for _two_ 2D supershapes, then "mix" them together using the 3D equations below.
 
 _Equations:_
-<table>
- <tr>
-  <td valign="top">General form</td>
-  <td>
-   <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/superformula-2.svg?raw=true">
 
-   Where `r` is a radius and `φ` (phi) is an angle
-  </td>
- </tr>
- <tr>
-  <td valign="top">3D equations</td>
-  <td>
-   <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/superformula-3.svg?raw=true"><br>
-   <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/superformula-4.svg?raw=true"><br>
-   <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/superformula-5.svg?raw=true">
+General form:
 
-   Where `φ` (latitude) varies between −π/2 and π/2 and `θ` (longitude) between −π and π.
-  </td>
- </tr>
-</table>
+$$r(\varphi) = \left(\left|\frac{\cos(m_1\varphi/4)}{a}\right|^{n_2} + \left|\frac{\sin(m_2\varphi/4)}{b}\right|^{n_3}\right)^{-1/n_1}$$
+
+Where `r` is a radius and `φ` (phi) is an angle.
+
+3D equations:
+
+$$x = r_1(\theta) \cos \theta \cdot r_2(\varphi) \cos \varphi$$
+
+$$y = r_1(\theta) \sin \theta \cdot r_2(\varphi) \cos \varphi$$
+
+$$z = r_2(\varphi) \sin \varphi$$
+
+Where `φ` (latitude) varies between −π/2 and π/2 and `θ` (longitude) between −π and π.
 
 _Articles:_
 * [Superformula](https://en.wikipedia.org/wiki/Superformula) on Wikipedia
@@ -1802,9 +1794,9 @@ They can be visualized using the [marching squares](#marching-squares) (2D) or [
 
 A typical function chosen for metaballs is:
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/metaballs-2.svg?raw=true">
+$$f(x,y,z) = \frac{1}{(x-x_0)^2 + (y-y_0)^2 + (z-z_0)^2}$$
 
-Where <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/metaballs-3.svg?raw=true"> is the center of the metaball.
+Where $(x_0, y_0, z_0)$ is the center of the metaball.
 
 _Articles:_
 * [Metaballs](https://en.wikipedia.org/wiki/Metaballs) on Wikipedia
@@ -2087,7 +2079,7 @@ Vectors can be manipulated using familiar algebraic operations like addition, su
 The term "vector" has slightly different meanings and uses in mathematics, physics, machine learning, biology, and more. In the context of digital morphogenesis, you'll most often encounter vectors as they are used in physics, representing discrete physical properties like position, displacement, velocity, direction, and more.
 
 _Properties:_
-* [Magnitude / length](https://natureofcode.com/book/chapter-1-vectors/#15-vector-magnitude) (`||v||`) = the "size" of a vector obtained by taking the square root of the sum of the square of each of the vector's components (an abstraction of the Pythagorean Formula). Mathematically, `||v|| = sqrt(v.x*v.x + v.y*v.y + v.z*v.z + ...)`.
+* [Magnitude / length](https://natureofcode.com/book/chapter-1-vectors/#15-vector-magnitude) ($\|\mathbf{v}\|$) = the "size" of a vector obtained by taking the square root of the sum of the square of each of the vector's components (an abstraction of the Pythagorean Formula). Mathematically, $\|\mathbf{v}\| = \sqrt{v_x^2 + v_y^2 + v_z^2 + \ldots}$.
 * Heading / direction / angle = the direction in which a vector is pointing. Applicable when using vectors to represent forces, but not so much when representing discrete points in space.
 
 _Key concepts:_
@@ -2107,32 +2099,32 @@ _Algebraic operations:_
   <tbody>
     <tr valign="top">
       <td><a href="https://natureofcode.com/book/chapter-1-vectors/#13-vector-addition">Addition</a></td>
-      <td><code>v1 + v2</code> = <code>{v1.x + v2.x, v1.y + v2.y, ...}</code></td>
-      <td><code>v + 10</code> = <code>{v.x + 10, v.y + 10, ...}</code></td>
+      <td>$\mathbf{v}_1 + \mathbf{v}_2 = \{v_{1x} + v_{2x}, v_{1y} + v_{2y}, \ldots\}$</td>
+      <td>$\mathbf{v} + 10 = \{v_x + 10, v_y + 10, \ldots\}$</td>
     </tr>
     <tr valign="top">
       <td><a href="https://natureofcode.com/book/chapter-1-vectors/#vector-subtraction">Subtraction</a></td>
-      <td><code>v1 - v2</code> = <code>{v1.x - v2.x, v1.y - v2.y, ...}</code></td>
-      <td><code>v - 10</code> = <code>{v.x - 10, v.y - 10, ...}</code></td>
+      <td>$\mathbf{v}_1 - \mathbf{v}_2 = \{v_{1x} - v_{2x}, v_{1y} - v_{2y}, \ldots\}$</td>
+      <td>$\mathbf{v} - 10 = \{v_x - 10, v_y - 10, \ldots\}$</td>
     </tr>
     <tr valign="top">
       <td><a href="https://natureofcode.com/book/chapter-1-vectors/#vector-multiplication">Multiplication</a></td>
-      <td><code>v1 * v2</code> = <code>{v1.x * v2.x, v1.y * v2.y, ...}</code></td>
-      <td><code>v * 10</code> = <code>{v.x * 10, v.y * 10, ...}</code></td>
+      <td>$\mathbf{v}_1 \times \mathbf{v}_2 = \{v_{1x} \times v_{2x}, v_{1y} \times v_{2y}, \ldots\}$</td>
+      <td>$\mathbf{v} \times 10 = \{v_x \times 10, v_y \times 10, \ldots\}$</td>
     </tr>
     <tr valign="top">
       <td>Division</td>
-      <td><code>v1 / v2</code> = <code>{v1.x / v2.x, v1.y / v2.y, ...}</code></td>
-      <td><code>v / 10</code> = <code>{v.x / 10, v.y / 10, ...}</code></td>
+      <td>$\mathbf{v}_1 / \mathbf{v}_2 = \{v_{1x} / v_{2x}, v_{1y} / v_{2y}, \ldots\}$</td>
+      <td>$\mathbf{v} / 10 = \{v_x / 10, v_y / 10, \ldots\}$</td>
     </tr>
     <tr valign="top">
       <td><a href="https://www.mathsisfun.com/algebra/vectors-dot-product.html">Dot product</a></td>
-      <td><code>v1 · v2</code> = <code>(v1.x * v2.x) + (v1.y * v2.y) + ...</code> (produces a single number)</td>
+      <td>$\mathbf{v}_1 \cdot \mathbf{v}_2 = (v_{1x} \times v_{2x}) + (v_{1y} \times v_{2y}) + \ldots$ <br/>(produces a single number)</td>
       <td><em>Not applicable.</em></td>
     </tr>
     <tr valign="top">
       <td><a href="https://www.mathsisfun.com/algebra/vectors-cross-product.html">Cross product</a></td>
-      <td><code>v1 × v2</code> = <code>mag(v1) * mag(v2) * sin(θ) * n</code> where <code>θ</code> is the angle between <code>v1</code> and <code>v2</code>, and <code>n</code> is the unit vector at right angles to both <code>v1</code> and <code>v2</code>. Produces a vector.</td>
+      <td>$\mathbf{v}_1 \times \mathbf{v}_2 = \|\mathbf{v}_1\| \|\mathbf{v}_2\| \sin(\theta) \mathbf{n}$<br/><br/>Where: $\theta$ = angle between $\mathbf{v}_1$ and $\mathbf{v}_2$; $\mathbf{n}$ = unit normal vector. Produces a vector.</td>
       <td><em>Not applicable.</em></td>
     </tr>
   </tbody>
@@ -2232,7 +2224,7 @@ TODO: Add link
       <td valign="top">Industry-level procedural VFX application with graphical node-based workflow. Excellent for creating high-quality renderings and animations based on generative algorithms. Allows for scripting with <a href="https://www.sidefx.com/docs/houdini/hom/index.html" target="_blank">Python</a> and <a href="https://www.sidefx.com/docs/houdini/vex/index.html" target="_blank">VEX</a> (proprietary language).</td>
       <td valign="top">
         <ul>
-          <li>Aprrentice - free for non-commercial users with watermarked renders </li>
+          <li>Apprentice - free for non-commercial users with watermarked renders </li>
           <li>Indie - $269/yr for no watermarks for commercial <$100k annual profit</li>
           <li>Thousands for commercial users, with complex pricing model</li>
         </ul>
