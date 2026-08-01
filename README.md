@@ -704,7 +704,9 @@ _Notable software:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/cymatics-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Cymatics"></a>
 
 ### Cymatics
-_See [Chladni plate](#chladni-plate)_
+
+> [!NOTE]
+> Related to [Chladni plate](#chladni-plate)
 
 Study of the visible effects of sound and vibration on physical media. Typically involves the vibration of a plate or membrane onto which fine powder or fluids have been placed, which subsequently arrange themselves into highly symmetrical, complex patterns based on the intensity of displacement of various regions of the vibrating plate. Areas that are moving a lot will "kick" material away from them while areas that are moving very little allow material to settle and accumulate. These areas of relatively little vibration are caused by destructive interference of waves as they propagate across the plate/membrane and become out of phase with one another, creating "dead zones" where these waves cancel each other out.
 
@@ -1971,7 +1973,8 @@ _Code projects:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/recursion-1.jpg?raw=true" width="300" align="right" title="TORLEY - Recusion: It recurs."></a>
 
 ### Recursion
-_See [recursion](#recursion)._
+> [!NOTE]
+> Related to [recursion](#recursion).
 
 Method of solving a problem where the solution depends on solutions to smaller instances of the same problem (as opposed to _iteration_). In programming terms, recursion is when a function calls itself during execution. Recursion is fundamentally connected to the concept of [fractals](#fractals).
 
