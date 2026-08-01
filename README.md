@@ -1073,9 +1073,9 @@ _Equations:_
 
 | Equation | Explanation |
 | --- | --- |
-| $H = (k_1 + k_2) / 2 = 0$<br>Where: $H$ = mean curvature (the average curvature of a surface); $k_1$ and $k_2$ = principal curvatures (the two main curvatures at a point). | The minimal surface condition says the average of the principal curvatures is zero. |
-| $\nabla \cdot \left(\frac{\nabla u}{\sqrt{1 + \lvert\nabla u\rvert^2}}\right) = 0$<br>Where: $u(x, y)$ = surface height; $\nabla u$ = gradient of the surface; $\nabla \cdot$ = divergence (how much a field spreads out or converges). | The minimal surface equation is the graph form of a minimal surface. |
-| $A[u] = \iint \sqrt{1 + u_x^2 + u_y^2}\,dx\,dy$<br>Where: $A[u]$ = area functional (the formula that computes total area); $u_x$ and $u_y$ = partial derivatives of the surface height. | The area functional gives the total surface area. |
+| $H = (k_1 + k_2) / 2 = 0$<br><br>Where: $H$ = mean curvature (the average curvature of a surface); $k_1$ and $k_2$ = principal curvatures (the two main curvatures at a point). | The minimal surface condition says the average of the principal curvatures is zero. |
+| $\nabla \cdot \left(\frac{\nabla u}{\sqrt{1 + \lvert\nabla u\rvert^2}}\right) = 0$<br><br>Where: $u(x, y)$ = surface height; $\nabla u$ = gradient of the surface; $\nabla \cdot$ = divergence (how much a field spreads out or converges). | The minimal surface equation is the graph form of a minimal surface. |
+| $A[u] = \iint \sqrt{1 + u_x^2 + u_y^2}\,dx\,dy$<br><br>Where: $A[u]$ = area functional (the formula that computes total area); $u_x$ and $u_y$ = partial derivatives of the surface height. | The area functional gives the total surface area. |
 
 _Key terms:_
 * Area functional - the integral that gives the total area of a surface
