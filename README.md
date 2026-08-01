@@ -166,7 +166,8 @@ _Code projects:_
 
 ### Diffusion-limited aggregation (DLA)
 
-_Related to [Dielectric breakdown model (DBM)](#dielectric-breakdown-model-dbm)_
+> [!NOTE]
+> Related to [Dielectric breakdown model (DBM)](#dielectric-breakdown-model-dbm).
 
 Process in which particles of matter stick together (_aggregate_) as they chaotically move (_diffuse_) through a medium that provides some sort of resistive (_limiting_) force. As these particles clump together over time they form characteristic fractal branching structures known as [Brownian trees](https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBrownian_tree).
 
@@ -256,7 +257,9 @@ _Creative projects:_
 <img src="https://raw.githubusercontent.com/jasonwebb/morphogenesis-resources/main/images/eden-growth-model-1.png" width="300" align="right" title="Silvio Costa Ferraria et al - Figure 1 from Pitfalls on the determination of the universality class of radial clusters"></a>
 
 ### Eden growth model
-_Image credit: Silvio Costa Ferraria et al - Figure 1 from [Pitfalls on the determination of the universality class of radial clusters](https://www.researchgate.net/figure/color-online-A-small-Eden-cluster-with-6000-particles-The-border-is-depicted-in-red_fig1_1858140)_
+
+> [!NOTE]
+> Image credit: Silvio Costa Ferraria et al - Figure 1 from [Pitfalls on the determination of the universality class of radial clusters](https://www.researchgate.net/figure/color-online-A-small-Eden-cluster-with-6000-particles-The-border-is-depicted-in-red_fig1_1858140).
 
 Created by Murray Eden in 1961 ([paper](https://projecteuclid.org/ebook/Download?urlId=bsmsp%2F1200512888&isFullBook=False&isResultClick=False) (PDF)), this is a type of surface fractal growth process where material randomly accumulates on the _boundary_ of clusters. Sort of like DLA but without all the empty space between branches. Thought to be a good way to model certain kinds of bacterial and lichen growth.
 
@@ -289,9 +292,11 @@ _Code projects:_
 
 ### Particle Life
 
-_Image credit: detail of the example results from [Particle Life Simulation](https://github.com/hunar4321/particle-life) by Hunar Ahmad_
+> [!NOTE]
+> Image credit: detail of the example results from [Particle Life Simulation](https://github.com/hunar4321/particle-life) by Hunar Ahmad.
 
-_Related to [Primordial Particle System](#primordial-particle-system) and [agent-based modelling](#agent-based-modelling)._
+> [!NOTE]
+> Related to [Primordial Particle System](#primordial-particle-system) and [agent-based modelling](#agent-based-modelling).
 
 Family of particle systems in which every particle belongs to one of several _types_ (usually drawn as colors), and every ordered pair of types is assigned its own attraction or repulsion strength. Those strengths are held in a small matrix that can be filled randomly and then tuned by hand, which makes the system extremely easy to explore - each new matrix is effectively a new set of "physics" to play with.
 
@@ -341,7 +346,8 @@ _Projects:_
 
 ### Physarum
 
-_Image credit to [Sage Jenson](https://www.sagejenson.com/physarum) ([@mxsage](https://www.instagram.com/mxsage/))_
+> [!NOTE]
+> Image credit to [Sage Jenson](https://www.sagejenson.com/physarum) ([@mxsage](https://www.instagram.com/mxsage/)).
 
 Technique for modelling the observed behaviors of the slime mold [physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) using [agent-based modelling](#agent-based-modelling). Originally described in 2010 paper by Jeff Jones, and more recently popularized by artist Sage Jensen (@mxsage), this algorithm produces highly dynamic and organic-looking webs that can seem very life-like and biological in nature.
 
@@ -381,9 +387,11 @@ _Creative projects:_
 
 ### Primordial Particle System
 
-_Image credit: detail of [Figure 3G](https://www.nature.com/articles/srep37969/figures/3) from Schmickl, Stefanec & Crailsheim (2016)_
+> [!NOTE]
+> Image credit: detail of [Figure 3G](https://www.nature.com/articles/srep37969/figures/3) from Schmickl, Stefanec & Crailsheim (2016).
 
-_Related to [Particle Life](#particle-life) and [agent-based modelling](#agent-based-modelling)._
+> [!NOTE]
+> Related to [Particle Life](#particle-life) and [agent-based modelling](#agent-based-modelling).
 
 Described in 2016 by Thomas Schmickl, Martin Stefanec and Karl Crailsheim of the Artificial Life Lab in Graz, Austria, a Primordial Particle System (PPS) is a minimal [agent-based model](#agent-based-modelling) in which self-propelled particles move through continuous space while steering based only on how many neighbors they can see to their left and right - a motion law even simpler than [boids](#boids), with no cohesion, separation or alignment rules. It is a separate system from [Particle Life](#particle-life), where all of the behavior comes instead from multiple particle types with per-pair attraction rules.
 
@@ -738,7 +746,9 @@ _Articles:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/fibonacci-sequence-1.png?raw=true" width="300" align="right" title="Wikipedia - Fibonacci sequence"></a>
 
 ### Fibonacci sequence
-_Related to [Golden ratio](#golden-ratio)_
+
+> [!NOTE]
+> Related to [Golden ratio](#golden-ratio).
 
 Sequence of numbers in which each number is the sum of it's two preceding numbers. [Binet's formula](https://en.wikipedia.org/wiki/Fibonacci_number#Binet's_formula) shows that the ratio of two consecutive numbers tends towards the [golden ratio](#golden-ratio) as the sequence progresses. Fibonacci numbers appear unexpectedly often in biology, having been observed in branching of trees, the arrangement of leaves on a stem, the fruit sprouts of a pineapple, the flowering of an artichoke, an uncurling fern and the arrangement of a pine cone's bracts.
 
@@ -835,7 +845,9 @@ _Notable software:_
 <img src="https://raw.githubusercontent.com/jasonwebb/morphogenesis-resources/main/images/geodesic.jpg" width="300" align="right" title="Vikash Mittal - Geometric phase and its applications: topological phases, quantum walks and non-inertial quantum systems (FIGURE 2)"></a>
 
 ### Geodesic
-_Image credit: Vikash Mittal -  [Geometric phase and its applications: topological phases, quantum walks and non-inertial quantum systems (FIGURE 2)](https://www.researchgate.net/publication/363501147_Geometric_phase_and_its_applications_topological_phases_quantum_walks_and_non-inertial_quantum_systems?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ)._
+
+> [!NOTE]
+> Image credit: Vikash Mittal - [Geometric phase and its applications: topological phases, quantum walks and non-inertial quantum systems (FIGURE 2)](https://www.researchgate.net/publication/363501147_Geometric_phase_and_its_applications_topological_phases_quantum_walks_and_non-inertial_quantum_systems?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ).
 
 The shortest path between two points on a curved surface - a generalization of the concept of a "straight line" to curved geometry. On a flat plane a geodesic is just a straight line; on the surface of a sphere, geodesics are arcs of [great circles](https://en.wikipedia.org/wiki/Great_circle); on more complex curved surfaces they can bend and twist while still remaining locally "as straight as possible" at every point.
 
@@ -854,7 +866,9 @@ _Articles:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/geodesic-dome.jpg?raw=true" width="300" align="right" title="Defense Visual Information Distribution Service - A crane removes the protective geodesic radar dome"></a>
 
 ### Geodesic dome
-_Related to [Geodesic](#geodesic) and [Platonic solids](#platonic-solids)._
+
+> [!NOTE]
+> Related to [Geodesic](#geodesic) and [Platonic solids](#platonic-solids).
 
 Spherical shell structure of triangular struts whose vertices all lie on a circumscribed sphere. It's typically derived from a [Platonic solid](#platonic-solids) with triangular faces (usually an icosahedron) by subdividing each face some number of times (the dome's "frequency") and projecting the new vertices onto the sphere - higher frequencies mean more, smaller struts and a closer approximation of a sphere.
 
@@ -894,7 +908,9 @@ _Notable real-world geodesic domes:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/golden-angle-1.png?raw=true" width="300" align="right" title="Wikipedia - Golden angle"></a>
 
 ### Golden angle
-_Related to the [golden ratio](#golden-ratio) and [phyllotaxis](#phyllotaxis)._
+
+> [!NOTE]
+> Related to the [golden ratio](#golden-ratio) and [phyllotaxis](#phyllotaxis).
 
 Radial version of the [golden ratio](#golden-ratio). It is the smaller of the two angles created by sectioning the circumference of a circle according to the golden ratio; that is, into two arcs such that the ratio of the length of the smaller arc to the length of the larger arc is the same as the ratio of the length of the larger arc to the full circumference of the circle.
 
@@ -913,7 +929,9 @@ _Creative projects:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/golden-ratio-1.png?raw=true" width="300" align="right" title="Wikipedia - Golden ratio"></a>
 
 ### Golden ratio
-_Related to the [Fibonacci sequence](#fibonacci-sequence)._
+
+> [!NOTE]
+> Related to the [Fibonacci sequence](#fibonacci-sequence).
 
 Also expressed as the Greek letter _phi_ (`φ`), this irrational number pops up when the ratio of two numbers is the same as the ratio of their sum to the largest of the two numbers. It has been observed in many fields of the natural sciences at every scale and is has become associated with aesthetic beauty, giving it a nearly mythic reputation for some.
 
@@ -1099,7 +1117,9 @@ _Code projects:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/phyllotaxis-1.jpg?raw=true" width="300" align="right" title="Wikipedia - Phyllotaxis"></a>
 
 ### Phyllotaxis
-_Related topics include the [golden ratio](#golden-ratio), the [golden angle](#golden-angle), and the [Fibonacci sequence](#fibonacci-sequence)._
+
+> [!NOTE]
+> Related topics include the [golden ratio](#golden-ratio), the [golden angle](#golden-angle), and the [Fibonacci sequence](#fibonacci-sequence).
 
 Refers to the arrangement (_taxis_) of leaves (_phyllo_) on a plant stem. Also can refer to seed arrangements and succulent geometry.
 
@@ -1148,7 +1168,9 @@ _Videos:_
 ---
 
 ### Saffman–Taylor instability
-_Related to the [Hele-Shaw cell](#hele-shaw-cell) experiment._
+
+> [!NOTE]
+> Related to the [Hele-Shaw cell](#hele-shaw-cell) experiment.
 
 Also known as viscous fingering.
 
@@ -1355,7 +1377,9 @@ _Videos:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/hele-shaw-1.jpg?raw=true" width="300" align="right" title="Nervous System - experiments"></a>
 
 ### Hele-Shaw cell
-_Related to [Saffman-Taylor instability](#saffmantaylor-instability)._
+
+> [!NOTE]
+> Related to [Saffman-Taylor instability](#saffmantaylor-instability).
 
 Apparatus for demonstrating and studying a pheonmenon known as [viscous fingering](#saffman%E2%80%93taylor-instability) (a.k.a. Saffman-Taylor instability), which is defined as "the formation of patterns in a morphologically unstable interface between two fluids in a porous medium" [[1](https://en.wikipedia.org/wiki/Saffman%E2%80%93Taylor_instability)]. It occurs when a less viscous fluid is injected into a more viscous fluid, displacing it in a series of blobby, fractal-like fingers resembling (perhaps related to) the patterns formed by [diffusion-limited aggregation](#diffusion-limited-aggregation-dla) or [differential growth](#differential-growth).
 
@@ -1454,7 +1478,9 @@ _Articles:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/boids-1.gif?raw=true" width="300" align="right" title="aYearInCode();"></a>
 
 ### Boids
-_Related to [agent-based modelling](#agent-based-modelling)._
+
+> [!NOTE]
+> Related to [agent-based modelling](#agent-based-modelling).
 
 Well-known type of [agent-based system](#agent-based-modelling) that realistically simulates the complex flocking behaviors of birds and fish using simple rules. Each "boid" is an autonomous agent that is only aware of its immediate neighbor boids, all following the same three rules:
 
@@ -1581,7 +1607,9 @@ _Code projects:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/flow-field-1.png?raw=true" width="300" align="right" title="Wikipedia - Vector field"></a>
 
 ### Flow field
-_Related to [fluid simulation](#fluid-simulation)._
+
+> [!NOTE]
+> Related to [fluid simulation](#fluid-simulation).
 
 Also known as a vector field, this technique involves assigning a unique vector to each point in a 2D or 3D space describing the direction and magnitude of varying forces. Flow fields are often used together with [particle systems](#particle-system) to model complex, dynamic movement caused by wind, fluid flow, electromagnetism, and more.
 
@@ -1656,7 +1684,9 @@ _Videos:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/lloyds-relaxation.gif?raw=true" width="300" align="right" title="Jason Davies - Lloyd's Relaxation"></a>
 
 ### Lloyd's relaxation
-_Related to [voronoi diagrams](#delaunay-triangulation-and-voronoi-diagrams)._
+
+> [!NOTE]
+> Related to [voronoi diagrams](#delaunay-triangulation-and-voronoi-diagrams).
 
 As [explained by Jason Davies](https://www.jasondavies.com/lloyd), Lloyd’s relaxation algorithm (named after Stuart P. Lloyd) generates a centroidal Voronoi tessellation, which is where the seed point for each Voronoi region is also its centroid.
 
@@ -1768,7 +1798,9 @@ _Videos:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/metaballs-1.gif?raw=true" width="300" align="right" title="Rhinoceros Forums thread 'How to grow/expand curves (polygons) until touch each other'"></a>
 
 ### Metaballs
-_Related to [implicit surfaces](#implicit-surface), [marching squares](#marching-squares) (2D) and [marching cubes](#marching-cubes) (3D)_
+
+> [!NOTE]
+> Related to [implicit surfaces](#implicit-surface), [marching squares](#marching-squares) (2D) and [marching cubes](#marching-cubes) (3D).
 
 Often confused with [marching cubes](#marching-cubes), this is more of a mathematical concept that describes a way to define the _values_ in 2D or 3D scalar fields based on distance to one or more points in space. They are a type of [implicit surface](#implicit-surface) that define blobby shapes as pure mathematical formulas rather than explicit polygons and vertices.
 
@@ -1847,7 +1879,9 @@ _Notable software:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/physics-engine-1.png?raw=true" width="300" align="right" title="HTML Game Development - Planck.js – JavaScript Rewrite of Box2D Physics Engine"></a>
 
 ### Physics engine
-_Related topics include [collision detection](#collision-detection) and [particle systems](#particle-system)_
+
+> [!NOTE]
+> Related topics include [collision detection](#collision-detection) and [particle systems](#particle-system).
 
 Simulates the movements and reactions of objects using real-world concepts like mass, velocity, constraints, and forces (like drag, gravity, and friction). Makes use of extremely optimized algorithms for collision detection, physics calculations, geometry management, and more.
 
@@ -2002,7 +2036,9 @@ _Videos:_
 ---
 
 ### Signed distance function (SDFs)
-_Related to [implicit surfaces](#implicit-surface)._
+
+> [!NOTE]
+> Related to [implicit surfaces](#implicit-surface).
 
 A function that returns the distance between a point in space to a mathematically/algorithmically defined surface (called an [implicit surface](#implicit-surface)). This allows algorithms like raymarching and [marching cubes](#marching-cubes) to efficiently render complex 3D surfaces in 2D.
 
