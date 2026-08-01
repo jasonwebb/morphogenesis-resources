@@ -258,8 +258,7 @@ _Creative projects:_
 
 ### Eden growth model
 
-> [!NOTE]
-> Image credit: Silvio Costa Ferraria et al - Figure 1 from [Pitfalls on the determination of the universality class of radial clusters](https://www.researchgate.net/figure/color-online-A-small-Eden-cluster-with-6000-particles-The-border-is-depicted-in-red_fig1_1858140).
+_Image credit: Silvio Costa Ferraria et al - Figure 1 from [Pitfalls on the determination of the universality class of radial clusters](https://www.researchgate.net/figure/color-online-A-small-Eden-cluster-with-6000-particles-The-border-is-depicted-in-red_fig1_1858140)_
 
 Created by Murray Eden in 1961 ([paper](https://projecteuclid.org/ebook/Download?urlId=bsmsp%2F1200512888&isFullBook=False&isResultClick=False) (PDF)), this is a type of surface fractal growth process where material randomly accumulates on the _boundary_ of clusters. Sort of like DLA but without all the empty space between branches. Thought to be a good way to model certain kinds of bacterial and lichen growth.
 
@@ -293,10 +292,9 @@ _Code projects:_
 ### Particle Life
 
 > [!NOTE]
-> Image credit: detail of the example results from [Particle Life Simulation](https://github.com/hunar4321/particle-life) by Hunar Ahmad.
-
-> [!NOTE]
 > Related to [Primordial Particle System](#primordial-particle-system) and [agent-based modelling](#agent-based-modelling).
+
+_Image credit: detail of the example results from [Particle Life Simulation](https://github.com/hunar4321/particle-life) by Hunar Ahmad_
 
 Family of particle systems in which every particle belongs to one of several _types_ (usually drawn as colors), and every ordered pair of types is assigned its own attraction or repulsion strength. Those strengths are held in a small matrix that can be filled randomly and then tuned by hand, which makes the system extremely easy to explore - each new matrix is effectively a new set of "physics" to play with.
 
@@ -346,8 +344,7 @@ _Projects:_
 
 ### Physarum
 
-> [!NOTE]
-> Image credit to [Sage Jenson](https://www.sagejenson.com/physarum) ([@mxsage](https://www.instagram.com/mxsage/)).
+_Image credit to [Sage Jenson](https://www.sagejenson.com/physarum) ([@mxsage](https://www.instagram.com/mxsage/))_
 
 Technique for modelling the observed behaviors of the slime mold [physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) using [agent-based modelling](#agent-based-modelling). Originally described in 2010 paper by Jeff Jones, and more recently popularized by artist Sage Jensen (@mxsage), this algorithm produces highly dynamic and organic-looking webs that can seem very life-like and biological in nature.
 
@@ -388,10 +385,9 @@ _Creative projects:_
 ### Primordial Particle System
 
 > [!NOTE]
-> Image credit: detail of [Figure 3G](https://www.nature.com/articles/srep37969/figures/3) from Schmickl, Stefanec & Crailsheim (2016).
-
-> [!NOTE]
 > Related to [Particle Life](#particle-life) and [agent-based modelling](#agent-based-modelling).
+
+_Image credit: detail of [Figure 3G](https://www.nature.com/articles/srep37969/figures/3) from Schmickl, Stefanec & Crailsheim (2016)_
 
 Described in 2016 by Thomas Schmickl, Martin Stefanec and Karl Crailsheim of the Artificial Life Lab in Graz, Austria, a Primordial Particle System (PPS) is a minimal [agent-based model](#agent-based-modelling) in which self-propelled particles move through continuous space while steering based only on how many neighbors they can see to their left and right - a motion law even simpler than [boids](#boids), with no cohesion, separation or alignment rules. It is a separate system from [Particle Life](#particle-life), where all of the behavior comes instead from multiple particle types with per-pair attraction rules.
 
@@ -846,8 +842,7 @@ _Notable software:_
 
 ### Geodesic
 
-> [!NOTE]
-> Image credit: Vikash Mittal - [Geometric phase and its applications: topological phases, quantum walks and non-inertial quantum systems (FIGURE 2)](https://www.researchgate.net/publication/363501147_Geometric_phase_and_its_applications_topological_phases_quantum_walks_and_non-inertial_quantum_systems?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ).
+_Image credit: Vikash Mittal -  [Geometric phase and its applications: topological phases, quantum walks and non-inertial quantum systems (FIGURE 2)](https://www.researchgate.net/publication/363501147_Geometric_phase_and_its_applications_topological_phases_quantum_walks_and_non-inertial_quantum_systems?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6Il9kaXJlY3QiLCJwYWdlIjoiX2RpcmVjdCJ9fQ)._
 
 The shortest path between two points on a curved surface - a generalization of the concept of a "straight line" to curved geometry. On a flat plane a geodesic is just a straight line; on the surface of a sphere, geodesics are arcs of [great circles](https://en.wikipedia.org/wiki/Great_circle); on more complex curved surfaces they can bend and twist while still remaining locally "as straight as possible" at every point.
 
