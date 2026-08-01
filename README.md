@@ -1061,19 +1061,70 @@ _Notable Tools:_
 
 ---
 
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/minimal-surface.jpg?raw=true" width="300" align="right" title="Wikipedia - Minimal surface">
+
 ### Minimal surface
 
-```
-TODO
-```
+A [minimal surface](https://en.wikipedia.org/wiki/Minimal_surface) is a surface that locally minimizes area, which means it settles into the smallest possible shape for a given boundary while keeping its mean curvature equal to zero. Minimal surfaces show up in architecture, material design, geometry, and optimization, and they are useful whenever you want a smooth surface or membrane that uses as little area as possible.
 
-* Soap experiments (see Frei Otto and [Joseph Plateau's experiments](https://medium.com/designscience/1842-1868-9c6e0954b549))
-* Mesh relaxation
-* CMC surface (same as minimal surface, or can be combined?)
-* Surface evolver - see [Ken Brakke's work](https://facstaff.susqu.edu/brakke/evolver/evolver.html). Is there an underlying algorithm that can be decoupled from his particular implementation?
+A soap film stretched across a wire frame is the classic physical example: the film naturally relaxes into a shape that balances tension everywhere. Frei Otto's [soap-bubble experiments](https://www.metalocus.es/en/news/frei-otto-video-modeling-soap-films) were important for showing how these forms emerge in the real world.
+
+_Equations:_
+
+| Equation | Explanation |
+| --- | --- |
+| $H = (k_1 + k_2) / 2 = 0$<br>Where: $H$ = mean curvature (the average curvature of a surface); $k_1$ and $k_2$ = principal curvatures (the two main curvatures at a point). | The minimal surface condition says the average of the principal curvatures is zero. |
+| $\nabla \cdot \left(\frac{\nabla u}{\sqrt{1 + \lvert\nabla u\rvert^2}}\right) = 0$<br>Where: $u(x, y)$ = surface height; $\nabla u$ = gradient of the surface; $\nabla \cdot$ = divergence (how much a field spreads out or converges). | The minimal surface equation is the graph form of a minimal surface. |
+| $A[u] = \iint \sqrt{1 + u_x^2 + u_y^2}\,dx\,dy$<br>Where: $A[u]$ = area functional (the formula that computes total area); $u_x$ and $u_y$ = partial derivatives of the surface height. | The area functional gives the total surface area. |
+
+_Key terms:_
+* Area functional - the integral that gives the total area of a surface
+* Mean curvature - the average of the two principal curvatures at a point on a surface
+* Minimal surface equation - the differential equation whose graph solutions are minimal surfaces
+* Minimal surface condition - the equation $H = 0$ that defines a minimal surface
+* [Plateau's problem](https://en.wikipedia.org/wiki/Plateau%27s_problem) - finding the least-area surface spanning a given boundary
+* Principal curvatures - the two main curvatures of a surface at a point, measured in perpendicular directions
+
+_Examples:_
+
+| Term | Equation |
+| --- | --- |
+| [Catenoid](https://en.wikipedia.org/wiki/Catenoid) | $r = a \cosh\left(\frac{z}{a}\right)$ |
+| [Helicoid](https://en.wikipedia.org/wiki/Helicoid) | $x = u \cos v, \quad y = u \sin v, \quad z = a v$ |
+| [Gyroid](https://en.wikipedia.org/wiki/Gyroid) | $\sin x \cos y + \sin y \cos z + \sin z \cos x = 0$ |
 
 _Articles:_
-* [Minimal surface](https://en.wikipedia.org/wiki/Minimal_surface)
+* [Minimal surface](https://en.wikipedia.org/wiki/Minimal_surface) on Wikipedia
+* [Plateau's problem](https://en.wikipedia.org/wiki/Plateau%27s_problem) on Wikipedia
+* [Constant mean curvature (CMC) surface ](https://en.wikipedia.org/wiki/Constant_mean_curvature_surface) on Wikipedia
+
+_Notable software:_
+* [Surface Evolver](https://facstaff.susqu.edu/brakke/evolver/evolver.html) by Ken Brakke - interactive software for minimizing surface energies and constraints
+* [Kangaroo Physics](https://www.food4rhino.com/app/kangaroo-physics) - Grasshopper plugin for physics-based form-finding and constraint solving, extensively used for minimal surface and structural exploration
+* [PufferFish](https://www.food4rhino.com/app/pufferfish) - Grasshopper plugin with mathematical surface components for minimal surface visualization and manipulation
+* [Houdini Vellum](https://www.sidefx.com/docs/houdini/shelf/cloth.html) - constraint-based cloth and hair solver useful for simulating membrane and fabric-like minimal surface behavior
+* [MinimalSurface addon](https://github.com/KlyachinVA/MinimalSurface) - Blender addon specifically designed for finding and generating minimal surfaces with prescribed boundary conditions
+* [Mathematica Implicit Surface Visualization](https://reference.wolfram.com/language/guide/Surfaces.html) - tools for rendering and analyzing implicit surface equations including minimal surfaces
+
+_Notable creative work:_
+* [Frei Otto's soap-bubble form-finding studies](https://www.metalocus.es/en/news/frei-otto-video-modeling-soap-films)
+* [Bathsheba Grossman](https://www.bathsheba.com/) - metal sculptures and mathematical artworks
+* [Rinus Roelofs](https://www.rinusroelofs.nl/sculpture/sculpture-00.html) - sculptures and installations
+
+_Notable real-world buildings:_
+* [Olympiastadion](https://en.wikipedia.org/wiki/Olympiastadion_(Munich)) (Munich, Germany) by Günther Behnisch and Frei Otto
+* [Multihalle Mannheim](https://mannheim-multihalle.de/en/architecture/) (Munich, Germany)
+* [German Pavilion at Expo 67](https://www.architecturelab.net/german-pavilion-expo-67-frei-otto-and-rolf-gutbrod/) (Montreal, Canada) by Frei Otto and Rolf Gutbrod
+
+_Natural phenomena:_
+* Soap bubbles and soap films - the classic physical analog for minimal surfaces
+* Butterfly wings (Papilio palinurus) - gyroid structure in wing scale ridges creates structural color via photonic crystal effects
+* Weevil exoskeleton (Lamprocyphus augustus) - Schwarz-D (diamond-type TPMS) surface with photonic properties
+* Sea urchin skeleton (echinoderm stereom) - diamond-type minimal surface formed from single-crystal magnesian calcite; guided by cytoskeletal templating
+* Endoplasmic reticulum - bicontinuous membrane network with negative Gaussian curvature and minimal surface-like topology
+* Mitochondrial cristae - morphology accurately predicted by minimal surface models; structure adapts based on cell energy state
+* Block copolymers (e.g., PS-b-PEO) - self-assemble into gyroid phase with bicontinuous nanochannels
+* Bicontinuous lipid cubic phases (monoolein/water) - form gyroid, diamond, or primitive TPMS depending on hydration level; used in drug delivery and protein crystallization
 
 ---
 
