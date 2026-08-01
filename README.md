@@ -756,7 +756,7 @@ $$F_{n}=F_{n-1}+F_{n-2},$$
 
 _Sequence begins with:_
 
-$$(0,)\;1,\;1,\;2,\;3,\;5,\;8,\;13,\;21,\;34,\;55,\;89,\;144,\;\ldots$$
+$$(0), 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, \ldots$$
 
 _Articles:_
 * [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) on Wikipedia
@@ -919,13 +919,18 @@ _Creative projects:_
 
 Also expressed as the Greek letter _phi_ (`φ`), this irrational number pops up when the ratio of two numbers is the same as the ratio of their sum to the largest of the two numbers. It has been observed in many fields of the natural sciences at every scale and is has become associated with aesthetic beauty, giving it a nearly mythic reputation for some.
 
-_Expressed algebraicly:_
-
-$$\varphi = \frac{1 + \sqrt{5}}{2} = 1.6180339887\ldots$$
-
-_Expressed as line segments:_
-
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/golden-ratio-3.svg?raw=true" style="background: white">
+<table>
+  <tbody>
+    <tr>
+      <td>Expressed algebraicly</td>
+      <td>$\varphi = \frac{1 + \sqrt{5}}{2} = 1.6180339887\ldots$</td>
+    </tr>
+    <tr>
+      <td>Expressed as line segments</td>
+      <td><img src="images/golden-ratio.svg" style="background: white"></td>
+    </tr>
+  </tbody>
+</table>
 
 _Articles:_
 * [Golden ratio](https://en.wikipedia.org/wiki/Golden_ratio) on Wikipedia
@@ -943,20 +948,30 @@ A surface defined by an equation in the form of <img src="https://wikimedia.org/
 
 _Examples of implicit surface equations:_
 
-Plane:
-$$x+2y-3z+1=0$$
-
-Sphere:
-$$x^{2}+y^{2}+z^{2}-4=0$$
-
-Torus:
-$$(x^{2}+y^{2}+z^{2}+R^{2}-a^{2})^{2}-4R^{2}(x^{2}+y^{2})=0$$
-
-Surface of genus 2:
-$$2y(y^{2}-3x^{2})(1-z^{2})+(x^{2}+y^{2})^{2}-(9z^{2}-1)(1-z^{2})=0$$
-
-Surface of revolution:
-$$x^{2}+y^{2}-(\ln(z+3.2))^{2}-0.02=0$$
+<table>
+  <tbody>
+    <tr>
+      <td>Plane</td>
+      <td>$x+2y-3z+1=0$</td>
+    </tr>
+    <tr>
+      <td>Sphere</td>
+      <td>$x^{2}+y^{2}+z^{2}-4=0$</td>
+    </tr>
+    <tr>
+      <td>Torus</td>
+      <td>$(x^{2}+y^{2}+z^{2}+R^{2}-a^{2})^{2}-4R^{2}(x^{2}+y^{2})=0$</td>
+    </tr>
+    <tr>
+      <td>Surface of genus 2</td>
+      <td>$2y(y^{2}-3x^{2})(1-z^{2})+(x^{2}+y^{2})^{2}-(9z^{2}-1)(1-z^{2})=0$</td>
+    </tr>
+    <tr>
+      <td>Surface of revolution</td>
+      <td>$x^{2}+y^{2}-(\ln(z+3.2))^{2}-0.02=0$</td>
+    </tr>
+  </tbody>
+</table>
 
 _Articles:_
 * [Implicit surface](https://en.wikipedia.org/wiki/Implicit_surface) on Wikipedia
@@ -1218,13 +1233,18 @@ Also known as the Lamé curve, this equation describes a closed curve that can g
 
 _Equations:_
 
-General form:
-
-$$\left|\frac{x}{a}\right|^{n} + \left|\frac{y}{b}\right|^{n} = 1$$
-
-Parametric:
-
-$$\begin{aligned}x(t) &= \pm a \cos^{\frac{2}{n}} t \\y(t) &= \pm b \sin^{\frac{2}{n}} t\end{aligned} \qquad 0 \leq t \leq \frac{\pi}{2}$$
+<table>
+  <tbody>
+    <tr>
+      <td>General form</td>
+      <td>$\left|\frac{x}{a}\right|^{n} + \left|\frac{y}{b}\right|^{n} = 1$</td>
+    </tr>
+    <tr>
+      <td>Parametric</td>
+      <td>$\begin{aligned}x(t) &= \pm a \cos^{\frac{2}{n}} t \\ y(t) &= \pm b \sin^{\frac{2}{n}} t\end{aligned} \qquad 0 \leq t \leq \frac{\pi}{2}$</td>
+    </tr>
+  </tbody>
+</table>
 
 _Articles:_
 * [Superellipse](https://en.wikipedia.org/wiki/Superellipse) on Wikipedia
@@ -1246,19 +1266,20 @@ The superformula can be used to generate both 2D and 3D forms. To create 2D form
 
 _Equations:_
 
-General form:
-
-$$r(\varphi) = \left(\left|\frac{\cos(m_1\varphi/4)}{a}\right|^{n_2} + \left|\frac{\sin(m_2\varphi/4)}{b}\right|^{n_3}\right)^{-1/n_1}$$
+<table>
+  <tbody>
+    <tr>
+      <td>General form</td>
+      <td>$r(\varphi) = \left(\left|\frac{\cos(m_1\varphi/4)}{a}\right|^{n_2} + \left|\frac{\sin(m_2\varphi/4)}{b}\right|^{n_3}\right)^{-1/n_1}$</td>
+    </tr>
+    <tr>
+      <td>3D equations</td>
+      <td>$\begin{aligned}x &= r_1(\theta) \cos \theta \cdot r_2(\varphi) \cos \varphi \\ y &= r_1(\theta) \sin \theta \cdot r_2(\varphi) \cos \varphi \\ z &= r_2(\varphi) \sin \varphi\end{aligned}$</td>
+    </tr>
+  </tbody>
+</table>
 
 Where `r` is a radius and `φ` (phi) is an angle.
-
-3D equations:
-
-$$x = r_1(\theta) \cos \theta \cdot r_2(\varphi) \cos \varphi$$
-
-$$y = r_1(\theta) \sin \theta \cdot r_2(\varphi) \cos \varphi$$
-
-$$z = r_2(\varphi) \sin \varphi$$
 
 Where `φ` (latitude) varies between −π/2 and π/2 and `θ` (longitude) between −π and π.
 
