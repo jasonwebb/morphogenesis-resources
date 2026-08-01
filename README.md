@@ -1241,7 +1241,7 @@ _Equations:_
     </tr>
     <tr>
       <td>Parametric</td>
-      <td>$\begin{aligned}x(t) &= \pm a \cos^{\frac{2}{n}} t \\ y(t) &= \pm b \sin^{\frac{2}{n}} t\end{aligned} \qquad 0 \leq t \leq \frac{\pi}{2}$</td>
+      <td>$x(t)=\pm a\cos^{\frac{2}{n}}t,\quad y(t)=\pm b\sin^{\frac{2}{n}}t,\quad 0\leq t\leq\frac{\pi}{2}$</td>
     </tr>
   </tbody>
 </table>
@@ -1274,7 +1274,7 @@ _Equations:_
     </tr>
     <tr>
       <td>3D equations</td>
-      <td>$\begin{aligned}x &= r_1(\theta) \cos \theta \cdot r_2(\varphi) \cos \varphi \\ y &= r_1(\theta) \sin \theta \cdot r_2(\varphi) \cos \varphi \\ z &= r_2(\varphi) \sin \varphi\end{aligned}$</td>
+      <td>$x=r_1(\theta)\cos\theta\cdot r_2(\varphi)\cos\varphi,\quad y=r_1(\theta)\sin\theta\cdot r_2(\varphi)\cos\varphi,\quad z=r_2(\varphi)\sin\varphi$</td>
     </tr>
   </tbody>
 </table>
