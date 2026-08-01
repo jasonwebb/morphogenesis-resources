@@ -126,10 +126,9 @@ With such a cross-disciplinary topic it can be hard to keep track of and correla
 ### Dielectric breakdown model (DBM)
 
 > [!NOTE]
-> Image credit to Ellak Somfai, from his document titled [Dielectric breakdown model in 3 dimensions](https://warwick.ac.uk/fac/cross_fac/complexity/study/msc_and_phd/miniprojects/archive/miniprojects2009/0670234-100209-miniproj08-somfai-dbm.pdf).
-
-> [!NOTE]
 > Related to [Diffusion-limited aggregation (DLA)](#diffusion-limited-aggregation-dla).
+
+_Image credit: Ellak Somfai - [Dielectric breakdown model in 3 dimensions](https://warwick.ac.uk/fac/cross_fac/complexity/study/msc_and_phd/miniprojects/archive/miniprojects2009/0670234-100209-miniproj08-somfai-dbm.pdf)._
 
 Generalization of [DLA](#diffusion-limited-aggregation-dla) that models how an electrical discharge propagates through an insulating (dielectric) material, producing the branching patterns known as [Lichtenberg figures](https://en.wikipedia.org/wiki/Lichtenberg_figure) - the same kind of patterns seen in lightning, [fulgurites](https://en.wikipedia.org/wiki/Fulgurite) in sand, and burn marks left by high-voltage discharge. 
 
@@ -344,7 +343,7 @@ _Projects:_
 
 ### Physarum
 
-_Image credit to [Sage Jenson](https://www.sagejenson.com/physarum) ([@mxsage](https://www.instagram.com/mxsage/))_
+_Image credit: [Sage Jenson](https://www.sagejenson.com/physarum) ([@mxsage](https://www.instagram.com/mxsage/))_
 
 Technique for modelling the observed behaviors of the slime mold [physarum polycephalum](https://en.wikipedia.org/wiki/Physarum_polycephalum) using [agent-based modelling](#agent-based-modelling). Originally described in 2010 paper by Jeff Jones, and more recently popularized by artist Sage Jensen (@mxsage), this algorithm produces highly dynamic and organic-looking webs that can seem very life-like and biological in nature.
 
