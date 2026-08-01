@@ -1,8 +1,8 @@
-[Digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis) is the exploration of how shapes, forms, and patterns emerge in nature through the use of computational modeling and generative systems based on biological, chemical, and physical processes. It draws upon research from practically every area of the natural sciences and has applications in architecture, digital fabrication, art, engineering, biomedicine, and more.
+[Digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis) studies how forms, shapes, and patterns emerge in nature through computational models of biological, chemical, and physical processes, with applications in architecture, fabrication, art, engineering, and biomedicine.
 
-With such a cross-disciplinary topic it can be hard to keep track of and correlate all the interesting bits of knowledge that one comes across, which is where this list comes in. The goal of this list is to succinctly catalog various growth algorithms and lab experiments along with relevant math, physics, and programming concepts in one place in order to (1) serve as a sort of "cheat sheet" reference for developers and computer artists, and (2) spark new insights by making it easier to see relationships between seemingly disparate topics.
+This list is a compact reference of growth algorithms, lab experiments, and related math/physics/programming topics so readers can find unexpected relationships and patterns across disciplines. 
 
-[Contributions](https://github.com/jasonwebb/morphogenesis-resources/blob/main/CONTRIBUTING.md) are always welcome! If you'd like to add a description for any topic, or have some interesting and relevant links to share, or know of a topic that should be included somewhere in this document, please feel free to [open an issue](https://github.com/jasonwebb/morphogenesis-resources/issues/new) or a PR with your changes.
+[Contributions](https://github.com/jasonwebb/morphogenesis-resources/blob/main/CONTRIBUTING.md) are welcome. If you have improvements, links, or missing topics to add, please [open an issue](https://github.com/jasonwebb/morphogenesis-resources/issues/new) or submit a PR.
 
 <br>
 
