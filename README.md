@@ -1,8 +1,8 @@
-[Digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis) studies how forms, shapes, and patterns emerge in nature through computational models of biological, chemical, and physical processes, with applications in architecture, fabrication, art, engineering, and biomedicine.
+[Digital morphogenesis](https://en.wikipedia.org/wiki/Digital_morphogenesis) studies how forms, shapes, and patterns emerge in nature through computational models of biological, chemical, and physical processes, with applications in architecture, fabrication, art, engineering, biomedicine and more
 
 This list is a compact reference of growth algorithms, lab experiments, and related math/physics/programming topics so readers can find unexpected relationships and patterns across disciplines. 
 
-[Contributions](https://github.com/jasonwebb/morphogenesis-resources/blob/main/CONTRIBUTING.md) are welcome. If you have improvements, links, or missing topics to add, please [open an issue](https://github.com/jasonwebb/morphogenesis-resources/issues/new) or submit a PR.
+[Contributions](https://github.com/jasonwebb/morphogenesis-resources/blob/main/CONTRIBUTING.md) are welcome! If you have improvements, links, or missing topics to add, please [open an issue](https://github.com/jasonwebb/morphogenesis-resources/issues/new) or [PR](https://github.com/jasonwebb/morphogenesis-resources/compare).
 
 <br>
 
