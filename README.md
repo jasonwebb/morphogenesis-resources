@@ -23,6 +23,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#diffusion-limited-aggregation-dla">Diffusion-limited aggregation (DLA)</a></li>
               <li><a href="#differential-growth">Differential growth</a></li>
               <li><a href="#eden-growth-model">Eden growth model</a></li>
+              <li><a href="#l-systems-lindenmayer-systems">L-systems (Lindenmayer systems)</a></li>
               <li><a href="#particle-life">Particle Life</a></li>
               <li><a href="#physarum">Physarum</a></li>
               <li><a href="#primordial-particle-system">Primordial Particle System</a></li>
