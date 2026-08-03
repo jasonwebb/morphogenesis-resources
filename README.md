@@ -1159,17 +1159,53 @@ _Videos:_
 
 ---
 
+<a href="https://en.wikipedia.org/wiki/Percolation_theory" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/percolation-theory.jpg?raw=true" width="300" align="right" title="Wikipedia - Percolation theory"></a>
+
 ### Percolation theory
 
-```
-TODO
-```
+> [!NOTE]
+> Closely related to the [Ising model](https://en.wikipedia.org/wiki/Ising_model) - via the Fortuin–Kasteleyn (random-cluster) representation, the Ising and Potts models can be recast as a correlated bond-percolation process, linking magnetic phase transitions to percolation thresholds.
+
+Mathematical framework that studies the behavior of connected clusters in random networks. At its core, percolation explores the threshold at which a system transitions from isolated fragments to a connected network spanning the entire space—a critical phenomenon with applications in material science, epidemiology, network analysis, and growth simulation.
+
+The classical model places sites or bonds randomly on a grid, each with some occupation probability $p$. As $p$ increases, small disconnected clusters begin to merge and grow. At a critical threshold $p_c$ (the _percolation threshold_), a “giant component” suddenly emerges that connects from one side of the system to the opposite side. Above the threshold, clusters merge rapidly; below it, they remain fragmented. This sharp transition is a classic example of a phase transition in physics.
+
+_Key concepts:_
+
+* Percolation threshold ($p_c$) - the occupation probability at which a spanning cluster first appears. The value depends on the lattice type: for square lattices $p_c \approx 0.593$ (bond) or $0.589$ (site), for triangular lattices $p_c \approx 0.5$ (bond), etc.
+* Cluster - a connected group of occupied sites or bonds.
+* Giant component - the largest, system-spanning cluster that emerges above the threshold.
+* Lattice types - square, triangular, hexagonal, random graphs, and others; each has different percolation thresholds and scaling behavior.
+* Major models:
+  * Bond (Bernoulli) percolation - bonds (edges) between fixed sites are randomly occupied; relates to fluid flow through porous media.
+  * Site percolation - individual sites (nodes) are randomly occupied; relates to disease spread or forest fire models.
+  * Mixed percolation - combines site and bond percolation in one model, requiring both the sites and the bonds connecting them to be open for a cluster to form.
+  * Bootstrap percolation - starting from a random set of occupied sites, empty sites are iteratively "infected" once they have at least $k$ occupied neighbors, repeating until no more sites change; models cascading activation like infection spread or social contagion.
+  * Inhomogeneous percolation - the occupation probability $p$ varies from site to site (or bond to bond) instead of being uniform, e.g. to model spatially-varying material properties.
+  * Long-range percolation - bonds can connect any two sites, not just nearest neighbors, with connection probability typically decaying with distance (often as a power law); can percolate via rare long "jumps" even below the classical threshold.
+  * Directed percolation (oriented percolation) - bonds/sites can only be traversed along a preferred direction (e.g. "downward" through time); models epidemic spreading and non-equilibrium phase transitions.
+  * Continuum percolation - occupation is defined over continuous space rather than a discrete lattice, e.g. overlapping disks or spheres; models material conductivity and wireless network coverage.
+    * Germ-grain model - general stochastic-geometry framework of "germs" (points) dressed with "grains" (shapes) that may be correlated with one another or their surroundings.
+    * Boolean model (Poisson Boolean model) - the germ-grain model's independent special case: germs scattered via a Poisson process, each dressed with an independent random grain; percolation occurs when grains overlap into a spanning cluster.
+    * Disk model (Gilbert disk model) - special case of the Boolean model where every grain is a disk of fixed or random radius; used for random geometric graphs and wireless/sensor network connectivity.
+    * Random-connection model - generalizes the Boolean/disk model into a random graph: any two points connect with a probability given by a distance-dependent "connection function," rather than by fixed-radius grain overlap.
+  * Invasion percolation - growth advances by always occupying the weakest/most accessible available site rather than a random one; models fluid displacement in porous media.
+  * First-passage percolation - instead of open/closed sites or bonds, each bond is assigned a random "passage time"; studies how quickly a fluid spreads from a source along the fastest weighted paths, producing random growth shapes.
+  * Random-cluster model (Fortuin–Kasteleyn model) - generalizes percolation with an extra parameter $q$ that continuously interpolates between percolation ($q=1$), the Ising model ($q=2$), and the Potts model ($q>2$).
+* Critical exponents - power-law relationships describing cluster size distribution, correlation length, and other properties near $p_c$. These exponents are universal across many percolation models.
+* Universality class - percolation models grouped by shared critical exponent values; a hallmark of statistical physics.
+
+Percolation can model porous media (oil migration through rock), disease spread (how infections propagate through a population), forest fires (how rapidly fires spread through dense vegetation), and network robustness (how many nodes can fail before connectivity is lost). In the context of morphogenesis, percolation-based growth can generate branching patterns, fragmented structures, and networks with natural-looking interconnectivity.
 
 _Articles:_
 * [Percolation theory](https://en.wikipedia.org/wiki/Percolation_theory) on Wikipedia
+* [Percolation](http://paulbourke.net/fractals/percolation/) by Paul Bourke
+* [Percolation Threshold](http://mathworld.wolfram.com/PercolationThreshold.html) on Wolfram MathWorld
 
-_Code projects:_
-* [“Barista's Secret”: Percolation on a lattice](https://www.complexity-explorables.org/explorables/baristas-secret/) by Dirk Brockmann
+_Code projects and interactive tools:_
+* [“Barista's Secret”: Percolation on a lattice](https://www.complexity-explorables.org/explorables/baristas-secret/) by Dirk Brockmann - interactive visualization of site percolation on a square lattice
+* [Red Blob Games - Percolation](https://www.redblobgames.com/grids/hexagons/) - explores percolation on different grid types (mentions percolation effects in hexagonal grids)
 
 ---
 
