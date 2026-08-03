@@ -2005,6 +2005,7 @@ Also helpful for creating looping animations because reproducable results can be
 
 The `noise()` function in many creative coding frameworks usually makes use of Perlin noise.
 
+* [Curl noise](https://en.wikipedia.org/wiki/Simulation_noise#Curl_noise) - produces swirling, rotational motion patterns useful for simulating vortices, flowing fluids, and turbulent effects without the computational cost of a full physics simulation (see [Curl-Noise for Procedural Fluid Flow](https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph2007-curlnoise.pdf) (PDF) by Robert Bridson et al.)
 * [Gradient noise](https://en.wikipedia.org/wiki/Gradient_noise) - created by interpolation of a lattice of pseudorandom gradients
   * [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise) ⭐ - extremely influential type of gradient noise developed by Ken Perlin in 1983
 * [Simplex noise](https://en.wikipedia.org/wiki/Simplex_noise) - method for constructing an n-dimensional noise function comparable to Perlin noise
@@ -2020,9 +2021,41 @@ _Videos:_
 * [Coding Challenge #11: 3D Terrain Generation with Perlin Noise in Processing](https://www.youtube.com/watch?v=IKB1hWWedMk) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_011_PerlinNoiseTerrain) with source code for p5.js and Processing)
 * [Coding Challenge #136.1: Polar Perlin Noise Loops](https://www.youtube.com/watch?v=ZI1dmHv3MeM) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_136_Polar_Noise_Loop_1) [[2]](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_136_Polar_Noise_Loop_2) with source code for p5.js and Processing)
 
-```
-TODO: add note on curl noise
-```
+_Notable implementations:_
+
+* Perlin noise
+  * Processing - built-in [`noise()`](https://processing.org/reference/noise_.html) function
+  * p5.js - [`noise()`](https://p5js.org/reference/#/p5/noise) function
+  * Three.js / WebGL - [SimplexNoise](https://threejs.org/examples/?q=perlin#webgl_geometry_terrain) in examples; [shader implementations](https://www.shadertoy.com/results?query=perlin)
+  * Houdini - [Noise VOP nodes](https://www.sidefx.com/docs/houdini/nodes/vop/noise.html) (Perlin, Fractal, etc)
+  * TouchDesigner - [Noise CHOP](https://docs.derivative.ca/Noise_CHOP) and [Noise MAT](https://docs.derivative.ca/Noise_MAT) operators
+  * vvvv - Noise nodes in [vvvv.js](https://vvvv.js.org/) and [vvvv gamma](https://vvvv.org/)
+  * Blender - [Noise texture node](https://docs.blender.org/manual/en/latest/render/shader_nodes/texture/noise.html) in Shader Editor
+
+* Simplex noise
+  * GLSL - [Simplex noise shader implementations](https://github.com/ashima/webgl-noise) (Ashima Arts)
+  * p5.js - [`noise()`](https://p5js.org/reference/#/p5/noise) uses Simplex noise
+  * Houdini - [Simplex Noise VOP](https://www.sidefx.com/docs/houdini/nodes/vop/simplex.html)
+  * TouchDesigner - available in [Noise CHOP](https://docs.derivative.ca/Noise_CHOP)
+  * Blender - [Noise texture](https://docs.blender.org/manual/en/latest/render/shader_nodes/texture/noise.html) with Simplex option
+
+* Worley noise / Voronoi
+  * GLSL - [Voronoi/Worley shader collections](https://www.shadertoy.com/results?query=voronoi)
+  * Houdini - [Worley Noise VOP](https://www.sidefx.com/docs/houdini/nodes/vop/worley.html)
+  * TouchDesigner - [Voronoi/Worley operators](https://docs.derivative.ca/Noise_CHOP)
+  * Blender - [Voronoi texture node](https://docs.blender.org/manual/en/latest/render/shader_nodes/texture/voronoi.html) in Shader Editor
+  * vvvv - Voronoi nodes in [vvvv.js](https://vvvv.js.org/) and [vvvv gamma](https://vvvv.org/)
+
+* Curl noise
+  * Houdini - [Curl Noise VOP](https://www.sidefx.com/docs/houdini/nodes/vop/curlnoise.html)
+  * Unreal Engine 5 - [Procedural content documentation](https://docs.unrealengine.com/5.0/en-US/procedural-content-generation-in-unreal-engine/)
+  * TouchDesigner - [Curl Noise in Noise MAT](https://docs.derivative.ca/Noise_MAT)
+  * GLSL - [Curl noise shader implementations](https://www.shadertoy.com/results?query=curl+noise)
+
+_Code projects:_
+  * [FastNoise2](https://github.com/Auburn/FastNoise2) (C++, multiple language bindings) - high-performance noise library with SIMD optimization
+  * [libnoise](http://libnoise.sourceforge.net/) (C++) - procedural noise library with multiple noise types
+  * [Perlin Noise implementation collections](https://github.com/stegu/perlin-noise) (multiple languages)
 
 ---
 
