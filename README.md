@@ -1010,9 +1010,45 @@ _Videos:_
 
 ### Laplace transform
 
-```
-TODO
-```
+Mathematical transformation that converts a function of time into a function of complex frequency, transforming differential equations into algebraic equations that are often easier to solve. Named after Pierre-Simon Laplace, this tool is fundamental in engineering, physics, and control theory for analyzing systems and solving differential equations that govern dynamic behavior.
+
+The Laplace transform takes a time-domain function $f(t)$ and produces a frequency-domain function $F(s)$. This transformation is particularly useful because it converts differentiation operations in the time domain into multiplication in the frequency domain, and convolution becomes multiplication - operations that are algebraically simpler to handle. The inverse Laplace transform then converts the solution back to the time domain.
+
+In the context of morphogenesis and dynamic systems, Laplace transforms are used to analyze stability, resonance, and response characteristics of systems. For example, in modeling growth dynamics, signal propagation, or feedback-driven development, the Laplace transform helps determine whether a system will remain stable, oscillate, or diverge under given conditions.
+
+_Definition:_
+
+$$F(s) = \mathcal{L}\{f(t)\} = \int_0^{\infty} e^{-st} f(t) \, dt$$
+
+Where $s = \sigma + i\omega$ is a complex frequency variable, $t$ is time, and the integral converges for sufficiently large $\sigma$.
+
+_Key properties:_
+
+| Property | Formula | Description |
+|---|---|---|
+| Linearity | $\mathcal{L}\{af(t) + bg(t)\} = a\mathcal{L}\{f(t)\} + b\mathcal{L}\{g(t)\}$ | Sum transforms equal sum of transforms |
+| Differentiation rule | $\mathcal{L}\{f'(t)\} = sF(s) - f(0)$ | Converts derivatives to algebraic operations |
+| Integration rule | $\mathcal{L}\{\int_0^t f(\tau)\,d\tau\} = \frac{F(s)}{s}$ | Converts integrals to division by $s$ |
+| Convolution theorem | $\mathcal{L}\{f(t) * g(t)\} = F(s)G(s)$ | Converts convolution to multiplication |
+| Final value theorem | $\lim_{t \to \infty} f(t) = \lim_{s \to 0} sF(s)$ | Determines steady-state behavior |
+| Initial value theorem | $f(0^+) = \lim_{s \to \infty} sF(s)$ | Determines initial conditions |
+| Frequency shifting | $\mathcal{L}\{e^{at}f(t)\} = F(s-a)$ | Scaling exponential shifts frequency |
+| Time shifting | $\mathcal{L}\{f(t-a)u(t-a)\} = e^{-as}F(s)$ | Delay in time domain multiplies by $e^{-as}$ |
+
+_Key terms:_
+
+* Region of convergence (ROC) - the set of complex $s$ values for which the Laplace integral converges
+* Pole - a value of $s$ where $F(s)$ becomes infinite; poles determine system stability and response characteristics
+* Zero - a value of $s$ where $F(s)$ equals zero
+* Transfer function - the Laplace transform of a system's impulse response; describes how a system responds to inputs
+* Inverse Laplace transform - converting from frequency domain back to time domain; often done via partial fraction decomposition
+* Partial fraction decomposition - breaking a complex rational function into simpler fractions to facilitate inverse transformation
+
+_Articles:_
+* [Laplace transform](https://en.wikipedia.org/wiki/Laplace_transform) on Wikipedia
+* [Laplace Transform](http://mathworld.wolfram.com/LaplaceTransform.html) on Wolfram MathWorld
+* [Laplace Transform Tables and Properties](https://tutorial.math.lamar.edu/Classes/DE/Laplace_Transforms.aspx) by Paul's Online Math Notes
+* [Introduction to the Laplace Transform](https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/) from MIT OpenCourseWare (differential equations course)
 ---
 
 ### Lissajous curves
