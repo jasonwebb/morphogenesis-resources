@@ -1287,15 +1287,34 @@ _Articles:_
 
 ---
 
+<a href="https://www.theochem.ru.nl/~pwormer/Knowino/knowino.org/wiki/Spherical_harmonics.html" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/spherical-harmonics.jpg?raw=true" width="300" align="right" title="Knowino - Spherical harmonics"></a>
+
 ### Spherical harmonics
 
-```
-TODO
-```
+> [!NOTE]
+> Related to [Fourier series](#fourier-series)
+
+Spherical harmonics are a set of special functions defined on the surface of a sphere that form a complete, orthonormal basis - meaning any reasonably well-behaved function over the sphere (e.g. a bumpy radius, a lighting environment, a temperature field) can be reconstructed as a weighted sum of them, in the same way a [Fourier series](#fourier-series) reconstructs a periodic signal from sines and cosines. They arise naturally as the angular part of the solution to Laplace's equation in spherical coordinates, which is why they show up throughout physics wherever spherical symmetry is involved - gravitational and electric potentials, atomic orbitals, geodesy, and the cosmic microwave background.
+
+Each spherical harmonic is indexed by a degree $l$ and an order $m$, and looks like a pattern of positive and negative lobes tiling the sphere; low-degree harmonics vary slowly across the surface (capturing broad, low-frequency features) while higher-degree harmonics oscillate more rapidly (capturing fine detail) - directly analogous to how low vs. high frequency terms behave in a Fourier series. This makes them a useful tool for morphogenesis and shape modeling: an arbitrary blob-like or organic 3D form can be approximated, generated, or smoothly deformed by manipulating just a handful of spherical harmonic coefficients instead of a dense mesh.
+
+_Key terms:_
+* Degree ($l$) and order ($m$) - indices identifying each spherical harmonic; the degree controls how many nodal lines (angular frequency) a harmonic has, while the order controls their orientation around the polar axis.
+* [Legendre polynomials](https://en.wikipedia.org/wiki/Legendre_polynomials) (and associated Legendre functions) - the family of functions used to build the latitude (polar-angle) part of each spherical harmonic.
+* Real vs. complex spherical harmonics - two equivalent bases for the same functions; real harmonics are more common in graphics and engineering, complex ones in quantum mechanics.
+* [Multipole expansion](https://en.wikipedia.org/wiki/Multipole_expansion) - representing a field (gravitational, electric, etc.) as a sum of spherical harmonics weighted by coefficients, ordered from coarse (monopole/dipole) to fine detail.
+* Precomputed radiance transfer (PRT) - computer graphics technique that stores lighting/shading information as a small set of spherical harmonic coefficients for fast, approximate real-time rendering.
+* SPHARM (spherical harmonic shape description) - representing an arbitrary closed 3D surface, such as an organic blob or biological structure, as a set of spherical harmonic coefficients; used for shape analysis, comparison, and generative modeling.
 
 _Articles:_
 * [Spherical harmonics](https://en.wikipedia.org/wiki/Spherical_harmonics) on Wikipedia
 * [Spherical Harmonics](http://paulbourke.net/geometry/sphericalh/) by Paul Bourke
+
+_Code projects and tools:_
+* [google/spherical-harmonics](https://github.com/google/spherical-harmonics) (C++) - graphics-oriented library for evaluating, projecting, and rotating spherical harmonic basis functions, including diffuse irradiance/environment lighting helpers.
+* [SHTOOLS/SHTOOLS](https://github.com/SHTOOLS/SHTOOLS) (Fortran 95 / Python, `pyshtools`) - library for spherical harmonic transforms, spectral analysis, and working with gravity/magnetic/topography field data.
+* [A Symphony of Spheres: Animating Spherical Harmonics in Blender with Python and Shape Keys](https://medium.com/@bldevries/a-symphony-of-spheres-animating-spherical-harmonics-in-blender-with-python-and-shape-keys-aa67b7ff3d93) by Ben de Vries
 
 ---
 
