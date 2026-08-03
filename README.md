@@ -615,14 +615,9 @@ _\* indicates a potential simulation parameter_
 
 _Example:_
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/l-systems-example-1.jpg?raw=true" width="300" align="right">
-
-Axiom: `F`
-Rules: `F → F[+F]F[-F]F`
-After 1 iteration: `F[+F]F[-F]F`
-After 2 iterations: `F[+F]F[-F]F[+F[+F]F[-F]F]F[+F]F[-F]F[-F[+F]F[-F]F]F[+F]F[-F]F`
-
-When rendered with `angle=25°`, this produces a branching plant-like structure.
+| Description | Rendered Result |
+|---|---|
+| Axiom: `F`<br>Rule: `F → F[+F]F[-F]F`<br>After iteration 1: `F[+F]F[-F]F`<br>After iteration 2:<br>`F[+F]F[-F]F[+F[+F]F[-F]F]F[+F]F[-F]F[-F[+F]F[-F]F]F[+F]F[-F]F`<br><br>When rendered with `angle=25°`, this produces a branching plant-like structure. | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/l-systems-example-1.jpg?raw=true" width="300"> |
 
 _Key terms:_
 
