@@ -65,6 +65,8 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#strange-attractors">Strange attractors</a></li>
               <li><a href="#superellipse">Superellipse</a></li>
               <li><a href="#superformula">Superformula</a></li>
+              <li><a href="#tiling--tessellation">Tiling / tessellation</a></li>
+              <li><a href="#travelling-salesman-problem-tsp">Travelling salesman problem (TSP)</a></li>
               <li><a href="#verlet-physics">Verlet physics</a></li>
             </ul>
           </p>
@@ -811,6 +813,10 @@ _Creative projects:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/delaunay-voronoi-1.png?raw=true" width="300" align="right" title="Wikipedia - Delaunay triangulation"></a>
 
 ### Delaunay triangulation and Voronoi diagrams
+
+> [!NOTE]
+> Related to [tiling / tessellation](#tiling--tessellation).
+
 _Delaunay triangulation_ is a way of connecting a set of points to form a network of non-overlapping triangles. One of the key properties of Delaunay triangulations is that the [circumcircles](https://en.wikipedia.org/wiki/Circumscribed_circle) associated with each triangle contains no other points than their three triangle vertices. When extended into 3D, Delaunay triangulation is useful for creating meshes.
 
 _Voronoi diagrams_ are the [dual](https://observablehq.com/@mbostock/the-delaunays-dual) of Delaunay triangulations. This means that once a Delaunay triangulation has been computed for a set of points, a Voronoi diagram can be drawn without any additional data - just draw lines connecting the centers of the circumcircles!
@@ -1683,6 +1689,57 @@ _Code projects:_
 
 _Videos:_
 * [Coding Challenge #26: 3D Supershapes](https://www.youtube.com/watch?v=akM4wMZIBWg) by Daniel Shiffman ([Processing sketch](https://github.com/CodingTrain/website/blob/master/CodingChallenges/CC_026_SuperShape3D/Processing/CC_026_SuperShape3D/CC_026_SuperShape3D.pde) on Github)
+
+---
+
+<a href="https://en.wikipedia.org/wiki/Tessellation" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/tiling.webp?raw=true" width="300" align="right" title="Wikipedia - Tessellation"></a>
+
+### Tiling / tessellation
+
+> [!NOTE]
+> Related to [polyhedra](#polyhedra), [Wave Function Collapse (WFC)](#wave-function-collapse-wfc), and [Delaunay triangulation and Voronoi diagrams](#delaunay-triangulation-and-voronoi-diagrams).
+
+A tiling (or tessellation) is a covering of a plane, or other surface, by one or more shapes ("tiles") with no gaps and no overlaps. Like [polyhedra](#polyhedra), tilings are a design space defined by a small set of construction rules, which makes them a reliable source of "correct-looking" repeating patterns for generative art, procedural texture generation, and physical fabrication (laser-cut panels, tiled floors, quilting).
+
+_Key concepts:_
+* Periodic vs. aperiodic - periodic tilings repeat via simple translation, so a single finite patch can tile the whole plane; aperiodic tilings (like Penrose tilings) never repeat via translation alone, no matter how far you zoom out.
+* Regular and semi-regular tilings - the 2D analog of [Platonic and Archimedean solids](#polyhedra): 3 regular tilings (one type of regular polygon) and 8 semi-regular tilings (2+ types), each with an identical arrangement of polygons at every vertex.
+* Symmetry (wallpaper groups) - every repeating 2D pattern falls into one of exactly 17 [wallpaper groups](https://en.wikipedia.org/wiki/Wallpaper_group), based on which combination of translations, rotations, reflections, and glide reflections leave the pattern looking unchanged.
+* Substitution tilings - built by repeatedly subdividing each tile into smaller copies of the same prototile set according to a fixed rule; many aperiodic tilings, including Penrose's, can be generated this way.
+
+_Notable named tilings:_
+* [Penrose tiling](https://en.wikipedia.org/wiki/Penrose_tiling) - the best-known aperiodic tiling, built from just two prototiles (kite & dart, or two rhombi) related by the golden ratio.
+* [Wang tiles](https://en.wikipedia.org/wiki/Wang_tile) - square tiles with colored edges that must match their neighbors, with no rotation allowed in the original formalism; widely used in computer graphics for generating large, non-repetitive textures, height fields, and point distributions from a small tile set.
+* [Truchet tiles](https://en.wikipedia.org/wiki/Truchet_tile) - simple square tiles (split diagonally, or decorated with quarter-circle arcs) that, placed in random orientations, produce intricate maze-like or flowing patterns; a long-running favorite in generative art, first described by Sébastien Truchet in 1704.
+* [The Hat and Spectre](https://en.wikipedia.org/wiki/Einstein_problem) - the first known aperiodic _monotiles_ ("einsteins"), discovered in 2023 by David Smith, Craig Kaplan, Joseph Myers, and Chaim Goodman-Strauss. Each forces aperiodicity using a single tile shape and no matching rules, resolving a problem that had been open since the 1960s.
+* [Isohedral (Escher-style) tilings](https://en.wikipedia.org/wiki/Isohedral_figure) - tilings where every tile is equivalent to every other tile under the pattern's symmetries; the class M.C. Escher's interlocking animal and figure tessellations belong to.
+
+_Key terms:_
+* Prototile - one of the shape(s) allowed in a tiling; a monotile is a tiling that uses just one.
+* Edge-to-edge - a tiling where tiles only ever share a full edge with a neighbor, never a partial one.
+* Vertex configuration - the cyclic sequence of polygon types meeting at a vertex, e.g. `3.6.3.6` for a triangle-hexagon-triangle-hexagon arrangement.
+* Matching rules - markings or notches added to prototiles that forbid periodic arrangements; used by some, but not all, aperiodic tilings to enforce non-repetition.
+
+_Articles:_
+* [Tessellation](https://en.wikipedia.org/wiki/Tessellation) on Wikipedia
+* [Wallpaper group](https://en.wikipedia.org/wiki/Wallpaper_group) on Wikipedia
+* [Introductory Tiling Theory for Computer Graphics](https://www.gbv.de/dms/tib-ub-hannover/670618950.pdf) (PDF) by Craig S. Kaplan - concise academic introduction to tiling theory for a graphics/programming audience
+* [An aperiodic monotile](https://arxiv.org/pdf/2303.10798) (PDF) by David Smith, Joseph Samuel Myers, Craig S. Kaplan, and Chaim Goodman-Strauss - the original "Hat" paper
+* [The Hat and the Spectre](https://momath.org/the-hat/) from the National Museum of Mathematics - accessible overview of both 2023 discoveries
+
+_Videos:_
+* [5 and Penrose Tiling](https://www.youtube.com/watch?v=QTrM-UVcgBY) by Numberphile
+* [Aperiodic monotile animation](https://www.youtube.com/watch?v=W-ECvtIA-5A) featuring the discoverers of "the Hat"
+
+_Notable tools:_
+* [Tactile.js](https://github.com/isohedral/tactile-js) by Craig Kaplan - JavaScript library for representing, manipulating, and drawing Escher-style isohedral tilings ([C++ version](https://github.com/isohedral/tactile))
+* [Pattern Collider](https://aatishb.com/patterncollider/) by Aatish Bhatia - interactive web tool for exploring quasiperiodic tilings, including Penrose and the Hat/Spectre monotiles
+* [Penrose](https://penrose.cs.cmu.edu/) by Carnegie Mellon University - web-based tool that creates images from text notation. ([Github repo](https://github.com/penrose/penrose))
+
+_Code projects:_
+* [Penrose.js](https://github.com/guinetik/penrose-js) - pure JavaScript library for generating Penrose tilings, rendered to canvas or bitmap
+* [Pattern Collider](https://github.com/aatishb/patterncollider) - source code for the interactive tool above
 
 ---
 
@@ -2824,6 +2881,9 @@ _Code projects:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/wfc-1.png?raw=true" width="300" align="right" title="Robert Heaton - The Wavefunction Collapse Algorithm explained very clearly"></a>
 
 ### Wave Function Collapse (WFC)
+
+> [!NOTE]
+> Related to [Tiling / tessellation](#tiling--tessellation).
 
 Method of procedurally generating textures and tilemaps that are similar to a single source image using ideas from quantum mechanics. Originally developed by Maxim Gumin, WFC learns local patterns and constraints from a source image, then iteratively generates new content by "collapsing" possibilities while respecting learned rules. The name references quantum superposition (many possible states simultaneously) and measurement (collapsing to a single outcome).
 
