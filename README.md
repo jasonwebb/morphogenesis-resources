@@ -590,6 +590,72 @@ _Videos:_
 * [Coding Challenge #17: Fractal Trees - Space Colonization](https://www.youtube.com/watch?v=kKT0v3qhIQY) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_017_SpaceColonizer) with source code for p5.js and Processing)
 
 ---
+
+<a href="https://en.wikipedia.org/wiki/L-system" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/l-systems.jpg?raw=true" width="300" align="right" title="Wikipedia - L-system"></a>
+
+### L-systems (Lindenmayer systems)
+
+String rewriting system invented by biologist Aristid Lindenmayer in 1968 to model the growth processes of plant development and other organisms. L-systems use simple grammatical rules to iteratively expand a string of symbols, which can then be interpreted geometrically (e.g., using turtle graphics) to produce complex branching structures. Despite their simplicity, L-systems can generate remarkably naturalistic plant forms, fractals, and branching patterns.
+
+The key insight is that local production rules (each symbol rewrites to a sequence of symbols) applied recursively across iterations can generate globally complex structures without explicitly encoding the final form. This makes L-systems particularly powerful for modeling hierarchical biological growth.
+
+_Algorithm at a glance:_
+
+_\* indicates a potential simulation parameter_
+
+1. Define an axiom\* - the initial string (often just "F" or a single symbol).
+2. Define production rules\* - for example, "F → FF" (each forward step becomes two forward steps).
+3. Define a number of iterations\*.
+4. For each iteration, replace every symbol in the string according to its production rule, simultaneously.
+5. Interpret the final string geometrically:
+   - Common symbols: `F` (move forward and draw), `f` (move forward without drawing), `+` (turn left), `-` (turn right), `[` (push position/heading to stack), `]` (pop position/heading from stack)
+6. Render the resulting path or tree structure.
+
+_Example:_
+
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/l-system-example-1.jpg?raw=true" width="300" align="right">
+
+Axiom: `F`
+Rules: `F → F[+F]F[-F]F`
+After 1 iteration: `F[+F]F[-F]F`
+After 2 iterations: `F[+F]F[-F]F[+F[+F]F[-F]F]F[+F]F[-F]F[-F[+F]F[-F]F]F[+F]F[-F]F`
+
+When rendered with `angle=25°`, this produces a branching plant-like structure.
+
+_Key terms:_
+
+* Axiom - the starting string
+* Production rules - symbol-to-string mappings applied each iteration
+* Turtle graphics - geometric interpretation of the L-system string using position, heading, and a drawing pen
+* Stochastic L-systems - rules chosen probabilistically rather than deterministically, creating variation
+* Parametric L-systems - rules can use parameters and conditions for more sophisticated generation
+* Context-sensitive L-systems - rules depend on neighboring symbols, allowing more complex interactions
+
+_Articles:_
+* [L-system](https://en.wikipedia.org/wiki/L-system) on Wikipedia
+* [Chapter 1: Plant Models](http://algorithmicbotany.org/papers/abop/abop-ch1.pdf) from Algorithmic Botany book - foundational reference
+
+_Videos:_
+* [Coding Challenge #16: Recursive Trees - Fractal Trees](https://www.youtube.com/watch?v=0jjeOYMjmQE) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_016_RecursiveTree) with p5.js and Processing code)
+* [L-System Creature Evolution](https://www.youtube.com/watch?v=knmNML7Q8Fw) by Lenia
+* [8.5: L-Systems](https://www.youtube.com/watch?v=f6ra024-ASY) from Daniel Shiffman's Nature of Code series
+
+_Notabld tools and libraries:_
+
+* Blender
+  * [Sapling Tree Gen](https://docs.blender.org/manual/en/4.1/addons/add_curve/sapling.html) - add-on for procedural L-system-based tree generation
+* Houdini
+  * [L-System Geometry node](https://www.sidefx.com/docs/houdini/nodes/sop/lsystem.html)
+* TouchDesigner
+  * [LSystem SOP](https://docs.derivative.ca/LSystem_SOP)
+* Unity
+  * [SpeedTree](https://speedtree.com/) - commercial procedural tree generator with L-system-based generation
+* Unreal Engine
+  * [SpeedTree integration](https://docs.unrealengine.com/5.0/en-US/using-speedtree-in-unreal-engine/) - native support for SpeedTree models
+
+---
+
 <a href="https://en.wikipedia.org/wiki/Spinodal_decomposition" target="_blank">
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/spinodal-decomposition.gif?raw=true" width="300" align="right" title="Wikipedia - Spinodal decomposition"></a>
 
