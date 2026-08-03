@@ -62,6 +62,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#strange-attractors">Strange attractors</a></li>
               <li><a href="#superellipse">Superellipse</a></li>
               <li><a href="#superformula">Superformula</a></li>
+              <li><a href="#verlet-physics">Verlet physics</a></li>
             </ul>
           </p>
         </details>
@@ -1524,6 +1525,54 @@ _Articles:_
 
 _Notable software:_
 * [StippleGen](https://wiki.evilmadscientist.com/StippleGen) from Evil Mad Scientist Laboratories can [calculate TSP paths](https://wiki.evilmadscientist.com/StippleGen#Calculating_the_TSP_Path).
+
+---
+
+<a href="https://graphics.stanford.edu/~mdfisher/cloth.html" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/verlet-physics.jpg?raw=true" width="300" align="right" title="Matthew Fisher - Cloth"></a>
+
+### Verlet physics
+
+> [!NOTE]
+> Related to [physics engines](#physics-engine) and [particle systems](#particle-system).
+
+_Image credit: Matthew Fisher - [Cloth](https://graphics.stanford.edu/~mdfisher/cloth.html)_
+
+Family of numerical integration methods for simulating motion that skip storing velocity explicitly, instead deriving it implicitly from a particle's current and previous position. Named after French physicist Loup Verlet, who used it for molecular dynamics simulations in the 1960s, though the technique dates back further.
+
+At each step, a particle's next position is calculated from its current position, its previous position, and the acceleration currently acting on it:
+
+```
+newPosition = 2 * currentPosition - previousPosition + acceleration * timeStep^2
+```
+
+Because positions - not velocities - are what's being directly manipulated, distance constraints (like the fixed-length "sticks" connecting particles in a rope, cloth, or soft body) can be enforced by simply nudging connected particles toward or away from each other until the constraint is satisfied, without separately tracking or adjusting velocity. This makes Verlet integration especially popular for simulating chains, cloth, ragdolls, and other constraint-based systems in games, creative coding, and animation - and it forms the conceptual basis for the more general [Position Based Dynamics](https://www.researchgate.net/publication/223399772_Position_Based_Dynamics) approach used in many modern physics engines.
+
+_Key terms:_
+* Implicit velocity - since a particle's velocity is never stored directly, it can be recovered as the difference between its current and previous position.
+* Distance constraint - a rule (often visualized as a "stick") requiring two particles to stay a certain distance apart; satisfied directly by moving positions rather than applying forces.
+* [Position Based Dynamics (PBD)](https://www.researchgate.net/publication/223399772_Position_Based_Dynamics) - generalization of Verlet-style constraint solving into a broader framework for simulating cloth, rigid bodies, fluids, and more.
+* Numerical stability - Verlet integration is more stable than simple Euler integration over long simulations, since it approximately conserves energy.
+
+_Articles:_
+* [Verlet integration](https://en.wikipedia.org/wiki/Verlet_integration) on Wikipedia
+* [Advanced Character Physics](https://www.cs.cmu.edu/afs/cs/academic/class/15462-s13/www/lec_slides/Jakobsen.pdf) (PDF) by Thomas Jakobsen - classic, widely-cited article on using Verlet integration for constraint-based cloth and character simulation, developed for the game Hitman: Codename 47
+* [Ten Minute Physics](https://matthias-research.github.io/pages/tenMinutePhysics/) by Matthias Müller - video tutorial series building from basic particle simulation up to Position Based Dynamics
+* [Verlet Physics with Toxiclibs.js](https://natureofcode.com/book/chapter-5-physics-libraries/#verlet-physics-with-toxiclibsjs) chapter from Daniel Shiffman's Nature of Code book
+
+_Videos:_
+* [ToxicLibs Verlet Physics](https://thecodingtrain.com/tracks/physics-libraries/physics-libraries/toxiclibs/1-introduction/) video series by Daniel Shiffman (The Coding Train) - covers particles, springs, connected systems, and attraction behaviors in Processing with toxiclibs.js
+
+_Notable tools:_
+* [Vellum](https://www.sidefx.com/docs/houdini/vellum/overview.html) - Houdini's unified solver for cloth, hair, grains, and softbodies, built on an extended Position Based Dynamics approach
+* [ChaosCloth](https://dev.epicgames.com/documentation/en-us/unreal-engine/API/Plugins/ChaosCloth) - Unreal Engine's built-in cloth solver, also based on Position Based Dynamics
+* [Obi](https://obi.virtualmethodstudio.com/) (Unity asset) by Virtual Method - rope, cloth, softbody, and fluid simulation using an XPBD (Extended Position Based Dynamics) solver
+
+_Code projects:_
+* [toxiclibs VerletPhysics](https://github.com/postspectacular/toxiclibs/tree/master/src.physics) (Processing/Java addon) by Karsten Schmidt
+* [toxiclibsjs](https://github.com/hapticdata/toxiclibsjs) (JavaScript/p5.js port of toxiclibs, including its VerletPhysics2D/3D package) by Kyle Phillips (hapticdata)
+* [ofxMSAPhysics](https://github.com/memo/ofxMSAPhysics) (openFrameworks addon, C++) by Memo Akten - particle/constraint physics library explicitly modeled on the same approach described in Jakobsen's article above
+* [Rope and Cloth Simulation](https://github.com/aryamancodes/Rope-and-Cloth-Simulation) (p5.js) by Aryaman - tearable rope/cloth demo with wind and collisions
 
 <br>
 
