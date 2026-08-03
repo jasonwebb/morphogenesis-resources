@@ -109,6 +109,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#signed-distance-function-sdfs">Signed distance functions (SDFs)</a></li>
               <li><a href="#spatial-index">Spatial index</a></li>
               <li><a href="#vectors">Vectors</a></li>
+              <li><a href="#vdbs">VDBs</a></li>
               <li><a href="#wave-function-collapse-wfc">Wave Function Collapse (WFC)</a></li>
               <li><a href="#weighted-voronoi-stippling">Weighted Voronoi stippling</a></li>
             </ul>
@@ -2533,6 +2534,49 @@ _Notable implementations:_
 * [Vector data types](https://www.khronos.org/opengl/wiki/Data_Type_(GLSL)#Vectors) in GLSL
 * [Vector Type](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-vector) in HLSL
 * [Vector2](https://docs.unity3d.com/ScriptReference/Vector2.html), [Vector3](https://docs.unity3d.com/ScriptReference/Vector3.html), [Vector4](https://docs.unity3d.com/ScriptReference/Vector4.html) in Unity
+
+---
+
+<a href="https://jangafx.com/insights/vdb-a-deep-dive" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/vdbs.jpg?raw=true" width="300" align="right" title="Said Al Attrach - VDB: A Deep Dive"></a>
+
+### VDBs
+
+> [!NOTE]
+> Related or similar to [spatial indices](#spatial-index) and [fluid simulations](#fluid-simulation)
+
+_Image credit: Said Al Attrach - [VDB: A Deep Dive](https://jangafx.com/insights/vdb-a-deep-dive)_
+
+Grid-based data structure designed for storing and manipulating sparse 3D volumetric data - grids of voxels (3D pixels). Unlike a naive 3D array where every voxel consumes memory regardless of content, VDBs use a [B-tree](#spatial-index)-like hierarchical structure that only stores voxels containing meaningful data, making them extremely memory-efficient for large, sparse volumes. Named for their characteristics (**V**olumetric, **D**ynamic, and **B**-tree-like), they approximate an "infinite" index space with fast O(1) random access, cache-coherent traversal, and support for dynamic topology changes.
+
+VDBs are the industry standard in VFX and animation for representing volumetric data like smoke, fire, liquids, and distance fields. [OpenVDB](https://www.openvdb.org), an Academy Award-winning open-source library originally developed by DreamWorks Animation, has become the de facto standard format for volumetric data interchange in professional VFX pipelines.
+
+_How they work at a glance:_
+
+The VDB hierarchy typically has four levels: a root node (hash table), intermediate nodes, and leaf nodes (storing fixed blocks of voxels, usually 8×8×8). When accessing or inserting data, the tree is traversed from root to leaf, skipping branches that contain no data. This structure avoids allocating memory for empty space while maintaining fast random access patterns typical of dense grids.
+
+_Articles:_
+* [VDB: High-Resolution Sparse Volumes with Dynamic Topology](https://www.museth.org/Ken/Publications_files/Museth_TOG13.pdf) (PDF) by Ken Museth - the foundational 2013 ACM Transactions on Graphics paper introducing VDB at DreamWorks Animation
+
+_Notable tools and libraries:_
+
+* ⭐ OpenVDB (C++, Python bindings) by Academy Software Foundation
+  * [GitHub repo](https://github.com/AcademySoftwareFoundation/openvdb) - open-source, cross-platform library maintained by the VFX industry
+  * [Official docs](https://www.openvdb.org/documentation/) - API reference and guides
+  * Includes tools for data I/O, visualization (vdb_view), filtering, and mesh generation
+* Blender
+  * [Volume objects](https://docs.blender.org/manual/en/latest/modeling/volumes/introduction.html) - native VDB/OpenVDB volume support
+  * [Import VDB](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/input/import/vdb.html) Geometry Node
+* [EmberGen](https://jangafx.com/software/embergen/) - real-time volumetric fluid simulator using VDB-compatible formats for export
+* Houdini
+  * [OpenVDB volumes](https://www.sidefx.com/docs/houdini/model/volumes.html#openvdb-volumes) - native VDB support
+* Three.js
+  * [mjurczyk/openvdb](https://github.com/mjurczyk/openvdb) - adds `.vdb` format support with a VDBLoader as well as a `FogVolume` class for working with the data
+
+_Code projects:_
+* [fluid-engine-OpenVDB](https://github.com/yangfengzzz/fluid-engine-OpenVDB) (C++) - fluid simulation engine adapting algorithms from fluid-engine-dev to leverage OpenVDB's sparse structure for memory-efficient 3D grid-based physics
+* [Liquid3D](https://github.com/Konodinger/Liquid3D) (C++) - IISPH (Implicit Incompressible SPH) fluid simulation that uses OpenVDB to mesh fluid particles for Blender import
+* [OpenVDB_Visualizer](https://github.com/Elyg/OpenVDB_Visualizer) (C++) - volume rendering application using OpenGL and Qt5 to visualize and explore VDB files
 
 ---
 
