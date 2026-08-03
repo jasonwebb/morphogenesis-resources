@@ -50,6 +50,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#golden-ratio">Golden ratio</a></li>
               <li><a href="#implicit-surface">Implicit surface</a></li>
               <li><a href="#inverse-and-forward-kinematics">Inverse and forward kinematics</a></li>
+              <li><a href="#laplace-equation">Laplace equation</a></li>
               <li><a href="#laplace-transform">Laplace transform</a></li>
               <li><a href="#lissajous-curves">Lissajous curves</a></li>
               <li><a href="#mass-spring-system">Mass-spring system</a></li>
@@ -137,7 +138,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
 ### Dielectric breakdown model (DBM)
 
 > [!NOTE]
-> Related to [Diffusion-limited aggregation (DLA)](#diffusion-limited-aggregation-dla).
+> Related to [Diffusion-limited aggregation (DLA)](#diffusion-limited-aggregation-dla) and [Laplace equation](#laplace-equation).
 
 _Image credit: Ellak Somfai - [Dielectric breakdown model in 3 dimensions](https://warwick.ac.uk/fac/cross_fac/complexity/study/msc_and_phd/miniprojects/archive/miniprojects2009/0670234-100209-miniproj08-somfai-dbm.pdf)._
 
@@ -177,7 +178,7 @@ _Code projects:_
 ### Diffusion-limited aggregation (DLA)
 
 > [!NOTE]
-> Related to [Dielectric breakdown model (DBM)](#dielectric-breakdown-model-dbm).
+> Related to [Dielectric breakdown model (DBM)](#dielectric-breakdown-model-dbm) and [Laplace equation](#laplace-equation).
 
 Process in which particles of matter stick together (_aggregate_) as they chaotically move (_diffuse_) through a medium that provides some sort of resistive (_limiting_) force. As these particles clump together over time they form characteristic fractal branching structures known as [Brownian trees](https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBrownian_tree).
 
@@ -451,6 +452,9 @@ _Projects:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/reaction-diffusion-1.jpg?raw=true" width="250" align="right" title="Author unknown"></a>
 
 ### Reaction-diffusion
+
+> [!NOTE]
+> Related to [Laplace equation](#laplace-equation).
 
 Grid-based process that generates complex and dynamic patterns based the interactions of two chemicals as they _diffuse_ through a medium and _react_ with one another. At every location on the grid these chemicals (usually referred to as `A` and `B`) have a chance of causing a _reaction_ that converts chemicals of one type to another based on their relative concentrations at that location.
 
@@ -1100,13 +1104,58 @@ _Videos:_
 
 ---
 
+### Laplace equation
+
+<a href="https://en.wikipedia.org/wiki/Laplace%27s_equation" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/laplace-equation.jpg?raw=true" width="300" align="right" title="Wikipedia - Laplace equation"></a>
+
+> [!NOTE]
+> Related to [DLA](#diffusion-limited-aggregation-dla), [DBM](#dielectric-breakdown-model-dbm), [Saffman–Taylor instability](#saffmantaylor-instability), [reaction-diffusion](#reaction-diffusion), [minimal surface](#minimal-surface), [fluid simulation](#fluid-simulation), and [Laplace transform](#laplace-transform).
+
+The Laplace equation, $\nabla^2 \varphi = 0$, says that a field's value at any point equals the average of its immediate surroundings - no interior point can be a local bump or dip. It shows up constantly in physics because it's simply the _steady-state_ form of diffusion, heat flow, and potential fields: whenever something free to spread out (heat, concentration, charge, pressure) has finished settling, its value obeys this equation. Solutions are called _harmonic functions_.
+
+That abstractness is exactly why it matters for morphogenesis: several branching growth patterns already covered elsewhere in this list are, mathematically, the same equation wearing different clothes - a family of processes collectively known as **Laplacian growth**.
+
+_Laplacian growth - from equation to organic form:_
+
+Each of these solves the Laplace equation in the region _around_ a growing cluster, then advances the cluster's boundary fastest wherever the resulting field's gradient is steepest:
+* [Diffusion-limited aggregation (DLA)](#diffusion-limited-aggregation-dla) - random walkers stick where they first touch the cluster. In the continuum limit, the probability of a walker arriving at any boundary point is proportional to the gradient of the harmonic concentration field around the cluster - DLA is the stochastic, particle-based way of sampling a Laplacian growth process.
+* [Dielectric breakdown model (DBM)](#dielectric-breakdown-model-dbm) - solves the Laplace equation directly for an electric potential field around the growing discharge, then grows each boundary point in proportion to the local field gradient raised to a tunable power - the same idea as DLA, made explicit and continuous.
+* [Saffman–Taylor instability](#saffmantaylor-instability) (viscous fingering) - inside a [Hele-Shaw cell](#hele-shaw-cell), the fluid pressure field obeys the Laplace equation (via Darcy's law), and the identical "grow fastest where the gradient is steepest" feedback produces the same branching, finger-like interface.
+
+This is why DLA clusters, electrical discharge patterns, and viscous fingers all look so similar despite arising from unrelated physics - they're all boundaries growing into a harmonic field, differing only in their noise and boundary conditions.
+
+_Key terms:_
+* Laplacian operator ($\nabla^2$ or $\Delta$) - the divergence of the gradient; measures how much a point's value differs from the average of its immediate surroundings.
+* Harmonic function - any solution to the Laplace equation; has no local maxima or minima except at the domain's boundary (the "mean value property").
+* Poisson equation - the Laplace equation with a source term ($\nabla^2 \varphi = f$); used whenever the field being solved has "generators" (charge, heat sources, image gradients) rather than being purely diffusive.
+* Boundary conditions - since the Laplace equation alone has infinitely many solutions, a specific field is picked out by fixing its values (Dirichlet) or its gradient (Neumann) on the domain's boundary - the growing cluster's surface, in Laplacian growth models.
+* Laplacian growth - the general term for a growth process where the interface advances in proportion to the gradient of a harmonic field solved in the region ahead of it.
+* Laplacian smoothing (mesh relaxation) - the discrete, iterative graphics technique of averaging each mesh vertex with its neighbors; converges toward a discrete solution of the Laplace equation.
+
+_Articles:_
+* [Laplace's equation](https://en.wikipedia.org/wiki/Laplace%27s_equation) on Wikipedia
+* [Harmonic function](https://en.wikipedia.org/wiki/Harmonic_function) on Wikipedia
+* [Laplacian smoothing](https://en.wikipedia.org/wiki/Laplacian_smoothing) on Wikipedia
+* [Fast Simulation of Laplacian Growth](https://faculty.cc.gatech.edu/~turk/bio_sim/articles/laplacian_growth.pdf) (PDF) by Theodore Kim et al. Academic review connecting DLA, dielectric breakdown, and viscous fingering as a single family of processes
+* [Discrete Differential Geometry: An Applied Introduction](https://brickisland.net/ddg-web/) by Keenan Crane - course notes covering the discrete Laplacian as "the Swiss army knife of geometry processing," including mesh smoothing
+
+_Videos:_
+* [Harmonic Functions](https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives/laplacian/v/harmonic-functions) from Khan Academy - short, visual introduction to the Laplacian and harmonic functions
+
+_Code projects:_
+* [geometry-processing-smoothing](https://github.com/alecjacobson/geometry-processing-smoothing) by Alec Jacobson - reference implementation of Laplacian mesh smoothing from a geometry processing course
+
+---
+
 ### Laplace transform
 
-Mathematical transformation that converts a function of time into a function of complex frequency, transforming differential equations into algebraic equations that are often easier to solve. Named after Pierre-Simon Laplace, this tool is fundamental in engineering, physics, and control theory for analyzing systems and solving differential equations that govern dynamic behavior.
+> [!NOTE]
+> Related to [Laplace equation](#laplace-equation)
 
-The Laplace transform takes a time-domain function $f(t)$ and produces a frequency-domain function $F(s)$. This transformation is particularly useful because it converts differentiation operations in the time domain into multiplication in the frequency domain, and convolution becomes multiplication - operations that are algebraically simpler to handle. The inverse Laplace transform then converts the solution back to the time domain.
+Mathematical transform that converts a function of time into a function of complex frequency, turning differential equations into algebraic ones that are often easier to solve. It is widely used in engineering, physics, and control theory to analyze dynamic systems and their stability, resonance, and response.
 
-In the context of morphogenesis and dynamic systems, Laplace transforms are used to analyze stability, resonance, and response characteristics of systems. For example, in modeling growth dynamics, signal propagation, or feedback-driven development, the Laplace transform helps determine whether a system will remain stable, oscillate, or diverge under given conditions.
+The Laplace transform maps a time-domain function $f(t)$ to a frequency-domain function $F(s)$. In this form, differentiation becomes multiplication and convolution becomes multiplication, making many system problems easier to analyze. Its inverse recovers the time-domain solution for applications such as growth dynamics, signal propagation, and feedback-driven behavior.
 
 _Definition:_
 
@@ -1241,6 +1290,9 @@ _Notable Tools:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/minimal-surface.jpg?raw=true" width="300" align="right" title="Wikipedia - Minimal surface">
 
 ### Minimal surface
+
+> [!NOTE]
+> Related to [Laplace equation](#laplace-equation).
 
 A [minimal surface](https://en.wikipedia.org/wiki/Minimal_surface) is a surface that locally minimizes area, which means it settles into the smallest possible shape for a given boundary while keeping its mean curvature equal to zero. Minimal surfaces show up in architecture, material design, geometry, and optimization, and they are useful whenever you want a smooth surface or membrane that uses as little area as possible.
 
@@ -1521,7 +1573,7 @@ _Code projects:_
 ### Saffman-Taylor instability
 
 > [!NOTE]
-> Related to [DBM](#dielectric-breakdown-model-dbm), [DLA](#diffusion-limited-aggregation-dla), [differential growth](#differential-growth), [reaction-diffusion](#reaction-diffusion), [fluid simulation](#fluid-simulation), [Hele-Shaw cells](#hele-shaw-cell)
+> Related to [DBM](#dielectric-breakdown-model-dbm), [DLA](#diffusion-limited-aggregation-dla), [differential growth](#differential-growth), [reaction-diffusion](#reaction-diffusion), [fluid simulation](#fluid-simulation), [Hele-Shaw cells](#hele-shaw-cell), and [Laplace equation](#laplace-equation)
 
 Also known as viscous fingering, this is a fluid dynamics instability that occurs at the interface between two fluids of different viscosity when a less viscous fluid is pushed into a more viscous one - inside a narrow gap such as a [Hele-Shaw cell](#hele-shaw-cell), or through a porous medium. Rather than advancing as a flat front, the interface spontaneously breaks up into branching, finger-like intrusions.
 
@@ -2199,6 +2251,9 @@ _Videos:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/fluid-simulation-1.jpg?raw=true" width="300" align="right" title="Karl Sims - Flow Field Tutorial"></a>
 
 ### Fluid simulation
+
+> [!NOTE]
+> Related to [Laplace equation](#laplace-equation) and [Saffman–Taylor instability](#saffmantaylor-instability).
 
 Simulates the highly complex and dynamic nature of flows in fluid volumes using computationally-efficient implementations of the [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations). Can be thought of as a 2D or 3D flow field that is constantly changing based on the velocity, viscocity, and density of the fluid at each point in space and its surrounding area. This flow field is made visible through the use of digital "dyes" (usually particles) that get distributed, diffused, sheared, and blended through the system by the flow forces.
 
