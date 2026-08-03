@@ -89,6 +89,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
             <ul>
               <li><a href="#agent-based-modelling">Agent-based modelling</a></li>
               <li><a href="#boids">Boids</a></li>
+              <li><a href="#cloth-simulation">Cloth simulation</a></li>
               <li><a href="#collision-detection">Collision detection</a></li>
               <li><a href="#constructive-solid-geometry-csg">Constructive solid geometry (CSG)</a></li>
               <li><a href="#dithering">Dithering</a></li>
@@ -1812,6 +1813,61 @@ _Articles:_
 _Code projects:_
 * [csg.js](https://github.com/evanw/csg.js/) (JavaScript) by Evan Wallace
 * [CGAL 4.14- 3D Boolean Operations on Nef Polyhedra](https://doc.cgal.org/latest/Nef_3/index.html) (C++)
+
+---
+
+<a href="https://www.isabelzhang.net/projects/cs184_proj4/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/cloth-simulation.jpg?raw=true" width="300" align="right" title="Isabel Zhang - Project 4: Cloth Simulator"></a>
+
+### Cloth simulation
+
+> [!NOTE]
+> Related to [verlet physics](#verlet-physics), [particle systems](#particle-system), and [physics engines](#physics-engine).
+
+_Image credit: Isabel Zhang - [Project 4: Cloth Simulator](https://www.isabelzhang.net/projects/cs184_proj4/)
+
+Real-time simulation of cloth dynamics - how fabric bends, stretches, folds, and interacts with collisions and external forces like wind and gravity. Most cloth solvers model cloth as a mesh of particles connected by distance constraints (springs), typically using [Verlet integration](#verlet-physics) or [Position Based Dynamics](#verlet-physics) for stability and speed. The mesh deforms and settles as constraint-based solvers iteratively push connected particles toward their rest distances, while collisions are handled by detecting and pushing cloth away from obstacles.
+
+Cloth simulation is essential for character animation, VFX, and any scenario requiring realistic fabric behavior without pre-baked animation. It scales from interactive real-time performance in games to high-quality offline rendering in film and animation.
+
+_Algorithm at a glance:_
+
+_\* indicates a potential simulation parameter_
+
+1. Create a mesh of particles (one per vertex), each with mass\*, position, and velocity.
+2. Connect neighboring particles with distance constraints (structural, shear, and optionally bend constraints\*) representing fabric stiffness.
+3. Each frame, apply forces\* (gravity, wind, damping) to all particles.
+4. Update particle positions using [Verlet integration](#verlet-physics) or similar.
+5. Repeatedly satisfy constraints: for each constraint, if the distance between two particles deviates from the rest length, nudge them toward the target distance.
+6. Optionally, check each constraint against a breaking threshold\* (e.g., how much it can stretch before tearing); if exceeded, remove the constraint to simulate ripping or tearing.
+7. Detect collisions with rigid bodies and other geometry, and reposition particles to prevent penetration.
+8. Repeat until the cloth settles or the simulation ends.
+
+_Key terms:_
+* Structural constraint - distance constraint along the fabric's grid edges, prevents stretching.
+* Shear constraint - diagonal distance constraint, prevents skewing and distortion.
+* Bend constraint - constraint between particles separated by one edge, prevents unrealistic folding.
+* Damping - friction-like force that slows particle motion over time, helps cloth settle faster.
+* Self-collision - cloth colliding with itself; necessary for realistic folding and wrapping.
+* Constraint breaking / tearing - removal of constraints when they exceed a strain threshold\*, allowing cloth to rip and tear when stretched too far; can also be triggered by collision impact.
+
+_Articles:_
+* [Cloth Modeling and Simulation: A Literature Survey](https://link.springer.com/chapter/10.1007/978-3-642-21799-9_35) in Springer's Computer Graphics and Geometric Modeling
+* [Simulation of Clothing with Folds and Wrinkles](https://www.cs.ubc.ca/~rbridson/docs/cloth2003.pdf) (PDF) by R. Bridson, S. Marino, and R. Fedkiw - foundational paper introducing a physically-correct bending model and wrinkle pre-shaping
+* [Robust Treatment of Collisions, Contact and Friction for Cloth Animation](https://physbam.stanford.edu/~fedkiw/papers/stanford2002-01.pdf) (PDF) by R. Bridson, R. Fedkiw, and J. Anderson - seminal paper on collision handling for cloth
+* [Fast Simulation of Cloth Tearing](https://www.researchgate.net/publication/264457835_Fast_Simulation_of_Cloth_Tearing) - techniques for efficiently simulating constraint breaking and mesh splitting during cloth tearing
+* [Simulation of Tearing Cloth with Frayed Edges](https://www.researchgate.net/publication/220505979_Simulation_of_Tearing_Cloth_with_Frayed_Edges) - methods for realistic fraying and edge detail in torn cloth
+* [Breaking and Tearing](https://www.sidefx.com/docs/houdini/vellum/breaking_tearing.html) - Houdini Vellum documentation on implementing constraint breaking and artistic control over tearing guides
+
+_Videos:_
+* [Coding Challenge #63: Texturing and Cloth Simulation](https://thecodingtrain.com/challenges/63-texturing-cloth-simulation/) by Daniel Shiffman (The Coding Train) - combines toxiclibs Verlet physics with texture rendering for a waving flag
+
+_Notable tools:_
+* [Obi Cloth](https://assetstore.unity.com/packages/tools/physics/obi-cloth-81333) (Unity asset) by Virtual Method - high-quality cloth simulation with character clothing, two-way rigidbody interaction, and aerodynamics
+* [Vellum](https://www.sidefx.com/docs/houdini/vellum/overview.html) (Houdini solver) by SideFX - unified cloth/hair/grain solver using Position Based Dynamics
+
+_Code projects:_
+* [Cloth Simulation](https://github.com/aryamancodes/Rope-and-Cloth-Simulation) (p5.js) by Aryaman - interactive tearable cloth demo with wind and collisions
 
 ---
 
