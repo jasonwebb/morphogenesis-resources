@@ -2444,7 +2444,7 @@ _Videos:_
 ---
 
 <a href="https://www.evilmadscientist.com/2012/stipplegen-weighted-voronoi-stippling-and-tsp-paths-in-processing" target="_blank">
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/weighted-voronoi-stippling?raw=true" width="300" align="right" title="Windell Oskay (EMSL)  - StippleGen: Weighted Voronoi stippling and TSP paths in Processing"></a>
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/weighted-voronoi-stippling.jpg?raw=true" width="300" align="right" title="Windell Oskay (EMSL)  - StippleGen: Weighted Voronoi stippling and TSP paths in Processing"></a>
 
 ### Weighted Voronoi stippling
 
