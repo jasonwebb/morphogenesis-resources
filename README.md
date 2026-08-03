@@ -107,6 +107,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#spatial-index">Spatial index</a></li>
               <li><a href="#vectors">Vectors</a></li>
               <li><a href="#wave-function-collapse-wfc">Wave Function Collapse (WFC)</a></li>
+              <li><a href="#weighted-voronoi-stippling">Weighted Voronoi stippling</a></li>
             </ul>
           </p>
         </details>
@@ -2439,6 +2440,57 @@ _Code projects:_
 
 _Videos:_
 * [WaveFunctionCollapse Supercharged with PDG for Level Generation](https://vimeo.com/400993662) talk by Paul Ambrosiussen at HOUDINI HIVE GAMEDEV
+
+---
+
+<a href="https://www.evilmadscientist.com/2012/stipplegen-weighted-voronoi-stippling-and-tsp-paths-in-processing" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/weighted-voronoi-stippling?raw=true" width="300" align="right" title="Windell Oskay (EMSL)  - StippleGen: Weighted Voronoi stippling and TSP paths in Processing"></a>
+
+### Weighted Voronoi stippling
+
+> [!NOTE]
+> Related to [Delaunay triangulation and Voronoi diagrams](#delaunay-triangulation-and-voronoi-diagrams), [dithering](#dithering), and [Lloyd's relaxation](#lloyds-relaxation).
+
+_Image credit: Windell Oskay (Evil Mad Scientist Laboratories) - [StippleGen: Weighted Voronoi stippling and TSP paths in Processing](https://www.evilmadscientist.com/2012/stipplegen-weighted-voronoi-stippling-and-tsp-paths-in-processing)._
+
+Weighted variant of [Lloyd's relaxation](#lloyds-relaxation) that uses the darkness (or density) of an underlying image to bias where points settle, producing a stippled illustration made of dots whose size and/or spacing follows the image's tone - more and/or larger dots in darker regions, fewer/smaller dots in lighter ones. Because points are still spread evenly within their local Voronoi region even as they respect image density, the result reads as a convincingly hand-drawn stipple illustration rather than a mechanical dither pattern.
+
+Frequently paired with [TSP](#travelling-salesman-problem-tsp) path-finding to connect the stippled points into a single continuous line, making it a popular technique for pen plotter art.
+
+_Algorithm at a glance:_
+1. Scatter an initial set of points across the image, with more points landing in darker regions (e.g. via rejection sampling against pixel brightness).
+2. Compute the [Voronoi diagram](#delaunay-triangulation-and-voronoi-diagrams) for the current points.
+3. For each Voronoi cell, compute its centroid using the underlying image as a density function - darker pixels pull the centroid more strongly - rather than treating every pixel in the cell equally, as in standard Lloyd's relaxation.
+4. Move each point to its cell's weighted centroid.
+5. Repeat for some number of iterations\*, or until points stop moving significantly.
+6. Render each final point as a dot, optionally sized or oriented based on local density.
+
+_\* indicates a potential simulation parameter_
+
+_Key terms:_
+* Density function - the underlying image data used to weight where points are pulled during relaxation; typically derived from pixel brightness/darkness.
+* Weighted centroid - center of mass of a Voronoi cell computed using the density function, as opposed to the plain geometric centroid used in standard [Lloyd's relaxation](#lloyds-relaxation).
+
+_Articles:_
+* [Weighted Voronoi Stippling](https://www.cs.ubc.ca/labs/imager/tr/2002/secord2002b/secord.2002b.pdf) (PDF) by Adrian Secord. The original 2002 paper.
+* [Weighted Voronoi Stippling](https://github.com/ReScience-Archives/Rougier-2017) by Nicolas Rougier - a peer-reviewed reproduction of Secord's algorithm published in ReScience (2017).
+* [Creating Traveling Salesman Art With Weighted Voronoi Stippling](https://jxmo.io/posts/traveling-salesman-art) by Jack Morris
+
+_Videos:_
+* [Coding Challenge #181: Weighted Voronoi Stippling](https://thecodingtrain.com/challenges/181-image-stippling/) by Daniel Shiffman (p5.js and d3.js)
+
+_Notable software:_
+* [StippleGen](https://github.com/evil-mad/stipplegen) by Evil Mad Scientist Laboratories - Processing-based tool that generates weighted Voronoi stipple drawings, including [TSP path](#travelling-salesman-problem-tsp) art.
+* [Voronoi Stippling Art Generator](https://www.cyber-consult.org/labs/dots/) by Joe Shenouda - browser-based tool for turning any photo into a stipple drawing
+
+_Creative projects:_
+
+_Code projects:_
+* [Swingline](https://www.mattkeeter.com/projects/swingline/) by Matt Keeter - C implementation that runs up to 10-20x faster than StippleGen ([Github repo](https://github.com/mkeeter/Swingline))
+* [Voronoi Stippling](https://observablehq.com/@mbostock/voronoi-stippling) by Mike Bostock on Observable (JavaScript and D3.js)
+* [weighted-voronoi-stippling](https://github.com/amaurs/weighted-voronoi-stippling) by Amaury Sanchez (JavaScript) - straightforward reference implementation of Secord's algorithm
+* [weighted-voronoi-stippling](https://github.com/jtompuri/weighted-voronoi-stippling) by Juha Tompuri (Python) - high-performance, Numba-accelerated implementation that exports PNG and TSP tour files
+* [Stippling and TSP art](http://dahtah.github.io/imager/stippling.html) by Simon Barthelmé - tutorial with runnable code using the `imager` R package
 
 <br>
 
