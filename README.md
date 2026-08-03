@@ -28,6 +28,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#primordial-particle-system">Primordial Particle System</a></li>
               <li><a href="#reaction-diffusion">Reaction-diffusion</a></li>
               <li><a href="#space-colonization">Space colonization</a></li>
+              <li><a href="#spinodal-decomposition">Spinodal decomposition</a></li>
             </ul>
           </p>
         </details>
@@ -574,6 +575,42 @@ _Code projects:_
 
 _Videos:_
 * [Coding Challenge #17: Fractal Trees - Space Colonization](https://www.youtube.com/watch?v=kKT0v3qhIQY) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_017_SpaceColonizer) with source code for p5.js and Processing)
+
+---
+<a href="https://en.wikipedia.org/wiki/Spinodal_decomposition" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/spinodal-decomposition.gif?raw=true" width="300" align="right" title="Wikipedia - Spinodal decomposition"></a>
+
+### Spinodal decomposition
+
+> [!NOTE]
+> Related to [reaction-diffusion](#reaction-diffusion).
+
+Physical process by which a homogeneous mixture (a molten alloy, polymer blend, glass, etc.) spontaneously separates into two distinct phases when rapidly cooled ("quenched") into an unstable region of its phase diagram. Unlike typical nucleation-based phase separation, no discrete starting sites or thermodynamic barrier are needed - tiny composition fluctuations grow everywhere in the material simultaneously.
+
+The result is a characteristic pattern of intertwined, worm-like regions that grow and merge ("coarsen") over time while roughly maintaining the same overall proportions of each phase - visually similar to some [reaction-diffusion](#reaction-diffusion) patterns, though it arises from a different underlying process (phase-separation thermodynamics rather than a chemical feed/kill reaction). It's commonly modeled with the [Cahn-Hilliard equation](https://en.wikipedia.org/wiki/Cahn%E2%80%93Hilliard_equation), a PDE describing how the concentration of the two phases diffuses and separates over time.
+
+_Algorithm at a glance:_
+
+_\* indicates a potential simulation parameter_
+
+1. Fill a grid with random noise\* representing the initial, unstable composition of the mixture.
+2. At each step, for every cell, calculate how its concentration should change based on two competing effects: diffusion (smoothing out differences with its neighbors) and phase separation (pushing its value away from the mixed middle and toward one pure phase or the other).
+3. Update every cell by combining these two effects, scaled by a diffusion rate\* and a phase-separation strength\*.
+4. Repeat, letting separated regions grow and merge (coarsen) over time.
+
+_Key terms:_
+* [Cahn-Hilliard equation](https://en.wikipedia.org/wiki/Cahn%E2%80%93Hilliard_equation) - the PDE most commonly used to model spinodal decomposition.
+* Quench - rapid cooling of a mixture into an unstable region of its phase diagram, triggering decomposition.
+* Coarsening - the slow, ongoing growth and merging of separated regions over time.
+* Nucleation - the barrier-driven alternative to spinodal decomposition, where phase separation starts at discrete sites rather than everywhere at once.
+
+_Articles:_
+* [Spinodal decomposition](https://en.wikipedia.org/wiki/Spinodal_decomposition) on Wikipedia
+* [Cahn-Hilliard equation](https://en.wikipedia.org/wiki/Cahn%E2%80%93Hilliard_equation) on Wikipedia
+* [Spinodal decomposition](https://www.reddit.com/r/generative/comments/g3spa0/spinodal_decomposition/) generative art post on r/generative - the post that inspired [this topic's request](https://github.com/jasonwebb/morphogenesis-resources/issues/18)
+
+_Code projects:_
+* [Spinodal-Decomposition](https://github.com/nsbalbi/Spinodal-Decomposition) (MATLAB) by Nicholas Balbi - simulates and renders the Cahn-Hilliard equation
 
 <br>
 
