@@ -615,7 +615,7 @@ _\* indicates a potential simulation parameter_
 
 _Example:_
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/l-system-example-1.jpg?raw=true" width="300" align="right">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/l-systems-example-1.jpg?raw=true" width="300" align="right">
 
 Axiom: `F`
 Rules: `F → F[+F]F[-F]F`
