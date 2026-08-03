@@ -1164,7 +1164,7 @@ _Videos:_
 
 ### Percolation theory
 
-Mathematical framework that studies the behavior of connected clusters in random networks. At its core, percolation explores the threshold at which a system transitions from isolated fragments to a connected network spanning the entire space—a critical phenomenon with applications in material science, epidemiology, network analysis, and growth simulation.
+Mathematical framework that studies the behavior of connected clusters in random networks. At its core, percolation explores the threshold at which a system transitions from isolated fragments to a connected network spanning the entire space - a critical phenomenon with applications in material science, epidemiology, network analysis, and growth simulation.
 
 The classical model places sites or bonds randomly on a grid, each with some occupation probability $p$. As $p$ increases, small disconnected clusters begin to merge and grow. At a critical threshold $p_c$ (the _percolation threshold_), a “giant component” suddenly emerges that connects from one side of the system to the opposite side. Above the threshold, clusters merge rapidly; below it, they remain fragmented. This sharp transition is a classic example of a phase transition in physics.
 
@@ -2307,11 +2307,36 @@ _Notable implementations:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/wfc-1.png?raw=true" width="300" align="right" title="Robert Heaton - The Wavefunction Collapse Algorithm explained very clearly"></a>
 
 ### Wave Function Collapse (WFC)
-Method of procedurally generating textures and tilemaps that are similar to a single source image using ideas from quantum mechanics.
 
-```
-TODO - add description of algorithm
-```
+Method of procedurally generating textures and tilemaps that are similar to a single source image using ideas from quantum mechanics. Originally developed by Maxim Gumin, WFC learns local patterns and constraints from a source image, then iteratively generates new content by "collapsing" possibilities while respecting learned rules. The name references quantum superposition (many possible states simultaneously) and measurement (collapsing to a single outcome).
+
+The algorithm works in two main steps: first, _extract patterns_ by scanning the source image and recording which local arrangements of pixels (or tiles) occur; second, _generate output_ by starting with all possibilities everywhere, then repeatedly choosing a location with minimum entropy (fewest valid options) and randomly collapsing it to one valid choice, then propagating constraints to neighbors to ensure the result remains compatible.
+
+The key insight is that local compatibility - enforcing that neighboring regions respect learned patterns - naturally produces globally coherent, recognizable results even though the algorithm makes only local decisions. This approach produces remarkably human-like outputs and has become popular for game level design, texture synthesis, and procedural content generation.
+
+_Algorithm outline:_
+
+_\* indicates a potential simulation parameter_
+
+1. Scan the source image to extract all $N \times N$\* local patterns (e.g., all 3×3 neighborhoods of pixels or tiles).
+2. Initialize the output grid with all patterns marked as possible at every location.
+3. In each iteration:
+   1. Find the location with minimum entropy (fewest valid patterns remaining).
+   2. If no location remains, generation is complete.
+   3. If a location has zero valid patterns (contradiction), backtrack or restart.
+   4. Randomly select one valid pattern from that location and collapse it (remove all other patterns).
+   5. Propagate constraints: for each neighbor, remove any patterns that would be incompatible with the collapsed pattern (based on learned adjacencies).
+4. Repeat until the entire grid is determined.
+
+_Key terms:_
+
+* Pattern extraction - scanning the source image to find all valid local neighborhoods.
+* Entropy - in this context, the number of valid choices remaining at a location; minimum entropy heuristic prioritizes constrained areas.
+* Wave - the superposition of all possible patterns at each location before collapse.
+* Collapse - randomly choosing one pattern and removing all alternatives.
+* Constraint propagation - updating neighbors to eliminate patterns incompatible with a collapsed choice; ensures global coherence.
+* Contradiction / backtracking - if all patterns are eliminated at some location, the algorithm has failed and must restart or undo recent decisions.
+* Tile-based vs. pixel-based - the algorithm works on discrete units (tiles for maps, pixels for images) and can be adapted to 2D or 3D.
 
 _Articles:_
 * Original [WaveFunctionCollapse Github repo](https://github.com/mxgmn/WaveFunctionCollapse) by Maxim Gumin (mxgmn)
