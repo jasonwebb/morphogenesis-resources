@@ -1260,19 +1260,30 @@ _Videos:_
 
 ---
 
+<a href="https://www.flowvis.org/2014/09/12/air-pulled-into-ferrofluid-forms-the-saffman-taylor-fingering-instability-as-the-plates-of-a-hele-shaw-cell-are-separated/" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/saffman-taylor-instability.jpg?raw=true" width="300" align="right" title="Vigneshwaran Selvaraju et al - Air pulled into ferrofluid forms the Saffman-Taylor fingering instability as the plates of a Hele-Shaw cell are separated"></a>
+
 ### Saffman–Taylor instability
 
 > [!NOTE]
-> Related to the [Hele-Shaw cell](#hele-shaw-cell) experiment.
+> Related to [DBM](#dielectric-breakdown-model-dbm), [DLA](#diffusion-limited-aggregation-dla), [differential growth](#differential-growth), [reaction-diffusion](#reaction-diffusion), [fluid simulation](#fluid-simulation), [Hele-Shaw cells](#hele-shaw-cell)
 
-Also known as viscous fingering.
+Also known as viscous fingering, this is a fluid dynamics instability that occurs at the interface between two fluids of different viscosity when a less viscous fluid is pushed into a more viscous one - inside a narrow gap such as a [Hele-Shaw cell](#hele-shaw-cell), or through a porous medium. Rather than advancing as a flat front, the interface spontaneously breaks up into branching, finger-like intrusions.
 
-```
-TODO
-```
+The instability is a positive feedback loop: any small bump that forms on the interface sits in a region of lower flow resistance, so it advances faster than its surroundings, growing further ahead and widening into a finger; the same feedback then acts along the flanks of that finger, splitting its tip and producing a branching structure reminiscent of [diffusion-limited aggregation](#diffusion-limited-aggregation-dla) and the [dielectric breakdown model](#dielectric-breakdown-model-dbm). Interfacial tension between the two fluids counteracts this, damping out short-wavelength wrinkles and setting a characteristic finger width - the balance between the two effects selects the fairly regular finger spacing seen in real experiments.
 
-_Articless:_
+_Key terms:_
+* Viscous fingering - the common, descriptive name for the same phenomenon.
+* Mobility ratio - ratio between the two fluids' viscosities (or, in a porous medium, permeabilities); the interface is unstable only when the injected fluid is less viscous than the fluid it displaces.
+* [Hele-Shaw flow](https://en.wikipedia.org/wiki/Hele-Shaw_flow) - the mathematical description of flow through the thin gap of a [Hele-Shaw cell](#hele-shaw-cell), from which the instability was originally derived.
+* Interfacial (surface) tension - force resisting curvature of the interface; suppresses high-frequency wrinkles and sets a preferred finger width/wavelength.
+* Tip-splitting - the process by which a growing finger becomes unstable at its own tip and divides into two smaller fingers, driving the fractal branching seen in the radial configuration.
+* Channel vs. radial geometry - the two most common experimental setups: injection along a straight channel typically produces one dominant "Saffman–Taylor finger," while injection from a central point (radial) produces repeated tip-splitting into many fingers.
+
+_Articles:_
 * [Saffman–Taylor instability](https://en.wikipedia.org/wiki/Saffman%E2%80%93Taylor_instability) on Wikipedia
+* [The penetration of a fluid into a porous medium or Hele-Shaw cell containing a more viscous liquid](https://doi.org/10.1098/rspa.1958.0085) (1958) by Philip Saffman and G. I. Taylor. The original paper.
+* [Viscous Fingering in Porous Media](https://doi.org/10.1146/annurev.fl.19.010187.001415) (1987) by G. M. Homsy. Widely-cited review of the phenomenon.
 
 ---
 
