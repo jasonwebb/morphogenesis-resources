@@ -637,7 +637,7 @@ _Videos:_
 * [L-System Creature Evolution](https://www.youtube.com/watch?v=knmNML7Q8Fw) by Lenia
 * [8.5: L-Systems](https://www.youtube.com/watch?v=f6ra024-ASY) from Daniel Shiffman's Nature of Code series
 
-_Notabld tools and libraries:_
+_Notable tools and libraries:_
 
 * Blender
   * [Sapling Tree Gen](https://docs.blender.org/manual/en/4.1/addons/add_curve/sapling.html) - add-on for procedural L-system-based tree generation
