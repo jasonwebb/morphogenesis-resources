@@ -51,6 +51,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#inverse-and-forward-kinematics">Inverse and forward kinematics</a></li>
               <li><a href="#laplace-transform">Laplace transform</a></li>
               <li><a href="#lissajous-curves">Lissajous curves</a></li>
+              <li><a href="#mass-spring-system">Mass-spring systems</a></li>
               <li><a href="#medial-axis">Medial axis</a></li>
               <li><a href="#minimal-surface">Minimal surface</a></li>
               <li><a href="#packing-problems">Packing problems</a></li>
@@ -107,6 +108,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#recursion">Recursion</a></li>
               <li><a href="#shaders">Shaders</a></li>
               <li><a href="#signed-distance-function-sdfs">Signed distance functions (SDFs)</a></li>
+              <li><a href="#soft-body-physics">Soft-body physics</a></li>
               <li><a href="#spatial-index">Spatial index</a></li>
               <li><a href="#vectors">Vectors</a></li>
               <li><a href="#vdbs">VDBs</a></li>
@@ -1115,6 +1117,55 @@ _Videos:_
 
 ---
 
+<a href="https://en.wikipedia.org/wiki/Spring_system" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/mass-spring-system.jpg?raw=true" width="300" align="right" title="Wikipedia - Spring system"></a>
+
+### Mass-spring system
+
+> [!NOTE]
+> Related to [soft-body physics](#soft-body-physics), [cloth simulation](#cloth-simulation), [Verlet physics](#verlet-physics), and [physics engines](#physics-engine).
+
+A mass-spring system is a general mathematical model for deformable bodies: a graph of point masses connected by springs that obey [Hooke's law](https://en.wikipedia.org/wiki/Hooke%27s_law) (restoring force proportional to displacement from a rest length). It's one of the oldest and most widely reused abstractions in computational physics, showing up not just in computer graphics but in structural engineering (truss analysis), molecular dynamics (bond modeling), and biomechanics (tissue and muscle models). Its appeal is that a small number of local rules - distance constraints and simple forces - can produce believable global deformation without solving a full continuum mechanics problem.
+
+In graphics and simulation, mass-spring systems are the conceptual backbone of [cloth simulation](#cloth-simulation), rope/hair simulation, and soft-body deformation, and are typically stepped forward with [Verlet integration](#verlet-physics) for stability. Real-time applications commonly layer three kinds of springs to control different deformation modes: structural springs (resist stretching), shear springs (resist skewing), and bend springs (resist folding).
+
+_Algorithm at a glance:_
+
+_\* indicates a potential simulation parameter_
+
+1. Represent the body as a graph of point masses, each with position, velocity, and mass\*.
+2. Connect masses with springs, each with a rest length and stiffness\*.
+3. For each spring, compute the restoring force: `F = stiffness × (current_distance - rest_length)`.
+4. Add a damping force proportional to relative velocity\*: `F_damping = damping × relative_velocity`.
+5. Sum spring, damping, and external forces (gravity, wind, etc) on each mass.
+6. Integrate mass positions forward, commonly with [Verlet integration](#verlet-physics).
+7. Detect and resolve collisions with rigid bodies and self-collisions.
+8. Repeat until the system settles or the simulation ends.
+
+_Key terms:_
+* [Hooke's law](https://en.wikipedia.org/wiki/Hooke%27s_law) - the restoring force in a spring is proportional to its displacement from rest length, scaled by a stiffness constant.
+* Rest length - the preferred distance between two connected masses; springs pull toward this distance.
+* Stiffness (spring constant) - how strongly a spring resists stretching; higher values resist deformation more.
+* Damping - dissipative force proportional to velocity; prevents infinite oscillation and lets systems settle.
+* Structural constraints - springs between nearest neighbors; define topology and resist stretching.
+* Shear constraints - diagonal springs between diagonal neighbors; resist skewing.
+* Bend constraints - springs between masses separated by one neighbor; resist folding/creasing.
+
+_Articles:_
+* [Mass-Spring Model](https://interactivecomputergraphics.github.io/physics-simulation/examples/spring_plot.html) - interactive visualization of spring-mass dynamics
+* [Advanced Character Physics](https://www.gamedev.net/tutorials/programming/math-and-physics/advanced-character-physics-r3293/) by Thomas Jakobsen - the classic paper connecting Verlet integration to mass-spring constraint systems
+* [Real Time Simulation of Soft Objects Using Mass-Spring System](https://www.cs.rpi.edu/~cutler/classes/advancedgraphics/S17/final_projects/haoxin_brandon.pdf) (PDF) - academic paper on soft-body simulation
+
+_Code projects:_
+* [Rope Simulation (CS184 Discussion)](https://github.com/cal-cs184/rope_simulation) - basic rope/cloth mass-spring implementation
+* [Cloth Simulation](https://andrewdcampbell.github.io/clothsim/) - interactive cloth simulator demonstrating mass-spring constraints
+* [Mass-Spring System for Soft-Body Simulation](https://github.com/YukunXia/Mass-Spring-System-for-Soft-Body-Simulation) - 3D soft-body physics implementation
+
+_Videos:_
+* [Coding Challenge #26: Spring Physics](https://www.youtube.com/watch?v=4hIUAoB2VVE) by The Coding Train - implementing mass-spring systems in p5.js
+
+---
+
 <a href="https://www.researchgate.net/figure/Medial-Axis-Transform_fig25_296196212" target="_blank">
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/medial-axis-1.jpg?raw=true" width="300" align="right" title="Ashish A Gupta - Figure 3 from Writer Dependent Handwriting Synthesis"></a>
 
@@ -1825,7 +1876,7 @@ _Code projects:_
 > [!NOTE]
 > Related to [verlet physics](#verlet-physics), [particle systems](#particle-system), and [physics engines](#physics-engine).
 
-_Image credit: Isabel Zhang - [Project 4: Cloth Simulator](https://www.isabelzhang.net/projects/cs184_proj4/)
+_Image credit: Isabel Zhang - [Project 4: Cloth Simulator](https://www.isabelzhang.net/projects/cs184_proj4/)_
 
 Real-time simulation of cloth dynamics - how fabric bends, stretches, folds, and interacts with collisions and external forces like wind and gravity. Most cloth solvers model cloth as a mesh of particles connected by distance constraints (springs), typically using [Verlet integration](#verlet-physics) or [Position Based Dynamics](#verlet-physics) for stability and speed. The mesh deforms and settles as constraint-based solvers iteratively push connected particles toward their rest distances, while collisions are handled by detecting and pushing cloth away from obstacles.
 
@@ -2424,6 +2475,74 @@ _Notable open-source libraries:_
 
 _Videos:_
 * [How to Create Content with Signed Distance Functions by Johann Korndörfer](https://www.youtube.com/watch?v=s8nFqwOho-s)
+
+---
+
+<a href="https://manual.coppeliarobotics.com/en/physicsEngineDifferences.htm" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/soft-body-physics.jpg?raw=true" width="300" align="right" title="CoppeliaSim docs - Physics engine differences"></a>
+
+### Soft-body physics
+
+> [!NOTE]
+> Related to [mass-spring systems](#mass-spring-system), [cloth simulation](#cloth-simulation), [Verlet physics](#verlet-physics), and [physics engines](#physics-engine).
+
+_Image credit: [CoppeliaSim docs - Physics engine differences](https://manual.coppeliarobotics.com/en/physicsEngineDifferences.htm)_
+
+Soft-body physics is the applied, real-time counterpart to [mass-spring systems](#mass-spring-systems): simulating volumetric objects - rubber, flesh, jelly, foam, organs - that deform under force and recover their shape rather than staying rigid. Unlike [cloth simulation](#cloth-simulation), which models thin 2D sheets, soft-body solvers operate on 3D volumes (tetrahedral meshes, voxel grids, or particle clouds) and must resist compression as well as stretching, giving deformable objects a sense of internal volume and squishiness.
+
+Several families of techniques compete for this problem, each trading accuracy for speed differently:
+* Mass-spring - the volumetric extension of [mass-spring systems](#mass-spring-systems): tetrahedral or lattice structures of point masses connected by springs. Fast and simple, but prone to visible artifacts (bulging, asymmetric stretching) since spring networks don't perfectly capture rotational/volumetric behavior.
+* [Finite Element Method (FEM)](https://en.wikipedia.org/wiki/Finite_element_method) - discretizes the body into tetrahedral elements and solves continuum-mechanics stress/strain equations directly, giving physically accurate results at higher computational cost. Common in engineering, biomechanics, and high-end VFX.
+* Shape matching - a meshless technique that computes a "goal" rigid/deformed shape for a cluster of particles each frame and pulls particles toward it; cheap, stable, and popular in games.
+* Position Based Dynamics (PBD) / XPBD - treats constraints (distance, volume, bending) as positional corrections solved iteratively rather than forces, which is unconditionally stable and easy to combine with cloth, rigid bodies, and fluids in one solver. XPBD adds proper stiffness independent of iteration count and time step.
+
+_Key terms:_
+* Tetrahedral mesh - the volumetric equivalent of a triangle mesh; most FEM and volumetric mass-spring solvers discretize a soft body into tetrahedra.
+* Volume constraint - a constraint that resists compression/expansion of a tetrahedron or cell, preventing unrealistic "deflating" under stress.
+* Stress and strain - core FEM quantities describing internal forces and deformation, related through a material's stiffness (its constitutive model).
+* Shape matching - fitting a rigid or affine transform to a rest-shape point cluster each frame, then pulling particles toward the transformed goal positions.
+* Corotational formulation - a technique used in FEM/mass-spring elasticity models to separate rotation from strain, avoiding ghost forces when elements rotate.
+
+_Articles:_
+* [Soft-body dynamics](https://en.wikipedia.org/wiki/Soft-body_dynamics) on Wikipedia
+* [Meshless Deformations Based on Shape Matching](https://matthias-research.github.io/pages/publications/MeshlessDeformations_SIG05.pdf) (PDF) by Müller, Heidelberger, Teschner, and Gross - foundational shape-matching paper
+* [Position Based Dynamics](https://matthias-research.github.io/pages/publications/posBasedDyn.pdf) (PDF) by Müller, Heidelberger, Hennix, and Ratcliff
+* [XPBD: Position-Based Simulation of Compliant Constrained Dynamics](https://matthias-research.github.io/pages/publications/XPBD.pdf) (PDF) by Macklin, Müller, and Chentanez
+* [FEM Simulation of 3D Deformable Solids: A Practitioner's Guide](https://www.physicsbasedanimation.com/2012/08/15/siggraph-course-fem-simulation-of-3d-deformable-solids-a-practitioners-guide-to-theory-discretization-and-model-reduction/) - SIGGRAPH course by Sifakis and Barbič covering FEM soft-body simulation from first principles
+
+_Videos:_
+* [Coding Challenge 177: Soft Body Physics](https://thecodingtrain.com/challenges/177-soft-body-character) by Daniel Shiffman (Coding Train)
+* [Ten Minute Physics](https://www.youtube.com/c/TenMinutePhysics) by Matthias Müller - short tutorials covering shape matching, PBD, XPBD, and soft-body simulation from scratch
+* [10 - Simple and unbreakable simulation of soft bodies](https://www.youtube.com/watch?v=uCaHXkS2cUg) by Ten Minute Physics
+
+_Notable tools and libraries:_
+* [PositionBasedDynamics](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics) (C++) by Jan Bender - open-source PBD/XPBD library covering cloth, soft bodies, fluids, and rigid bodies
+* [SOFA](https://www.sofa-framework.org/) - open-source framework for real-time multi-physics simulation, widely used in biomedical soft-tissue and soft-robotics research
+* [PhysX 5](https://github.com/NVIDIA-Omniverse/PhysX) by NVIDIA - GPU-accelerated FEM-based soft body simulation, open-sourced from the former NVIDIA Flex library
+* Unity
+  * [Obi Softbody](https://obi.virtualmethodstudio.com/manual/7.0/softbodysetup.html) by Virtual Method - particle-based soft body simulation
+* Unreal
+  * [Chaos Flesh](https://dev.epicgames.com/documentation/unreal-engine/chaos-flesh-overview?lang=en-US)
+* TouchDesigner
+  * [Flex](https://docs.derivative.ca/Flex) - GPU particle solver (Nvidia Flex) for particle-based soft materials and fluids
+* Processing
+  * [toxiclibs](https://github.com/postspectacular/toxiclibs) - Verlet-based particle/spring physics library commonly used for soft-body and cloth-like simulations
+* p5.js
+  * [p5-matter](https://github.com/pzp1997/p5-matter) - wraps Matter.js's soft-body composite meshes
+  * [toxiclibs.js](https://haptic-data.com/toxiclibsjs/examples/soft-body-square) - JavaScript port of toxiclibs
+* Three.js
+  * [Ammo.js soft body volume demo](https://threejs.org/examples/physics_ammo_volume.html) (first-party) - official three.js example using the Bullet-based Ammo.js soft body solver
+* React Three Fiber
+  * [use-ammojs](https://github.com/notrabs/use-ammojs) - Ammo.js/Bullet physics hooks with soft body
+* Houdini
+  * [Vellum](https://www.sidefx.com/docs/houdini/vellum/overview.html) - unified PBD solver for cloth, hair, grains, and soft bodies
+* Blender
+  * [Soft Body](https://docs.blender.org/manual/en/latest/physics/soft_body/index.html)- built-in mass-spring-based soft body physics
+
+_Code projects:_
+* [Ten Minute Physics - Soft Bodies](https://github.com/matthias-research/pages/blob/master/tenMinutePhysics/10-softBodies.html) by Matthias Müller - self-contained XPBD soft-body demo in vanilla JavaScript
+* [ammo.js Soft Body Volume demo](https://github.com/kripken/ammo.js/blob/main/examples/webgl_demo_softbody_volume/index.html) - Bullet physics soft-body simulation ported to the web via three.js
+* [Soft Body Character](https://thecodingtrain.com/challenges/177-soft-body-character/) by The Coding Train - p5.js soft-body character built with toxiclibs.js springs and particles
 
 ---
 
