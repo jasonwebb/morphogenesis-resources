@@ -1936,11 +1936,11 @@ _Videos:_
 ### Marching cubes
 3D version of [marching squares](#marching-squares). Whereas marching _squares_ uses lines and cells to trace the contours of a 2D scalar field, marching _cubes_ uses polygons and voxels to trace the contours of a 3D scalar field, resulting in a mesh. Marching cubes can be thought of as a mesh conversion algorithm that produces meshes based on 3D scalar fields.
 
-Originally developed by William Lorensen and Harvey Cline of General Electric in 1987 (see original paper in _Articles_ section) for use in the medical imaging (MRI/CT) field, this algorithm has become widely used in many areas of computer graphics
+Originally developed by William Lorensen and Harvey Cline of General Electric in 1987 (see original paper in _Articles_ section) for use in the medical imaging (MRI/CT) field, this algorithm has become widely used in many areas of computer graphics.
 
-```
-TODO: add note on dual marching cubes
-```
+_Dual marching cubes:_
+
+A variant called [dual marching cubes](https://www.cs.rice.edu/~jwarren/papers/dmc.pdf) (PDF) reverses the role of vertices and cells: instead of placing vertices on cube edges, it places vertices at voxel centers and connects them based on neighboring voxel values. This approach can reduce polygon count, better handle ambiguous cases at isovalue boundaries, and eliminate certain artifacts that appear in standard marching cubes. Dual marching cubes is particularly useful when a cleaner, more regular mesh is desired.
 
 _Algorithm [[link](https://en.wikipedia.org/wiki/Marching_cubes#Algorithm_)]:_
 
