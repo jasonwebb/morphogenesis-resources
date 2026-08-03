@@ -2023,6 +2023,14 @@ _Videos:_
 
 _Notable implementations:_
 
+* Curl noise
+  * Houdini - [Curl Noise VOP](https://www.sidefx.com/docs/houdini/nodes/vop/curlnoise.html)
+  * Unreal Engine 5 - [Procedural content documentation](https://docs.unrealengine.com/5.0/en-US/procedural-content-generation-in-unreal-engine/)
+  * TouchDesigner - [Curl Noise in Noise MAT](https://docs.derivative.ca/Noise_MAT)
+  * GLSL - [Curl noise shader implementations](https://www.shadertoy.com/results?query=curl+noise)
+
+* Bitangent noise - more computationally efficient alternative to curl noise for generating divergence-free vector fields ([paper](https://www.ivandewoolf.com/bitangent-noise) by Ivan DeWolf)
+
 * Perlin noise
   * Processing - built-in [`noise()`](https://processing.org/reference/noise_.html) function
   * p5.js - [`noise()`](https://p5js.org/reference/#/p5/noise) function
@@ -2045,12 +2053,6 @@ _Notable implementations:_
   * TouchDesigner - [Voronoi/Worley operators](https://docs.derivative.ca/Noise_CHOP)
   * Blender - [Voronoi texture node](https://docs.blender.org/manual/en/latest/render/shader_nodes/texture/voronoi.html) in Shader Editor
   * vvvv - Voronoi nodes in [vvvv.js](https://vvvv.js.org/) and [vvvv gamma](https://vvvv.org/)
-
-* Curl noise
-  * Houdini - [Curl Noise VOP](https://www.sidefx.com/docs/houdini/nodes/vop/curlnoise.html)
-  * Unreal Engine 5 - [Procedural content documentation](https://docs.unrealengine.com/5.0/en-US/procedural-content-generation-in-unreal-engine/)
-  * TouchDesigner - [Curl Noise in Noise MAT](https://docs.derivative.ca/Noise_MAT)
-  * GLSL - [Curl noise shader implementations](https://www.shadertoy.com/results?query=curl+noise)
 
 _Code projects:_
   * [FastNoise2](https://github.com/Auburn/FastNoise2) (C++, multiple language bindings) - high-performance noise library with SIMD optimization
