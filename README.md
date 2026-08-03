@@ -1164,9 +1164,6 @@ _Videos:_
 
 ### Percolation theory
 
-> [!NOTE]
-> Closely related to the [Ising model](https://en.wikipedia.org/wiki/Ising_model) - via the Fortuin–Kasteleyn (random-cluster) representation, the Ising and Potts models can be recast as a correlated bond-percolation process, linking magnetic phase transitions to percolation thresholds.
-
 Mathematical framework that studies the behavior of connected clusters in random networks. At its core, percolation explores the threshold at which a system transitions from isolated fragments to a connected network spanning the entire space—a critical phenomenon with applications in material science, epidemiology, network analysis, and growth simulation.
 
 The classical model places sites or bonds randomly on a grid, each with some occupation probability $p$. As $p$ increases, small disconnected clusters begin to merge and grow. At a critical threshold $p_c$ (the _percolation threshold_), a “giant component” suddenly emerges that connects from one side of the system to the opposite side. Above the threshold, clusters merge rapidly; below it, they remain fragmented. This sharp transition is a classic example of a phase transition in physics.
