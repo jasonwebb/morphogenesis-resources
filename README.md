@@ -2028,9 +2028,7 @@ _Notable implementations:_
   * Unreal Engine 5 - [Procedural content documentation](https://docs.unrealengine.com/5.0/en-US/procedural-content-generation-in-unreal-engine/)
   * TouchDesigner - [Curl Noise in Noise MAT](https://docs.derivative.ca/Noise_MAT)
   * GLSL - [Curl noise shader implementations](https://www.shadertoy.com/results?query=curl+noise)
-
 * Bitangent noise - more computationally efficient alternative to curl noise for generating divergence-free vector fields ([paper](https://www.ivandewoolf.com/bitangent-noise) by Ivan DeWolf)
-
 * Perlin noise
   * Processing - built-in [`noise()`](https://processing.org/reference/noise_.html) function
   * p5.js - [`noise()`](https://p5js.org/reference/#/p5/noise) function
@@ -2039,14 +2037,12 @@ _Notable implementations:_
   * TouchDesigner - [Noise CHOP](https://docs.derivative.ca/Noise_CHOP) and [Noise MAT](https://docs.derivative.ca/Noise_MAT) operators
   * vvvv - Noise nodes in [vvvv.js](https://vvvv.js.org/) and [vvvv gamma](https://vvvv.org/)
   * Blender - [Noise texture node](https://docs.blender.org/manual/en/latest/render/shader_nodes/texture/noise.html) in Shader Editor
-
 * Simplex noise
   * GLSL - [Simplex noise shader implementations](https://github.com/ashima/webgl-noise) (Ashima Arts)
   * p5.js - [`noise()`](https://p5js.org/reference/#/p5/noise) uses Simplex noise
   * Houdini - [Simplex Noise VOP](https://www.sidefx.com/docs/houdini/nodes/vop/simplex.html)
   * TouchDesigner - available in [Noise CHOP](https://docs.derivative.ca/Noise_CHOP)
   * Blender - [Noise texture](https://docs.blender.org/manual/en/latest/render/shader_nodes/texture/noise.html) with Simplex option
-
 * Worley noise / Voronoi
   * GLSL - [Voronoi/Worley shader collections](https://www.shadertoy.com/results?query=voronoi)
   * Houdini - [Worley Noise VOP](https://www.sidefx.com/docs/houdini/nodes/vop/worley.html)
@@ -2055,9 +2051,9 @@ _Notable implementations:_
   * vvvv - Voronoi nodes in [vvvv.js](https://vvvv.js.org/) and [vvvv gamma](https://vvvv.org/)
 
 _Code projects:_
-  * [FastNoise2](https://github.com/Auburn/FastNoise2) (C++, multiple language bindings) - high-performance noise library with SIMD optimization
-  * [libnoise](http://libnoise.sourceforge.net/) (C++) - procedural noise library with multiple noise types
-  * [Perlin Noise implementation collections](https://github.com/stegu/perlin-noise) (multiple languages)
+* [FastNoise2](https://github.com/Auburn/FastNoise2) (C++, multiple language bindings) - high-performance noise library with SIMD optimization
+* [libnoise](http://libnoise.sourceforge.net/) (C++) - procedural noise library with multiple noise types
+* [Perlin Noise implementation collections](https://github.com/stegu/perlin-noise) (multiple languages)
 
 ---
 
