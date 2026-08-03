@@ -1323,9 +1323,21 @@ _Code projects and tools:_
 
 ### Strange attractors
 
-```
-TODO
-```
+Trajectories of deterministic dynamical systems that exhibit chaotic behavior while remaining confined within a bounded region of space. Unlike ordinary attractors (fixed points or periodic cycles), strange attractors have a fractal structure with infinite detail and display sensitive dependence on initial conditions - tiny differences in starting state lead to wildly divergent outcomes. Despite their deterministic rules, the long-term behavior appears random or turbulent.
+
+Strange attractors emerge in nonlinear systems where feedback loops create complex dynamics. They are "strange" because they combine order (the system never leaves a bounded region) with chaos (unpredictable behavior). They are "attractors" because trajectories from nearby initial conditions are pulled toward them over time. Their fractal dimension is typically non-integer, a hallmark of their geometric complexity.
+
+Strange attractors have been observed in fluid dynamics (turbulence), weather systems (weather chaos), population dynamics, electronic circuits, and more. In generative art and morphogenesis, they are often used to create organic-looking, intricate patterns and forms that would be difficult or impossible to design by hand. The self-similar, fractal-like structures they produce can simulate natural phenomena like cloud formations, terrain, and biological branching patterns.
+
+_Key terms:_
+
+* Attractor - a set of states (points in phase space) toward which a dynamical system evolves, regardless of initial conditions. Non-strange attractors include fixed points and periodic orbits.
+* Phase space - an abstract mathematical space where each point represents a possible state of the system; trajectories trace the system's evolution through this space.
+* Chaos / Chaotic behavior - deterministic evolution that is sensitive to initial conditions; small perturbations grow exponentially, making long-term prediction impossible even though the system is not random.
+* Sensitive dependence on initial conditions - the hallmark of chaos; trajectories starting arbitrarily close together diverge exponentially fast. Related to the concept of the [Lyapunov exponent](https://en.wikipedia.org/wiki/Lyapunov_exponent).
+* Fractal structure - strange attractors typically have infinite detail at all scales, with a non-integer (fractal) dimension.
+* Basin of attraction - the set of initial conditions from which trajectories are drawn to a particular attractor.
+* Bifurcation - a qualitative change in system behavior as a parameter varies; can lead to onset of chaos or transition between different types of attractors.
 
 _Notable attractors:_
 * [Clifford attractor](http://paulbourke.net/fractals/clifford/)
