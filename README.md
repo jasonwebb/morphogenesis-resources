@@ -1490,9 +1490,17 @@ Oscillating chemical reaction that can produce complex, regularly-spaced shapes 
 
 It may be possible to simulate this reaction, at least superficially, using either [reaction-diffusion systems](#reaction-diffusion) or [cellular automata](#cellular-automata-ca) (see the Hodgepodge Machine specifically).
 
-```
-TODO: is it possible to succinctly describe "recipe" for reliable BZ reaction in petri dish?
-```
+_Basic petri dish setup:_
+
+1. Gather reactants: malonic acid, potassium bromate, sulfuric acid, and an indicator dye (typically ferroin, which shifts between blue and red).
+2. Mix the reactants in specific proportions (see Nigel Baldwin's videos below for exact ratios).
+3. Pour the mixed solution into a shallow petri dish or watch glass.
+4. Leave undisturbed to allow the reaction to begin.
+5. Within minutes, concentric rings or spiral waves of color will form and propagate across the dish.
+6. Observe the patterns oscillating between blue and red states as the chemical reaction continues.
+7. The reaction typically persists for 30 minutes to several hours depending on conditions and reagent concentrations.
+
+For detailed preparation procedures and exact chemical ratios, consult the video references below - particularly Nigel Baldwin's two-part preparation series.
 
 _Articles:_
 * [Belousov–Zhabotinsky reaction](https://en.wikipedia.org/wiki/Belousov%E2%80%93Zhabotinsky_reaction) on Wikipedia
