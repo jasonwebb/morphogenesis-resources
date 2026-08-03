@@ -38,6 +38,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
             <ul>
               <li><a href="#archimedean-solids">Archimedean solids</a></li>
               <li><a href="#cellular-automata-ca">Cellular automata</a></li>
+              <li><a href="#conway-operators">Conway operators</a></li>
               <li><a href="#cymatics">Cymatics</a></li>
               <li><a href="#delaunay-triangulation-and-voronoi-diagrams">Delaunay triangulation and Voronoi diagrams</a></li>
               <li><a href="#fibonacci-sequence">Fibonacci sequence</a></li>
@@ -51,13 +52,14 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#inverse-and-forward-kinematics">Inverse and forward kinematics</a></li>
               <li><a href="#laplace-transform">Laplace transform</a></li>
               <li><a href="#lissajous-curves">Lissajous curves</a></li>
-              <li><a href="#mass-spring-system">Mass-spring systems</a></li>
+              <li><a href="#mass-spring-system">Mass-spring system</a></li>
               <li><a href="#medial-axis">Medial axis</a></li>
               <li><a href="#minimal-surface">Minimal surface</a></li>
               <li><a href="#packing-problems">Packing problems</a></li>
               <li><a href="#percolation-theory">Percolation theory</a></li>
               <li><a href="#phyllotaxis">Phyllotaxis</a></li>
               <li><a href="#platonic-solids">Platonic solids</a></li>
+              <li><a href="#polyhedra">Polyhedra</a></li>
               <li><a href="#saffmantaylor-instability">Saffman–Taylor instability</a></li>
               <li><a href="#spherical-harmonics">Spherical harmonics</a></li>
               <li><a href="#strange-attractors">Strange attractors</a></li>
@@ -626,6 +628,9 @@ _Code projects:_
 
 ### Archimedean solids
 
+> [!NOTE]
+> Related to [polyhedra](#polyhedra) and [Platonic solids](#platonic-solids).
+
 Set of 13 semi-regular convex polyhedra composed of regular polygons meeting in identical vertices, excluding the 5 [Platonic solids](#platonic-solids) (which are composed of only one type of polygon) and excluding the prisms and antiprisms.
 
 Each shape [can be constructed](https://en.wikipedia.org/wiki/Archimedean_solid#Construction_of_Archimedean_solids) by starting with one of the [Platonic solids](#platonic-solids) and truncating it's corners or edges in various ways.
@@ -740,6 +745,44 @@ _Notable software:_
 * [MCell](http://psoup.math.wisc.edu/mcell/) (Mirek's Cellebration) by Mirek Wojtowicz
 * [Visions of Chaos](https://www.softology.com.au/voc.htm) by Jason Rampe
 * [WebCA / Cellular Automata Laboratory (CelLab)](https://www.fourmilab.ch/cellab/webca/) by Rudy Rucker and John Walker
+
+---
+
+<a href="https://en.wikipedia.org/wiki/Conway_polyhedron_notation" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/conway-operators.jpg?raw=true" width="300" align="right" title="Wikipedia - Conway polyhdron notation"></a>
+
+### Conway operators
+
+> [!NOTE]
+> Related to [polyhedra](#polyhedra), [Platonic solids](#platonic-solids), and [Archimedean solids](#archimedean-solids).
+
+[Conway polyhedron notation](https://en.wikipedia.org/wiki/Conway_polyhedron_notation), invented by mathematician John Horton Conway and later extended by George W. Hart, is a compact system for describing complex polyhedra as a short chain of operators applied to a simple seed shape. Operators are single lowercase letters applied right-to-left, so `taC` means "start with a cube (`C`), apply ambo (`a`), then truncate (`t`)" - the same recipe that produces a truncated cuboctahedron. This turns a huge space of polyhedra into a small, composable vocabulary, which is why it's a popular basis for procedural polyhedron tools.
+
+_Seeds:_
+Starting shapes are abbreviated with a single capital letter: `T` (tetrahedron), `C` (cube), `O` (octahedron), `D` (dodecahedron), `I` (icosahedron), `P`_n_ (n-gonal prism), `A`_n_ (n-gonal antiprism), `Y`_n_ (n-gonal pyramid).
+
+_Core operators:_
+* `d` (dual) - swaps every face for a vertex and vice versa (e.g. `dC` = octahedron).
+* `a` (ambo) - adds a vertex at the midpoint of every edge and connects them, producing the "rectified" Archimedean forms (e.g. `aC` = cuboctahedron).
+* `t` (truncate) - slices off each vertex, turning it into a small new face.
+* `k` (kis) - raises a pyramid on every face by adding a vertex at its center.
+* `j` (join) - connects the centers of adjacent faces, replacing them with quadrilaterals.
+* `e` (expand) - pushes each face outward along its normal and fills the resulting gaps with new faces.
+* `s` (snub) - like expand, but with a twist added, producing a chiral form with extra triangular faces (e.g. `sC` = snub cube).
+* `g` (gyro) - the dual of snub; introduces a chiral twist without adding triangles.
+* `b` (bevel) - combines truncation and ambo.
+* `o` (ortho) - subdivides each face into quadrilaterals around its center.
+* `m` (meta) - combines kis and join.
+
+George Hart later added `r` (reflect, mirrors a chiral form) and `p` (propellor), and modern implementations support dozens more (chamfer, needle, zip, loft, whirl, and others).
+
+_Articles:_
+* [Conway polyhedron notation](https://en.wikipedia.org/wiki/Conway_polyhedron_notation) on Wikipedia
+* [Conway Notation for Polyhedra](https://www.georgehart.com/virtual-polyhedra/conway_notation.html) by George Hart - the original extended reference, with construction diagrams for each operator
+
+_Notable tools:_
+* [Polyhedronisme](https://levskaya.github.io/polyhedronisme/) by Anselm Levskaya - interactive web app for building polyhedra with Conway operators (see [Polyhedra](#polyhedra) for more)
+* [Antiprism's `conway`](https://www.antiprism.com/programs/conway.html) by Adrian Rossiter and Roger Kaufman - command-line Conway notation processor, adapted from Hart's original implementation
 
 ---
 
@@ -897,7 +940,7 @@ _Articles:_
 ### Geodesic dome
 
 > [!NOTE]
-> Related to [Geodesic](#geodesic) and [Platonic solids](#platonic-solids).
+> Related to [geodesics](#geodesic), [Platonic solids](#platonic-solids), and [polyhedra](#polyhedra).
 
 Spherical shell structure of triangular struts whose vertices all lie on a circumscribed sphere. It's typically derived from a [Platonic solid](#platonic-solids) with triangular faces (usually an icosahedron) by subdividing each face some number of times (the dome's "frequency") and projecting the new vertices onto the sphere - higher frequencies mean more, smaller struts and a closer approximation of a sphere.
 
@@ -1369,6 +1412,9 @@ _Videos:_
 
 ### Platonic solids
 
+> [!NOTE]
+> Related to [polyhedra](#polyhedra) and [Archimedean solids](#archimedean-solids).
+
 Set of regular, convex polyhedra constructed using congruent, regular polygonal faces with the same number of faces meeting at each vertex. Euclid (and perhaps [Theaetetus](https://en.wikipedia.org/wiki/Theaetetus_(mathematician)) proved mathematically that there are only five shapes that fit this criteria (below).
 
 | Name         | Polygon type | Faces | Edges | Vertices | Image |
@@ -1385,6 +1431,81 @@ _Articles:_
 
 _Videos:_
 * [5 Platonic Solids](https://www.youtube.com/watch?v=gVzu1_12FUc) by Numberphile
+
+---
+
+<a href="https://en.wikipedia.org/wiki/Polyhedron" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/polyhedra.jpg?raw=true" width="300" align="right" title="Wikipedia - Polyhedra"></a>
+
+### Polyhedra
+
+> [!NOTE]
+> Related to [Platonic solids](#platonic-solids), [Archimedean solids](#archimedean-solids), [geodesic domes](#geodesic-dome), and [Conway operators](#conway-operators).
+
+A polyhedron is a solid bounded by flat polygonal faces, straight edges, and sharp vertices - the [Platonic](#platonic-solids) and [Archimedean solids](#archimedean-solids) are just the two best-known families in a much larger space of shapes. For generative artists, polyhedra are a useful design space precisely because they're so constrained: a handful of construction rules (regular faces, identical vertices, symmetric arrangements) generate a finite, well-catalogued set of "correct-looking" forms, which is why the same few solids keep reappearing as base meshes for subdivision, [geodesic domes](#geodesic-dome), and procedural modeling more broadly.
+
+_Key concepts:_
+* Convex vs. concave - convex polyhedra bulge outward everywhere with no self-intersections; concave ones have indentations or intersecting faces.
+* Classes - groupings based on construction rules, e.g. Platonic, Archimedean, Catalan, Kepler-Poinsot, Johnson, prisms/antiprisms, and near-misses.
+* Symmetry - when a shape can be rotated or reflected and still look exactly the same.
+* Stellation and facetting - dual operations for making new polyhedra from old ones: stellation extends face planes outward; facetting cuts new faces from existing vertices.
+
+_Major classes:_
+* [Platonic solids](#platonic-solids) - the 5 regular convex polyhedra; one type of regular polygon face, identical arrangement at every vertex.
+* [Archimedean solids](#archimedean-solids) - 13 semi-regular convex polyhedra with two or more types of regular polygon faces meeting identically at every vertex.
+* [Catalan solids](https://en.wikipedia.org/wiki/Catalan_solid) - the 13 duals of the Archimedean solids; face-transitive rather than vertex-transitive, so their faces aren't regular polygons but their vertex figures are.
+* [Kepler-Poinsot solids](https://en.wikipedia.org/wiki/Kepler%E2%80%93Poinsot_polyhedron) - the 4 regular star polyhedra (small/great stellated dodecahedron, great dodecahedron, great icosahedron); self-intersecting stellations or facettings of the dodecahedron and icosahedron.
+* [Johnson solids](https://en.wikipedia.org/wiki/Johnson_solid) - the 92 remaining convex solids with regular polygon faces that aren't vertex-transitive (i.e. everything left once Platonic, Archimedean, prisms, and antiprisms are excluded).
+* [Prisms and antiprisms](https://en.wikipedia.org/wiki/Prism_(geometry)) - two infinite families of uniform polyhedra: two parallel _n_-gon faces connected by a ring of squares (prism) or triangles (antiprism).
+* Near-misses - convex solids with faces so close to regular that they read as "correct" at a glance (e.g. the soccer-ball-style truncated icosahedron variants used in geodesic-adjacent design); popular in architecture and fabrication because slightly irregular faces can simplify paneling or tiling.
+
+_Symmetry:_
+
+A shape has symmetry when it can be rotated or reflected and still look exactly the same - spin a cube 90° around an axis through two opposite faces and you can't tell it moved. The full set of ways a shape can do this is called its symmetry group, and the larger it is, the more interchangeable the shape's faces, edges, and vertices look.
+
+Highly symmetric polyhedra fall into just three of these groups (doubled again with mirror reflections) - part of why the same few base shapes keep recurring in generative work:
+* [Tetrahedral symmetry](https://en.wikipedia.org/wiki/Tetrahedral_symmetry) - 12 rotations (24 with reflections); the symmetry of the tetrahedron.
+* [Octahedral symmetry](https://en.wikipedia.org/wiki/Point_groups_in_three_dimensions) - 24 rotations (48 with reflections); shared by the cube and octahedron since they're duals of each other.
+* [Icosahedral symmetry](https://en.wikipedia.org/wiki/Icosahedral_symmetry) - 60 rotations (120 with reflections); shared by the dodecahedron and icosahedron, and the reason icosahedral subdivision is the standard approach for [geodesic domes](#geodesic-dome).
+
+A polyhedron's symmetry group also determines whether every vertex looks like every other vertex (isogonal, true of the Platonic and Archimedean solids), every face looks like every other face (isohedral, true of the Platonic and Catalan solids), or every edge looks like every other edge (isotoxal).
+
+_Stellation and facetting:_
+
+These are dual, opposite operations for generating new polyhedra from existing ones:
+* Stellation - extending a polyhedron's face planes outward until they intersect each other again, producing a larger, usually self-intersecting shape. The four Kepler-Poinsot solids are the only regular stellations of the dodecahedron and icosahedron, but a single seed shape (like the icosahedron) can have dozens of named stellations.
+* Facetting - creating new faces using only a polyhedron's existing vertices, without adding any new ones - effectively "cutting into" the solid rather than extending outward.
+
+_Key terms:_
+* Face, edge, vertex - the three basic elements of a polyhedron.
+* [Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) - `V - E + F = 2` for any simple convex polyhedron; a quick sanity check for procedurally generated meshes.
+* [Dual polyhedron](https://en.wikipedia.org/wiki/Dual_polyhedron) - swapping faces and vertices produces a shape's dual (cube ↔ octahedron, dodecahedron ↔ icosahedron, tetrahedron ↔ itself).
+* [Uniform polyhedron](https://en.wikipedia.org/wiki/Uniform_polyhedron) - vertex-transitive with regular polygon faces; covers the Platonic and Archimedean solids, prisms, antiprisms, and their non-convex "star" counterparts.
+* [Schläfli symbol](https://en.wikipedia.org/wiki/Schl%C3%A4fli_symbol) - shorthand `{p, q}` describing a regular polyhedron by its face polygon (_p_-gon) and how many meet at each vertex (_q_); star polyhedra use fractions, e.g. `{5/2, 5}` for the small stellated dodecahedron.
+* [Vertex figure](https://en.wikipedia.org/wiki/Vertex_figure) - the cross-section shape formed by slicing off a vertex; used to classify uniform polyhedra by which polygons meet there.
+* [Convex hull](https://en.wikipedia.org/wiki/Convex_hull) - the smallest convex shape enclosing a set of points; a common generative technique for deriving a convex polyhedron from a symmetric point distribution.
+
+_Articles:_
+* [Polyhedron](https://en.wikipedia.org/wiki/Polyhedron) on Wikipedia
+* [Point groups in three dimensions](https://en.wikipedia.org/wiki/Point_groups_in_three_dimensions) on Wikipedia - overview of the tetrahedral, octahedral, and icosahedral symmetry groups
+* [Stellation](https://en.wikipedia.org/wiki/Stellation) on Wikipedia
+* [Faceting](https://en.wikipedia.org/wiki/Faceting) on Wikipedia
+* [Stellations](https://www.georgehart.com/virtual-polyhedra/stellations-info.html) by George Hart - short illustrated explanation of the stellation process
+* [Visual Polyhedra](https://dmccooey.com/polyhedra/) by David McCooey - interactive 3D models organized by class (Platonic, Archimedean, Catalan, Kepler-Poinsot, Johnson, and more), with downloadable geometry data
+* [Virtual Polyhedra: The Encyclopedia of Polyhedra](https://www.georgehart.com/virtual-polyhedra/vp.html) by George Hart
+
+_Videos:_
+* [Kepler-Poinsot Polyhedra](https://www.youtube.com/watch?v=Y8_Xx961_oI) - overview of the four regular star polyhedra
+
+_Notable tools:_
+* [Stella](https://www.software3d.com/Stella.php) by Robert Webb - dedicated polyhedra exploration software (Great Stella, Small Stella, Stella4D) supporting stellation, facetting, augmentation, dualization, convex hulls, and printable nets
+* [Antiprism](https://www.antiprism.com/) by Adrian Rossiter - open-source command-line toolkit for generating, transforming, and converting polyhedra ([GitHub](https://github.com/antiprism/antiprism))
+* [Polyhedronisme](https://levskaya.github.io/polyhedronisme/) by Anselm Levskaya - web app for building polyhedra from a seed shape using [Conway polyhedron notation](https://en.wikipedia.org/wiki/Conway_polyhedron_notation) operators
+
+_Code projects:_
+* [polyhedronisme](https://github.com/levskaya/polyhedronisme) - source code for the Conway-notation polyhedron builder above
+* [PolyJS](https://matthewarcus.github.io/polyjs/) ([GitHub](https://github.com/matthewarcus/polyjs)) by Matthew Arcus - generates and animates uniform polyhedra and compounds in Three.js using the Wythoff construction
+* [Polyhedra (Three.js)](https://stemkoski.github.io/Three.js/Polyhedra.html) by Lee Stemkoski - renders polyhedra using vertex/face data from George Hart's polyhedra encyclopedia
 
 ---
 
@@ -2488,10 +2609,10 @@ _Videos:_
 
 _Image credit: [CoppeliaSim docs - Physics engine differences](https://manual.coppeliarobotics.com/en/physicsEngineDifferences.htm)_
 
-Soft-body physics is the applied, real-time counterpart to [mass-spring systems](#mass-spring-systems): simulating volumetric objects - rubber, flesh, jelly, foam, organs - that deform under force and recover their shape rather than staying rigid. Unlike [cloth simulation](#cloth-simulation), which models thin 2D sheets, soft-body solvers operate on 3D volumes (tetrahedral meshes, voxel grids, or particle clouds) and must resist compression as well as stretching, giving deformable objects a sense of internal volume and squishiness.
+Soft-body physics is the applied, real-time counterpart to [mass-spring systems](#mass-spring-system): simulating volumetric objects - rubber, flesh, jelly, foam, organs - that deform under force and recover their shape rather than staying rigid. Unlike [cloth simulation](#cloth-simulation), which models thin 2D sheets, soft-body solvers operate on 3D volumes (tetrahedral meshes, voxel grids, or particle clouds) and must resist compression as well as stretching, giving deformable objects a sense of internal volume and squishiness.
 
 Several families of techniques compete for this problem, each trading accuracy for speed differently:
-* Mass-spring - the volumetric extension of [mass-spring systems](#mass-spring-systems): tetrahedral or lattice structures of point masses connected by springs. Fast and simple, but prone to visible artifacts (bulging, asymmetric stretching) since spring networks don't perfectly capture rotational/volumetric behavior.
+* Mass-spring - the volumetric extension of [mass-spring systems](#mass-spring-system): tetrahedral or lattice structures of point masses connected by springs. Fast and simple, but prone to visible artifacts (bulging, asymmetric stretching) since spring networks don't perfectly capture rotational/volumetric behavior.
 * [Finite Element Method (FEM)](https://en.wikipedia.org/wiki/Finite_element_method) - discretizes the body into tetrahedral elements and solves continuum-mechanics stress/strain equations directly, giving physically accurate results at higher computational cost. Common in engineering, biomechanics, and high-end VFX.
 * Shape matching - a meshless technique that computes a "goal" rigid/deformed shape for a cluster of particles each frame and pulls particles toward it; cheap, stable, and popular in games.
 * Position Based Dynamics (PBD) / XPBD - treats constraints (distance, volume, bending) as positional corrections solved iteratively rather than forces, which is unconditionally stable and easy to combine with cloth, rigid bodies, and fluids in one solver. XPBD adds proper stiffness independent of iteration count and time step.
@@ -2950,6 +3071,3 @@ TODO: Add link
   * [nannou](https://github.com/nannou-org/nannou)
 * Kotlin
   * [OPENRNDR](https://openrndr.org/)
-
-## Uncategorized
-* [Conway operators](https://en.wikipedia.org/wiki/Conway_polyhedron_notation#Operators)
