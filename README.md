@@ -1299,7 +1299,7 @@ _Videos:_
 <a href="https://www.flowvis.org/2014/09/12/air-pulled-into-ferrofluid-forms-the-saffman-taylor-fingering-instability-as-the-plates-of-a-hele-shaw-cell-are-separated/" target="_blank">
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/saffman-taylor-instability.jpg?raw=true" width="300" align="right" title="Vigneshwaran Selvaraju et al - Air pulled into ferrofluid forms the Saffman-Taylor fingering instability as the plates of a Hele-Shaw cell are separated"></a>
 
-### Saffman–Taylor instability
+### Saffman-Taylor instability
 
 > [!NOTE]
 > Related to [DBM](#dielectric-breakdown-model-dbm), [DLA](#diffusion-limited-aggregation-dla), [differential growth](#differential-growth), [reaction-diffusion](#reaction-diffusion), [fluid simulation](#fluid-simulation), [Hele-Shaw cells](#hele-shaw-cell)
@@ -1315,6 +1315,16 @@ _Key terms:_
 * Interfacial (surface) tension - force resisting curvature of the interface; suppresses high-frequency wrinkles and sets a preferred finger width/wavelength.
 * Tip-splitting - the process by which a growing finger becomes unstable at its own tip and divides into two smaller fingers, driving the fractal branching seen in the radial configuration.
 * Channel vs. radial geometry - the two most common experimental setups: injection along a straight channel typically produces one dominant "Saffman–Taylor finger," while injection from a central point (radial) produces repeated tip-splitting into many fingers.
+
+_DIY experiments:_
+
+Viscous fingering can be observed with everyday materials without specialized equipment. When two surfaces are slowly peeled or pulled apart with a thin viscous layer (honey, jam, corn syrup, or hand lotion) between them, the less viscous fluid (air) displaces the viscous layer, creating fingerlike flow patterns at the retreating interface. The same effect occurs in setups such as:
+* Slowly peeling apart two wet pieces of paper
+* Separating two wet glass plates or acrylic sheets
+* Pulling apart plastic wrap or film from a surface coated with a viscous substance
+* Lifting a glass plate from a table with a thin layer of honey, oil, or gel underneath
+
+These "peeling" setups exhibit viscous fingering because the viscous fluid resists the air's advance, creating an unstable interface that spontaneously breaks into fingers. This is closely related to the [lifted Hele-Shaw cell](#hele-shaw-cell) concept—in both cases, viscous resistance shapes fluid interfaces during separation or displacement, revealing the same underlying physics.
 
 _Articles:_
 * [Saffman–Taylor instability](https://en.wikipedia.org/wiki/Saffman%E2%80%93Taylor_instability) on Wikipedia
@@ -1564,15 +1574,20 @@ Apparatus for demonstrating and studying a pheonmenon known as [viscous fingerin
 
 _Setup:_
 
-The Hele-Shaw cell typically consists of two plates, usually glass or plexiglass, separated by a very short distance (`TODO: how short?`). A viscous fluid such as glycerin is injected through a hole either in the center of one of the plates or between the plates from the side, followed by colored water. As the colored water is injected and pressure is built up, the glycerin partially resists it's flow resulting in complex, wavy lines where the two liquids meet. For added effect, illuminate the cell by placing a light underneath, shining towards the viewer through the cell.
+The Hele-Shaw cell typically consists of two plates, usually glass or plexiglass, separated by a very narrow gap (typically 0.5 to 2 mm). The small gap constrains fluid flow to approximately 2D motion, allowing viscous fingering patterns to emerge clearly.
 
-```
-TODO: provide more details step-by-step instructions
-```
+_Procedure:_
 
-```
-TODO: note about lifted Hele-Shaw cells
-```
+1. Seal the edges of the two plates together, leaving injection points open.
+2. Fill the cell with a viscous fluid such as glycerin or silicone oil.
+3. Inject a less viscous fluid (such as colored water or dyed oil) through a hole in one of the plates or between the plates from the side.
+4. As pressure builds from the injection, the less viscous fluid displaces the glycerin, but the viscous resistance creates an unstable interface.
+5. Complex, branching finger-like patterns form and propagate across the gap between the fluids.
+6. For better visualization, illuminate the cell from underneath, shining light through toward the viewer. The contrast between fluids makes the fingering patterns clearly visible.
+
+_Lifted Hele-Shaw cells:_
+
+A variant called a "lifted" or "tilted" Hele-Shaw cell involves rotating or lifting the cell at an angle during the experiment. This introduces gravitational and buoyancy effects that modify the viscous fingering patterns, creating asymmetrical or spiral-like flow patterns instead of the symmetric branching seen in vertical cells. This technique reveals how gravity influences fluid dynamics and pattern formation.
 
 _Articles:_
 * [Hele-Shaw flow](https://en.wikipedia.org/wiki/Hele-Shaw_flow) on Wikipedia
