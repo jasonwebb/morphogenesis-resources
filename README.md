@@ -2434,50 +2434,14 @@ Applying [convolution kernels](#convolution-kernel) to images for filtering and 
 
 _Common image processing effects:_
 
-<table>
-<tr>
-<th align="left">Effect</th>
-<th align="left">Purpose</th>
-<th align="left">Kernel</th>
-<th align="left">Example</th>
-</tr>
-<tr valign="top">
-<td>Edge detection (Sobel)</td>
-<td>Detect boundaries between regions</td>
-<td>$\begin{bmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{bmatrix}$</td>
-<td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-edge-detection.jpg?raw=true"></td>
-</tr>
-<tr valign="top">
-<td>Sharpen</td>
-<td>Enhance edges and details</td>
-<td>$\begin{bmatrix} 0 & -1 & 0 \\ -1 & 5 & -1 \\ 0 & -1 & 0 \end{bmatrix}$</td>
-<td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-sharpen.jpg?raw=true"></td>
-</tr>
-<tr valign="top">
-<td>Box blur</td>
-<td>Simple averaging blur</td>
-<td>$\frac{1}{9}\begin{bmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{bmatrix}$</td>
-<td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-box-blur.jpg?raw=true"></td>
-</tr>
-<tr valign="top">
-<td>Gaussian blur</td>
-<td>Smooth blur, weighted toward center</td>
-<td>$\frac{1}{16}\begin{bmatrix} 1 & 2 & 1 \\ 2 & 4 & 2 \\ 1 & 2 & 1 \end{bmatrix}$</td>
-<td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-gaussian-blur.jpg?raw=true"></td>
-</tr>
-<tr valign="top">
-<td>Unsharp mask</td>
-<td>Enhance sharpness and clarity</td>
-<td>$\begin{bmatrix} 0 & -1 & 0 \\ -1 & 5 & -1 \\ 0 & -1 & 0 \end{bmatrix}$</td>
-<td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-unsharp-masking.jpg?raw=true"></td>
-</tr>
-<tr valign="top">
-<td>Emboss</td>
-<td>3D relief effect</td>
-<td>$\begin{bmatrix} -2 & -1 & 0 \\ -1 & 1 & 1 \\ 0 & 1 & 2 \end{bmatrix}$</td>
-<td>N/A</td>
-</tr>
-</table>
+| Effect | Purpose | Kernel | Example |
+|---|---|---|---|
+| Edge detection (Sobel) | Detect boundaries between regions | $\begin{bmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{bmatrix}$ | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-edge-detection.jpg?raw=true" width="80"> |
+| Sharpen | Enhance edges and details | $\begin{bmatrix} 0 & -1 & 0 \\ -1 & 5 & -1 \\ 0 & -1 & 0 \end{bmatrix}$ | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-sharpen.jpg?raw=true" width="80"> |
+| Box blur | Simple averaging blur | $\frac{1}{9}\begin{bmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{bmatrix}$ | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-box-blur.jpg?raw=true" width="80"> |
+| Gaussian blur | Smooth blur, weighted toward center | $\frac{1}{16}\begin{bmatrix} 1 & 2 & 1 \\ 2 & 4 & 2 \\ 1 & 2 & 1 \end{bmatrix}$ | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-gaussian-blur.jpg?raw=true" width="80"> |
+| Unsharp mask | Enhance sharpness and clarity | $\begin{bmatrix} 0 & -1 & 0 \\ -1 & 5 & -1 \\ 0 & -1 & 0 \end{bmatrix}$ | <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-unsharp-masking.jpg?raw=true" width="80"> |
+| Emboss | 3D relief effect | $\begin{bmatrix} -2 & -1 & 0 \\ -1 & 1 & 1 \\ 0 & 1 & 2 \end{bmatrix}$ | N/A |
 
 _Key implementation considerations:_
 * Boundary handling - what happens at image edges (zero-padding, reflection, wrapping, shrinking)
