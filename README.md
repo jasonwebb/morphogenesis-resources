@@ -40,6 +40,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#archimedean-solids">Archimedean solids</a></li>
               <li><a href="#cellular-automata-ca">Cellular automata</a></li>
               <li><a href="#conway-operators">Conway operators</a></li>
+              <li><a href="#convolution-kernel">Convolution kernel</a></li>
               <li><a href="#cymatics">Cymatics</a></li>
               <li><a href="#delaunay-triangulation-and-voronoi-diagrams">Delaunay triangulation and Voronoi diagrams</a></li>
               <li><a href="#fibonacci-sequence">Fibonacci sequence</a></li>
@@ -102,6 +103,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#dithering">Dithering</a></li>
               <li><a href="#flow-field">Flow field</a></li>
               <li><a href="#fluid-simulation">Fluid simulation</a></li>
+              <li><a href="#kernel-based-image-processing">Kernel-based image processing</a></li>
               <li><a href="#lloyds-relaxation">Lloyd's relaxation</a></li>
               <li><a href="#marching-squares">Marching squares</a></li>
               <li><a href="#marching-cubes">Marching cubes</a></li>
@@ -455,7 +457,7 @@ _Projects:_
 ### Reaction-diffusion
 
 > [!NOTE]
-> Related to [Laplace equation](#laplace-equation).
+> Related to [convolution kernel](#convolution-kernel) and [Laplace equation](#laplace-equation).
 
 Grid-based process that generates complex and dynamic patterns based the interactions of two chemicals as they _diffuse_ through a medium and _react_ with one another. At every location on the grid these chemicals (usually referred to as `A` and `B`) have a chance of causing a _reaction_ that converts chemicals of one type to another based on their relative concentrations at that location.
 
@@ -735,6 +737,10 @@ _Videos:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/cellular-automata-1.gif?raw=true" width="300" align="right" title="Softology - Multiple Rules Cellular Automata"></a>
 
 ### Cellular automata (CA)
+
+> [!NOTE]
+> Related to [convolution kernel](#convolution-kernel).
+
 A regular grid of _cells_ with _states_ that are updated each iteration in according to _rules_. Developed by Stanislaw Ulam and John von Neumann at the Los Alamos National Laboratory in the 1940s, this system has been used to model physical, biological, and social phenomena with remarkable variety and accuracy.
 
 _Key terms:_
@@ -851,6 +857,52 @@ _Articles:_
 _Notable tools:_
 * [Polyhedronisme](https://levskaya.github.io/polyhedronisme/) by Anselm Levskaya - interactive web app for building polyhedra with Conway operators (see [Polyhedra](#polyhedra) for more)
 * [Antiprism's `conway`](https://www.antiprism.com/programs/conway.html) by Adrian Rossiter and Roger Kaufman - command-line Conway notation processor, adapted from Hart's original implementation
+
+---
+
+### Convolution kernel
+
+> [!NOTE]
+> Related to [cellular automata](#cellular-automata-ca), [reaction-diffusion](#reaction-diffusion), [noise](#noise), and [image processing](https://en.wikipedia.org/wiki/Kernel_(image_processing)).
+
+A convolution kernel is a small matrix of numbers that defines a weighted neighborhood operation. When applied to a grid (like an image, scalar field, or cellular grid), the kernel is placed over each location, its values are multiplied by the overlapping grid values, the products are summed, and the result is written to the center cell. This operation is the foundation for countless techniques across image processing, simulations, and signal analysis.
+
+The kernel acts as a _filter_ that emphasizes or suppresses patterns in the data. A kernel of all ones computes the sum of a neighborhood. A kernel with larger values in the center and smaller values at the edges acts as a blur (weighted average). Kernels with opposing signs can detect edges. Different kernels solve different problems, but they all follow the same convolution process: slide, multiply, sum, repeat.
+
+_Core concepts:_
+* Kernel (filter) - the small matrix applied to each location. Kernels are typically square (3×3, 5×5) but can be any shape or size.
+* Neighborhood - the set of grid values that overlap with the kernel at a given position.
+* Convolution - the process of sliding the kernel across the grid, computing weighted sums, and producing an output grid.
+* Boundary handling - strategies for dealing with edges where the kernel extends beyond the grid: zero-padding (pad with 0s), reflection, wrapping, or shrinking the output.
+* Stride - the step size when sliding the kernel (1 means every position, 2 means every other position, etc.).
+* Normalization - dividing the kernel result by the sum of the kernel values to preserve the magnitude of the output (especially important for averaging kernels).
+
+_Applications across domains:_
+* [Image processing](#kernel-based-image-processing) - blur, sharpen, edge detection, emboss, dilation/erosion (mathematical morphology), and many other filters.
+* [Reaction-diffusion systems](#reaction-diffusion) - convolution kernels approximate the Laplacian operator, which governs how substances diffuse and interact across a spatial grid.
+* [Cellular automata](#cellular-automata-ca) - rules based on the sum or pattern of a neighborhood are implicitly convolving with a kernel.
+* [Fluid simulation](#fluid-simulation) - pressure solvers and advection schemes use convolution to distribute quantities across neighboring cells.
+* [Noise generation](#noise) - blurring or interpolating noise through convolution creates coherent multi-scale patterns (basis for Perlin noise smoothing).
+* Morphological operations - erosion and dilation kernels reshape binary regions (used in image segmentation and shape analysis).
+* Smoothing and filtering - low-pass filters smooth noisy data; high-pass filters enhance detail and edges.
+
+_Articles:_
+* [All about convolutions, kernels, features in CNN](https://medium.com/@abhishekjainindore24/all-about-convolutions-kernels-features-in-cnn-c656616390a1) by Abhishek Jain
+* [Kernel (image processing)](https://en.wikipedia.org/wiki/Kernel_(image_processing)) on Wikipedia
+* [Convolution](https://en.wikipedia.org/wiki/Convolution) on Wikipedia
+* [Filters and convolution](https://en.wikipedia.org/wiki/Digital_image_processing#Filtering) in digital image processing
+* [Laplacian operator](https://en.wikipedia.org/wiki/Laplace_operator) on Wikipedia
+
+_Videos:_
+* [Image Kernels Explained Visually](https://setosa.io/ev/image-kernels/) - interactive visualization by Victor Powell
+
+_Code projects and libraries:_
+* [scikit-image](https://scikit-image.org/) (Python) - filters, morphology, edge detection
+* [OpenCV](https://opencv.org/) (C++, Python, JavaScript) - extensive kernel-based filtering and image processing
+* [PIL/Pillow](https://python-pillow.org/) (Python) - image filters with custom kernels
+* [GIMP](https://www.gimp.org/) - manual convolution filter tool for artistic exploration
+* [Three.js postprocessing](https://github.com/mrdoob/three.js/tree/dev/examples/jsm/postprocessing) (JavaScript) - GPU-based convolution for real-time effects
+* [Shader-based convolution](https://www.khronos.org/opengl/wiki/Compute_Shader) - fragment shaders implement kernel operations efficiently on GPU
 
 ---
 
@@ -2247,6 +2299,10 @@ _Books:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/dithering-1.png?raw=true" width="300" align="right" title="Wikipedia - Dither"></a>
 
 ### Dithering
+
+> [!NOTE]
+> Related to [convolution kernel](#convolution-kernel).
+
 In an image using a limited color palette, dithering can provide an illusion of a continuous gradient, or a field of color not in the palette. Using colors that are close to the target color, the technique applies a granular pattern of varying sizes and spacing of solid, single-color dots or lines. The human eye then interpolates between the colors at a larger scale.
 
 Some techniques (like [halftones](https://en.wikipedia.org/wiki/Halftone)) predate modern digital technologies because of their usefulness in traditional printmaking and engraving processes. There are even relevant techniques in the fields of painting and drawing; see [stippling](https://en.wikipedia.org/wiki/Stippling) and [pointillism](https://en.wikipedia.org/wiki/Pointillism)! In digital imaging, modern palettes are usually comprehensive enough to reach a satisfactory visual fidelity for general purposes, but limits are still often reached in professional contexts.
@@ -2315,7 +2371,7 @@ _Videos:_
 ### Fluid simulation
 
 > [!NOTE]
-> Related to [Laplace equation](#laplace-equation) and [Saffman–Taylor instability](#saffmantaylor-instability).
+> Related to [convolution kernels](#convolution-kernel), [Laplace equation](#laplace-equation), and [Saffman–Taylor instability](#saffmantaylor-instability).
 
 Simulates the highly complex and dynamic nature of flows in fluid volumes using computationally-efficient implementations of the [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations). Can be thought of as a 2D or 3D flow field that is constantly changing based on the velocity, viscocity, and density of the fluid at each point in space and its surrounding area. This flow field is made visible through the use of digital "dyes" (usually particles) that get distributed, diffused, sheared, and blended through the system by the flow forces.
 
@@ -2361,6 +2417,88 @@ _Notable tools:_
 _Videos:_
 * [Coding Challenge #132: Fluid Simulation](https://www.youtube.com/watch?v=alhpH6ECFvQ) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_132_FluidSimulation) with source code for p5.js and Processing)
 * [Why Laminar Flow is AWESOME - Smarter Every Day 208](https://www.youtube.com/watch?v=y7Hyc3MRKno&feature=youtu.be) by Smarter Every Day
+
+---
+
+<a href="https://medium.com/code-dementia/kernels-and-their-usage-in-convolutional-neural-networks-cnn-3074ab5e849f" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects.webp?raw=true" width="300" align="right" title="Hrithik Patel - Kernels and Their Usage in Convolutional Neural Networks (CNN)"></a>
+
+### Kernel-based image processing
+
+> [!NOTE]
+> Related to [convolution kernel](#convolution-kernel).
+
+_Image credit: Hrithik Patel - [Kernels and Their Usage in Convolutional Neural Networks (CNN)](https://medium.com/code-dementia/kernels-and-their-usage-in-convolutional-neural-networks-cnn-3074ab5e849f)._
+
+Applying [convolution kernels](#convolution-kernel) to images for filtering and feature extraction. Each pixel's new value is computed as a weighted sum of its neighborhood, determined by the kernel matrix. This is one of the most practical and widely-used techniques in digital image processing.
+
+_Common image processing effects:_
+
+<table>
+<tr>
+<th align="left">Effect</th>
+<th align="left">Purpose</th>
+<th align="left">Kernel</th>
+<th align="left">Example</th>
+</tr>
+<tr valign="top">
+<td>Edge detection (Sobel)</td>
+<td>Detect boundaries between regions</td>
+<td>$$\begin{bmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{bmatrix}$$</td>
+<td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-edge-detection.jpg?raw=true"></td>
+</tr>
+<tr valign="top">
+<td>Sharpen</td>
+<td>Enhance edges and details</td>
+<td>$$\begin{bmatrix} 0 & -1 & 0 \\ -1 & 5 & -1 \\ 0 & -1 & 0 \end{bmatrix}$$</td>
+<td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-sharpen.jpg?raw=true"></td>
+</tr>
+<tr valign="top">
+<td>Box blur</td>
+<td>Simple averaging blur</td>
+<td>$$\frac{1}{9}\begin{bmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{bmatrix}$$</td>
+<td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-box-blur.jpg?raw=true"></td>
+</tr>
+<tr valign="top">
+<td>Gaussian blur</td>
+<td>Smooth blur, weighted toward center</td>
+<td>$$\frac{1}{16}\begin{bmatrix} 1 & 2 & 1 \\ 2 & 4 & 2 \\ 1 & 2 & 1 \end{bmatrix}$$</td>
+<td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-gaussian-blur.jpg?raw=true"></td>
+</tr>
+<tr valign="top">
+<td>Unsharp mask</td>
+<td>Enhance sharpness and clarity</td>
+<td>$$\begin{bmatrix} 0 & -1 & 0 \\ -1 & 5 & -1 \\ 0 & -1 & 0 \end{bmatrix}$$</td>
+<td><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/kernel-effects-unsharp-mask.jpg?raw=true"></td>
+</tr>
+<tr valign="top">
+<td>Emboss</td>
+<td>3D relief effect</td>
+<td>$$\begin{bmatrix} -2 & -1 & 0 \\ -1 & 1 & 1 \\ 0 & 1 & 2 \end{bmatrix}$$</td>
+<td>N/A</td>
+</tr>
+</table>
+
+_Key implementation considerations:_
+* Boundary handling - what happens at image edges (zero-padding, reflection, wrapping, shrinking)
+* Kernel normalization - dividing by kernel sum to preserve image brightness
+* Separable kernels - 2D kernels that can be decomposed into two 1D operations for faster computation
+* GPU acceleration - fragment shaders and compute shaders can apply kernels in parallel across many pixels
+* Fixed-point math - integer-only math for embedded systems or performance-critical code
+
+_Articles:_
+* [Kernel (image processing)](https://en.wikipedia.org/wiki/Kernel_(image_processing)) on Wikipedia
+* [Image Kernels Explained Visually](https://setosa.io/ev/image-kernels/) - interactive visualization
+* [Digital Image Processing](https://en.wikipedia.org/wiki/Digital_image_processing) on Wikipedia
+* [Kernels and Their Usage in Convolutional Neural Networks (CNN)](https://medium.com/code-dementia/kernels-and-their-usage-in-convolutional-neural-networks-cnn-3074ab5e849f) by Hrithik Patel
+
+_Notable tools and libraries:_
+* [OpenCV](https://opencv.org/) (C++, Python, JavaScript) - comprehensive image processing with custom kernels
+* [scikit-image](https://scikit-image.org/) (Python) - filters, morphology, edge detection
+* [PIL/Pillow](https://python-pillow.org/) (Python) - `ImageFilter` module with predefined and custom kernels
+* [GIMP](https://www.gimp.org/) - manual convolution filter tool (Filters > Generic > Convolution Matrix)
+* [Three.js postprocessing](https://github.com/mrdoob/three.js/tree/dev/examples/jsm/postprocessing) (JavaScript) - GPU-based kernel effects
+* [ImageMagick](https://imagemagick.org/) - command-line tool with `-morphology` and `-convolve` operations
 
 ---
 
@@ -2510,6 +2648,10 @@ _Videos:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/noise-1.png?raw=true" width="300" align="right" title="The blog at the bottom of the sea - Perlin Noise Experiments"></a>
 
 ### Noise
+
+> [!NOTE]
+> Related to [convolution kernel](#convolution-kernel).
+
 In the context of computer graphics, refers to pseudo-random functions useful for creating natural-looking textures and patterns. Often used to procedurally generate organic surface textures (bark, waves, rocks, etc) and to organically distribute objects across surfaces (like grass or barnacles).
 
 Useful for adding fine details and smooth asymmetry to otherwise pristine objects - use it in displacement maps for subtle natural features.
