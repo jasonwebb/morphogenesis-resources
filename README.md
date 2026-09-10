@@ -2280,7 +2280,7 @@ _Relevant topics:_
   * [Axis-aligned bounding box](https://en.wikipedia.org/wiki/Minimum_bounding_box#Axis-aligned_minimum_bounding_box) (AABB)
   * [Sort and sweep](https://en.wikipedia.org/wiki/Sweep_and_prune) (a.k.a. sweep and prune)
   * [Bounding volume hierarchy](https://en.wikipedia.org/wiki/Bounding_volume_hierarchy) (BVH)
-* Narrow phase - class of algorithms that determine if two shapes are definately intersecting or not, and by how much.
+* Narrow phase - class of algorithms that determine if two shapes are definitely intersecting or not, and by how much.
   * [Separating axis theorem](https://gamedevelopment.tutsplus.com/tutorials/collision-detection-using-the-separating-axis-theorem--gamedev-169) (SAT)
   * [Gilbert-Johnson-Keerthi](https://en.wikipedia.org/wiki/Gilbert%E2%80%93Johnson%E2%80%93Keerthi_distance_algorithm) (GJK) algorithm
   * Expanding Polytope Algorithm (EPA)
