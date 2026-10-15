@@ -58,6 +58,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#mass-spring-system">Mass-spring system</a></li>
               <li><a href="#medial-axis">Medial axis</a></li>
               <li><a href="#minimal-surface">Minimal surface</a></li>
+              <li><a href="#neural-cellular-automata-nca">Neural cellular automata (NCA)</a></li>
               <li><a href="#packing-problems">Packing problems</a></li>
               <li><a href="#percolation-theory">Percolation theory</a></li>
               <li><a href="#phyllotaxis">Phyllotaxis</a></li>
@@ -739,7 +740,7 @@ _Videos:_
 ### Cellular automata (CA)
 
 > [!NOTE]
-> Related to [convolution kernel](#convolution-kernel).
+> Related to [convolution kernel](#convolution-kernel) and [neural cellular automata](#neural-cellular-automata-nca).
 
 A regular grid of _cells_ with _states_ that are updated each iteration in according to _rules_. Developed by Stanislaw Ulam and John von Neumann at the Los Alamos National Laboratory in the 1940s, this system has been used to model physical, biological, and social phenomena with remarkable variety and accuracy.
 
@@ -759,6 +760,7 @@ _Types:_
 * Discrete - the "default" configuration for cellular automata, in which a grid of regular square cells and integer states are used.
 * [Elementary](https://en.wikipedia.org/wiki/Elementary_cellular_automaton) - 1D cellular automata with two states and 256 possible rules. Thought to be the simplest possible cellular automaton.
 * [Life-like](https://en.wikipedia.org/wiki/Life-like_cellular_automaton) - any 2D outer totalistic automaton that uses two states and a Moore neighborhood, and whose transition rule can be expressed as a function of the number of neighboring cells that are in the "alive" state. [Three standard rule notations](https://en.wikipedia.org/wiki/Life-like_cellular_automaton#Notation_for_rules) exist, and a large number of [rules have been identified and researched](https://en.wikipedia.org/wiki/Life-like_cellular_automaton#A_selection_of_Life-like_rules).
+* [Neural](#neural-cellular-automata-nca) - automaton whose local transition rule is represented by a neural network, typically learned by optimizing for desired large-scale forms or behaviors. Often also continuous and stochastic.
 * [Reversible](https://en.wikipedia.org/wiki/Reversible_cellular_automaton) - automaton in which past grid states can be determined using later grid states. In other words, if you know the state at time `t`, you can compute the state at `t - 1`.
 * [Second-order](https://en.wikipedia.org/wiki/Second-order_cellular_automaton) - automaton in which cell states depend on their neighborhood in the last _two_ generations. In other words, the state at time `t` depends on the state at both `t - 1` and `t - 2`.
 * [Stochastic](https://en.wikipedia.org/wiki/Stochastic_cellular_automaton) - automaton with a transition rule that incorporates a probability distribution or, in other words, some degree of randomness. Also known as probabilistic (PCA) or random cellular automata.
@@ -819,6 +821,45 @@ _Notable software:_
 * [MCell](http://psoup.math.wisc.edu/mcell/) (Mirek's Cellebration) by Mirek Wojtowicz
 * [Visions of Chaos](https://www.softology.com.au/voc.htm) by Jason Rampe
 * [WebCA / Cellular Automata Laboratory (CelLab)](https://www.fourmilab.ch/cellab/webca/) by Rudy Rucker and John Walker
+
+---
+
+### Neural cellular automata (NCA)
+
+> [!NOTE]
+> Related to [cellular automata](#cellular-automata-ca), [convolution kernel](#convolution-kernel), and [reaction-diffusion](#reaction-diffusion).
+
+Neural cellular automata use a neural network to define a shared local update rule, rather than specifying that rule by hand. For digital morphogenesis, this offers an _inverse design_ approach: specify properties of a desired form or growth process, then search for local interactions that produce them. The resulting system is still a CA, not a network that draws the entire output in one step.
+
+_How they work:_
+
+* **State:** In common continuous NCA models, each cell stores a vector of values. Some may represent visible color or occupancy, while additional _hidden channels_ can store information used for coordination. These channels do not automatically correspond to biological signals or chemicals.
+* **Perception and update:** Each cell reads its own state and nearby states, often through [convolution kernels](#convolution-kernel) that measure local gradients. The same small neural network computes a state change for every cell. Repeating these local updates allows information to propagate and large-scale structure to emerge; many implementations randomly update only a subset of cells at each step.
+* **Training:** Run the CA for multiple steps, measure a _loss_ (how far its output or behavior is from the objective), and propagate gradients back through those steps to adjust the shared rule. The objective can describe an exact image, texture statistics, or other measurable properties.
+* **After training:** The learned rule can run repeatedly without further training. Depending on the objective and training regime, it may grow a stable form from a seed, sustain changing patterns, or repair damage. Long-term stability and regeneration are not guaranteed merely by using a neural rule.
+
+_Generating new forms and patterns:_
+
+* **Learn a family of patterns, not a bitmap.** Texture objectives can reward statistical features rather than exact pixel positions, allowing different arrangements and ongoing dynamics. [Self-Organising Textures](https://distill.pub/selforg/2021/textures/) demonstrates this distinction, although its patterns are still guided by reference textures.
+* **Design objectives around properties.** Instead of supplying a finished image, experiments can target measurable qualities such as symmetry, spatial frequency, or persistent activity. These leave more freedom for unexpected forms, but the choice of measurements strongly shapes what can emerge. [Fun With Neural Cellular Automata](https://wandb.ai/johnowhitaker/nca/reports/Fun-With-Neural-Cellular-Automata--VmlldzoyMDQ5Mjg0) explores another route: combining texture and text-based objectives, and repeatedly rescaling the grid during growth.
+* **Explore the learned dynamics.** Vary seeds, initial states, boundaries, or rule parameters and record the resulting behaviors. Distinguish new arrangements within a learned pattern family from genuinely different growth behaviors; changing inputs or weights may also cause collapse rather than useful novelty.
+
+_Using NCA to investigate morphogenesis:_
+
+Treat a trained rule as a model to interrogate, not an explanation by itself. [Studying Growth](https://greydanus.github.io/2022/05/24/studying-growth/) illustrates experiments involving shell-like accretion, tissue induction, and programmed cell death. Reproducing an appearance or response does not establish that the model uses the mechanisms of the biological system.
+
+Useful investigations include removing or perturbing hidden channels to test their roles, grafting or damaging cell regions to study coordination and repair, and testing unfamiliar seeds, grid sizes, and longer runtimes. Compare against simpler models such as hand-written CA or [reaction-diffusion](#reaction-diffusion), measure outcomes across multiple runs, and document the rules, objectives, and training conditions. This helps separate robust self-organization from behavior specific to a training setup.
+
+_Articles and tutorials:_
+
+* [Growing Neural Cellular Automata](https://distill.pub/2020/growing-ca/) - interactive introduction to learned local rules, growth, persistence, and regeneration.
+* [Self-Organising Textures](https://distill.pub/selforg/2021/textures/) - learning dynamic texture-generating processes rather than pixel-perfect copies.
+* [Studying Growth](https://greydanus.github.io/2022/05/24/studying-growth/) by Sam Greydanus - experiments connecting NCA with developmental phenomena, with implementation notebooks.
+* [Fun With Neural Cellular Automata](https://wandb.ai/johnowhitaker/nca/reports/Fun-With-Neural-Cellular-Automata--VmlldzoyMDQ5Mjg0) by Jonathan Whitaker - interactive examples and creative training experiments.
+
+_Videos:_
+
+* [Organic neural cellular automata](https://www.youtube.com/watch?v=NPlAEnGX4Dg) by Emergent Garden
 
 ---
 
