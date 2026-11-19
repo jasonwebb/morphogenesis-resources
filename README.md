@@ -1473,49 +1473,50 @@ _Natural phenomena:_
 
 ---
 
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/neural-cellular-automata.gif?raw=true" width="300" align="right">
+
 ### Neural cellular automata (NCA)
 
 > [!NOTE]
 > Related to [cellular automata](#cellular-automata-ca), [convolution kernel](#convolution-kernel), and [reaction-diffusion](#reaction-diffusion).
 
-Cellular automata whose shared local transition rule is represented by a neural network. They offer an _inverse design_ approach to morphogenesis: optimize local interactions for desired large-scale forms or behaviors, rather than hand-authoring rules.
+NCAs are bio-inspired computational models that merge traditional [cellular automata](#cellular-automata-ca) with artificial neural networks. Instead of using hard-coded logical rules (like [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)), every cell in an NCA runs a tiny, identical neural network to update its state based on its immediate local neighbors. NCAs provide experimental models of distributed growth, coordination, and emergence.
 
-_Core principles and features:_
-* **Local computation:** Each cell updates from its own state and neighborhood, often using convolution kernels for perception. Global structure emerges through repeated local interactions.
-* **Multichannel state:** Common models use continuous vectors with visible and hidden channels; hidden channels support memory and coordination but have no inherent biological meaning.
-* **Learned dynamics:** Rules are typically optimized by backpropagating through successive CA updates. Once trained, they run without further optimization; stochastic cell updates are common.
-* **Growth and maintenance:** Depending on training, NCA can grow forms from seeds, sustain dynamic textures, or regenerate damaged regions. Stability and repair are learned capabilities, not guarantees.
-* **Beyond image reproduction:** Objectives can target texture statistics or properties such as symmetry and persistent activity rather than exact pixels. Varying seeds, conditions, or rule parameters explores possible forms, though variation alone does not imply a new growth mechanism.
+**2D NCAs** can be used to generate static images as well as [texture maps for use in PBR materials](https://meshnca.github.io) on 3D meshes. **3D NCAs** can be used to create 3D geometry using voxel engines (see [VDBs](#vdbs)) or by applying meshing techniques like [marching cubes](#marching-cubes) to [SDFs](#signed-distance-function-sdfs).
 
-_Investigating morphogenesis:_
+Images produced by 2D NCAs can be used as texture maps for PBR materials
 
-NCA provide experimental models of distributed growth and coordination, not biological explanations by default. Perturb hidden channels, damage or graft regions, and test unfamiliar conditions and longer runtimes to probe learned mechanisms. Comparisons with simpler CA or reaction-diffusion models help distinguish explanatory value from visual resemblance.
+_Core principles:_
+
+* Decentralized control: there is no central controller or global program; complex, coherent patterns emerge entirely from local cell-to-cell communication.
+* Continuous states: unlike classical grid cells (which are strictly 0 or 1), NCA cell states are represented as continuous vectors (often 16-dimensional values storing color, opacity, and hidden traits).
+* Self-organization & regeneration: because the rules are distributed, NCAs can regrow missing parts, heal from damage, or adapt when a pattern is partially erased.
+* Differentiable training: models are trained using backpropagation through time to learn local update rules that assemble a specific global target shape starting from a single seed cell.
 
 _Articles and tutorials:_
 
+* [NCA Literature](https://www.neural-cellular-automata.org/literature/) by Keuper Labs - curated directory of 50+ important papers and articles.
+* [Neural Cellular Automata (NCA)](https://www.neural-cellular-automata.org) by Keuper Labs - informational microsite with a good overview of NCAs and relevant literature.
 * [Studying Growth](https://greydanus.github.io/2022/05/24/studying-growth/) by Sam Greydanus - experiments connecting NCA with developmental phenomena, with implementation notebooks.
-* [Fun With Neural Cellular Automata](https://wandb.ai/johnowhitaker/nca/reports/Fun-With-Neural-Cellular-Automata--VmlldzoyMDQ5Mjg0) by Jonathan Whitaker - interactive examples and creative training experiments.
-* [Isotropic Neural Cellular Automata](https://google-research.github.io/self-organising-systems/isonca/) - review of directional bias, cell orientation, and symmetry breaking; useful for questioning which environmental assumptions a learned growth rule depends on.
-* [Differentiable Self-organizing Systems](https://distill.pub/2020/selforg/) on Distill - research thread with articles and critical commentary connecting learned local rules to developmental biology.
 
 _Notable papers:_
 
-* [Growing Neural Cellular Automata](https://distill.pub/2020/growing-ca/) by Alexander Mordvintsev et al. (Distill, 2020) - foundational demonstration of learning local rules for seeded growth, persistence, and regeneration, with interactive experiments.
-* [Self-Organising Textures](https://distill.pub/selforg/2021/textures/) by Eyvind Niklasson et al. (Distill, 2021) - learns dynamic pattern-generating processes from texture statistics rather than exact pixel arrangements.
-* [Differentiable Programming of Reaction-Diffusion Patterns](https://arxiv.org/abs/2107.06862) by Alexander Mordvintsev, Ettore Randazzo, and Eyvind Niklasson (2021) - constrains learned dynamics to a reaction-diffusion formulation, connecting NCA to a more structured model of pattern formation.
-* [Growing 3D Artefacts and Functional Machines with Neural Cellular Automata](https://arxiv.org/abs/2103.08737) by Shyam Sudhakaran et al. (ALIFE, 2021) - extends growth to voxel structures in Minecraft, including regeneration of simple functional machines.
+* [Growing Neural Cellular Automata](https://distill.pub/2020/growing-ca/) by Alexander Mordvintsev et al. (2020) - foundational paper that originally introduced NCA.
+* [Self-Organising Textures](https://distill.pub/selforg/2021/textures/) by Eyvind Niklasson et al. (2021) - learns dynamic pattern-generating processes from texture statistics rather than exact pixel arrangements.
+* [Differentiable Programming of Reaction-Diffusion Patterns](https://selforglive.github.io/alife_rd_textures) by Alexander Mordvintsev, Ettore Randazzo, and Eyvind Niklasson (2021) - constrains learned dynamics to a reaction-diffusion formulation, connecting NCA to a more structured model of pattern formation.
+* [Growing 3D Artefacts and Functional Machines with Neural Cellular Automata](https://arxiv.org/abs/2103.08737) ([Github repo](https://github.com/real-itu/3d-artefacts-nca)) by Shyam Sudhakaran et al. (2021) - extends growth to voxel structures in Minecraft, including regeneration of simple functional machines.
 * [Growing Isotropic Neural Cellular Automata](https://arxiv.org/abs/2205.01681) by Alexander Mordvintsev, Ettore Randazzo, and Craig Fouts (2022) - studies growth without a shared directional reference, including spontaneous symmetry breaking.
-* [Biomaker CA: a Biome Maker project using Cellular Automata](https://arxiv.org/abs/2307.09320) by Ettore Randazzo and Alexander Mordvintsev (2023) ([illustrated article](https://google-research.github.io/self-organising-systems/2023/biomaker-ca/)) - plant-like growth under resource constraints, reproduction, and mutation; especially relevant to exploring forms without target-image matching.
-* [Mesh Neural Cellular Automata](https://arxiv.org/abs/2311.02820) by Ehsan Pajouheshgar et al. (SIGGRAPH, 2024) - generalizes local rules to mesh vertices for dynamic, UV-free surface textures, with grafting and directional control.
-* [NoiseNCA: Noisy Seed Improves Spatio-Temporal Continuity of Neural Cellular Automata](https://arxiv.org/abs/2404.06279) by Ehsan Pajouheshgar, Yitao Xu, and Sabine Süsstrunk (ALIFE, 2024) - investigates overfitting to simulation discretization and improves consistency across spatial and temporal scales.
-* [Neural Cellular Automata: From Cells to Pixels](https://cells2pixels.github.io/) by Ehsan Pajouheshgar et al. (SIGGRAPH, 2026) - combines a coarse cellular simulation with a learned local decoder for fine-scale output, separating cell resolution from rendered detail.
+* [Biomaker CA: a Biome Maker project using Cellular Automata](https://google-research.github.io/self-organising-systems/2023/biomaker-ca) ([source code](https://github.com/google-research/self-organising-systems/tree/master/self_organising_systems/biomakerca)) by Ettore Randazzo and Alexander Mordvintsev (2023) - plant-like growth under resource constraints, reproduction, and mutation; especially relevant to exploring forms without target-image matching.
+* [Mesh Neural Cellular Automata](https://noisenca.github.io) ([Github repo](https://github.com/IVRL/MeshNCA)) by Ehsan Pajouheshgar et al. (2024) - generalizes local rules to mesh vertices for dynamic, UV-free surface textures, with grafting and directional control.
+* [NoiseNCA: Noisy Seed Improves Spatio-Temporal Continuity of Neural Cellular Automata](https://noisenca.github.io) ([Github repo](https://github.com/IVRL/NoiseNCA)) by Ehsan Pajouheshgar et al. (2024) - investigates overfitting to simulation discretization and improves consistency across spatial and temporal scales.
+* [Neural Cellular Automata: From Cells to Pixels](https://cells2pixels.github.io/) ([Github repo](https://github.com/TheDevilWillBeBee/Cells2Pixels)) by Ehsan Pajouheshgar et al. (2026) - combines a coarse cellular simulation with a learned local decoder for fine-scale output, separating cell resolution from rendered detail.
 
 _Interactive tools and demos:_
 
-* [Isotropic Neural CA demo](https://google-research.github.io/self-organising-systems/isonca/demo/) - browser experiments accompanying the isotropy review.
-* [MeshNCA](https://meshnca.github.io/) ([source](https://github.com/IVRL/MeshNCA)) - interactive 3D surface simulation with grafting, texture density/orientation, and motion controls. Changes surface patterns, not mesh geometry.
-* [NoiseNCA](https://noisenca.github.io/) ([source](https://github.com/IVRL/NoiseNCA)) - browser controls for pattern scale and evolution speed, useful for exploring spatial and temporal continuity.
-* [Cells to Pixels demos](https://cells2pixels.github.io/) ([source](https://github.com/TheDevilWillBeBee/Cells2Pixels)) - interactive growth and material-texture examples comparing coarse cell states with decoded detail.
+* [MeshNCA](https://meshnca.github.io) ([source](https://github.com/IVRL/MeshNCA)) - interactive 3D surface simulation with grafting, texture density/orientation, and motion controls. Changes surface patterns, not mesh geometry.
+* [NCATorch](https://github.com/mspitzna/NCAtorch) (Python) - modular research framework with a unified codebase for training, evaluating, and visualizing NCAs.
+* [NoiseNCA](https://noisenca.github.io) ([source](https://github.com/IVRL/NoiseNCA)) - browser controls for pattern scale and evolution speed, useful for exploring spatial and temporal continuity.
+* [Cells to Pixels demos](https://cells2pixels.github.io) ([source](https://github.com/TheDevilWillBeBee/Cells2Pixels)) - interactive growth and material-texture examples comparing coarse cell states with decoded detail.
 
 _Code projects:_
 
@@ -1523,7 +1524,7 @@ _Code projects:_
 * [Biomaker CA](https://github.com/google-research/self-organising-systems/tree/master/self_organising_systems/biomakerca) - JAX environment and experiment notebooks for evolving plant-like agents and modifying environmental constraints.
 * [3D Artefacts NCA](https://github.com/real-itu/3d-artefacts-nca) - implementation of voxel growth and functional-machine experiments in Minecraft.
 
-_Features in simulation programs:_
+_Relevant features in simulation programs:_
 
 * [Neural Cellular Automata in Houdini Copernicus](https://www.sidefx.com/docs/houdini/copernicus/neural_cellularautomata.html) - Core and Decode COPs evolve cell states and reconstruct high-resolution textures; simulation blocks support animated evolution, with update masks for regional control.
 * [ML Train Neural Cellular Automata in Houdini](https://www.sidefx.com/docs/houdini/ml/train_solutions/ml_trainneuralcellularautomata.html) - integrated recipe for training custom texture models, with a TOP node for automated training workflows.
@@ -1531,6 +1532,7 @@ _Features in simulation programs:_
 _Videos:_
 
 * [Organic neural cellular automata](https://www.youtube.com/watch?v=NPlAEnGX4Dg) by Emergent Garden
+* [Playing Games with Neural Cellular Automata](https://www.youtube.com/watch?v=0w_cVJoD2uk) by Data Science Castnet
 
 ---
 
