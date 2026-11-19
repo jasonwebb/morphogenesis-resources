@@ -1473,7 +1473,7 @@ _Natural phenomena:_
 
 ---
 
-<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/neural-cellular-automata.gif?raw=true" width="300" align="right">
+<a href="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/neural-cellular-automata.gif?raw=true" target="_blank"><img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/neural-cellular-automata.gif?raw=true" width="300" align="right"></a>
 
 ### Neural cellular automata (NCA)
 
