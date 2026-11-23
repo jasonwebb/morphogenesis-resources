@@ -109,6 +109,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#marching-squares">Marching squares</a></li>
               <li><a href="#marching-cubes">Marching cubes</a></li>
               <li><a href="#metaballs">Metaballs</a></li>
+              <li><a href="#neural-network">Neural network</a></li>
               <li><a href="#noise">Noise</a></li>
               <li><a href="#particle-system">Particle system</a></li>
               <li><a href="#physics-engine">Physics engine</a></li>
@@ -885,6 +886,7 @@ _Applications across domains:_
 * [Cellular automata](#cellular-automata-ca) - rules based on the sum or pattern of a neighborhood are implicitly convolving with a kernel.
 * [Fluid simulation](#fluid-simulation) - pressure solvers and advection schemes use convolution to distribute quantities across neighboring cells.
 * [Noise generation](#noise) - blurring or interpolating noise through convolution creates coherent multi-scale patterns (basis for Perlin noise smoothing).
+* [Neural networks](#neural-network) - convolutional layers apply exactly this operation, except the kernel values are learned from data instead of chosen by hand.
 * Morphological operations - erosion and dilation kernels reshape binary regions (used in image segmentation and shape analysis).
 * Smoothing and filtering - low-pass filters smooth noisy data; high-pass filters enhance detail and edges.
 
@@ -1478,13 +1480,11 @@ _Natural phenomena:_
 ### Neural cellular automata (NCA)
 
 > [!NOTE]
-> Related to [cellular automata](#cellular-automata-ca), [convolution kernel](#convolution-kernel), and [reaction-diffusion](#reaction-diffusion).
+> Related to [cellular automata](#cellular-automata-ca), [convolution kernel](#convolution-kernel), [reaction-diffusion](#reaction-diffusion), and [neural networks](#neural-network).
 
-NCAs are bio-inspired computational models that merge traditional [cellular automata](#cellular-automata-ca) with artificial neural networks. Instead of using hard-coded logical rules (like [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)), every cell in an NCA runs a tiny, identical neural network to update its state based on its immediate local neighbors. NCAs provide experimental models of distributed growth, coordination, and emergence.
+NCAs are bio-inspired computational models that merge traditional [cellular automata](#cellular-automata-ca) with artificial [neural networks](#neural-network). Instead of using hard-coded logical rules (like [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)), every cell in an NCA runs a tiny, identical [neural network](#neural-network) to update its state based on its immediate local neighbors. NCAs provide experimental models of distributed growth, coordination, and emergence.
 
 **2D NCAs** can be used to generate static images as well as [texture maps for use in PBR materials](https://meshnca.github.io) on 3D meshes. **3D NCAs** can be used to create 3D geometry using voxel engines (see [VDBs](#vdbs)) or by applying meshing techniques like [marching cubes](#marching-cubes) to [SDFs](#signed-distance-function-sdfs).
-
-Images produced by 2D NCAs can be used as texture maps for PBR materials
 
 _Core principles:_
 
@@ -1493,7 +1493,7 @@ _Core principles:_
 * Self-organization & regeneration: because the rules are distributed, NCAs can regrow missing parts, heal from damage, or adapt when a pattern is partially erased.
 * Differentiable training: models are trained using backpropagation through time to learn local update rules that assemble a specific global target shape starting from a single seed cell.
 
-_Articles and tutorials:_
+_Articles:_
 
 * [NCA Literature](https://www.neural-cellular-automata.org/literature/) by Keuper Labs - curated directory of 50+ important papers and articles.
 * [Neural Cellular Automata (NCA)](https://www.neural-cellular-automata.org) by Keuper Labs - informational microsite with a good overview of NCAs and relevant literature.
@@ -2720,6 +2720,84 @@ _Articles:_
 
 _Videos:_
 * [Coding Challenge #28: Metaballs](https://www.youtube.com/watch?v=ccYLb7cLB1I) by Daniel Shiffman ([Github repo](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_028_MetaBalls) with source code for p5.js and Processing)
+
+---
+
+<a href="https://commons.wikimedia.org/wiki/File:Artificial_neural_network_colored.svg" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/neural-network.jpg?raw=true" width="300" align="right" title="File:Artificial neural network colored.svg - Wikimedia Commons"></a>
+
+### Neural network
+
+> [!NOTE]
+> Related to [convolution kernel](#convolution-kernel) and [neural cellular automata](#neural-cellular-automata-nca).
+
+A neural network takes inputs and computes outputs by passing data through layers of virtual neurons, often called _units_. Each unit multiplies its inputs by learned _weights_ (how strongly each input matters), adds a learned _bias_ (an adjustable offset), then applies a nonlinear _activation function_; each layer's outputs feed the next. 
+
+This layered approach lets networks represent complicated patterns without requiring a single unit to recognize the whole thing. Small networks may have a few layers; large modern models can have dozens or hundreds. You choose the architecture, but training fits its weights from examples by measuring and reducing its errors.
+
+This makes neural networks useful when a task is easy to recognize but difficult to describe with hand-written rules: identifying objects in images, transcribing speech, translating text, forecasting weather, and generating images are familiar examples. They can also approximate expensive computations, such as physics simulations, much faster than running the original calculation. Training may be costly, but using a trained network (inference) is often fast enough for real-time applications, including interactive graphics and simulation.
+
+_Relevance to digital morphogenesis:_
+* Surrogate models - a trained network can stand in for an expensive solver, like those used in [reaction-diffusion](#reaction-diffusion), [fluid simulations](#fluid-simulation), or other [physics simulations](#physics-engine).
+* Neuroevolution and CPPNs - [compositional pattern-producing networks](https://en.wikipedia.org/wiki/Compositional_pattern-producing_network) map coordinates to color or density and are evolved rather than gradient-trained; they are a direct ancestor of learned [NCAs](#neural-cellular-automata-nca) and of much generative art.
+* Latent spaces - an [autoencoder](https://en.wikipedia.org/wiki/Autoencoder) compresses many forms into a few numbers, so interpolating between them walks through a family of related shapes.
+
+_How it works at a glance:_
+1. Define an architecture - the layers and how they connect.
+2. Forward pass - feed inputs through the layers to produce an output.
+3. Loss - compare that output to the desired output with a _loss function_, which reduces the error to a single number.
+4. Backpropagation - apply the chain rule backwards through the network to compute how much each individual weight contributed to the loss (its _gradient_).
+5. Gradient descent - move every weight a small step down its gradient, then repeat over the dataset many times until the loss stops improving.
+
+_Key terms:_
+* Weight / bias - the learned numbers; collectively the model's _parameters_. "Model size" refers to how many there are.
+* Activation function - the nonlinearity applied after each weighted sum (ReLU, sigmoid, tanh, GELU). Without it, any stack of layers would collapse into a single linear transform.
+* Layer - one stage of units, usually evaluated in parallel. "Fully connected" (dense) layers weight every input separately; other kinds share weights across positions or timesteps.
+* Loss function - the quantity being minimized (mean squared error, cross-entropy, etc.). Choosing it well is often what separates a network that learns the intended thing from one that learns a shortcut.
+* Learning rate - the step size of each weight update. Too large and training diverges; too small and it takes impractically long.
+* Batch / epoch - a batch is the handful of examples averaged into one update; an epoch is one full pass over the training data.
+* Overfitting - memorizing the training examples rather than the underlying relationship. Countered with more data, regularization, dropout, or early stopping.
+* Inference - running a trained network without updating weights. It's far cheaper than training, which is why trained models run comfortably in real time.
+* Universal approximation - in principle even one wide hidden layer can approximate any continuous function; depth mainly makes this practical and efficient rather than possible.
+
+_Common architecture families:_
+* Fully connected (MLP) - a general-purpose stack of dense layers; the simplest useful architecture.
+* Convolutional (CNN) - one small filter swept across every position in the input, rather than separate weights per position (the same operation as a [convolution kernel](#convolution-kernel), with learned values). Naturally suited to images, grids, and fields.
+* Recurrent (RNN / LSTM) - carries a hidden state from step to step, for sequences and time series.
+* Transformer - attention-based; relates every input position to every other one, which is why it dominates language and image generation.
+* Graph neural network (GNN) - operates on arbitrary connectivity, such as meshes or particle graphs.
+* Neural ODE - replaces discrete layers with a learned derivative that is integrated over time, so the effective depth adapts to the input; a natural fit for processes already described by differential equations like [reaction-diffusion](#reaction-diffusion) and [mass-spring systems](#mass-spring-system).
+* Tiny / embedded networks - models with only a few thousand parameters, small enough to evaluate thousands of times per frame inside a [shader](#shaders). Export them with [ONNX](https://onnx.ai/) and run them through [ONNX Runtime Web](https://onnxruntime.ai/docs/tutorials/web/) in a browser or [TensorRT](https://developer.nvidia.com/tensorrt) on the GPU.
+
+_Articles, books, and courses:_
+* [Neural network (machine learning)](https://en.wikipedia.org/wiki/Neural_network_(machine_learning)) on Wikipedia
+* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by Michael Nielsen - free online book that builds a network from scratch and explains backpropagation clearly
+* [Neural Networks from Scratch](https://nnfs.io/) by Harrison Kinsley and Daniel Kukieła - builds a framework line by line, without libraries
+* [Deep Learning](https://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville - free online reference book
+* [Dive into Deep Learning](https://d2l.ai/) by Aston Zhang, Zachary Lipton, Mu Li, and Alexander Smola - free interactive book that 
+* [Machine Learning for Art (ml4a)](https://ml4a.net) by Gene Kogan - guides and tools for applying machine learning in creative coding and interactive artpairs each concept with runnable code
+* [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) by Andrej Karpathy - free course that builds backpropagation, an autograd engine, and a small language model from scratch
+* [Practical Deep Learning for Coders](https://course.fast.ai/) by Jeremy Howard and Rachel Thomas - free course that focuses on getting working models before the theory
+
+_Videos:_
+* [Neural networks series](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) by 3Blue1Brown - visualizes weights, layers, backpropagation, and gradient descent
+
+_Interactive demos:_
+* [TensorFlow Playground](https://playground.tensorflow.org/) - adjust the architecture, learning rate, and activation functions of a small classifier, then watch the decision boundary change in the browser
+
+_Code projects and libraries:_
+* [Flax NNX](https://flax.readthedocs.io) (Python/JAX) - simplified API that makes it easier to create, inspect, debug, and analyze neural networks in JAX
+* [JAX](https://docs.jax.dev/en/latest/) (Python) - composable automatic differentiation that compiles to CPU, GPU, or TPU; the foundation underneath Flax
+* [Machine learning in Houdini](https://www.sidefx.com/docs/houdini/ml/) (Houdini) - node-based platform for generating synthetic training data, training models, and deploying them
+* [micrograd](https://github.com/karpathy/micrograd) (Python) - tiny scalar-valued autograd engine and neural net library; small enough to read end to end
+* [ml5.js NeuralNetwork](https://docs.ml5js.org/#/reference/neural-network) (JavaScript) - API for creating, training, and using neural networks in creative coding
+* [Neural Network Engine (NNE)](https://dev.epicgames.com/documentation/en-us/unreal-engine/neural-network-engine-in-unreal-engine) (Unreal 5.3, beta) - provides a common API for real-time inference; see the [quick-start guide](https://dev.epicgames.com/community/learning/courses/e7w/unreal-engine-neural-network-engine-nne/G3rx/unreal-engine-nne-overview-5-3).
+* [ONNX Runtime](https://onnxruntime.ai/) (C++, C#, Java, JavaScript, Python) - runs models exported from most training frameworks, with a [web build](https://onnxruntime.ai/docs/tutorials/web/) for browsers
+* [PyTorch](https://pytorch.org/) (Python) - leading framework for building and training networks; see [`torch.nn`](https://docs.pytorch.org/docs/stable/nn.html) for layers, loss functions, and other modules
+* [Sentis](https://docs.unity3d.com/Packages/com.unity.ai.inference@2.6/manual/get-started.html) (Unity) - imports and runs trained models in real time, with sample projects to explore its workflow
+* [TensorFlow.js models and layers](https://www.tensorflow.org/js/guide/models_and_layers) (JavaScript) - building blocks for constructing neural networks in the browser
+* [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn) (C++/CUDA) - real-time training and inference for small networks, including the hash-grid encodings often used to represent 3D scenes
+* [tinygrad](https://github.com/tinygrad/tinygrad) (Python) - minimal deep learning framework kept small enough to trace how autograd and GPU kernels actually work
 
 ---
 
