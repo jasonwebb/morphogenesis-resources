@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-11-23
+- Added: Procedural generation section (#41).
+
 ## 2026-08-21
 - Added: changelog file documenting the repository's git history.
 

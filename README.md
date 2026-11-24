@@ -114,6 +114,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#particle-system">Particle system</a></li>
               <li><a href="#physics-engine">Physics engine</a></li>
               <li><a href="#polygon-clipping">Polygon clipping</a></li>
+              <li><a href="#procedural-generation-pcg">Procedural generation (PCG)</a></li>
               <li><a href="#ray-tracing">Ray tracing</a></li>
               <li><a href="#recursion">Recursion</a></li>
               <li><a href="#shaders">Shaders</a></li>
@@ -2943,6 +2944,56 @@ _Code projects:_
 * [clipper-java](https://github.com/lightbringer/clipper-java) by Tobias Mahlmann (Java)
 * [ofxClipper](https://github.com/bakercp/ofxClipper) by Christopher Baker (openFrameworks / C++)
 * [polygon-clipping](https://github.com/mfogel/polygon-clipping) by Mike Fogel (JavaScript)
+
+---
+
+<a href="https://commons.wikimedia.org/wiki/File:Terragen.jpg" target="_blank">
+<img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/procedural-generation.jpg?raw=true" width="300" align="right" title="Levyznin - Procedural landscape rendered in Terragen from Wikimedia Commons"></a>
+
+### Procedural generation (PCG)
+
+_Image credit: Levyznin - [Procedural landscape rendered in Terragen](https://commons.wikimedia.org/wiki/File:Terragen.jpg)._
+
+The practice of producing content with an algorithm instead of authoring it directly: terrain, textures, level layouts, buildings, plants, music, names, or dialogue. It is usually shortened to _procgen_, and in game development to _procedural content generation_ (PCG). The useful description of a generator is its _possibility space_ - the set of outputs it can emit - and how much of that set is worth seeing.
+
+_Key concepts:_
+
+* Constraints = a property the output must not violate; separating hard constraints from soft preferences is what makes a generator reliable.
+* Controllability = how precisely a designer can steer the output toward a target
+* Deterministic = usually repeatable from a given input: the same seed and parameter values produce the same output every run, which is what makes results reproducible, shareable, and debuggable.
+* Parameters = exposed in the code are adjusted to steer the output towards particular results (room count, terrain roughness, branch angle, etc)
+* Possibility / parameter space = every output a generator can produce; a good one is wide and mostly acceptable.
+* Procedural oatmeal = outputs that are technically distinct but read as interchangeable, a term coined by Kate Compton for the usual failure mode of an unconstrained generator.
+* Seed = a predefined value that the system uses
+
+_Common approaches:_
+* Constructive - assemble the output directly from rules and randomness, such as carving rooms and corridors into a grid or expanding a grammar. Fast and deterministic given a seed, but global properties have to be designed into the local rules.
+* Search-based - generate candidates, score them against a quality function, and keep or evolve the best ones. Handles goals like playability or difficulty that resist direct construction.
+* Simulation-based - run a process forward in time and record the result; this is the approach behind most [growth algorithms](#growth-algorithms) in this list.
+* Constraint-based - place pieces while satisfying adjacency rules and undo choices that lead to a contradiction, as in [Wave Function Collapse](#wave-function-collapse-wfc).
+
+_Notable papers:_
+* [Search-Based Procedural Content Generation: A Taxonomy and Survey](https://doi.org/10.1109/TCIAIG.2011.2148116) by Julian Togelius, Georgios N. Yannakakis, Kenneth O. Stanley, and Cameron Browne (2011) - the field's standard survey: it defines what counts as content and as generation, places search-based methods among constructive and generate-and-test approaches, and catalogues how generators are evaluated.
+
+_Articles:_
+* [Procedural generation](https://en.wikipedia.org/wiki/Procedural_generation) on Wikipedia
+* [Procedural Content Generation Wiki](https://pcg.wikidot.com)
+* [Procedural Content Generation in Games](https://pcgbook.com/) by Noor Shaker, Julian Togelius, and Mark J. Nelson - free textbook an overview of current research
+* [Rooms and Mazes: A Procedural Dungeon Generator](https://journal.stuffwithstuff.com/2014/12/21/rooms-and-mazes/) by Bob Nystrom - builds a complete dungeon generator step by step, with a live demo.
+* [So you want to build a generator…](https://galaxykate0.tumblr.com/post/139774965871/so-you-want-to-build-a-generator) by Kate Compton - questions to answer about properties, constraints, and possibility space before writing any generator code.
+
+_Code projects:_
+* [DeBroglie](https://github.com/BorisTheBrave/DeBroglie) (C#) by Boris the Brave - [Wave Function Collapse](#wave-function-collapse-wfc) implementation that adds non-local constraints to the standard adjacency rules.
+* [Hauberk](https://github.com/munificent/hauberk) (Dart) by Bob Nystrom - roguelike whose room-and-maze dungeon generator is the subject of the article above.
+* [Tracery](https://github.com/galaxykate/tracery) (JavaScript) by Kate Compton - story-grammar library for generating text and names from rewrite rules.
+
+_Videos:_
+* [Practical Procedural Generation for Everyone](https://www.youtube.com/watch?v=WumyfLEa6bU) by Kate Compton (GDC 2017) - design advice for generators whose output stays interesting, and why so much generated content feels interchangeable.
+* [Noise-Based RNG](https://www.youtube.com/watch?v=LWFzPP8ZbdU) by Squirrel Eiserloh (GDC 2017) - why hashing coordinates into random values beats a sequential random number generator for anything spatial, and how that makes endless terrain and textures possible.
+
+_Interactive demos:_
+* [Medieval Fantasy City Generator](https://watabou.itch.io/medieval-fantasy-city-generator) by Oleg Dolya - regenerate a town plan at a chosen size and watch the street network and buildings rebuild from a new seed.
+* [Procgen Arcana](https://watabou.github.io/) by Oleg Dolya - a collection of generators for cities, dungeons, caves, and maps.
 
 ---
 
