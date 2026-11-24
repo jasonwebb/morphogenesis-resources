@@ -2992,7 +2992,6 @@ _Videos:_
 * [Noise-Based RNG](https://www.youtube.com/watch?v=LWFzPP8ZbdU) by Squirrel Eiserloh (GDC 2017) - why hashing coordinates into random values beats a sequential random number generator for anything spatial, and how that makes endless terrain and textures possible.
 
 _Interactive demos:_
-* [Medieval Fantasy City Generator](https://watabou.itch.io/medieval-fantasy-city-generator) by Oleg Dolya - regenerate a town plan at a chosen size and watch the street network and buildings rebuild from a new seed.
 * [Procgen Arcana](https://watabou.github.io/) by Oleg Dolya - a collection of generators for cities, dungeons, caves, and maps.
 
 ---
