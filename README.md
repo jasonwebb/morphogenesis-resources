@@ -64,7 +64,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#phyllotaxis">Phyllotaxis</a></li>
               <li><a href="#platonic-solids">Platonic solids</a></li>
               <li><a href="#polyhedra">Polyhedra</a></li>
-              <li><a href="#saffmantaylor-instability">Saffman–Taylor instability</a></li>
+              <li><a href="#saffman-taylor-instability">Saffman–Taylor instability</a></li>
               <li><a href="#spherical-harmonics">Spherical harmonics</a></li>
               <li><a href="#strange-attractors">Strange attractors</a></li>
               <li><a href="#superellipse">Superellipse</a></li>
@@ -1228,7 +1228,7 @@ _Videos:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/laplace-equation.jpg?raw=true" width="300" align="right" title="Wikipedia - Laplace equation"></a>
 
 > [!NOTE]
-> Related to [DLA](#diffusion-limited-aggregation-dla), [DBM](#dielectric-breakdown-model-dbm), [Saffman–Taylor instability](#saffmantaylor-instability), [reaction-diffusion](#reaction-diffusion), [minimal surface](#minimal-surface), [fluid simulation](#fluid-simulation), and [Laplace transform](#laplace-transform).
+> Related to [DLA](#diffusion-limited-aggregation-dla), [DBM](#dielectric-breakdown-model-dbm), [Saffman–Taylor instability](#saffman-taylor-instability), [reaction-diffusion](#reaction-diffusion), [minimal surface](#minimal-surface), [fluid simulation](#fluid-simulation), and [Laplace transform](#laplace-transform).
 
 The Laplace equation, $\nabla^2 \varphi = 0$, says that a field's value at any point equals the average of its immediate surroundings - no interior point can be a local bump or dip. It shows up constantly in physics because it's simply the _steady-state_ form of diffusion, heat flow, and potential fields: whenever something free to spread out (heat, concentration, charge, pressure) has finished settling, its value obeys this equation. Solutions are called _harmonic functions_.
 
@@ -1239,7 +1239,7 @@ _Laplacian growth - from equation to organic form:_
 Each of these solves the Laplace equation in the region _around_ a growing cluster, then advances the cluster's boundary fastest wherever the resulting field's gradient is steepest:
 * [Diffusion-limited aggregation (DLA)](#diffusion-limited-aggregation-dla) - random walkers stick where they first touch the cluster. In the continuum limit, the probability of a walker arriving at any boundary point is proportional to the gradient of the harmonic concentration field around the cluster - DLA is the stochastic, particle-based way of sampling a Laplacian growth process.
 * [Dielectric breakdown model (DBM)](#dielectric-breakdown-model-dbm) - solves the Laplace equation directly for an electric potential field around the growing discharge, then grows each boundary point in proportion to the local field gradient raised to a tunable power - the same idea as DLA, made explicit and continuous.
-* [Saffman–Taylor instability](#saffmantaylor-instability) (viscous fingering) - inside a [Hele-Shaw cell](#hele-shaw-cell), the fluid pressure field obeys the Laplace equation (via Darcy's law), and the identical "grow fastest where the gradient is steepest" feedback produces the same branching, finger-like interface.
+* [Saffman–Taylor instability](#saffman-taylor-instability) (viscous fingering) - inside a [Hele-Shaw cell](#hele-shaw-cell), the fluid pressure field obeys the Laplace equation (via Darcy's law), and the identical "grow fastest where the gradient is steepest" feedback produces the same branching, finger-like interface.
 
 This is why DLA clusters, electrical discharge patterns, and viscous fingers all look so similar despite arising from unrelated physics - they're all boundaries growing into a harmonic field, differing only in their noise and boundary conditions.
 
@@ -2117,9 +2117,9 @@ _Videos:_
 ### Hele-Shaw cell
 
 > [!NOTE]
-> Related to [Saffman-Taylor instability](#saffmantaylor-instability).
+> Related to [Saffman-Taylor instability](#saffman-taylor-instability).
 
-Apparatus for demonstrating and studying a pheonmenon known as [viscous fingering](#saffman%E2%80%93taylor-instability) (a.k.a. Saffman-Taylor instability), which is defined as "the formation of patterns in a morphologically unstable interface between two fluids in a porous medium" [[1](https://en.wikipedia.org/wiki/Saffman%E2%80%93Taylor_instability)]. It occurs when a less viscous fluid is injected into a more viscous fluid, displacing it in a series of blobby, fractal-like fingers resembling (perhaps related to) the patterns formed by [diffusion-limited aggregation](#diffusion-limited-aggregation-dla) or [differential growth](#differential-growth).
+Apparatus for demonstrating and studying a pheonmenon known as [viscous fingering](#saffman-taylor-instability) (a.k.a. Saffman-Taylor instability), which is defined as "the formation of patterns in a morphologically unstable interface between two fluids in a porous medium" [[1](https://en.wikipedia.org/wiki/Saffman%E2%80%93Taylor_instability)]. It occurs when a less viscous fluid is injected into a more viscous fluid, displacing it in a series of blobby, fractal-like fingers resembling (perhaps related to) the patterns formed by [diffusion-limited aggregation](#diffusion-limited-aggregation-dla) or [differential growth](#differential-growth).
 
 _Setup:_
 
@@ -2436,7 +2436,7 @@ _Videos:_
 ### Fluid simulation
 
 > [!NOTE]
-> Related to [convolution kernels](#convolution-kernel), [Laplace equation](#laplace-equation), and [Saffman–Taylor instability](#saffmantaylor-instability).
+> Related to [convolution kernels](#convolution-kernel), [Laplace equation](#laplace-equation), and [Saffman–Taylor instability](#saffman-taylor-instability).
 
 Simulates the highly complex and dynamic nature of flows in fluid volumes using computationally-efficient implementations of the [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations). Can be thought of as a 2D or 3D flow field that is constantly changing based on the velocity, viscocity, and density of the fluid at each point in space and its surrounding area. This flow field is made visible through the use of digital "dyes" (usually particles) that get distributed, diffused, sheared, and blended through the system by the flow forces.
 
