@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-11-27
+- Added: Evolutionary computing section (#51).
+
 ## 2026-11-23
 - Added: Procedural generation section (#41).
 

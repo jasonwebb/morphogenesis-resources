@@ -102,6 +102,7 @@ This list is a compact reference of growth algorithms, lab experiments, and rela
               <li><a href="#collision-detection">Collision detection</a></li>
               <li><a href="#constructive-solid-geometry-csg">Constructive solid geometry (CSG)</a></li>
               <li><a href="#dithering">Dithering</a></li>
+              <li><a href="#evolutionary-computing">Evolutionary computing</a></li>
               <li><a href="#flow-field">Flow field</a></li>
               <li><a href="#fluid-simulation">Fluid simulation</a></li>
               <li><a href="#kernel-based-image-processing">Kernel-based image processing</a></li>
@@ -1541,7 +1542,7 @@ _Videos:_
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/packing-problems-1.png?raw=true" width="300" align="right" title="Wikipedia - Packing problems"></a>
 
 ### Packing problems
-Class of optimization problems that involve determining efficient ways to arrange (_pack_) objects into containers. Packing problems can be tackled using discrete mathematical methods, physics systems (as seen in Nervous System's [Kinematics](https://n-e-r-v-o-u-s.com/blog/?p=7162) series), and even genetic algorithms and machine learning.
+Class of optimization problems that involve determining efficient ways to arrange (_pack_) objects into containers. Packing problems can be tackled using discrete mathematical methods, physics systems (as seen in Nervous System's [Kinematics](https://n-e-r-v-o-u-s.com/blog/?p=7162) series), and even [genetic algorithms](#evolutionary-computing) and machine learning.
 
 Has major applications in digital fabrication, manufacturing, and shipping logistics where material and space usage is directly related to costs. In 2D, packing/nesting problem solutions are useful for minimizing waste material in sheet goods like plywood and sheet steel, even for hobbyists. In 3D these solutions are useful for fitting as many objects as possible into 3D printer build envelopes (see article from [Sculpteo](https://www.sculpteo.com/blog/2017/07/19/3d-printing-software-how-we-optimize-our-batch-using-our-nesting-tool/)).
 
@@ -2406,6 +2407,69 @@ _Code projects:_
 
 ---
 
+### Evolutionary computing
+
+Evolutionary computing (EC) is a family of optimization methods that improve populations of candidate solutions through selection and variation. Genetic algorithms (GAs) are its best-known member; related methods evolve real-valued vectors (evolution strategies), expression trees (genetic programming), or neural networks (neuroevolution).
+
+In each generation (iteration), candidates are scored by a _fitness function_, which guides the search. In digital morphogenesis, it can reward a target shape or behavior, letting evolution discover forms that are hard to specify directly. When a person selects candidates, the process is called _interactive evolution_.
+
+_Algorithm at a glance:_
+
+_\* indicates a potential simulation parameter_
+
+1. Encode a candidate\* - choose what a genome contains: a vector of parameters, a bit string, an expression tree, or a network.
+2. Initialise a population\* - generate the first generation, usually from random genomes.
+3. Evaluate\* - decode and score every individual with the fitness function.
+4. Select parents\* - sample with probability weighted by fitness, or run small tournaments.
+5. Vary - recombine parents with probability $p_c$\* and mutate each gene with probability $p_m$\*.
+6. Replace - assemble the next generation, optionally copying the fittest individuals over unchanged (elitism\*).
+7. Repeat from step 3 until fitness stops improving or a generation budget\* is spent.
+
+_Key terms:_
+* Genome / chromosome - the encoded candidate solution; a gene is one element of it.
+* Fitness function - the score that ranks candidates, and the only place domain knowledge enters the search.
+* Selection pressure - how strongly the fitness function biases reproduction; tournament size is the usual dial.
+* Crossover (recombination) - combining parts of two parents' genomes into a child.
+* Mutation - a random change to a gene; the mutation rate sets how far offspring can stray from their parents.
+* Elitism - carrying the fittest individuals into the next generation unchanged, so a good solution is never lost.
+* Premature convergence - the population becoming uniform around a local optimum before anything better is found.
+* Generation - one complete cycle of evaluation, selection, and replacement.
+* Interactive evolution - a human selects the parents, making taste the fitness function.
+
+_Equations:_
+
+$$p_i = \frac{f_i}{\sum_{j=1}^{N} f_j}$$
+
+Under fitness-proportionate selection, the expected share of offspring for individual $i$ is its fitness $f_i$ divided by the population total - the roulette-wheel rule that breaks down once one individual dominates.
+
+_Notable papers:_
+* [Evolving Virtual Creatures](https://www.karlsims.com/papers/siggraph94.pdf) (PDF) by Karl Sims (1994) - encodes a creature's body and control as one genome and selects by simulated tasks such as swimming and jumping.
+* [Evolving Neural Networks through Augmenting Topologies](https://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf) (PDF) by Kenneth O. Stanley and Risto Miikkulainen (2002) - NEAT evolves network structure alongside weights, protecting new topologies long enough to be optimized.
+* [Illuminating search spaces by mapping elites](https://arxiv.org/abs/1504.04909) by Jean-Baptiste Mouret and Jeff Clune (2015) - MAP-Elites fills an archive keyed by behavioral descriptors, returning a map of diverse high performers rather than one best solution.
+* [The Surprising Creativity of Digital Evolution](https://arxiv.org/abs/1803.03453) by Joel Lehman, Jeff Clune, and others (2018) - a collection of evolved organisms that satisfied their fitness functions in ways their authors never intended.
+
+_Articles:_
+* [Evolutionary computation](https://en.wikipedia.org/wiki/Evolutionary_computation) on Wikipedia
+* [Genetic algorithm](https://en.wikipedia.org/wiki/Genetic_algorithm) on Wikipedia
+* [Evolved antenna](https://en.wikipedia.org/wiki/Evolved_antenna) on Wikipedia - NASA's ST5 antenna, a shape no engineer would have drawn, found by scoring candidate geometries against a radiation-pattern target.
+* [Chapter 9: Evolutionary Computing](https://natureofcode.com/genetic-algorithms/) from The Nature of Code by Daniel Shiffman - builds a GA that pilots a rocket through an obstacle course, with p5.js source.
+* [Genetic Programming: Evolution of Mona Lisa](https://rogerjohansson.blog/2008/12/07/genetic-programming-evolution-of-mona-lisa/) by Roger Johansson - a genome of 50 translucent polygons converges on the painting, the clearest one-page demonstration of a fitness function driving form.
+
+_Videos:_
+* [9.1: Genetic Algorithm: Introduction](https://www.youtube.com/watch?v=9zfeTw-uFCw) by Daniel Shiffman (The Coding Train) - the shortest route from a population of random values to a working GA.
+* [Evolving Soft Robots with Multiple Materials](https://www.youtube.com/watch?v=z9ptOeByLA4) by Evolving AI Lab - simulated creatures evolve muscle, bone, and support tissue together, then move across the ground.
+* [I programmed some creatures. They Evolved.](https://www.youtube.com/watch?v=N3tRFayqVtk) by davidrandallmiller - 3D physics creatures evolve gaits starting from random bodies.
+
+_Code projects:_
+* [DEAP](https://github.com/DEAP/deap) (Python) - framework for GAs and other evolutionary algorithms with pluggable operators and parallel fitness evaluation.
+* [genetic-js](https://github.com/subprotocol/genetic-js) (JavaScript) - GA library with interchangeable selection, crossover, and mutation strategies.
+* [gplearn](https://github.com/trevorstephens/gplearn) (Python) by Trevor Stephens - genetic programming for symbolic regression with a scikit-learn-style API.
+* [neat-python](https://github.com/CodeReclaimers/neat-python) (Python) - NEAT implementation that evolves network topology and weights together.
+* [pycma](https://github.com/CMA-ES/pycma) (Python) by Nikolaus Hansen - reference implementation of CMA-ES, the evolution strategy usually reached for when the genome is a vector of real numbers.
+* [PyGAD](https://github.com/ahmedfgad/GeneticAlgorithmPython) (Python) by Ahmed Fawzy Gad - GA library with callbacks and hooks for training Keras and PyTorch models.
+
+---
+
 <a href="https://en.wikipedia.org/wiki/Vector_field" target="_blank">
 <img src="https://github.com/jasonwebb/morphogenesis-resources/blob/main/images/flow-field-1.png?raw=true" width="300" align="right" title="Wikipedia - Vector field"></a>
 
@@ -2968,7 +3032,7 @@ _Key concepts:_
 
 _Common approaches:_
 * Constructive - assemble the output directly from rules and randomness, such as carving rooms and corridors into a grid or expanding a grammar. Fast and deterministic given a seed, but global properties have to be designed into the local rules.
-* Search-based - generate candidates, score them against a quality function, and keep or evolve the best ones. Handles goals like playability or difficulty that resist direct construction.
+* Search-based - generate candidates, score them against a quality function, and keep or evolve the best ones, as in [evolutionary computing](#evolutionary-computing). Handles goals like playability or difficulty that resist direct construction.
 * Simulation-based - run a process forward in time and record the result; this is the approach behind most [growth algorithms](#growth-algorithms) in this list.
 * Constraint-based - place pieces while satisfying adjacency rules and undo choices that lead to a contradiction, as in [Wave Function Collapse](#wave-function-collapse-wfc).
 
